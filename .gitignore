@@ -1,0 +1,48 @@
+# --- Obsidian: estado local de cada PC ---
+.obsidian/workspace*
+.obsidian/cache
+.trash/
+
+# --- RAG: base vectorial y cachés (se reconstruye: python 99_Scripts/rag/rag.py indexar --reconstruir) ---
+.rag/
+__pycache__/
+*.pyc
+.venv/
+venv/
+99_Scripts/datos/*.sqlite-journal
+
+# --- Secretos: nunca al repo ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*secret*
+*token*
+credenciales*
+
+# --- Datos de campo crudos: SOLO se suben los anonimizados ---
+05_Datos_Campo/_crudo/
+05_Datos_Campo/**/*_crudo*
+05_Datos_Campo/**/*_RAW*
+
+# --- Temporales ---
+~$*
+*.tmp
+*.part
+*.bak
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Documentos administrativos con cédulas: solo en local (Diego tiene sus copias como coautor) ---
+01_Borrador_Aprobado/*.pdf
+01_Borrador_Aprobado/cartas/
+01_Borrador_Aprobado/_historico/
+11_Planificacion/_historico/Plan_Soluciones_Tesis.docx
+11_Planificacion/_historico/Resumen_Tesis.docx
+11_Planificacion/_historico/plan_soluciones.json

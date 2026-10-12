@@ -1,0 +1,125 @@
+{
+  "busquedas": [
+    {"id": 1, "tema": "LOPDP", "consulta": "Norma general de transferencias internacionales de datos personales SPDP-SPD-2026-0004-R Ecuador",
+     "para_que": "H9: los datos van a Railway, Vercel, Slack y GitHub (EE.UU.)",
+     "fuentes": [
+       {"titulo": "Resolución SPDP-SPD-2026-0004-R — Norma general de transferencias (47 págs.)", "url": "https://spdp.gob.ec/wp-content/uploads/2026/01/04.01.01-SPSP-SPD-2026-0004-R-Norma-general-de-transferencias-signed.pdf", "hallazgo": "Norma vigente de la SPDP para transferencias nacionales e internacionales; desarrolla LOPDP arts. 55–61 y RGLOPDP arts. 21–23 y 38. Pendiente: ver si EE.UU. tiene nivel adecuado."},
+       {"titulo": "AVL Abogados — Normativa para la transferencia de datos personales", "url": "https://avl.com.ec/normativa-para-la-transferencia-nacional-e-internacional-de-datos-personales/", "hallazgo": "Resume la norma anterior (SPDP-SPD-2025-0024-R): sin nivel adecuado, hacen falta garantías contractuales, y la transferencia se registra (art. 78 del Reglamento)."}
+     ]},
+    {"id": 2, "tema": "LOPDP", "consulta": "Reglamento General Ley Orgánica de Protección de Datos Personales Decreto Ejecutivo 904 Registro Oficial 435",
+     "para_que": "H10: la referencia del Reglamento falta en la bibliografía",
+     "fuentes": [
+       {"titulo": "Lexis — Reglamento General de la LOPDP", "url": "https://www.lexis.com.ec/noticias/reglamento-general-de-ley-organica-de-proteccion-de-datos-personales", "hallazgo": "Decreto Ejecutivo 904, RO Tercer Suplemento 435, 13 de noviembre de 2023."},
+       {"titulo": "MINTEL — Decreto Ejecutivo 904 (PDF)", "url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/11/Decreto-Ejecutivo-No.-904.pdf", "hallazgo": "Texto oficial para citar."}
+     ]},
+    {"id": 3, "tema": "LOPDP", "consulta": "LOPDP Ecuador artículo 15 derecho de eliminación 15 días artículo 37 seguridad",
+     "para_que": "H6: supresión frente a un registro que no se puede alterar",
+     "fuentes": [
+       {"titulo": "LOPDP — texto (UTPL)", "url": "https://procuraduria.utpl.edu.ec/sitios/documentos/NormativasPublicas/Ley%20de%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos.pdf", "hallazgo": "Art. 15: eliminación en 15 días (volver ilegible o irreconocible de forma irreversible). Art. 37: medidas de seguridad acordes al riesgo, con verificación continua."}
+     ]},
+    {"id": 4, "tema": "LOPDP", "consulta": "SPDP guía de protección de datos desde el diseño y por defecto 2025",
+     "para_que": "Justificar la minimización de la bóveda (A.7) con guía oficial",
+     "fuentes": [
+       {"titulo": "SPDP — Guía de protección de datos desde el diseño y por defecto (oct-2025)", "url": "https://spdp.gob.ec/wp-content/uploads/2025/10/40.02-Guia-de-Proteccion-de-Datos-desde-el-Diseno-y-por-Defecto.pdf", "hallazgo": "Guía oficial: sirve para citar que la minimización y la separación de datos personales son práctica recomendada por la autoridad. Pendiente leerla."}
+     ]},
+    {"id": 5, "tema": "Comisiones", "consulta": "Código del Trabajo Ecuador artículo 95 comisiones remuneración",
+     "para_que": "D2: la regla de comisiones es materia laboral, no del software",
+     "fuentes": [
+       {"titulo": "Código del Trabajo (codificación) — CES", "url": "https://www.ces.gob.ec/lotaip/2020/Junio/Literal_a2/C%C3%B3digo%20del%20Trabajo.pdf", "hallazgo": "Art. 95: las comisiones forman parte de la remuneración. Por eso la política de titularidad debe firmarla gerencia; el sistema solo registra."},
+       {"titulo": "Derecho Ecuador — Remuneraciones del trabajador", "url": "https://derechoecuador.com/remuneraciones-del-trabajador/", "hallazgo": "Explicación del art. 95 para citar en lenguaje llano."}
+     ]},
+    {"id": 6, "tema": "Comisiones", "consulta": "split credit sales commission team selling handoff rules",
+     "para_que": "D2: referencia de mercado para dividir comisión en traspasos",
+     "fuentes": [
+       {"titulo": "WorldatWork — The good, the bad and the ugly of sharing sales credit", "url": "https://www.worldatwork.org/docs/sales-compensation-focus/2017/11-09-2017/the-good-the-bad-and-the-ugly-of-sharing-sales-credit.html", "hallazgo": "Fuente profesional sobre crédito compartido; útil como referencia práctica (no académica)."},
+       {"titulo": "Level 6 — Split credit rules for team sales", "url": "https://www.level6.com/split-credit-rules-sales/", "hallazgo": "Modelos 70/30 y por hitos; los modelos por hitos encajan cuando hay traspasos claros. Literatura gris: usar solo como ejemplo."}
+     ]},
+    {"id": 7, "tema": "Comisiones", "consulta": "team selling compensation conflict credit sharing Journal of Personal Selling & Sales Management",
+     "para_que": "D2: falta una cita académica sobre crédito compartido",
+     "fuentes": []},
+    {"id": 8, "tema": "Registro", "consulta": "Schneier Kelsey 1999 Secure audit logs to support computer forensics",
+     "para_que": "D1: base académica de la bitácora encadenada sin blockchain",
+     "fuentes": [
+       {"titulo": "Schneier y Kelsey (1999), ACM TISSEC 2(2), 159–176", "url": "https://dl.acm.org/doi/10.1145/317087.317089", "hallazgo": "Bitácoras de auditoría con cadena de hashes: los registros previos no se pueden modificar sin que se detecte; un verificador externo confirma."}
+     ]},
+    {"id": 9, "tema": "Registro", "consulta": "Wüst Gervais 2018 Do you need a blockchain",
+     "para_que": "D1: justificar por qué NO se usa blockchain",
+     "fuentes": [
+       {"titulo": "Wüst y Gervais (2018), CVCBT, pp. 45–54", "url": "https://ieeexplore.ieee.org/document/8525392/", "hallazgo": "Si hay un único responsable de confianza, una base de datos centralizada basta; blockchain solo aporta con varios escritores que desconfían entre sí."}
+     ]},
+    {"id": 10, "tema": "Registro", "consulta": "Ley de Comercio Electrónico Ecuador artículo 8 conservación mensajes de datos integridad",
+     "para_que": "D1: base legal ecuatoriana para exigir integridad del historial",
+     "fuentes": [
+       {"titulo": "Ley de Comercio Electrónico, Firmas y Mensajes de Datos (OEA)", "url": "https://www.oas.org/juridico/spanish/cyb_ecu_ley_comelectronico.pdf", "hallazgo": "Art. 8: conservar origen, destino, fecha y hora, y garantizar la integridad del mensaje; un mensaje es íntegro si su contenido se mantiene completo e inalterable."}
+     ]},
+    {"id": 11, "tema": "Registro", "consulta": "PostgreSQL append-only audit table hash chain trigger tamper evident",
+     "para_que": "Sprint D: cómo implementarlo (tabla solo de inserción + trigger)",
+     "fuentes": []},
+    {"id": 12, "tema": "Speed-to-lead", "consulta": "Oldroyd 2007 Lead Response Management Study MIT InsideSales 5 minutes 21 times qualify",
+     "para_que": "D2: sustento de los 5 minutos",
+     "fuentes": [
+       {"titulo": "Resumen de los estudios de tiempo de respuesta (MIT/InsideSales 2007; HBR 2011)", "url": "https://aiintegratedsols.com/insights/speed-to-lead-statistics", "hallazgo": "Contactar en 5 min frente a 30 min: 100 veces más probable contactar y 21 veces más probable calificar (estudio MIT/InsideSales 2007, Oldroyd). Es literatura gris: citarla junto a Oldroyd et al. (2011, HBR), no sola."}
+     ]},
+    {"id": 13, "tema": "Speed-to-lead", "consulta": "lead routing round robin escalation SLA sales response time research",
+     "para_que": "PO3: reglas de asignación y escalamiento",
+     "fuentes": []},
+    {"id": 14, "tema": "UPS", "consulta": "Universidad Politécnica Salesiana instructivo trabajos de titulación proyecto técnico diseño",
+     "para_que": "H10: formato y campos obligatorios del Diseño",
+     "fuentes": [
+       {"titulo": "UPS — Reglamento Interno de Régimen Académico", "url": "https://www.ups.edu.ec/documents/20121/258457/Reglamento+Interno+de+R%C3%A9gimen+Acad%C3%A9mico%C2%A0de+la+UPS.pdf", "hallazgo": "Marco general de titulación. El formato propio de Negocios Digitales hay que pedirlo a la carrera o a la tutora."}
+     ]},
+    {"id": 15, "tema": "UPS", "consulta": "Universidad Politécnica Salesiana líneas de investigación Negocios Digitales",
+     "para_que": "H10: campo «Línea(s) de investigación» vacío",
+     "fuentes": []},
+    {"id": 16, "tema": "UPS", "consulta": "Universidad Politécnica Salesiana política uso de inteligencia artificial trabajos de titulación",
+     "para_que": "H11: saber qué dice la UPS del uso de IA",
+     "fuentes": [
+       {"tipo": "Tesis UPS", "titulo": "Precedente: Tituaña (2026) declara la IA en una sección propia de su proyecto técnico", "url": "https://dspace.ups.edu.ec/handle/123456789/32435", "hallazgo": "No se encontró un lineamiento público de la UPS; la práctica visible en la carrera es declarar el uso de IA."},
+       {"tipo": "Guía", "titulo": "Red SUMMA — Lineamientos para el uso de inteligencia artificial generativa (2025)", "url": "https://redsummaeducation.net/wp-content/uploads/2025/09/Lineamientos-IAG-SUMMA.pdf", "hallazgo": "Referencia regional para redactar una declaración de uso de IA mientras no haya una norma UPS."}
+     ]},
+    {"id": 17, "tema": "Metodología", "consulta": "McNemar test small sample exact binomial paired proportions n 11",
+     "para_que": "H5: con n ≈ 11 usuarios, McNemar exacto",
+     "fuentes": []},
+    {"id": 18, "tema": "Metodología", "consulta": "anonimización de conversaciones de WhatsApp para investigación consentimiento",
+     "para_que": "H3: muestra documental de línea base",
+     "fuentes": []},
+    {"id": 19, "tema": "Bóveda", "consulta": "Obsidian Git plugin mobile iOS Android performance limitations",
+     "para_que": "H12 y H14: riesgo técnico de Git en el celular",
+     "fuentes": [
+       {"tipo": "Documentación oficial", "titulo": "Obsidian Git — repositorio y documentación del plugin", "url": "https://github.com/Vinzent03/obsidian-git", "hallazgo": "En móvil usa isomorphic-git: sin SSH, repositorio limitado por memoria y declarado «highly unstable»; revisar cambios en toda la bóveda tarda minutos."},
+       {"tipo": "Literatura gris", "titulo": "Obsidian Git Sync in 2026: What Actually Works on Mobile", "url": "https://www.stephanmiller.com/obsidian-git-sync-mobile/", "hallazgo": "Experiencia práctica 2026; alternativas como GitSync o Obsidian Sync para móvil."}
+     ]},
+    {"id": 20, "tema": "Repositorio UPS", "consulta": "dspace.ups.edu.ec \"negocios digitales\" (28 resultados)",
+     "para_que": "Ver cómo son los trabajos aprobados de nuestra carrera",
+     "fuentes": [
+       {"tipo": "Búsqueda UPS", "titulo": "Búsqueda «negocios digitales» en el repositorio UPS", "url": "https://dspace.ups.edu.ec/simple-search?query=%22negocios+digitales%22&sort_by=dc.date.issued_dt&order=desc", "hallazgo": "28 trabajos; la mayoría de 2026. Directores frecuentes: Tufiño, Villacrés, Yaguana, Proaño, Torres Cisneros, Chicaiza."},
+       {"tipo": "Tesis UPS", "titulo": "Collaguazo (2026). Sistema automático de alertas y seguimiento de vencimientos para clientes de facturación electrónica en Menatics — Proyecto Técnico, Quito", "url": "https://dspace.ups.edu.ec/handle/123456789/32306", "hallazgo": "El más parecido al nuestro: alertas automáticas y gestión de clientes. Django + Scrum (7 sprints); 12 h semanales → 15 min (97,92 %); Cap. V con costos, ROI y Payback. Modelo de estructura."},
+       {"tipo": "Tesis UPS", "titulo": "Tituaña (2026). Digitalización y automatización del proceso de gestión de inventario en la sucursal Quito de importadora Aguilar Ocho", "url": "https://dspace.ups.edu.ec/handle/123456789/32435", "hallazgo": "Flask + SQLite, 4 sprints; registro 5 min → 90 s, errores 15 % → 2 %; sección «Del tiempo al dinero», ROI y una sección que declara el uso de IA en el desarrollo."},
+       {"tipo": "Tesis UPS", "titulo": "Narváez y Lombardo (2026). Diseño de un flujo digital y automatización para la generación y nutrición de leads en Ovius Fashion", "url": "https://dspace.ups.edu.ec/handle/123456789/32656", "hallazgo": "Protocolo automático de primer contacto: respuesta de 50 h a menos de 10 s (99,9 %); Kanban, métodos mixtos, 350 usuarios y juicio de expertos. Antecedente directo de speed-to-lead."},
+       {"tipo": "Tesis UPS", "titulo": "Trujillo (2026). Percepción del branding y la calidad del servicio en estudiantes de la UPS — dirigido por Tania Chicaiza", "url": "https://dspace.ups.edu.ec/handle/123456789/32342", "hallazgo": "Trabajo dirigido por nuestra tutora: encuestas más entrevistas a directores, estudio comparativo. Muestra que domina el diseño de encuestas: cuidar instrumentos y muestras."},
+       {"tipo": "Tesis UPS", "titulo": "Ayala y Pazmiño (2026). Impacto de la transformación digital en la competitividad de los restaurantes de Barrio Nuevo, Quito — dirigido por Paola Torres", "url": "https://dspace.ups.edu.ec/handle/123456789/32467", "hallazgo": "La Directora de Carrera dirige temas de transformación digital y competitividad: el impacto empresarial medible es su lenguaje."},
+       {"tipo": "Tesis UPS", "titulo": "Allaica (2026). Influencia de WhatsApp Business en la atención al cliente de microempresas gastronómicas, Quito", "url": "https://dspace.ups.edu.ec/handle/123456789/32180", "hallazgo": "118 establecimientos; respuestas rápidas y etiquetas reducen errores (72,89 %). Útil para discutir WhatsApp como canal informal frente a un CRM."},
+       {"tipo": "Tesis UPS", "titulo": "Hidalgo (2026). Modelo de negocio digital con app móvil para gestión de información y fidelización de clientes en gasolineras — dirigido por Paola Torres", "url": "https://dspace.ups.edu.ec/handle/123456789/33762", "hallazgo": "Gestión de información de clientes con app móvil; referencia de enfoque de modelo de negocio."},
+       {"tipo": "Tesis UPS", "titulo": "Moreno y Dávila (2011). Análisis, diseño e implementación de un CRM y un módulo WAP destinado a ventas", "url": "https://dspace.ups.edu.ec/handle/123456789/1549", "hallazgo": "Antecedente histórico UPS de CRM móvil para ventas."}
+     ]},
+    {"id": 21, "tema": "Otras universidades", "consulta": "tesis implementación CRM pyme gestión de clientes repositorio",
+     "para_que": "Antecedentes fuera de la UPS",
+     "fuentes": [
+       {"tipo": "Tesis otra universidad", "titulo": "Rojas (2017). Implementación de un sistema CRM para la mejora en la gestión de atención al cliente — UNMSM, Perú", "url": "https://hdl.handle.net/20.500.12672/6626", "hallazgo": "CRM a medida; cuestionarios a 26 participantes; mejora del seguimiento del cliente. Ejemplo de muestra pequeña similar a la nuestra."},
+       {"tipo": "Tesis otra universidad", "titulo": "Guerra y Navarrete (2023). Plan de cumplimiento del delegado de protección de datos en una empresa ecuatoriana — UDLA", "url": "https://dspace.udla.edu.ec/handle/33000/14634", "hallazgo": "Cómo una empresa ecuatoriana organiza el cumplimiento de la LOPDP; útil para los controles de A.7."},
+       {"tipo": "Tesis otra universidad", "titulo": "UASB — Propuesta de mejoramiento de la gestión de ventas de las PYME de consumo masivo en Quito", "url": "https://repositorio.uasb.edu.ec/handle/10644/4040", "hallazgo": "Gestión de ventas en pymes de Quito: contexto local."},
+       {"tipo": "Repositorio", "titulo": "USFQ — Maestría en Dirección de Empresas Constructoras e Inmobiliarias (colección de tesis)", "url": "https://repositorio.usfq.edu.ec/handle/23000/14", "hallazgo": "Colección para buscar antecedentes del sector construcción en Ecuador."},
+       {"tipo": "Académico", "titulo": "Ojelabi et al. (2018). Adopción de CRM 2.0 en empresas constructoras nigerianas — Data in Brief", "url": "https://doi.org/10.1016/j.dib.2018.04.037", "hallazgo": "Barreras de CRM en construcción: falta de estrategia, control del uso de redes y tamaño de la empresa."}
+     ]},
+    {"id": 22, "tema": "Políticas", "consulta": "UPS carrera Negocios Digitales, CES Reglamento de Régimen Académico, CEISH, ODS",
+     "para_que": "Requisitos y alineamientos formales",
+     "fuentes": [
+       {"tipo": "Oficial UPS", "titulo": "Carrera de Negocios Digitales — UPS Quito (malla y resolución RPC-SO-24-No.584-2021)", "url": "https://negociosdigitalesuio.ups.edu.ec/", "hallazgo": "Perfil: emprendimientos con soluciones digitales, tecnología, marketing y gestión de proyectos. Malla: negociosdigitalesuio.ups.edu.ec/documents/20121/1051455/Negocios+Digitales+-+MC.pdf"},
+       {"tipo": "Oficial UPS", "titulo": "Portal de solicitudes del estudiante UPS", "url": "https://portal.ups.edu.ec/estudiante-solicitud", "hallazgo": "Donde se sube la solicitud del diseño hasta el 30-sep."},
+       {"tipo": "Normativa", "titulo": "CES — Reglamento de Régimen Académico", "url": "https://www.ces.gob.ec/lotaip/2023/Mayo/A3/Reglamento%20de%20R%C3%A9gimen%20Acad%C3%A9mico.pdf", "hallazgo": "Titulación por trabajo de integración curricular o examen complexivo."},
+       {"tipo": "Normativa", "titulo": "MSP — Acuerdo 00005-2022, reglamento de los CEISH", "url": "https://www.salud.gob.ec/aprobacion-de-comites-de-etica-de-investigacion-en-seres-humanos-ceish-y-comites-de-etica-asistenciales-para-la-salud-ceas/", "hallazgo": "Comités de ética para investigación con personas, orientados a salud; confirmar con la tutora si aplica a encuestas empresariales."},
+       {"tipo": "Guía", "titulo": "PUCP — Ejemplos de protocolos de consentimiento informado para encuestas", "url": "https://investigacion.pucp.edu.pe/wp-content/uploads/2019/04/ejemplos-de-los-pci-desarrollados-todos-los-casos.pdf", "hallazgo": "Plantillas para redactar nuestro consentimiento (H16)."},
+       {"tipo": "Oficial", "titulo": "Pacto Mundial ONU — ODS 9 Industria, innovación e infraestructura", "url": "https://www.pactomundial.org/ods/9-industria-innovacion-e-infraestructura/", "hallazgo": "Meta 9.c: acceso a TIC; ODS 8, metas 8.2 (productividad por modernización tecnológica) y 8.3 (pymes)."}
+     ]}
+  ]
+}

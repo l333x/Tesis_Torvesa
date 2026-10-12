@@ -1,0 +1,14 @@
+# Normaliza texto; los binarios nunca se tocan (evita corromper PDF/Office al clonar en otra PC)
+* text=auto
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.xls binary
+*.pptx binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.sqlite binary
+*.py text eol=lf
+*.md text eol=lf
