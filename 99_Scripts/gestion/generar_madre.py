@@ -33,6 +33,8 @@ def rastreados() -> set[str]:
 
 
 TRACK = rastreados()
+_MD = (BOVEDA / "11_Planificacion" / "CRONOGRAMA.md").read_text(encoding="utf-8")
+NUM = {k: int(v) for k, v in re.findall(r"\*\*([A-Z]+\d*-\d+)\*\* .*· #(\d+)\s*$", _MD, re.M)}
 
 
 def enlace(ruta: str, texto: str | None = None) -> str:
@@ -213,7 +215,7 @@ def generar() -> None:
         sem_ent = ", ".join(f"{i.split('-')[0]}" for i in ids)
         n_f = sum(n for c, n, _ in fu.get("por_cat", []) if c in cats); n_v = sum((v or 0) for c, _, v in fu.get("por_cat", []) if c in cats)
         d.tabla([["Aspecto", "Estado"],
-                 ["Archivo del capítulo", " · ".join(enlace(a) for a in arch) if arch else f"aún no existe — se crea en el sprint {sem_ent} ({', '.join(f'issue #{ENT[i][0]}' for i in ids if ENT[i][0])})"],
+                 ["Archivo del capítulo", " · ".join(enlace(a) for a in arch) if arch else f"aún no existe — se crea en el sprint {sem_ent} ({', '.join(f'issue #{ENT[i][0] or NUM.get(i)}' for i in ids if ENT[i][0] or NUM.get(i))})"],
                  ["Fuentes que lo respaldan", f"{n_f} fichas en {', '.join(cats)} ({n_v} verificadas) · " + enlace("02_Fuentes", "ver fichas")],
                  ["Datos de campo que usa", datos], ["Flujos de diseño que usa", flujos]], anchos=[4.2, 12.4])
 

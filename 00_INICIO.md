@@ -17,41 +17,41 @@ tags: [inicio, portal]
 ### Esta semana
 | Día | Tarea | Quién | Estado |
 |---|---|---|---|
-| 2026-10-12 | Conversar con la tutora sobre los 5 cambios, para tener su aprobación | Víctor | Pendiente |
-| 2026-10-12 | Escribir el acta de la conversación, para que quede por escrito lo que decidió | Víctor | Pendiente |
-| 2026-10-12 | Enviar el correo a Torvesa (giro, nota de respaldo, catálogo, permisos), para trabajar con datos oficiales | Víctor | Pendiente |
-| 2026-10-12 | Aceptar la invitación de GitHub y clonar el repo, para trabajar en la bóveda compartida | Diego | Pendiente |
-| 2026-10-12 | Levantar el buscador RAG en su PC, para consultar la bóveda | Diego | Pendiente |
-| 2026-10-13 | Buscar y verificar fuentes sobre el tiempo de respuesta a clientes (Oldroyd y estudios 2023+), para respaldar el problema (A9, A10) | Víctor | Pendiente |
-| 2026-10-13 | Buscar fuentes sobre la digitalización de la construcción, para respaldar el contexto (A5, A6) | Víctor | Pendiente |
-| 2026-10-13 | Investigar cómo consolidar bóvedas de conocimiento, para diseñar la bóveda del sistema | Diego | Pendiente |
-| 2026-10-13 | Leer el Documento madre y el Glosario, para entender el proyecto completo | Diego | Pendiente |
-| 2026-10-14 | Revisar la respuesta de Torvesa y ajustar el campo del jueves y viernes, para saber qué se puede aplicar | Víctor | Pendiente |
-| 2026-10-14 | Corregir los instrumentos a la versión 0.2, para aplicarlos en Torvesa | Víctor | Pendiente |
-| 2026-10-14 | Hacer el corte de fuentes: armar la matriz afirmación–fuente–estado, para decidir qué entra al capítulo 1 | Víctor | Pendiente |
-| 2026-10-14 | Investigar arquitecturas RAG para negocio, para proponer cómo el asistente consultará la bóveda | Diego | Pendiente |
-| 2026-10-14 | Escribir un resumen de 1 página para Víctor sobre bóvedas y RAG, para compartir lo aprendido | Diego | Pendiente |
-| 2026-10-15 | Aplicar la encuesta a colaboradores y 2 entrevistas en Torvesa (si autorizó), para la línea base real | Víctor | Pendiente |
-| 2026-10-15 | Cronometrar las cotizaciones del día en Torvesa (si autorizó), para medir el tiempo real (meta M2) | Diego | Pendiente |
-| 2026-10-16 | Llamar a los clientes para la encuesta corta (si autorizó), para conocer su experiencia | Víctor | Pendiente |
-| 2026-10-16 | Revisar solicitudes y cotizaciones de los últimos 3 meses (solo fechas y horas), para medir el tiempo de respuesta (meta M1) | Diego | Pendiente |
-| 2026-10-17 | Buscar el texto oficial de la ley de datos (LOPDP) y agregar sus artículos al consentimiento, para cumplir la ley | Víctor | Pendiente |
-| 2026-10-17 | Buscar la versión validada en español de la escala SUS, para medir la usabilidad correctamente | Víctor | Pendiente |
-| 2026-10-17 | Buscar fuentes de metodología (DSR, Design Thinking, Scrum, censo), para justificar el método | Víctor | Pendiente |
-| 2026-10-17 | Investigar flujos de información y diseño de procesos (BPMN), para dibujar el proceso de Torvesa | Diego | Pendiente |
-| 2026-10-17 | Investigar CRMs móviles y herramientas existentes con sus precios, para comparar y calcular costos | Diego | Pendiente |
-| 2026-10-18 | Tabular y anonimizar los datos de campo, para que estén listos y sean confiables | Ambos | Pendiente |
-| 2026-10-18 | Escribir un resumen de 1 página para Diego sobre el problema y sus fuentes | Víctor | Pendiente |
-| 2026-10-18 | Escribir un resumen de 1 página para Víctor sobre CRMs y flujos | Diego | Pendiente |
-| 2026-10-18 | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Ambos | Pendiente |
+| lun 12-oct | Conversar con la tutora sobre los 5 cambios, para tener su aprobación | Víctor | Pendiente |
+| lun 12-oct | Escribir el acta de la conversación, para que quede por escrito lo que decidió | Víctor | Pendiente |
+| lun 12-oct | Enviar el correo a Torvesa (giro, nota de respaldo, catálogo, permisos), para trabajar con datos oficiales | Víctor | Pendiente |
+| lun 12-oct | Aceptar la invitación de GitHub y clonar el repo, para trabajar en la bóveda compartida | Diego | Pendiente |
+| lun 12-oct | Levantar el buscador RAG en su PC, para consultar la bóveda | Diego | Pendiente |
+| mar 13-oct | Buscar y verificar fuentes sobre el tiempo de respuesta a clientes (Oldroyd y estudios 2023+), para respaldar el problema (A9, A10) | Víctor | Pendiente |
+| mar 13-oct | Buscar fuentes sobre la digitalización de la construcción, para respaldar el contexto (A5, A6) | Víctor | Pendiente |
+| mar 13-oct | Investigar cómo consolidar bóvedas de conocimiento, para diseñar la bóveda del sistema | Diego | Pendiente |
+| mar 13-oct | Leer el Documento madre y el Glosario, para entender el proyecto completo | Diego | Pendiente |
+| mié 14-oct | Revisar la respuesta de Torvesa y ajustar el campo del jueves y viernes, para saber qué se puede aplicar | Víctor | Pendiente |
+| mié 14-oct | Corregir los instrumentos a la versión 0.2, para aplicarlos en Torvesa | Víctor | Pendiente |
+| mié 14-oct | Hacer el corte de fuentes: armar la matriz afirmación–fuente–estado, para decidir qué entra al capítulo 1 | Víctor | Pendiente |
+| mié 14-oct | Investigar arquitecturas RAG para negocio, para proponer cómo el asistente consultará la bóveda | Diego | Pendiente |
+| mié 14-oct | Escribir un resumen de 1 página para Víctor sobre bóvedas y RAG, para compartir lo aprendido | Diego | Pendiente |
+| jue 15-oct | Aplicar la encuesta a colaboradores y 2 entrevistas en Torvesa (si autorizó), para la línea base real | Víctor | Pendiente |
+| jue 15-oct | Cronometrar las cotizaciones del día en Torvesa (si autorizó), para medir el tiempo real (meta M2) | Diego | Pendiente |
+| vie 16-oct | Llamar a los clientes para la encuesta corta (si autorizó), para conocer su experiencia | Víctor | Pendiente |
+| vie 16-oct | Revisar solicitudes y cotizaciones de los últimos 3 meses (solo fechas y horas), para medir el tiempo de respuesta (meta M1) | Diego | Pendiente |
+| sáb 17-oct | Buscar el texto oficial de la ley de datos (LOPDP) y agregar sus artículos al consentimiento, para cumplir la ley | Víctor | Pendiente |
+| sáb 17-oct | Buscar la versión validada en español de la escala SUS, para medir la usabilidad correctamente | Víctor | Pendiente |
+| sáb 17-oct | Buscar fuentes de metodología (DSR, Design Thinking, Scrum, censo), para justificar el método | Víctor | Pendiente |
+| sáb 17-oct | Investigar flujos de información y diseño de procesos (BPMN), para dibujar el proceso de Torvesa | Diego | Pendiente |
+| sáb 17-oct | Investigar CRMs móviles y herramientas existentes con sus precios, para comparar y calcular costos | Diego | Pendiente |
+| dom 18-oct | Tabular y anonimizar los datos de campo, para que estén listos y sean confiables | Ambos | Pendiente |
+| dom 18-oct | Escribir un resumen de 1 página para Diego sobre el problema y sus fuentes | Víctor | Pendiente |
+| dom 18-oct | Escribir un resumen de 1 página para Víctor sobre CRMs y flujos | Diego | Pendiente |
+| dom 18-oct | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Ambos | Pendiente |
 
 ### Necesita tu decisión
-- [ ] Escribir a la tutora **antes** de la Revisión 1: datos simulados, D2, D5 (¿el 15-dic es fecha dura?) y D6.
-- [ ] Conseguir de gerencia, antes del jueves 15: autorización C1-C, permiso de cronometraje y lista de los 33 clientes (solo a `_crudo/`).
-- [ ] Confirmar con Torvesa el giro real del negocio y si vende inmuebles.
-- [ ] Corregir los instrumentos v0.1 → v0.2 el miércoles 14 (cada cambio en un archivo nuevo).
-- [ ] Ejecutar `gh auth refresh -s project` para crear el tablero kanban.
-- [ ] Aprobar o ajustar la propuesta de reorganización del repo (renombrados con `git mv`).
+- [ ] Mañana: conversar con la tutora usando la hoja de 5 puntos (`08_Reuniones_Tutora/2026-10-12_Puntos_Tutora.pdf`) y escribir el acta ese mismo día.
+- [ ] Mañana: enviar el correo a Torvesa (borrador en `11_Planificacion/2026-10-12_Correo_Torvesa_borrador.docx`), con respuesta hasta el miércoles 14.
+- [ ] Decidir si se borra la copia cancelada de la bóveda 1 (`F:\Compartir_Diego_PENDIENTE`, tiene datos de CRISFE).
+- [ ] Elegir cuál es el Informe Final y cuál es el pitch deck vigentes (hay varias versiones en `10_Antecedentes_Propios`).
+- [ ] Repetir `gh auth refresh -s project` en PowerShell y completar el paso del navegador, para crear el tablero de GitHub.
+- [ ] Avisar a Diego que acepte la invitación de GitHub (vence el 18-oct).
 
 ## Carpetas
 - [[00_Inbox/README|00_Inbox]] — Todo lo nuevo sin clasificar (Ambos)
