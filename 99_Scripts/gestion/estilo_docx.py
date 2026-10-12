@@ -230,6 +230,14 @@ class Doc:
     def salto(self):
         self.d.add_page_break()
 
+    def imagen(self, ruta, ancho_cm: float = 16.0, pie: str = ""):
+        p = self.d.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.add_run().add_picture(str(ruta), width=Cm(ancho_cm))
+        if pie:
+            c = self.d.add_paragraph(); c.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            r = c.add_run(pie); r.italic = True; r.font.size = Pt(8.5); r.font.color.rgb = GRIS
+        return p
+
     # ---------- Markdown simple -> docx ----------
     def markdown(self, md: str) -> None:
         md = re.sub(r"^---\n.*?\n---\n", "", md, count=1, flags=re.S)  # frontmatter

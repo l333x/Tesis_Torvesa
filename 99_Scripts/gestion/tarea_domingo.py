@@ -25,11 +25,19 @@ def correr(cmd: list[str]) -> tuple[int, str]:
 def main() -> int:
     LOG.parent.mkdir(parents=True, exist_ok=True)
     filas = []
+    c, s = correr([PY, str(AQUI / "generar_cronograma.py"), "--md"]); filas.append(("cronograma Excel → CRONOGRAMA.md", c, s))
     c, s = correr([PY, str(AQUI / "sincronizar_github.py")]); filas.append(("sincronizar GitHub", c, s))
     c, s = correr([PY, str(AQUI / "generar_informe.py")]); filas.append(("generar informe", c, s))
+    c2, s2 = correr([PY, str(AQUI / "generar_madre.py")]); filas.append(("documento madre", c2, s2))
     pdf = f"11_Planificacion/Informes/{date.today().isoformat()}_Informe_Avance.pdf"
+    madre = ["00_DOCUMENTO_MADRE.docx", "00_DOCUMENTO_MADRE.pdf", "00_INICIO.md"]
+    if c2 == 0:  # auditoría de datos personales del PDF madre antes de subirlo
+        sys.path.insert(0, str(AQUI.parent))
+        from generar_informe import auditar
+        if auditar(BOVEDA / "00_DOCUMENTO_MADRE.pdf"):
+            filas.append(("auditoría madre", 1, "datos personales detectados: NO se sube")); madre = []
     if c == 0 and (BOVEDA / pdf).exists():
-        correr(["git", "add", "11_Planificacion/CRONOGRAMA.md", pdf])
+        correr(["git", "add", "11_Planificacion/CRONOGRAMA.md", pdf, *madre])
         c2, s2 = correr(["git", "commit", "-m", f"Informe de avance {date.today().isoformat()} (automático)"])
         filas.append(("commit", c2, s2))
         if c2 == 0:

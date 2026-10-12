@@ -63,4 +63,4 @@ Con n = 10, cada persona vale 10 puntos porcentuales: hay que reportar **frecuen
 
 **P6 «etapa donde se pierde la mayoría»:** «Antes del primer contacto» = 9/30 (30,0 %). Es la **etapa modal percibida** por el equipo, **no una tasa de fuga**. Redacción sugerida: «el 30,0 % del equipo percibe que la mayoría de los prospectos se pierde antes del primer contacto».
 
-Script de recálculo: pendiente de formalizar en `99_Scripts/recalculo_diagnostico.py` (fase 1).
+No se crea un script de recálculo: estos datos no se usan (decisión del 2026-10-11).

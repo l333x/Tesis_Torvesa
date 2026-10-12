@@ -61,3 +61,39 @@ tags: [bitacora, informes, planificacion]
 - **Jue–vie:** campo (I1, I2, I3, P2-A, P2-B) con el registro de procedencia P1.
 - **Fin de semana:** tabulación, anonimización, hashes y auditoría PII.
 - **Diego:** aceptar la invitación, clonar, levantar el RAG y hacer el commit de prueba (#10).
+
+## 2026-10-11 · Cambio de enfoque: documentos para personas
+
+### Resumen
+- Desde hoy hay dos tipos de documentos: los **.md** son para la IA y los **Word/PDF** son para Víctor y Diego, en lenguaje simple, con diagramas y sin códigos sin explicar.
+- Nuevos: **Documento madre** (este, se actualiza cada domingo), **Glosario**, **Auditoría de la bóveda**, **cronograma día a día en Excel** (166 tareas en sprints semanales), **guía de conceptos de negocio**, **scripts de búsqueda de fuentes con Chrome** y su guía de 1 página.
+- **Roles corregidos:** Víctor = tesis, fuentes, método, modelo de negocio y finanzas · Diego = todo lo técnico. Diego **no** tendrá acceso a la bóveda 1; esta semana investiga con fuentes (bóvedas, RAG, flujos, CRMs).
+- Mañana, lunes 12, conversación con la tutora en la UPS y correo a Torvesa.
+
+### Decisiones
+- ✅ Se usa siempre «validación del diseño en operación experimental controlada», nunca «piloto».
+- ✅ Reorganización aprobada y hecha: datos simulados marcados «NO USAR», fecha en el nombre de los instrumentos, versiones repetidas fuera del repositorio.
+- ✅ Se canceló la copia de la bóveda 1 para Diego (tarea #11 cerrada).
+- ✅ La infraestructura queda congelada (la única excepción fueron los scripts de búsqueda).
+
+### Riesgos y bloqueos
+- **El diseño que firmó la tutora presenta datos simulados como si fueran reales.** Hay que contárselo mañana, antes de la primera revisión formal.
+- Las metas que dependen de la línea base (la medición del «antes») quedan sin dato hasta que Torvesa autorice el campo: responder en menos de 15 minutos, perder menos clientes antes del primer contacto, encontrar el historial de un cliente ajeno y la usabilidad del sistema.
+- El dato «30–44 minutos por cotización» no tiene fuente: se medirá con cronómetro si Torvesa lo permite.
+- No sabemos con certeza a qué se dedica Torvesa (en el SRI figura la construcción de vías; las encuestas simuladas hablaban de inmuebles).
+- El tablero de GitHub todavía no existe porque falta un permiso en tu sesión.
+
+### Atención de Víctor
+- Mañana: conversar con la tutora usando la hoja de 5 puntos (`08_Reuniones_Tutora/2026-10-12_Puntos_Tutora.pdf`) y escribir el acta ese mismo día.
+- Mañana: enviar el correo a Torvesa (borrador en `11_Planificacion/2026-10-12_Correo_Torvesa_borrador.docx`), con respuesta hasta el miércoles 14.
+- Decidir si se borra la copia cancelada de la bóveda 1 (`F:\Compartir_Diego_PENDIENTE`, tiene datos de CRISFE).
+- Elegir cuál es el Informe Final y cuál es el pitch deck vigentes (hay varias versiones en `10_Antecedentes_Propios`).
+- Repetir `gh auth refresh -s project` en PowerShell y completar el paso del navegador, para crear el tablero de GitHub.
+- Avisar a Diego que acepte la invitación de GitHub (vence el 18-oct).
+
+### Próxima semana
+- Lunes a miércoles: buscar y verificar fuentes (tiempo de respuesta, digitalización de la construcción, metodología, ley de datos, escala de usabilidad en español).
+- Miércoles 14: instrumentos corregidos (versión 0.2) y matriz de fuentes.
+- Jueves 15 y viernes 16: campo en Torvesa **solo si lo autoriza**; si no, más fuentes.
+- Diego: investigar bóvedas de conocimiento, RAG, flujos y CRMs, con un resumen de 1 página para Víctor.
+- Domingo 18: revisión de la semana con «explícame lo tuyo».

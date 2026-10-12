@@ -9,6 +9,10 @@ estado: aprobado
 tags: [tesis, torvesa, fase0]
 ---
 
+
+> [!note] Rutas de la bóveda 1
+> Esta nota se escribió antes de crear la bóveda de la tesis. Las rutas que nombra (`00_Inbox/…`, `01_Raw/UPS/…`, `02_Wiki/UPS/…`, `03_Out/UPS/…`) son de la **bóveda 1** (Segundo Cerebro), no de esta. Es un registro histórico: no se corrige.
+
 # Fase 0 — Validación (v0.1)
 
 > [!warning] Punto de validación
@@ -175,7 +179,7 @@ Estado: 🔎 citada en el borrador, falta verificar · ❌ sin fuente · 🏠 da
 | A33 | Obsidian no tiene permisos por usuario | ❌ | Documentación oficial |
 | A34 | Git puede ser lento en Android/iOS | ❌ | Documentación del plugin o issues |
 | A35 | OpenTimestamps es gratuito y no requiere criptomonedas | 🔎 Todd (2016) | Verificar |
-| A36 | El costo del LLM por consumo es acotado | ❌ | Precios oficiales del [[Proveedores|proveedor]] elegido (CAPEX/OPEX) |
+| A36 | El costo del LLM por consumo es acotado | ❌ | Precios oficiales del proveedor elegido (CAPEX/OPEX) |
 | A37 | RAG ancla las respuestas y reduce errores | 🔎 Lewis et al. (2020) | Seminal; buscar evidencia de 2023+ sobre alucinación con RAG |
 | A38 | Local-first permite trabajar sin conexión | 🔎 Kleppmann et al. (2019) | Verificar |
 

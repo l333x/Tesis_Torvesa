@@ -4,19 +4,20 @@
 Proyecto Técnico · Negocios Digitales · Universidad Politécnica Salesiana (Quito) · Período 69
 Autores: **Víctor Segura** (documento, investigación, APA, instrumentos, finanzas, tutora y Torvesa) · **Diego Bermeo** (bóveda del sistema, RAG, flujos, arquitectura, prototipo, pruebas) · Tutora: Ing. Tania Chicaiza
 
-> **Estado (2026-10-11):** fase 0.5 cerrada (infraestructura lista) · arranca S1: fase 1 de fuentes (12–14 oct) y campo (15–16 oct) · escenario de entrega **B (enero)**, a la espera de que la tutora confirme si el 15-dic es fecha dura.
+> **Estado (2026-10-11):** empieza el sprint 1 (12–18 oct): buscar fuentes, conversar con la tutora y con Torvesa · entrega prevista en **enero (escenario B)**, salvo que la tutora confirme el 15-dic.
 
-## Enlaces rápidos
-| Para… | Ir a |
+## Empieza aquí
+| Para… | Abre |
 |---|---|
-| Ver qué toca esta semana | [`11_Planificacion/CRONOGRAMA.md`](11_Planificacion/CRONOGRAMA.md) · [issues por milestone](https://github.com/l333x/Tesis_Torvesa/milestones) |
-| Empezar (Diego) | [`GUIA_DIEGO.md`](GUIA_DIEGO.md) |
-| Reglas de trabajo, Git y conflictos | [`COLABORACION.md`](COLABORACION.md) |
-| Último informe de avance | [`11_Planificacion/Informes/`](11_Planificacion/Informes/) |
+| **Leer todo el proyecto en un solo documento** (se actualiza cada domingo) | [`00_DOCUMENTO_MADRE.pdf`](00_DOCUMENTO_MADRE.pdf) · versión Obsidian: [`00_INICIO.md`](00_INICIO.md) |
+| Entender un código o una palabra (A1–A47, M1–M6, OVA, RAG…) | [`Glosario.pdf`](Glosario.pdf) |
+| Ver qué toca hoy y marcar avances | [`11_Planificacion/Cronograma_Tesis.xlsx`](11_Planificacion/Cronograma_Tesis.xlsx) · [issues](https://github.com/l333x/Tesis_Torvesa/issues) |
+| Empezar (Diego) | [`GUIA_DIEGO.pdf`](GUIA_DIEGO.pdf) |
+| Conceptos de negocio explicados | [`Conceptos_Negocio.pdf`](Conceptos_Negocio.pdf) |
+| Buscar fuentes con Chrome | [`99_Scripts/busqueda/Guia_Busqueda.pdf`](99_Scripts/busqueda/Guia_Busqueda.pdf) |
+| Último informe semanal | [`11_Planificacion/Informes/`](11_Planificacion/Informes/) |
+| Reglas de Git y conflictos | [`COLABORACION.md`](COLABORACION.md) |
 | Levantar todo después de apagar la PC | [`ARRANQUE.md`](ARRANQUE.md) |
-| Buscar en la bóveda (RAG local) | [`RAG_README.md`](RAG_README.md) |
-| Quién hizo qué | [`09_Registro_Contribuciones/`](09_Registro_Contribuciones/Registro_Contribuciones.md) |
-| El borrador aprobado (solo lectura) | [`01_Borrador_Aprobado/`](01_Borrador_Aprobado/) |
 
 ## Qué vive aquí y qué no
 **Sí:** lo que trabajamos, decidimos y entregamos; el cronograma; fichas de fuentes; instrumentos; datos **anonimizados**; flujos; capítulos; actas; registro de contribuciones.

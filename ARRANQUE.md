@@ -17,7 +17,7 @@ tags: [sistema, arranque]
    3. abre `claude` en la bóveda.
 
    Lee lo que imprime: si algo sale en **rojo**, mira la sección «Si algo falla».
-4. **Revisa los respaldos (una vez por semana):** abre el acceso «Respaldos Tesis» y mira la última fila de `log_respaldos.md`. Debe tener la fecha de ayer a las 22:00 o la de tu último inicio de sesión.
+4. **Revisa los respaldos (una vez por semana):** abre el acceso «Respaldos_Tesis - Acceso directo» del escritorio y mira la última fila de `log_respaldos.md`. Debe tener la fecha de ayer a las 22:00 o la de tu último inicio de sesión.
 5. **Al terminar:** `git add -A`, después `git commit -m "carpeta: qué hice"` y por último `git push` (detalle en `COLABORACION.md`).
 
 «Claude Bóveda 1» abre Claude en la bóveda de Compras / Segundo Cerebro. No se mezclan.

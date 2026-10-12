@@ -49,3 +49,7 @@ desktop.ini
 
 # --- Versiones intermedias y duplicadas de antecedentes: solo en local (E6) ---
 10_Antecedentes_Propios/_versiones/
+
+# --- Búsqueda: PDF descargados y textos completos (pueden ser de bases con licencia: no se redistribuyen) ---
+00_Inbox/descargas/
+02_Fuentes/_Textos/
