@@ -9,6 +9,7 @@ Guía para personas: `Guia_Busqueda.pdf` (esta carpeta).
 | `navegador.py` | Playwright conectado por CDP a TU Chrome (puerto 9222). Redalyc, SciELO, repositorio UPS y modo asistido. Pausa si hay login o verificación; ritmo humano 8–20 s; no evade CAPTCHAs; no descarga en masa; no automatiza Google Académico |
 | `iniciar_chrome.py` | Abre Chrome con perfil propio en `F:\IA\chrome_tesis` (las sesiones quedan guardadas) |
 | `buscar.py` | Comando principal → `99_Scripts/datos/fuentes.sqlite` + `fuentes.csv` + fichas candidatas en `02_Fuentes/<categoría>/` (deduplica por DOI o título) |
+| `exportar_marcadores.py` | Base de fuentes → `02_Fuentes/Marcadores_Fuentes_AAAA-MM-DD.html` para importar en Chrome. Carpetas: sirven / por revisar / por bajar / videos / no sirven / dónde buscar / documentos. Volver a correrlo cuando cambie la base (pedido de Víctor, 12-oct) |
 | `procesar_descargas.py` | PDF de `00_Inbox/descargas/` → `02_Fuentes/_Textos/<citekey>.pdf` (empareja por DOI o título) y actualiza la ficha |
 
 Requisitos: `pip install playwright truststore requests pymupdf` (no hace falta `playwright install`: usa el Chrome instalado).

@@ -1,6 +1,6 @@
 ---
 titulo: Inicio — documento madre (versión Obsidian)
-actualizado: 2026-10-11
+actualizado: 2026-10-12
 tipo: portal
 tags: [inicio, portal]
 ---
@@ -10,8 +10,8 @@ tags: [inicio, portal]
 > Versión para leer en Obsidian. La versión completa, con gráficos, es [[00_DOCUMENTO_MADRE.pdf]] (se regenera cada domingo).
 
 ## Hoy
-- **Semana:** Sprint 1 · 12–18 oct · Recopilar información (empieza el lunes)
-- **Avance:** 0/166 tareas · **Fuentes:** 0 (0 verificadas)
+- **Semana:** Sprint 1 · 12–18 oct · Recopilar información
+- **Avance:** 0/166 tareas · **Fuentes:** 262 (22 verificadas)
 - **Cronograma:** [[Cronograma_Tesis.xlsx]] · [[CRONOGRAMA]] (versión IA)
 
 ### Esta semana
