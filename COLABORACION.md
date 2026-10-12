@@ -101,6 +101,12 @@ Pasa cuando los dos editan las mismas líneas del mismo archivo.
 
 En un `.docx` (binario) Git no puede mezclar. Para esos archivos, el autor del capítulo es el único que lo edita, y el otro comenta en la nota `.md` del capítulo.
 
+## Antes de subir datos de campo
+```powershell
+F:\IA\venvs\tesis_rag\Scripts\python.exe 99_Scripts\auditoria_pii.py    # debe decir: 0 hallazgos
+```
+Revisa correos, teléfonos y cédulas en todo lo que Git sube (también dentro de PDF y Word). Si encuentra algo, **no hagas push**: el dato va a `05_Datos_Campo/_crudo/`, que nunca se sube.
+
 ## Nunca
 - Subir claves, tokens, contraseñas ni archivos `.env`. El `.gitignore` los bloquea, pero el responsable eres tú.
 - Subir datos de campo sin anonimizar.
