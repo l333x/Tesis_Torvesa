@@ -29,7 +29,7 @@ os.environ.setdefault("TQDM_DISABLE", "1")
 
 # Lo que el sistema escribe sobre sí mismo no compite con las fuentes.
 EXCLUIR_DIRS = {".obsidian", ".rag", ".git", ".trash", "99_Scripts", "_crudo", "node_modules"}
-EXCLUIR_ARCHIVOS = {"RAG_README.md", "COLABORACION.md", "ARRANQUE.md", "README.md"}
+EXCLUIR_ARCHIVOS = {"RAG_README.md", "COLABORACION.md", "ARRANQUE.md", "README.md", "GUIA_DIEGO.md"}
 MAX_CHARS, SOLAPE = 1500, 200
 # Campos del frontmatter que viajan como metadatos (ver 99_Scripts/plantillas/ficha_fuente.md)
 CAMPOS = ("tipo", "categoria", "objetivos", "anio", "estado", "confianza", "referencia_apa",
