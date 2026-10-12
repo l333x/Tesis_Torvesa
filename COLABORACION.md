@@ -11,7 +11,7 @@ Repositorio **privado** en GitHub. Lo pueden ver solo Víctor y Diego.
 
 ## Primera vez — Diego (una sola vez, ~30 min)
 
-**1. Aceptar la invitación.** GitHub te manda un correo, o entra directo a <https://github.com/notifications> o a la URL del repo → **Accept invitation**. La invitación caduca a los 7 días: si caduca, pide a Víctor que la reenvíe.
+**1. Aceptar la invitación.** GitHub te manda un correo, o entra directo a <https://github.com/notifications> o a <https://github.com/l333x/Tesis_Torvesa/invitations> → **Accept invitation**. La invitación caduca a los 7 días: si caduca, pide a Víctor que la reenvíe.
 
 **2. Instalar las herramientas** (PowerShell normal):
 ```powershell
@@ -36,7 +36,7 @@ ssh -T git@github.com     # debe decir: Hi PiscesLivie! You've successfully auth
 **4. Clonar el repo.** Elige una carpeta **fuera de OneDrive**, porque OneDrive y Git se pelean:
 ```powershell
 cd C:\        # o D:\ si tienes otro disco
-gh repo clone <usuario-de-Víctor>/Tesis_Torvesa
+gh repo clone l333x/Tesis_Torvesa
 cd Tesis_Torvesa
 git config core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
 ```

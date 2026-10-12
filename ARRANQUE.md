@@ -34,7 +34,7 @@ tags: [sistema, arranque]
 | `Could not resolve host` | Sin internet | Trabaja igual, y haz `git pull` y `git push` cuando vuelva la red |
 | `Permission denied (publickey)` | La clave SSH no está cargada o cambió | `ssh -T git@github.com`. Si falla: `gh auth status`, y luego `gh auth refresh` o `gh ssh-key list`. **Las contraseñas y passphrases las escribes tú; nunca las pegues en una nota** |
 | `Not possible to fast-forward` / `CONFLICT` | Tú y Diego cambiaron lo mismo | Ver «Si aparece un conflicto» en `COLABORACION.md`. No edites hasta resolverlo |
-| `not a git repository` | La carpeta perdió `.git` | **No hagas `git init`**: restaura el último zip de `F:\Respaldos_Tesis` o clona de nuevo con `gh repo clone <usuario>/Tesis_Torvesa` |
+| `not a git repository` | La carpeta perdió `.git` | **No hagas `git init`**: restaura el último zip de `F:\Respaldos_Tesis` o clona de nuevo con `gh repo clone l333x/Tesis_Torvesa` |
 
 ### RAG desactualizado o con error
 - El lanzador dice «El RAG falló»: Claude funciona igual, pero la búsqueda semántica puede estar vieja.
