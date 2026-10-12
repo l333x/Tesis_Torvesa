@@ -75,20 +75,21 @@ tags: [bitacora, informes, planificacion]
 - ✅ Reorganización aprobada y hecha: datos simulados marcados «NO USAR», fecha en el nombre de los instrumentos, versiones repetidas fuera del repositorio.
 - ✅ Se canceló la copia de la bóveda 1 para Diego (tarea #11 cerrada).
 - ✅ La infraestructura queda congelada (la única excepción fueron los scripts de búsqueda).
+- ✅ El tablero de GitHub se descarta: el avance se sigue en el Excel del cronograma.
+- ✅ «Subasta suiza» queda fuera de la guía de conceptos.
+- ✅ Se borró el contenido de la copia cancelada de la bóveda 1 (`F:\Compartir_Diego_PENDIENTE`) y los duplicados se movieron a `_historico`.
 
 ### Riesgos y bloqueos
 - **El diseño que firmó la tutora presenta datos simulados como si fueran reales.** Hay que contárselo mañana, antes de la primera revisión formal.
 - Las metas que dependen de la línea base (la medición del «antes») quedan sin dato hasta que Torvesa autorice el campo: responder en menos de 15 minutos, perder menos clientes antes del primer contacto, encontrar el historial de un cliente ajeno y la usabilidad del sistema.
 - El dato «30–44 minutos por cotización» no tiene fuente: se medirá con cronómetro si Torvesa lo permite.
 - No sabemos con certeza a qué se dedica Torvesa (en el SRI figura la construcción de vías; las encuestas simuladas hablaban de inmuebles).
-- El tablero de GitHub todavía no existe porque falta un permiso en tu sesión.
 
 ### Atención de Víctor
 - Mañana: conversar con la tutora usando la hoja de 5 puntos (`08_Reuniones_Tutora/2026-10-12_Puntos_Tutora.pdf`) y escribir el acta ese mismo día.
 - Mañana: enviar el correo a Torvesa (borrador en `11_Planificacion/2026-10-12_Correo_Torvesa_borrador.docx`), con respuesta hasta el miércoles 14.
-- Decidir si se borra la copia cancelada de la bóveda 1 (`F:\Compartir_Diego_PENDIENTE`, tiene datos de CRISFE).
+- Borrar la carpeta vacía `F:\Compartir_Diego_PENDIENTE` (la herramienta no me deja borrar carpetas en la raíz de F:).
 - Elegir cuál es el Informe Final y cuál es el pitch deck vigentes (hay varias versiones en `10_Antecedentes_Propios`).
-- Repetir `gh auth refresh -s project` en PowerShell y completar el paso del navegador, para crear el tablero de GitHub.
 - Avisar a Diego que acepte la invitación de GitHub (vence el 18-oct).
 
 ### Próxima semana

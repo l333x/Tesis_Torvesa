@@ -1,4 +1,4 @@
-"""Sincroniza 11_Planificacion/CRONOGRAMA.md <-> GitHub (etiquetas, milestones, issues, Project).
+"""Sincroniza 11_Planificacion/CRONOGRAMA.md <-> GitHub (etiquetas, milestones, issues).
 
     python sincronizar_github.py            sincroniza (idempotente)
     python sincronizar_github.py --simular  muestra qué haría, sin tocar nada
@@ -8,7 +8,7 @@ Reglas:
 - '[x]' en el cronograma con el issue abierto -> se cierra el issue.
 - Issue cerrado en GitHub con '[ ]' en el cronograma -> se marca '[x]' con la fecha de cierre.
 - Responsables: @Victor -> l333x, @Diego -> PiscesLivie (solo si ya aceptó la invitación).
-- Project (tablero): si el token tiene el permiso 'project', agrega los issues al tablero.
+- El tablero (Project) se descartó el 2026-10-11 por decisión de Víctor: no se intenta crear.
 Requiere gh autenticado. No lee ni guarda tokens.
 """
 from __future__ import annotations
@@ -138,7 +138,7 @@ def main() -> int:
             print(f"  → asigno #{t['n']} a {', '.join(faltan)}"); cambios += 1
     if not SIMULAR:
         CRONO.write_text("\n".join(lineas), encoding="utf-8")
-    proyecto(tareas)
+    # proyecto(tareas)  # tablero descartado (2026-10-11): no se intenta
     pend = "PiscesLivie" not in colaboradores
     print(f"\n{cambios} cambios." + ("  Diego aún no acepta la invitación: sus issues quedan sin asignar." if pend else ""))
     return 0

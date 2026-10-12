@@ -149,7 +149,7 @@ Aquí se explica, en lenguaje simple, cada código y término que aparece en la 
 | **DSR** (Design Science Research, investigación en ciencia del diseño) | Método de investigación para proyectos que **construyen** algo (un sistema) y lo prueban. Tiene 6 pasos: problema → objetivos → diseño → demostración → evaluación → comunicación | El borrador sigue los 6 pasos de Peffers (2007) | Borrador, metodología, D2 |
 | **Design Thinking** (pensamiento de diseño) | Forma de diseñar partiendo de entender a las personas que usarán la solución (empatía) | La encuesta a clientes (I2) busca entender qué les molesta | D2, I2 |
 | **Scrum** | Forma de organizar el trabajo en ciclos cortos (sprints) con revisión al final de cada uno | Cada domingo se revisa la semana | Cronograma |
-| **Kanban** | Tablero con columnas (Por hacer → En curso → Hecho) para ver el avance | El tablero de GitHub (pendiente de crear) | GitHub |
+| **Kanban** | Tablero con columnas (Por hacer → En curso → Hecho) para ver el avance | El tablero de GitHub se descartó (11-oct): el avance se ve en el Excel del cronograma | GitHub |
 | **AS-IS / TO-BE** | AS-IS = cómo funciona el proceso **hoy**; TO-BE = cómo funcionará **con el sistema** | AS-IS: el vendedor busca cotizaciones viejas en su correo | Tareas de Diego |
 | **BPMN** | Notación estándar para dibujar procesos (cajas, flechas, decisiones) | Diagrama del proceso de cotización | Carpeta `07_Flujos_Diseno/` |
 | **Línea base** | La medición del «antes», para comparar con el «después» | Tiempo de respuesta medido el 15–16 oct | Instrumentos, metas |
@@ -208,7 +208,7 @@ Aquí se explica, en lenguaje simple, cada código y término que aparece en la 
 | **OpenTimestamps** | Servicio que sella esa huella en la red de Bitcoin para probar la fecha. D6 propone quitarlo | — |
 | **GitHub, repo** | Sitio donde se guarda la bóveda compartida con su historial. «Repo» = repositorio | `github.com/l333x/Tesis_Torvesa` |
 | **Commit / push / pull** | Commit = guardar un cambio con un mensaje · Push = subirlo a GitHub · Pull = bajar lo que subió el otro | — |
-| **Issue / milestone / Project** | Issue = ficha de una tarea · Milestone = grupo de tareas de un sprint · Project = tablero Kanban | Issue #4 en el milestone S1 |
+| **Issue / milestone / Project** | Issue = ficha de una tarea · Milestone = grupo de tareas de un sprint · Project = tablero Kanban (descartado; no se usa) | Issue #4 en el milestone S1 |
 | **_crudo** | Carpeta privada para datos con nombres o teléfonos. **Nunca se sube a GitHub** | Lista de los 33 clientes |
 | **PII / auditoría PII** | PII = datos personales (nombre, cédula, teléfono, correo). La auditoría es un programa que los busca antes de subir algo | «0 hallazgos» = se puede subir |
 | **LOPDP** | Ley Orgánica de Protección de Datos Personales del Ecuador (2021) | Exige consentimiento informado |

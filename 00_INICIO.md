@@ -48,9 +48,8 @@ tags: [inicio, portal]
 ### Necesita tu decisión
 - [ ] Mañana: conversar con la tutora usando la hoja de 5 puntos (`08_Reuniones_Tutora/2026-10-12_Puntos_Tutora.pdf`) y escribir el acta ese mismo día.
 - [ ] Mañana: enviar el correo a Torvesa (borrador en `11_Planificacion/2026-10-12_Correo_Torvesa_borrador.docx`), con respuesta hasta el miércoles 14.
-- [ ] Decidir si se borra la copia cancelada de la bóveda 1 (`F:\Compartir_Diego_PENDIENTE`, tiene datos de CRISFE).
+- [ ] Borrar la carpeta vacía `F:\Compartir_Diego_PENDIENTE` (la herramienta no me deja borrar carpetas en la raíz de F:).
 - [ ] Elegir cuál es el Informe Final y cuál es el pitch deck vigentes (hay varias versiones en `10_Antecedentes_Propios`).
-- [ ] Repetir `gh auth refresh -s project` en PowerShell y completar el paso del navegador, para crear el tablero de GitHub.
 - [ ] Avisar a Diego que acepte la invitación de GitHub (vence el 18-oct).
 
 ## Carpetas
