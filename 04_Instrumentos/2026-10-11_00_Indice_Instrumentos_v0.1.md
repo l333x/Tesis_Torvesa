@@ -33,7 +33,7 @@ tags: [instrumentos, campo, linea_base]
 
 | Día | Mañana | Tarde | Responsable |
 |---|---|---|---|
-| **Mié 14** | Víctor corrige la v0.1 → v0.2 · se imprimen I1, C1 y las hojas de P1 y P2 · se arma el Google Forms (si se usa) | Prueba piloto de I1 con 1–2 personas **ajenas** a Torvesa (claridad y duración) | Víctor (instrumentos) · Diego (formularios y hojas) |
+| **Mié 14** | Víctor corrige la v0.1 → v0.2 · se imprimen I1, C1 y las hojas de P1 y P2 · se arma el Google Forms (si se usa) | Prueba previa (pretest) de I1 con 1–2 personas **ajenas** a Torvesa (claridad y duración) | Víctor (instrumentos) · Diego (formularios y hojas) |
 | **Jue 15** | Sesión de I1 con colaboradores (consentimiento → encuesta) · arranca P2-A | I3: entrevistas 1–2 · P2-A continúa · P2-B: extracción de la muestra documental con quien autorice gerencia | Víctor aplica · Diego cronometra |
 | **Vie 16** | I1 para los rezagados · I2: llamadas a clientes | I3: entrevistas 3–5 · P2-A continúa · cierre: digitar, anonimizar, calcular hashes y llenar el registro P1 | ambos |
 | **Sáb–dom** | Consolidación: datos anonimizados en `05_Datos_Campo/LineaBase_2026-10/` y primer análisis descriptivo | | Víctor |

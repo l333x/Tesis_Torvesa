@@ -37,7 +37,7 @@ MILESTONES = {  # prefijo de ID -> (título, fecha límite)
     "S1": ("S1 · Levantamiento", "2026-10-18"), "S2": ("S2 · Redacción por capítulos", "2026-10-25"),
     "S3": ("S3 · Revisión 1 tutora", "2026-10-30"), "S4": ("S4 · Diseño", "2026-11-08"),
     "S5": ("S5 · Mejora continua", "2026-11-15"), "S6": ("S6 · Revisión 2 tutora", "2026-11-22"),
-    "S7": ("S7 · Feedback + piloto", "2026-11-29"), "S8": ("S8 · Documentación del sistema", "2026-12-06"),
+    "S7": ("S7 · Feedback + validación controlada", "2026-11-29"), "S8": ("S8 · Documentación del sistema", "2026-12-06"),
     "S9": ("S9 · Medición post y análisis", "2026-12-13"), "S10": ("S10 · Cierre e hito 90 %", "2026-12-20"),
     "H": ("Holgura · APA y pulido", "2027-01-03"), "E": ("Entrega", "2027-01-08"), "D": ("Defensa", "2027-02-12"),
 }

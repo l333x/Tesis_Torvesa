@@ -20,7 +20,7 @@ tags: [bitacora, informes, planificacion]
 - **Hallazgo crítico:** los datos del «diagnóstico N = 30» son **simulados**. No se usan. La línea base real se levanta el 15–16 de octubre.
 
 ### Decisiones
-- **D1** ✅ El piloto se llama «validación del diseño en operación experimental controlada»; nunca «implementación».
+- **D1** ✅ Lo que el borrador llama «piloto» se denomina «validación del diseño en operación experimental controlada»; nunca «implementación» ni «piloto».
 - **D2** ⏳ DSR como marco + Design Thinking en el diseño + Scrum para organizar; «mixto con predominio cuantitativo». **Pendiente de la tutora.**
 - **D3** ✅ Se usan los OVA oficiales (4.1–4.3, 5.1/5.3/5.4, 6.1–6.3), mapeados a los objetivos de Víctor.
 - **D4** ✅ Dos censos: 30 colaboradores y 33 clientes.
@@ -44,7 +44,7 @@ tags: [bitacora, informes, planificacion]
 - Las metas **M1, M3, M4 y M6** quedan sin línea base hasta el campo del 15–16 oct. **M2** (30–44 min) no tiene fuente: se mide con cronómetro.
 - **Giro del negocio sin confirmar:** el SRI dice vías; el instrumento simulado hablaba de inmuebles. Afecta el vocabulario de los instrumentos.
 - El campo depende de permisos de gerencia (cronometraje, muestra documental, lista de clientes) que todavía no están.
-- El volumen de solicitudes del piloto (2 semanas, 33 clientes) puede ser bajo para las pruebas estadísticas.
+- El volumen de solicitudes durante la validación del diseño en operación experimental controlada (2 semanas, 33 clientes) puede ser bajo para las pruebas estadísticas.
 - El tablero (Project) de GitHub falta: requiere `gh auth refresh -s project`.
 
 ### Atención de Víctor

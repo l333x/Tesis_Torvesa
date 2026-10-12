@@ -22,7 +22,7 @@ INFORMES = Path(r"F:\Respaldos_Tesis\Informes")
 SEMANAS = [("S1", "S1 · 12–18 oct · Levantamiento"), ("S2", "S2 · 19–25 oct · Redacción por capítulos"),
            ("S3", "S3 · 26–30 oct · Revisión 1 con la tutora"), ("S4", "S4 · 2–8 nov · Diseño"),
            ("S5", "S5 · 9–15 nov · Mejora continua"), ("S6", "S6 · 16–22 nov · Revisión 2 con la tutora"),
-           ("S7", "S7 · 23–29 nov · Feedback + arranque del piloto"), ("S8", "S8 · 30 nov–6 dic · Documentación del sistema"),
+           ("S7", "S7 · 23–29 nov · Feedback + arranque de la validación del diseño en operación experimental controlada"), ("S8", "S8 · 30 nov–6 dic · Documentación del sistema"),
            ("S9", "S9 · 7–13 dic · Medición post y análisis"), ("S10", "S10 · 14–20 dic · Cierre e hito del 90 %"),
            ("H", "Holgura · 21 dic–3 ene"), ("E", "Entrega · 4–8 ene (A: 15-dic)"), ("D", "Defensa · 11 ene–12 feb")]
 
@@ -69,7 +69,7 @@ def main() -> int:
                  ["Se recorta", "—", "Pruebas de carga · ciclos diarios con la tutora (solo 2) · manual básico · APA por capítulo"]])
     d.comentario(t.cell(0, 2).paragraphs[0], "Pendiente: confirmar con la tutora si el 15-dic es fecha dura (D5).")
     d.p("**Intocable en ambos:** el trabajo de campo de S1, las revisiones 1 y 2 con la tutora, la medición post del "
-        "piloto y el hito del 90 %. **Piloto:** 24-nov → 5-dic, con medición post del 7 al 9 de diciembre.")
+        "validación del diseño en operación experimental controlada y el hito del 90 %. **Validación del diseño en operación experimental controlada:** 24-nov → 5-dic, con medición post del 7 al 9 de diciembre.")
 
     # 3. Cronograma
     d.h1("3. Cronograma semanal")
@@ -98,8 +98,8 @@ def main() -> int:
              ["S1-05 permisos de gerencia", "S1-08/09 campo", "Sin autorización no hay cronometraje ni muestra documental"],
              ["S1-12 datos consolidados", "S2-01 Cap. 1 · S2-04 análisis", "La línea base real reemplaza al diagnóstico simulado"],
              ["S4-01 TO-BE + S4-02 validación de Víctor", "S4-03 bóveda del sistema", "Diego no levanta la bóveda sin flujos aprobados"],
-             ["S5-04 PoC estable", "S7-03 piloto", "No hay validación controlada sin un prototipo que funcione"],
-             ["S7-03 piloto (24-nov → 5-dic)", "S9-01 medición post", "La comparación pre-post necesita las dos semanas completas"]],
+             ["S5-04 PoC estable", "S7-03 validación del diseño en operación experimental controlada", "No hay validación controlada sin un prototipo que funcione"],
+             ["S7-03 validación del diseño en operación experimental controlada (24-nov → 5-dic)", "S9-01 medición post", "La comparación pre-post necesita las dos semanas completas"]],
             anchos=[5.0, 5.0, 6.6])
 
     # 5. Carga
@@ -150,10 +150,10 @@ def main() -> int:
     t = d.tabla([["Riesgo", "Prob.", "Impacto", "Mitigación"],
                  ["La tutora no acepta el cambio de datos simulados → línea base real", "Media", "Alto", "Escribirle antes de la Revisión 1; llevar el protocolo de procedencia y los datos nuevos"],
                  ["Sin permisos de gerencia para el campo del 15–16 oct", "Media", "Alto", "Pedirlos el lunes 12; plan B: autorregistro de cotizaciones por 2 semanas"],
-                 ["Pocas solicitudes durante el piloto (33 clientes)", "Alta", "Medio", "Reportar casos individuales; sumar la muestra documental P2-B como línea base; no forzar pruebas inferenciales"],
+                 ["Pocas solicitudes durante la validación del diseño en operación experimental controlada (33 clientes)", "Alta", "Medio", "Reportar casos individuales; sumar la muestra documental P2-B como línea base; no forzar pruebas inferenciales"],
                  ["El 15-dic resulta fecha dura", "Media", "Alto", "Escenario A ya planificado; recortes ✂ definidos"],
                  ["El formato oficial de capítulos llega tarde", "Media", "Medio", "Redactar por secciones del diseño aprobado; reacomodar al llegar"],
-                 ["PoC inestable antes del piloto", "Media", "Alto", "PoC en S5 con una semana de margen; casos de prueba antes del piloto"],
+                 ["PoC inestable antes de la validación del diseño en operación experimental controlada", "Media", "Alto", "PoC en S5 con una semana de margen; casos de prueba antes de la validación del diseño en operación experimental controlada"],
                  ["Fuentes clave sin acceso al texto completo", "Media", "Medio", "Marcar «solo resumen»; buscar alternativas abiertas; reformular la afirmación"],
                  ["Fuga de datos personales en el repo", "Baja", "Alto", "_crudo/ ignorado por Git; auditoría PII antes de cada push; códigos en vez de nombres"]],
                 anchos=[6.0, 1.6, 1.8, 7.2])

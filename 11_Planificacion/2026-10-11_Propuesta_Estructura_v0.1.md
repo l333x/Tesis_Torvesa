@@ -2,13 +2,13 @@
 titulo: Propuesta de ajuste de la estructura del repo
 version: v0.1
 fecha: 2026-10-11
-estado: pendiente_aprobacion
+estado: aplicada_parcial
 tags: [estructura, planificacion]
 ---
 
 # Propuesta de ajuste de estructura (v0.1)
 
-> [!warning] Nada se ha movido todavía
+> [!success] Aplicada parcialmente el 2026-10-11 (ver «Resultado» al final)
 > Todo se hace con `git mv`, que conserva el historial, en **un solo commit**, después de tu OK. Lo único que ya se creó, sin mover nada, son los README de cada carpeta, el portal, `11_Planificacion/Informes/` y `99_Scripts/gestion/`.
 
 ## Diagnóstico
@@ -36,3 +36,13 @@ La estructura aprobada funciona y **no propongo fusionar ni eliminar carpetas nu
 1. ¿Apruebas E1–E6? Puede ser todo o una lista, por ejemplo «E1, E2 y E5 sí; E6 no».
 2. En E6: de las 3 versiones del pitch deck del 22-jul (a, b, c), ¿cuál es la vigente?
 3. Después de mover, reviso y actualizo los enlaces internos (READMEs, GUIA_DIEGO, F0, `rag.py`, `.gitignore`) en el mismo commit.
+
+## Resultado (2026-10-11)
+- **Aprobado por Víctor:** E1, E2 y E6. **No se aplican:** E3, E4, E5 y E7.
+- **E1 ✅** `Diagnostico_2026/` → `Diagnostico_2026_SIMULADO_no_usar/`.
+- **E2 ✅** Los 7 instrumentos llevan ahora el prefijo `2026-10-11_`.
+- **E6 parcial ✅** Pasaron a `_versiones/` (solo en local) los 5 archivos sin ambigüedad: los .docx del Informe Final v4, del Informe Final del 22-jul y de la Propuesta del Concurso (ya tienen su PDF), el Proyecto Integrador del 18-may (hay una versión del 25-may) y el Master Brief del 26-jun (hay una del 1-jul).
+- **E6 pendiente de Víctor:**
+  - (a) ¿Cuál es el **Informe Final** vigente? Hay tres versiones: `2026-07-16_teamslash.pdf` (56 págs.), `2026-07-20_Informe_Final_v4.pdf` y `2026-07-22_Informe_Final.pdf`.
+  - (b) ¿Cuál de los **pitch decks** es el vigente? Hay cuatro: `2026-07-10`, y `2026-07-22` a, b y c.
+- `proyecto.pdf` **no es una versión**: es otro documento del séptimo semestre, y se queda en el repo.

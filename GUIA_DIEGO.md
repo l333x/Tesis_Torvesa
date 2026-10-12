@@ -47,7 +47,7 @@ Las demás carpetas son de Víctor o compartidas. Puedes leer y comentar en toda
    - abre la carpeta como bóveda en Obsidian.
 3. **Levanta el RAG:** [`RAG_README.md`](RAG_README.md). Comprueba que `rag.py consultar "tiempo de elaboración de cotizaciones"` devuelva resultados.
 4. **Commit de prueba:** crea `00_Inbox/hola_diego.md`, haz commit con `S1-10: commit de prueba (closes #10)` y push. Eso cierra tu primer issue.
-5. **Prepara el campo** (miércoles 14): lee `04_Instrumentos/P2_Protocolo_Cronometraje_v0.1.md` y `P1_Protocolo_Aplicacion_Procedencia_v0.1.md`, e imprime las hojas de cronometraje.
+5. **Prepara el campo** (miércoles 14): lee `04_Instrumentos/2026-10-11_P2_Protocolo_Cronometraje_v0.1.md` y `2026-10-11_P1_Protocolo_Aplicacion_Procedencia_v0.1.md`, e imprime las hojas de cronometraje.
 6. **Campo** (jueves 15 y viernes 16): cronometraje P2-A, muestra documental P2-B y apoyo en I2 (clientes). Llena el registro P1 en cada aplicación.
 7. **Fin de semana:** tabulación con Víctor. Los datos **crudos** van a `_crudo/`; al repo solo suben los anonimizados, y antes de subir corres la auditoría.
 8. **Análisis de la bóveda 1** (#11): Víctor te comparte una copia de lectura de `99_Sistema/` de su Segundo Cerebro (sin las carpetas CRISFE). Anota en `07_Flujos_Diseno/ideas_boveda1.md` qué patrones reutilizar:
@@ -75,7 +75,7 @@ Cada tarea es un issue. Ciérralo con `closes #n` en el commit; Víctor marca el
 | S5 · 9–15 nov | Prueba de concepto: front conversacional → back → bóveda | [#31](https://github.com/l333x/Tesis_Torvesa/issues/31) |
 | | Diseño de los 3 casos de prueba | [#32](https://github.com/l333x/Tesis_Torvesa/issues/32) |
 | S6 · 16–22 nov | Revisión 2: presentar diseño, flujos y datos (con Víctor) | [#33](https://github.com/l333x/Tesis_Torvesa/issues/33) |
-| S7 · 23–29 nov | Incorporar observaciones (con Víctor) · arrancar el piloto el 24-nov | [#35](https://github.com/l333x/Tesis_Torvesa/issues/35) · [#37](https://github.com/l333x/Tesis_Torvesa/issues/37) |
+| S7 · 23–29 nov | Incorporar observaciones (con Víctor) · arrancar la validación del diseño en operación experimental controlada el 24-nov | [#35](https://github.com/l333x/Tesis_Torvesa/issues/35) · [#37](https://github.com/l333x/Tesis_Torvesa/issues/37) |
 | S8 · 30 nov–6 dic | Herramientas elegidas y descartadas · modelo de datos · plantillas + spec del asistente · casos de prueba · manual | [#38](https://github.com/l333x/Tesis_Torvesa/issues/38) · [#39](https://github.com/l333x/Tesis_Torvesa/issues/39) · [#40](https://github.com/l333x/Tesis_Torvesa/issues/40) · [#41](https://github.com/l333x/Tesis_Torvesa/issues/41) · [#42](https://github.com/l333x/Tesis_Torvesa/issues/42) |
 | S9 · 7–13 dic | Medición post (con Víctor) · pruebas de uso y de carga | [#43](https://github.com/l333x/Tesis_Torvesa/issues/43) · [#45](https://github.com/l333x/Tesis_Torvesa/issues/45) |
 | S10 · 14–20 dic | Hito del 90 % (con Víctor) | [#47](https://github.com/l333x/Tesis_Torvesa/issues/47) |
@@ -83,7 +83,7 @@ Cada tarea es un issue. Ciérralo con `closes #n` en el commit; Víctor marca el
 
 **Dependencias que te afectan:**
 - No levantes la bóveda del sistema (#24) sin los flujos TO-BE **aprobados** por Víctor (#22 → S4-02).
-- La PoC (#31) es requisito del piloto (#37).
+- La PoC (#31) es requisito de la validación del diseño en operación experimental controlada (#37).
 
 ## 5. Reglas
 

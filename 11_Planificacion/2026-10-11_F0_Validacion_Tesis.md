@@ -17,7 +17,7 @@ tags: [tesis, torvesa, fase0]
 Fuente leída completa: `00_Inbox/BORRADOR DE TESIS.pdf` (22 págs.: carta aval de la tutora + carta de Torvesa del 29-sep-2026 + *Diseño de Trabajo de Titulación* + Anexo A). Contexto: `Capitulo_IV_Diagnostico…md` y `ENCUESTA1–4.csv` (N = 30 c/u).
 
 > [!success] Decisiones de Víctor (2026-10-11)
-> - **D1** ✅ Piloto = «validación del diseño en operación experimental controlada». Nunca «implementación».
+> - **D1** ✅ Lo que el borrador llama «piloto» = «validación del diseño en operación experimental controlada». No se usa la palabra «piloto». Nunca «implementación».
 > - **D2** ✅ DSR como marco + DT en la etapa de diseño + Scrum para organizar; «mixto con predominio cuantitativo». ⏳ **Cambio pendiente de aprobar con la tutora.**
 > - **D3** ✅ OVA oficiales con el mapeo de §1.4.
 > - **D4** ✅ Dos censos: 30 colaboradores y 33 clientes.
@@ -59,11 +59,11 @@ Fuente leída completa: `00_Inbox/BORRADOR DE TESIS.pdf` (22 págs.: carta aval 
 PostgreSQL guarda «quién, qué y cuándo»; la bóveda guarda «el porqué». Los controles LOPDP se detallan en el Anexo A.7.
 
 **1.3 Objetivos.**
-- **OG:** diseñar el sistema y validarlo con un piloto de 2 semanas.
+- **OG:** diseñar el sistema y validarlo en 2 semanas de validación del diseño en operación experimental controlada (el borrador dice «piloto»).
 - **OE1:** diagnóstico AS-IS y línea base.
 - **OE2:** arquitectura TO-BE, requisitos, viabilidad técnica y económica, LOPDP.
 - **OE3:** desarrollo en sprints A–D.
-- **OE4:** 4 casos de prueba + piloto.
+- **OE4:** 4 casos de prueba + validación del diseño en operación experimental controlada.
 - **OE5:** manual, gobierno de la información y transferencia.
 
 **1.4 Mapa de OVA (D3).**
@@ -80,7 +80,7 @@ PostgreSQL guarda «quién, qué y cuándo»; la bóveda guarda «el porqué». 
 | 4.8 Impacto con KPI | **5.4** | OE4 |
 | 4.9 Plan de implementación | **5.3** | OE5 |
 
-**1.5 Metodología declarada.** Enfoque cuantitativo, tipo experimental-tecnológico, **DSR** en las 6 actividades de Peffers y diseño cuasi-experimental pre-post de un solo grupo. Censo de 30 colaboradores y de 33 clientes. La unidad de análisis son las solicitudes del piloto.
+**1.5 Metodología declarada.** Enfoque cuantitativo, tipo experimental-tecnológico, **DSR** en las 6 actividades de Peffers y diseño cuasi-experimental pre-post de un solo grupo. Censo de 30 colaboradores y de 33 clientes. La unidad de análisis son las solicitudes de la validación del diseño en operación experimental controlada.
 
 **Instrumentos nuevos:**
 - BPMN AS-IS/TO-BE, con entrevistas y una jornada de observación;
@@ -104,15 +104,15 @@ PostgreSQL guarda «quién, qué y cuándo»; la bóveda guarda «el porqué». 
 - M5: 100 % de las alteraciones detectadas.
 - M6: SUS ≥ 68.
 
-**1.8 Cronograma original.** S1 5–11 oct línea base · S2 requisitos/TO-BE · S3 sprints A+B · S4 sprints C+D · S5 casos de prueba · S6–7 piloto (9–22 nov) · S8 análisis e informe (23–29 nov) · diciembre revisión y presentación · entrega 15-dic-2026.
+**1.8 Cronograma original.** S1 5–11 oct línea base · S2 requisitos/TO-BE · S3 sprints A+B · S4 sprints C+D · S5 casos de prueba · S6–7 validación del diseño en operación experimental controlada (9–22 nov) · S8 análisis e informe (23–29 nov) · diciembre revisión y presentación · entrega 15-dic-2026.
 
 **1.9 Limitaciones declaradas.** Caso único sin grupo de control · línea base en parte autorreportada · N pequeña, por eso pruebas no paramétricas · efecto Hawthorne · Obsidian sin permisos por usuario · el registro prueba que no hubo alteración, no que lo registrado sea cierto · el SaaS es contexto.
 
 > [!danger] Riesgos de fondo que veo (no tocar el texto aún; para la Revisión 1)
 > 1. **Validez del dato de speed-to-lead:** el 13,3 % y el 23,3 % salen de la Encuesta 3, que respondieron **los 30 colaboradores**, incluido personal de obra y administrativo. Solo 10 de los 30 se declaran asesores comerciales. Es percepción, no registro, y se comparará contra un post medido en el sistema: esa asimetría la va a ver el tribunal.
-> 2. **M3:** el 30,0 % es la *etapa modal* donde «se pierde la mayoría» (opinión), no una tasa de fuga medida. No se puede comparar contra una tasa real del piloto.
+> 2. **M3:** el 30,0 % es la *etapa modal* donde «se pierde la mayoría» (opinión), no una tasa de fuga medida. No se puede comparar contra una tasa real de la validación del diseño en operación experimental controlada.
 > 3. **Composición inestable:** «Director/Gerencia» son 7 en la E1 y 11 en la E3. Con 30 colaboradores, entre 7 y 11 directivos es raro: o la autodeclaración es libre o no fueron las mismas personas. Hay que explicarlo.
-> 4. **Volumen del piloto:** con 33 clientes en cartera, ¿cuántos leads nuevos entran en 2 semanas? Si son menos de 10, M1 y la U de Mann-Whitney quedan sin potencia.
+> 4. **Volumen durante la validación del diseño en operación experimental controlada:** con 33 clientes en cartera, ¿cuántos leads nuevos entran en 2 semanas? Si son menos de 10, M1 y la U de Mann-Whitney quedan sin potencia.
 > 5. **Probable error de atribución:** la «ventana de 5 a 15 minutos» se atribuye a Oldroyd et al. (2011), pero ese artículo habla de **la primera hora**. El dato de 5 minutos viene del *Lead Response Management Study* (Elkington y MIT, 2007). Hay que verificarlo en la fase 1.
 
 ---
@@ -150,7 +150,7 @@ Estado: 🔎 citada en el borrador, falta verificar · ❌ sin fuente · 🏠 da
 |---|---|---|---|---|
 | A9 | Responder en ≤1 h → ~7× más probabilidad de calificar; >60× frente a 24 h | Oldroyd et al. (2011) | 🔎 | Confirmar cifras y página; buscar evidencia de 2023+ (seminal) |
 | A10 | La ventana de referencia es de 5–15 min | Oldroyd et al. (2011) | ⚠️ | Ver el riesgo 5 (§1) |
-| A11–A19 | 13,3 % · 23,3 % · 30,0 % · 50,0 % · 43,3 % · 36,7 % · 56,7 % · 53,3 % · SUS 53,83 | Bermeo y Segura (2026) | ⛔ datos simulados | **No se usan.** Se reemplazan con la reaplicación del 15–16 oct (`05_Datos_Campo/Diagnostico_2026/LEEME_Procedencia.md`) |
+| A11–A19 | 13,3 % · 23,3 % · 30,0 % · 50,0 % · 43,3 % · 36,7 % · 56,7 % · 53,3 % · SUS 53,83 | Bermeo y Segura (2026) | ⛔ datos simulados | **No se usan.** Se reemplazan con la reaplicación del 15–16 oct (`05_Datos_Campo/Diagnostico_2026_SIMULADO_no_usar/LEEME_Procedencia.md`) |
 | A20 | El umbral normativo de la SUS es 68 | Sauro (2011); Lewis (2018); Bangor et al. (2008) | 🔎 | Verificar |
 | A21 | Ohiomah et al.: 108 profesionales, PLS-SEM, 55 % de varianza | Ohiomah et al. (2019) | 🔎 | Verificar el número y la página |
 | A22 | La automatización del seguimiento sube la conversión entre 0 y 23 pp | Habel et al. (2025) | 🔎 | Verificar (artículo reciente, posible *online first*) |
@@ -216,7 +216,7 @@ Tesis_Torvesa/
 ├── 03_Matriz_Objetivos/         OVA oficiales ↔ OE ↔ fuentes ↔ capítulos
 ├── 04_Instrumentos/             encuestas, guías de entrevista, consentimientos (LOPDP)
 ├── 05_Datos_Campo/              SOLO anonimizado
-│   └── Diagnostico_2026/        ENCUESTA1–4.csv + script de recálculo
+│   └── Diagnostico_2026_SIMULADO_no_usar/        ENCUESTA1–4.csv + script de recálculo
 ├── 06_Capitulos/                Cap_X_vN.md / .docx  (nunca se sobrescribe una versión tuya)
 ├── 07_Flujos_Diseno/            BPMN, Mermaid, Miro (Diego)
 ├── 08_Reuniones_Tutora/
@@ -243,7 +243,7 @@ Tesis_Torvesa/
 | `01_Raw/UPS/Tesis_TeamSlash/`: informe final + v4, proyecto integrador 12-05 y Sprint 5, pitch deck, master brief, propuesta concurso, manual de usuario, `teamslash.pdf`, `proyecto.pdf` | `10_Antecedentes_Propios/` | Las 4 copias del pitch → **1** (la más reciente; te muestro los hashes antes) |
 | `00_Inbox/TEAMSLASH_Tablas_Comparativas_Herramientas.pdf` | `10_Antecedentes_Propios/` | Base para «herramientas elegidas/descartadas» |
 | `00_Inbox/Capitulo_IV_Diagnostico_y_Analisis_de_Resultados.md` | `10_Antecedentes_Propios/` | Quitar el tag `compras` en la copia |
-| `00_Inbox/ENCUESTA1–4.csv` | `05_Datos_Campo/Diagnostico_2026/` | Revisé las cabeceras: rol, antigüedad y respuestas, **sin nombres**. Confirmo celda por celda antes de copiar |
+| `00_Inbox/ENCUESTA1–4.csv` | `05_Datos_Campo/Diagnostico_2026_SIMULADO_no_usar/` | Revisé las cabeceras: rol, antigüedad y respuestas, **sin nombres**. Confirmo celda por celda antes de copiar |
 | `03_Out/UPS/2026-09-27_Analisis_Borrador_Tesis.md`, `Tesis_Plan/*` | `11_Planificacion/_historico/` | `busquedas.json` sirve de semilla para el script de la fase 1 |
 | esta nota (F0) | `11_Planificacion/` | |
 | `02_Wiki/UPS/Tesis_TeamSlash.md` | **se queda** | Solo le agrego un enlace a la bóveda nueva |

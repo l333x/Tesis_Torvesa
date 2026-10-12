@@ -31,9 +31,9 @@ tags: [cronograma, planificacion]
 - el pulido APA pasa a revisión por capítulo durante S8–S9;
 - el manual de usuario queda en versión básica (S8-05).
 
-**Intocable en cualquier escenario:** el trabajo de campo de S1, las revisiones 1 y 2 con la tutora, la medición post del piloto y el hito del 90 %.
+**Intocable en cualquier escenario:** el trabajo de campo de S1, las revisiones 1 y 2 con la tutora, la medición post de la validación del diseño en operación experimental controlada y el hito del 90 %.
 
-**Piloto (validación del diseño en operación experimental controlada):** del **24 nov al 5 dic** (2 semanas hábiles), con medición post del **7 al 9 dic**. Así funciona en los dos escenarios. Depende de la prueba de concepto estable (S5-04) y del permiso de Torvesa.
+**Validación del diseño en operación experimental controlada:** del **24 nov al 5 dic** (2 semanas hábiles), con medición post del **7 al 9 dic**. Así funciona en los dos escenarios. Depende de la prueba de concepto estable (S5-04) y del permiso de Torvesa.
 
 ## Carga y contingencia
 
@@ -94,12 +94,12 @@ tags: [cronograma, planificacion]
 - [ ] **S6-01** Presentar diseño, flujos, datos y viabilidad · @Victor @Diego · entregable: presentación · hecho: reunión realizada · cierre: — · #33
 - [ ] **S6-02** Acta de la Revisión 2 · @Victor · entregable: acta en 08 · hecho: observaciones con responsable y plazo · cierre: — · #34
 
-## S7 · 23–29 nov · Feedback + arranque del piloto
+## S7 · 23–29 nov · Feedback + arranque de la validación del diseño en operación experimental controlada
 - [ ] **S7-01** Incorporar las observaciones de la Revisión 2 · @Victor @Diego · entregable: versiones nuevas · hecho: cada observación cerrada en el acta · cierre: — · #35
-- [ ] **S7-02** Preparar la validación controlada (protocolo, capacitación, permisos) · @Victor · entregable: protocolo del piloto · hecho: aprobado por Torvesa · cierre: — · #36
-- [ ] **S7-03** Arrancar el piloto (24-nov) y monitorear · @Diego · entregable: registro de eventos activo · hecho: primeros eventos registrados sin errores · cierre: — · #37
+- [ ] **S7-02** Preparar la validación del diseño en operación experimental controlada (protocolo, capacitación, permisos) · @Victor · entregable: protocolo de la validación del diseño en operación experimental controlada · hecho: aprobado por Torvesa · cierre: — · #36
+- [ ] **S7-03** Arrancar la validación del diseño en operación experimental controlada (24-nov) y monitorear · @Diego · entregable: registro de eventos activo · hecho: primeros eventos registrados sin errores · cierre: — · #37
 
-## S8 · 30 nov–6 dic · Documentación del sistema (el piloto sigue hasta el 5-dic)
+## S8 · 30 nov–6 dic · Documentación del sistema (la validación del diseño en operación experimental controlada sigue hasta el 5-dic)
 - [ ] **S8-01** Herramientas elegidas y descartadas, con justificación · @Diego · entregable: documento · hecho: cada decisión con criterio · cierre: — · #38
 - [ ] **S8-02** Modelo de datos y registro de eventos · @Diego · entregable: diagrama + diccionario · hecho: coincide con la PoC · cierre: — · #39
 - [ ] **S8-03** Plantillas de cotización y especificación del asistente de IA · @Diego · entregable: documentos · hecho: revisados por Víctor · cierre: — · #40
