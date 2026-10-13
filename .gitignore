@@ -50,6 +50,9 @@ desktop.ini
 # --- Versiones intermedias y duplicadas de antecedentes: solo en local (E6) ---
 10_Antecedentes_Propios/_versiones/
 
+# --- Formatos UPS: la tesis real de ejemplo trae cédulas de terceros; solo en local ---
+02_Fuentes/Formatos_UPS/EjemploInformeFinal.docx
+
 # --- Búsqueda: PDF descargados y textos completos (pueden ser de bases con licencia: no se redistribuyen) ---
 00_Inbox/descargas/
 02_Fuentes/_Textos/

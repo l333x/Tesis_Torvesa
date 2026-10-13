@@ -1,7 +1,7 @@
 ---
 titulo: "Manual de redacción de la tesis (para la IA)"
-version: "0.1"
-fecha: 2026-10-12
+version: "0.2"
+fecha: 2026-10-13
 tipo: manual-ia
 tags: [manual, apa7, estructura, redaccion]
 ---
@@ -12,8 +12,8 @@ tags: [manual, apa7, estructura, redaccion]
 > **Cuándo se lee:** antes de redactar o revisar **cualquier** parte de un capítulo, de un resumen o de las referencias.
 > **Orden de prioridad cuando dos reglas chocan:**
 > 1. Lo que diga la tutora (actas en `08_Reuniones_Tutora/`).
-> 2. El instructivo oficial de la UPS (**todavía no lo tenemos**, ver §12).
-> 3. La práctica observada en tesis UPS recientes (§2).
+> 2. El **Manual de estilo oficial de la carrera (proyecto técnico)**: `02_Fuentes/Formatos_UPS/` (recibido el 13-oct-2026; análisis y contradicciones C1–C8 en `_Analisis_Formatos_UPS.md`).
+> 3. La práctica observada en tesis UPS recientes (§2), sobre todo Collaguazo (2026), la tesis real que trae el paquete de formatos.
 > 4. APA 7 oficial (apastyle.apa.org).
 > 5. Las adaptaciones al español de guías universitarias ecuatorianas (UTPL, ESPE).
 
@@ -41,44 +41,47 @@ Reglas de vocabulario que **no se negocian** (ver `CLAUDE.md`):
 
 ## 2. Estructura del documento
 
-### 2.1 Lo que se observó en tesis UPS reales (2024–2026)
-Se revisaron dos trabajos del repositorio DSpace de la UPS:
-- Ordoñez (2026), **Negocios Digitales, Quito**, «proyecto de investigación».
-- Carrión (2024), Computación, Guayaquil, «artículo académico».
+### 2.1 Estructura oficial (Manual de estilo de la carrera, proyecto técnico)
+Fuente: `02_Fuentes/Formatos_UPS/MANUAL DE ESTILO – CARRERA DE NEGOCIOS DIGITALES_proyecto_técnico.docx`. El manual se declara **obligatorio**. También se revisaron tesis reales: Collaguazo (2026, Negocios Digitales, proyecto técnico, viene en el paquete), Ordoñez (2026, Negocios Digitales, proyecto de investigación) y Carrión (2024, Computación, artículo).
 
-Hay elementos comunes y obligatorios **en este orden**:
+**Parte pretextual** (números romanos en minúsculas; la portada se cuenta pero no se numera), **en este orden**:
 
-1. **Portada:** «UNIVERSIDAD POLITÉCNICA SALESIANA / SEDE [ciudad] / CARRERA DE NEGOCIOS DIGITALES», el título en mayúsculas, «Trabajo de titulación previo a la obtención del título de Licenciado en Negocios Digitales», autores, tutor (con título académico), «[Ciudad] – Ecuador» y el año.
-2. **Certificado de responsabilidad y autoría del trabajo de titulación:** firmado por cada autor, con su cédula. ⚠️ En la versión de 2026 incluye una **declaración de uso de IA**: «declaro que he utilizado herramientas de inteligencia artificial solo para efectos de mejorar la redacción y puntuación del trabajo, lo cual consta en las citas y referencias». La de 2024 no la tenía → **la UPS la agregó hace poco**. Confirmar el texto vigente con la tutora (ver §10).
-3. **Certificado de cesión de derechos de autor** a la UPS.
-4. **Certificado de dirección:** lo firma la tutora y nombra la opción de titulación («proyecto técnico»).
-5. Dedicatoria y agradecimiento (opcionales).
-6. **Índice de contenidos**, **índice de tablas** e **índice de figuras** (generados automáticamente).
-7. **Resumen** y **Abstract**, cada uno con palabras clave. Un documento de terceros dice que el máximo es de **350 palabras**: **verificar**.
-8. **Introducción:** sin numeración. Cierra con un párrafo que describe la estructura del documento por capítulos.
-9. **Capítulos** numerados «CAPÍTULO I: …» con subtítulos decimales (1.1, 1.1.1).
-10. **Conclusiones** (organizadas **por objetivo específico**) y **recomendaciones**.
-11. **Referencias.** Usar ese nombre (APA); la tesis de 2026 dice «Bibliografía», pero es un mal ejemplo, ver §6.4.
-12. **Anexos** numerados: «Anexo 1.», «Anexo 1.1».
+1. **Portada:** «UNIVERSIDAD POLITÉCNICA SALESIANA / SEDE QUITO / CARRERA DE NEGOCIOS DIGITALES», el título en mayúsculas, «Trabajo de titulación previo a la obtención del / Título de Licenciado en Negocios Digitales.», «Autores: NOMBRES EN MAYÚSCULAS», «Tutor: NOMBRE EN MAYÚSCULAS» (la plantilla oficial **no** pone título académico), «Quito – Ecuador» y el año. Plantilla: `portadaTrabajoTitulacion.docx`.
+2. **Certificado de responsabilidad y autoría:** firmado por cada autor con su cédula. La plantilla oficial **no trae** la frase de uso de IA que sí aparece en Ordoñez (2026); el manual manda la declaración de IA a los **anexos** (§10).
+3. **Certificado de cesión de derechos de autor** a la UPS (nombra la opción «Proyecto Técnico»).
+4. **Certificado de dirección:** lo firma la tutora. Usar el texto del esqueleto Word: la plantilla `.odt` trae por error a los estudiantes en el bloque de firma (C6).
+5. Dedicatoria y agradecimientos (opcionales).
+6. **Índice de contenido**, **índice de tablas** e **índice de figuras**: automáticos, alineados a la izquierda, con puntos guía; incluyen las páginas pretextuales.
+7. **Resumen** (una hoja, **≤ 250 palabras**) y **Abstract** (otra hoja, ≤ 250 palabras).
+8. **Palabras clave:** de **3 a 5**, justo después del resumen; el rótulo «Palabras claves» va en cursiva y con sangría de 1,27 cm; en minúsculas salvo nombres propios, separadas por comas y **sin punto final**. Lo mismo para *Keywords*.
 
-**Formato medido en la tesis de Negocios Digitales 2026:** hoja **A4**, márgenes de **2,54 cm**, **Times New Roman 12**, interlineado ≈ **1,5**, títulos de capítulo en 16 pt negrita y tablas numeradas «Tabla 1». Esto **difiere de APA estudiantil** (carta, doble espacio, sin numerar títulos). **Gana la práctica UPS** hasta que la tutora diga otra cosa (§12).
+**Parte textual** (números arábigos desde la Introducción): Introducción → Marco teórico → Metodología → Desarrollo técnico → Evaluación y resultados → Conclusiones y recomendaciones (§2.2).
+- La **Introducción** es el primer capítulo y contiene **problema, justificación, objetivos y alcance**. En Collaguazo (2026) aparece como «CAPÍTULO I» y, en la línea siguiente, «INTRODUCCIÓN». Cierra con un párrafo que describe la estructura del documento.
+- **Conclusiones** organizadas **por objetivo específico**, y luego las **recomendaciones**.
+
+**Parte postextual:**
+- **Referencias** (APA). El manual dice «Referencias bibliográficas»; nunca «Bibliografía» (§6.4).
+- **Anexos** numerados («Anexo 1.»): instrumentos, tablas extensas, documentos y la **declaración de uso de IA generativa**.
+
+**Contradicciones del propio material oficial** (detalle en `_Analisis_Formatos_UPS.md` §4): márgenes de 2 cm en las plantillas de portada y certificados (C1); títulos numerados en el esqueleto pero no en la tesis real (C3); el esqueleto «proyecto técnico» usa la estructura del artículo (C4). Se llevan a la tutora (§12).
 
 ### 2.2 Estructura propuesta para nuestra tesis (Proyecto Técnico + DSR)
 El marco es la investigación en ciencia del diseño (**DSR**). Sus seis actividades (Peffers et al., 2007) deben verse en el documento: (1) identificar el problema, (2) definir los objetivos de la solución, (3) diseñar y desarrollar, (4) demostrar, (5) evaluar y (6) comunicar. Según Gregor y Hevner (2013), en DSR **la descripción del artefacto ocupa el lugar de la sección de resultados** de un trabajo empírico.
 
 | Parte | Contenido | Actividad DSR | Objetivo / OVA | Insumos en la bóveda | Sprint |
 |---|---|---|---|---|---|
-| Introducción | Contexto breve, problema, propósito, método en una línea, estructura | — | — | Borrador aprobado | S9 |
-| **Cap. I · El problema** | Contexto (IA desde 2021, Ecuador, construcción), Torvesa, problema, pregunta, justificación, objetivos, alcance y delimitación | 1 y 2 | 4.1 | `02_Fuentes/Base_Fuentes_2021-2026`, matriz en `03_Matriz_Objetivos/`, afirmaciones A1–A10 | S2 |
+| **Cap. I · Introducción** | Contexto (IA desde 2021, Ecuador, construcción), Torvesa, problema, pregunta, justificación, objetivos, alcance y delimitación; cierra con la estructura del documento | 1 y 2 | 4.1 | `02_Fuentes/Base_Fuentes_2021-2026`, matriz en `03_Matriz_Objetivos/`, afirmaciones A1–A10 | S2 (el párrafo final, en S9) |
 | **Cap. II · Marco teórico** | Antecedentes 2021+, bases teóricas (CRM y CRM móvil, tiempo de respuesta, gestión del conocimiento, RAG), bases legales (LOPDP), discusión crítica y vacíos (A27–A29) | 1 | 4.2 | Fichas verificadas por categoría | S2 |
 | **Cap. III · Metodología** | Enfoque mixto con predominio cuantitativo, DSR + Design Thinking + Scrum, población (dos censos), instrumentos, procedimiento, análisis y ética (LOPDP, consentimiento) | marco | 4.3 | `04_Instrumentos/`, decisiones D2 y D4 | S2 |
-| **Cap. IV · Diagnóstico** | Proceso actual (AS-IS en BPMN) y línea base **real** (M1–M6) | 1 (evidencia) | 5.1 | `05_Datos_Campo/` (solo datos reales anonimizados) | S7 |
-| **Cap. V · Diseño del sistema y viabilidad** | Requisitos, proceso TO-BE, arquitectura, herramientas, costos, VAN y TIR, riesgos, ley de datos | 3 (artefacto) | 5.3, 5.4, 6.1 | `07_Flujos_Diseno/`, anexo A del borrador | S4 |
-| **Cap. VI · Resultados de la validación** | Demostración y evaluación: antes y después en operación experimental controlada, SUS, discusión y limitaciones | 4 y 5 | 6.2, 6.3 | Datos de la validación | S9 |
-| Conclusiones y recomendaciones | Una conclusión por objetivo específico; recomendaciones para Torvesa y para futuras investigaciones | 6 | — | — | S9 |
+| **Cap. IV · Desarrollo técnico** — 4.1 Diagnóstico | Proceso actual (AS-IS en BPMN) y línea base **real** (M1–M6) | 1 (evidencia) | 5.1 | `05_Datos_Campo/` (solo datos reales anonimizados) | S7 |
+| **Cap. IV · Desarrollo técnico** — 4.2 Diseño del sistema y viabilidad | Requisitos, proceso TO-BE, arquitectura, herramientas, costos, VAN y TIR, riesgos, ley de datos | 3 (artefacto) | 5.3, 5.4, 6.1 | `07_Flujos_Diseno/`, anexo A del borrador | S4 |
+| **Cap. V · Evaluación y resultados** | Demostración y evaluación: antes y después en operación experimental controlada, SUS, discusión y limitaciones | 4 y 5 | 6.2, 6.3 | Datos de la validación | S9 |
+| **Cap. VI · Conclusiones y recomendaciones** | Una conclusión por objetivo específico; recomendaciones para Torvesa y para futuras investigaciones | 6 | — | — | S9 |
 | Anexos | Instrumentos, consentimiento, diccionario de datos, BPMN, costos, declaración de IA | — | — | — | — |
 
-**Regla de coherencia («hilo rojo»):** cada objetivo específico debe aparecer en cuatro sitios. Debe tener (a) su método en el Cap. III, (b) su resultado en el Cap. IV, V o VI y (c) su conclusión. Además, (d) la tabla de la §11.4 lo registra. Si algo no cierra, la IA lo avisa antes de redactar.
+**Encaje con la estructura oficial:** los seis capítulos siguen el orden del manual de estilo (§2.1). El diagnóstico y el diseño comparten el Cap. IV «Desarrollo técnico», igual que en Collaguazo (2026). Su capítulo V, con el costo del proceso manual, la inversión, el ROI, el *payback* y la proyección a 12 meses, sirve de **modelo de estructura** para nuestra viabilidad (§4.2); **no** es fuente de datos. [DECIDIR-TUTORA]: si el diagnóstico puede ser un capítulo propio.
+
+**Regla de coherencia («hilo rojo»):** cada objetivo específico debe aparecer en cuatro sitios. Debe tener (a) su método en el Cap. III, (b) su resultado en el Cap. IV o V y (c) su conclusión. Además, (d) la tabla de la §11.4 lo registra. Si algo no cierra, la IA lo avisa antes de redactar.
 
 ---
 
@@ -299,33 +302,36 @@ Son el formato automático de Word (APA 6): les falta el título y la revista, p
 - Explicar cómo se codificó (categorías) y presentar una tabla de categorías con su frecuencia y una cita representativa.
 - Citas de participantes: anónimas, cortas y con contexto. Nunca datos que permitan identificar a alguien (LOPDP; datos crudos solo en `05_Datos_Campo/_crudo/`).
 
-### 8.4 Artefacto (Cap. V, en lugar de «resultados» en DSR)
+### 8.4 Artefacto (Cap. IV §4.2, en lugar de «resultados» en DSR)
 - Describir el artefacto con requisitos → diseño → componentes → flujo TO-BE → decisiones y alternativas descartadas (con su porqué).
 - Cada requisito debe venir de un hallazgo del diagnóstico (trazabilidad, anexo A.6 del borrador).
 
 ---
 
 ## 9. Formato del documento final
-| Elemento | Práctica UPS observada (2026) | APA estudiante | Valor por defecto aquí |
+| Elemento | Manual de estilo oficial (2026) | Tesis real (Collaguazo, 2026) | Valor que se usa |
 |---|---|---|---|
-| Papel | A4 | Carta | **A4** [DECIDIR-TUTORA] |
-| Márgenes | 2,54 cm | 2,54 cm | **2,54 cm** |
-| Letra | Times New Roman 12 | TNR 12, Calibri 11, Arial 11, etc. | **Times New Roman 12** |
-| Interlineado | ≈ 1,5 | Doble | **1,5** [DECIDIR-TUTORA] |
-| Alineación | Justificado (habitual) | A la izquierda | [DECIDIR-TUTORA] |
-| Sangría | — | 1,27 cm en la primera línea | **1,27 cm** |
-| Títulos | «CAPÍTULO I: …» + 1.1, 1.1.1 | Sin números, 5 niveles | **Numerados como la UPS** |
-| Paginación | Romana en los preliminares (tesis 2024) | Arábiga desde la portada | Romana en preliminares, arábiga desde la Introducción |
-| Tablas y figuras | «Tabla 1 Título» | Número en negrita y título en cursiva | **APA** |
+| Papel | A4 (29,7 × 21 cm), bond de 75 g, una cara | A4 | **A4** |
+| Márgenes | **sup. 3 · inf. 3 · izq. 2,5 · der. 2,5 cm** | 3 / 3 / 2,5 / 2,5 | **3 / 3 / 2,5 / 2,5 cm**. La portada y los certificados de las plantillas vienen en 2 cm (C1) [DECIDIR-TUTORA] |
+| Letra del cuerpo | No lo dice | Times New Roman 12 | **Times New Roman 12** [DECIDIR-TUTORA] |
+| Interlineado | **1,5** | Doble (no sigue el manual) | **1,5** |
+| Espaciado | Doble entre párrafos; simple entre título y párrafo; doble entre párrafo y título, figura o tabla | — | **Como el manual** |
+| Alineación | No lo dice | Justificado | **Justificado** [DECIDIR-TUTORA] |
+| Sangría | 1,27 cm (solo la menciona para «Palabras claves») | 1,25 cm en la primera línea | **1,27 cm** en la primera línea |
+| Títulos | Jerarquía APA: N1 centrado y negrita; N2 a la izquierda y negrita; N3 a la izquierda, negrita y cursiva | «CAPÍTULO I» + nombre del capítulo; subtítulos sin número | **«CAPÍTULO I» + nombre, subtítulos APA sin número** (C3) [DECIDIR-TUTORA] |
+| Paginación | Abajo y centrada, **TNR 10**; romanos en minúsculas en las páginas pretextuales; la portada se cuenta pero no se numera; arábigos desde la Introducción | Igual | **Como el manual** |
+| Tablas | Rótulo **arriba**, 10 pt, **solo «Tabla N.» en negrita** y el título normal; autoajuste a la ventana; nota de origen al final; referencia cruzada antes de la tabla | «Tabla 1 Título», arriba | **Como el manual**, numeradas de corrido (Tabla 1, 2…) |
+| Figuras | «Figura N. Título»; línea en blanco a doble espacio entre la figura y el texto; referencia cruzada antes de la figura | — | **Como el manual** |
+| Extensión | **De 60 a 100 páginas sin anexos** | ≈ 80 | **De 60 a 100** |
 
-**Herramienta:** `99_Scripts/gestion/estilo_docx.py` está hecho para los **documentos de trabajo** (con colores) y **no** para la tesis. Para la tesis hace falta una plantilla Word UPS. **Propuesta, que requiere el OK de Víctor** porque la infraestructura está congelada: crear `plantilla_tesis.docx` con estos valores cuando la tutora los confirme.
+**Herramienta:** `99_Scripts/gestion/estilo_docx.py` está hecho para los **documentos de trabajo** (con colores) y **no** para la tesis. Para la tesis hace falta una plantilla Word UPS: los requisitos ya están escritos en `02_Fuentes/Formatos_UPS/_Analisis_Formatos_UPS.md` §7 (plantilla, generador de capítulos y verificador de formato). Se construye **solo cuando Víctor lo pida** (la infraestructura está congelada) y después de que la tutora resuelva C1, C3 y C4.
 
 ---
 
 ## 10. Declaración de uso de IA
 Hay dos capas. Las dos se preparan.
 
-1. **UPS:** el certificado de responsabilidad y autoría de 2026 trae la frase de uso de IA (§2.1). **Ojo:** esa frase dice «solo para mejorar la redacción y puntuación», pero en esta tesis la IA también ayudó a buscar fuentes, planificar y analizar. **No se puede firmar una frase que no es cierta.** Se le pregunta a la tutora qué redacción usar [DECIDIR-TUTORA].
+1. **UPS:** el manual de estilo oficial pone la **declaración de uso de IA generativa en los anexos**, y la plantilla oficial del certificado de responsabilidad **no** trae la frase de IA. Ordoñez (2026), en cambio, sí la tenía en el certificado: «solo para efectos de mejorar la redacción y puntuación». **Ojo:** en esta tesis la IA también ayudó a buscar fuentes, planificar y analizar, y **no se puede firmar una frase que no es cierta**. Por defecto: un **anexo de declaración de IA** con el contenido APA del punto 2 y el certificado sin la frase. [DECIDIR-TUTORA]: confirmar que el certificado no la necesita.
 2. **APA (AI Contribution Statement, guía del 1-sep-2026):** es un párrafo que dice:
    - **fechas** de uso;
    - **qué se le pidió** a la IA (las instrucciones);
@@ -360,22 +366,26 @@ Hay dos capas. Las dos se preparan.
 - [ ] Los títulos siguen la numeración UPS.
 
 ### 11.4 Trazabilidad (se mantiene en `03_Matriz_Objetivos/`)
-| Objetivo específico | Método (Cap. III) | Resultado (Cap. IV–VI) | Conclusión | Meta M |
+| Objetivo específico | Método (Cap. III) | Resultado (Cap. IV–V) | Conclusión | Meta M |
 |---|---|---|---|---|
 | OE1 … | … | … | … | … |
 
 ---
 
 ## 12. Decisiones pendientes (se llevan a la tutora)
-1. ¿Hay un **instructivo o plantilla oficial UPS vigente** para el Proyecto Técnico de Negocios Digitales? (No es público; pedirlo a la tutora o a la coordinación.)
-2. Papel A4 o carta; interlineado 1,5 o doble; justificado o alineado a la izquierda.
-3. «y» o «&» en las citas y referencias; comillas « » o “ ”.
-4. Primera persona del plural o forma impersonal.
-5. Extensión máxima del resumen y del abstract (¿350 palabras?) y número de palabras clave.
-6. Redacción exacta de la **declaración de uso de IA** en el certificado (§10) y si piden además el *AI Contribution Statement*.
-7. Si «Referencias» o «Bibliografía»; si las conclusiones van separadas de las recomendaciones.
+**Resuelto por el manual de estilo oficial (13-oct-2026):** sí existe un instructivo oficial; hoja A4; interlineado de 1,5; resumen y abstract de ≤ 250 palabras con 3 a 5 palabras clave; «Referencias bibliográficas»; la declaración de IA va en los anexos; de 60 a 100 páginas.
 
-Cuando la tutora decida, se actualiza este manual (v0.2) y se borra el `[DECIDIR-TUTORA]` correspondiente.
+**Sigue abierto:**
+1. Alineación (justificado o a la izquierda) y letra del cuerpo (el manual no lo dice; por defecto, TNR 12 justificado).
+2. «y» o «&» en las citas y referencias; comillas « » o “ ”.
+3. Primera persona del plural o forma impersonal.
+4. Si el certificado de responsabilidad debe llevar además una frase de uso de IA (§10), y si el anexo de IA puede seguir el formato APA (*AI Contribution Statement*).
+5. **C1:** ¿la portada y los certificados van con márgenes de 2 cm (plantilla) o de 3/3/2,5/2,5 (manual)?
+6. **C3:** ¿títulos numerados (1.1, 1.1.1) o sin número (tesis real)?
+7. **C4:** ¿se respetan los nombres «Desarrollo técnico» y «Evaluación y resultados» del manual, o se aceptan otros nombres como en la tesis real? ¿El diagnóstico puede ser un capítulo propio?
+8. El «Anexo 3» (guía APA) que cita el manual no vino en el paquete: pedirlo.
+
+Cuando la tutora decida, se actualiza este manual (v0.3) y se borra el `[DECIDIR-TUTORA]` correspondiente.
 
 ---
 
