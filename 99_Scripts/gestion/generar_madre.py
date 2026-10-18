@@ -137,11 +137,11 @@ CAPITULOS = [  # (título, qué contendrá, ids de entregable, categorías de fu
 ]
 DECISIONES = [
     ("D1", "Lo que el borrador llama «piloto» se llama «validación del diseño en operación experimental controlada»; nunca «implementación»", "Tomada"),
-    ("D2", "Marco DSR + Design Thinking para diseñar + Scrum para organizar; enfoque «mixto con predominio cuantitativo»", "Falta el OK de la tutora"),
+    ("D2", "Marco DSR + Design Thinking para diseñar + Scrum para organizar; enfoque «mixto con predominio cuantitativo»", "Tomada (tutora sin objeciones, 12-oct; falta el acta)"),
     ("D3", "Usar los objetivos de aprendizaje oficiales de la carrera (OVA 4.1–6.3)", "Tomada"),
     ("D4", "Dos censos: los 30 colaboradores y los 33 clientes", "Tomada"),
     ("D5", "Entrega en enero (escenario B), salvo que la tutora confirme el 15-dic como fecha obligatoria (escenario A)", "Falta la respuesta de la tutora"),
-    ("D6", "Proponer quitar OpenTimestamps (sello en Bitcoin) y usar huella SHA-256 + registro que solo se puede ampliar", "Falta el OK de la tutora"),
+    ("D6", "Proponer quitar OpenTimestamps (sello en Bitcoin) y usar huella SHA-256 + registro que solo se puede ampliar", "Tomada (tutora sin objeciones, 12-oct; falta el acta)"),
     ("D7", "VAN y TIR del sistema para Torvesa; el negocio SaaS TEAMSLASH va como anexo", "Tomada"),
 ]
 

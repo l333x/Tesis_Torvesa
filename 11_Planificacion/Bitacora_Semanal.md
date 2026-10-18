@@ -98,3 +98,49 @@ tags: [bitacora, informes, planificacion]
 - Jueves 15 y viernes 16: campo en Torvesa **solo si lo autoriza**; si no, más fuentes.
 - Diego: investigar bóvedas de conocimiento, RAG, flujos y CRMs, con un resumen de 1 página para Víctor.
 - Domingo 18: revisión de la semana con «explícame lo tuyo».
+
+
+## 2026-10-18 · Revisión del sprint 1 (12–18 oct)
+
+### Resumen
+- **Qué se hizo:**
+  - lunes 12: 22 fuentes verificadas, base de fuentes, manual de redacción y app;
+  - martes 13: formatos oficiales UPS y MANUAL_TESIS v0.2;
+  - domingo 18: corte de la fase 1, con 8 verificadas más (30 en total), matriz afirmación–fuente–estado, C1 v0.2 (LOPDP), I1 v0.2 (SUS validada en español), resumen del problema para Diego e instrucciones para la IA de Diego (`IA_DIEGO.md`).
+- **Qué no se hizo:**
+  - del martes 13 al mediodía al sábado 17 no hubo trabajo (dos días de retraso, según Víctor);
+  - el campo en Torvesa no se hizo;
+  - Diego no empezó su parte.
+- **Qué aprendimos:**
+  - la evidencia no respalda la ventana de 5–15 min (A10), que pasa a ser una decisión de diseño;
+  - la ley no fija los 12 meses de archivo (A45): es un plazo que fija la tesis;
+  - las editoriales grandes bloquean la descarga automática, así que hace falta un rato de descarga a mano.
+
+### Decisiones
+- ✅ Tutora: Víctor conversó con ella el 12-oct y no hubo objeciones a los 5 puntos. El acta se hará más adelante (decisión de Víctor).
+- ✅ Antecedentes vigentes: **Informe Final del 22-jul** y **pitch decks del 22-jul b y c** (una mezcla de los dos). Los demás pasaron a `_versiones/`; `2026-07-16_teamslash.pdf` se queda.
+- ✅ Diego se encarga de conseguir la información y los permisos de Torvesa.
+- ✅ Las tareas de Diego se organizan en bloques dobles del 19 al 24 oct, guiadas por su IA con `IA_DIEGO.md`.
+- ✅ La carpeta vacía `F:\Compartir_Diego_PENDIENTE` ya se borró (lo hizo Víctor).
+
+### Riesgos y bloqueos
+- **El campo depende de Torvesa:** sin línea base no hay análisis de datos (S2-T02, S2-T04) ni proceso AS-IS completo.
+- 19 de 42 filas de la matriz siguen sin fuente; el capítulo 2 (CRM, A21–A27) es lo más urgente para Víctor.
+- La fecha de entrega (D5: 15-dic o enero) sigue sin confirmar.
+
+### Atención de Víctor
+- Bajar a mano los PDF de la lista de `F1_reporte_2026-10-18.md`.
+- Revisar la matriz, C1 v0.2, I1 v0.2, el resumen del problema y `IA_DIEGO.md`.
+- Confirmar con la tutora la fecha de entrega (D5).
+- Llamada de 20 min con Diego: «explícame lo tuyo».
+
+### Próxima semana (sprint 2, 19–25 oct)
+- **Víctor (bloques dobles):**
+  - lun: cap. 1 parte 1 + PDF a mano;
+  - mar: cap. 1 parte 2 + fuentes de CRM A21–A27;
+  - mié: cap. 2 parte 1 + censo y métodos (biblioteca);
+  - jue: cap. 2 parte 2 + A44 y A30;
+  - vie: fuentes de IA + lienzo del modelo de negocio;
+  - sáb: cap. 3 parte 1 + resumen para Diego;
+  - dom: cap. 3 parte 2 + revisión del sprint.
+- **Diego:** bloques A–H de `IA_DIEGO.md` (arranque, bóvedas y RAG, documentación oficial y precios, BPMN, herramientas) y el campo cuando Torvesa autorice.

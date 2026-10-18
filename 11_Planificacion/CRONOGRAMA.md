@@ -1,7 +1,7 @@
 ---
 titulo: Cronograma maestro (versión para la IA)
 tipo: documento_vivo
-actualizado: 2026-10-11
+actualizado: 2026-10-18
 fuente_de_verdad: 11_Planificacion/Cronograma_Tesis.xlsx
 tags: [cronograma, planificacion]
 ---
@@ -14,8 +14,8 @@ tags: [cronograma, planificacion]
 ## Entregables (= issues de GitHub)
 - [ ] **S1-01** Buscar y verificar fuentes del problema (tiempo de respuesta, digitalización de la construcción, datos de Torvesa), para respaldar el capítulo 1 · @Victor · entregable: fichas en 02_Fuentes/Problema/ · hecho: afirmaciones A1–A10 con estado definido · cierre: — · #1
 - [ ] **S1-02** Buscar fuentes de metodología, ley de datos (LOPDP), escala SUS en español e IA 2023–2026, para justificar el método · @Victor · entregable: fichas en 02_Fuentes/Metodologia/, 02_Fuentes/Normativa/ y 02_Fuentes/Tecnologia_IA/ · hecho: afirmaciones A39–A47 con estado · cierre: — · #2
-- [ ] **S1-03** Armar la matriz afirmación–fuente–estado (corte del miércoles), para decidir qué entra al capítulo 1 · @Victor · entregable: 03_Matriz_Objetivos/2026-10-14_Matriz_Afirmaciones_v0.1.xlsx · hecho: las 47 afirmaciones con estado · cierre: — · #3
-- [ ] **S1-04** Corregir los instrumentos de campo a la versión 0.2, para aplicarlos en Torvesa · @Victor · entregable: 04_Instrumentos/2026-10-14_*_v0.2 · hecho: aprobados por Víctor e impresos · cierre: — · #4
+- [x] **S1-03** Armar la matriz afirmación–fuente–estado (corte del miércoles), para decidir qué entra al capítulo 1 · @Victor · entregable: 03_Matriz_Objetivos/2026-10-14_Matriz_Afirmaciones_v0.1.xlsx · hecho: las 47 afirmaciones con estado · cierre: — · #3
+- [x] **S1-04** Corregir los instrumentos de campo a la versión 0.2, para aplicarlos en Torvesa · @Victor · entregable: 04_Instrumentos/2026-10-14_*_v0.2 · hecho: aprobados por Víctor e impresos · cierre: — · #4
 - [ ] **S1-05** Pedir a Torvesa el permiso de campo, la nota de respaldo y el catálogo de servicios, para trabajar con datos oficiales · @Victor · entregable: correo enviado + respuesta · hecho: respuesta recibida o plazo vencido el 14-oct · cierre: — · #5
 - [ ] **S1-06** Confirmar con Torvesa a qué se dedica (vías, edificios, inmuebles), para usar las palabras correctas en encuestas y tesis · @Victor · entregable: respuesta de Torvesa · hecho: afirmaciones A1–A1d resueltas · cierre: — · #6
 - [ ] **S1-07** Conversar con la tutora sobre los 5 cambios, para tener su aprobación antes de la Revisión 1 · @Victor · entregable: 08_Reuniones_Tutora/2026-10-12_Acta_Conversacion.md · hecho: acta con sus respuestas · cierre: — · #7
@@ -87,33 +87,33 @@ tags: [cronograma, planificacion]
 
 | Sprint | ID | Día | Resp. | Tarea | Dónde | Resultado | Estado | Fecha real |
 |---|---|---|---|---|---|---|---|---|
-| S1 | S1-T01 | 2026-10-12 | Víctor | Conversar con la tutora sobre los 5 cambios, para tener su aprobación | UPS Quito, en persona · llevar 08_Reuniones_Tutora/2026-10-12_Puntos_Tutora.pdf | Respuestas de la tutora anotadas | Pendiente |  |
-| S1 | S1-T02 | 2026-10-12 | Víctor | Escribir el acta de la conversación, para que quede por escrito lo que decidió | 08_Reuniones_Tutora/ | 08_Reuniones_Tutora/2026-10-12_Acta_Conversacion.md | Pendiente |  |
-| S1 | S1-T03 | 2026-10-12 | Víctor | Enviar el correo a Torvesa (giro, nota de respaldo, catálogo, permisos), para trabajar con datos oficiales | Correo electrónico · borrador en 11_Planificacion/2026-10-12_Correo_Torvesa_borrador.docx | Correo enviado con el catálogo adjunto | Pendiente |  |
-| S1 | S1-T04 | 2026-10-12 | Diego | Aceptar la invitación de GitHub y clonar el repo, para trabajar en la bóveda compartida | PC de Diego · pasos en GUIA_DIEGO.pdf (raíz) | Repo clonado + 00_Inbox/hola_diego.md | Pendiente |  |
-| S1 | S1-T05 | 2026-10-12 | Diego | Levantar el buscador RAG en su PC, para consultar la bóveda | PC de Diego · pasos en RAG_README.md (raíz) | Consulta de prueba con resultados | Pendiente |  |
-| S1 | S1-T06 | 2026-10-13 | Víctor | Buscar y verificar fuentes sobre el tiempo de respuesta a clientes (Oldroyd y estudios 2023+), para respaldar el problema (A9, A10) | 02_Fuentes/Problema/ · con 99_Scripts/busqueda/ | ≥5 fichas, ≥2 verificadas con página | Pendiente |  |
-| S1 | S1-T07 | 2026-10-13 | Víctor | Buscar fuentes sobre la digitalización de la construcción, para respaldar el contexto (A5, A6) | 02_Fuentes/Problema/ | ≥4 fichas | Pendiente |  |
-| S1 | S1-T08 | 2026-10-13 | Diego | Investigar cómo consolidar bóvedas de conocimiento, para diseñar la bóveda del sistema | 02_Fuentes/Tecnologia_IA/ · con 99_Scripts/busqueda/ | ≥5 fichas | Pendiente |  |
-| S1 | S1-T09 | 2026-10-13 | Diego | Leer el Documento madre y el Glosario, para entender el proyecto completo | 00_DOCUMENTO_MADRE.pdf y Glosario.pdf (raíz) | Dudas anotadas en el issue #10 | Pendiente |  |
-| S1 | S1-T10 | 2026-10-14 | Víctor | Revisar la respuesta de Torvesa y ajustar el campo del jueves y viernes, para saber qué se puede aplicar | Correo · 11_Planificacion/Cronograma_Tesis.xlsx | Campo confirmado o reprogramado | Pendiente |  |
-| S1 | S1-T11 | 2026-10-14 | Víctor | Corregir los instrumentos a la versión 0.2, para aplicarlos en Torvesa | 04_Instrumentos/ | 04_Instrumentos/2026-10-14_*_v0.2 (.md + Word) | Pendiente |  |
-| S1 | S1-T12 | 2026-10-14 | Víctor | Hacer el corte de fuentes: armar la matriz afirmación–fuente–estado, para decidir qué entra al capítulo 1 | 03_Matriz_Objetivos/ | 03_Matriz_Objetivos/2026-10-14_Matriz_Afirmaciones_v0.1.xlsx | Pendiente |  |
-| S1 | S1-T13 | 2026-10-14 | Diego | Investigar arquitecturas RAG para negocio, para proponer cómo el asistente consultará la bóveda | 02_Fuentes/Tecnologia_IA/ | ≥5 fichas | Pendiente |  |
-| S1 | S1-T14 | 2026-10-14 | Diego | Escribir un resumen de 1 página para Víctor sobre bóvedas y RAG, para compartir lo aprendido | 02_Fuentes/Tecnologia_IA/ | 02_Fuentes/Tecnologia_IA/2026-10-14_Resumen_Bovedas_RAG.md | Pendiente |  |
-| S1 | S1-T15 | 2026-10-15 | Víctor | Aplicar la encuesta a colaboradores y 2 entrevistas en Torvesa (si autorizó), para la línea base real | Torvesa (oficina, Quito) · registro en 05_Datos_Campo/LineaBase_2026-10/ | Hojas firmadas + 05_Datos_Campo/LineaBase_2026-10/registro_aplicacion.csv | Pendiente |  |
-| S1 | S1-T16 | 2026-10-15 | Diego | Cronometrar las cotizaciones del día en Torvesa (si autorizó), para medir el tiempo real (meta M2) | Torvesa (oficina, Quito) | 05_Datos_Campo/LineaBase_2026-10/P2A_cronometraje.csv | Pendiente |  |
-| S1 | S1-T17 | 2026-10-16 | Víctor | Llamar a los clientes para la encuesta corta (si autorizó), para conocer su experiencia | Teléfono · lista solo en 05_Datos_Campo/_crudo/ (privada) | Respuestas codificadas CLI-xx | Pendiente |  |
-| S1 | S1-T18 | 2026-10-16 | Diego | Revisar solicitudes y cotizaciones de los últimos 3 meses (solo fechas y horas), para medir el tiempo de respuesta (meta M1) | Torvesa (oficina, Quito) | 05_Datos_Campo/LineaBase_2026-10/P2B_muestra_documental.csv | Pendiente |  |
-| S1 | S1-T19 | 2026-10-17 | Víctor | Buscar el texto oficial de la ley de datos (LOPDP) y agregar sus artículos al consentimiento, para cumplir la ley | 02_Fuentes/Normativa/ y 04_Instrumentos/ | Ficha LOPDP + consentimiento v0.2 con artículos | Pendiente |  |
-| S1 | S1-T20 | 2026-10-17 | Víctor | Buscar la versión validada en español de la escala SUS, para medir la usabilidad correctamente | 02_Fuentes/Metodologia/ | Ficha verificada + encuesta I1 v0.2 con la traducción | Pendiente |  |
-| S1 | S1-T21 | 2026-10-17 | Víctor | Buscar fuentes de metodología (DSR, Design Thinking, Scrum, censo), para justificar el método | 02_Fuentes/Metodologia/ | ≥6 fichas | Pendiente |  |
-| S1 | S1-T22 | 2026-10-17 | Diego | Investigar flujos de información y diseño de procesos (BPMN), para dibujar el proceso de Torvesa | 02_Fuentes/Metodologia/ | ≥5 fichas | Pendiente |  |
-| S1 | S1-T23 | 2026-10-17 | Diego | Investigar CRMs móviles y herramientas existentes con sus precios, para comparar y calcular costos | 02_Fuentes/Casos_Estudio/ y 02_Fuentes/Costos_Viabilidad/ | Tabla de ≥6 herramientas con precio y fecha | Pendiente |  |
-| S1 | S1-T24 | 2026-10-18 | Ambos | Tabular y anonimizar los datos de campo, para que estén listos y sean confiables | 05_Datos_Campo/LineaBase_2026-10/ | CSV anonimizados + hashes + auditoría | Pendiente |  |
-| S1 | S1-T25 | 2026-10-18 | Víctor | Escribir un resumen de 1 página para Diego sobre el problema y sus fuentes | 02_Fuentes/Problema/ | 02_Fuentes/Problema/2026-10-18_Resumen_Problema.md | Pendiente |  |
-| S1 | S1-T26 | 2026-10-18 | Diego | Escribir un resumen de 1 página para Víctor sobre CRMs y flujos | 02_Fuentes/Casos_Estudio/ | 02_Fuentes/Casos_Estudio/2026-10-18_Resumen_CRM_Flujos.md | Pendiente |  |
-| S1 | S1-T27 | 2026-10-18 | Ambos | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Llamada Víctor–Diego · 11_Planificacion/Bitacora_Semanal.md y 11_Planificacion/Cronograma_Tesis.xlsx | Sección de la semana en la bitácora + hoja del sprint siguiente ajustada | Pendiente |  |
+| S1 | S1-T01 | 2026-10-12 | Víctor | Conversar con la tutora sobre los 5 cambios, para tener su aprobación | UPS Quito, en persona · llevar 08_Reuniones_Tutora/2026-10-12_Puntos_Tutora.pdf | Respuestas de la tutora anotadas | Hecho | 2026-10-12 |
+| S1 | S1-T02 | 2026-10-12 | Víctor | Escribir el acta de la conversación, para que quede por escrito lo que decidió | 08_Reuniones_Tutora/ | 08_Reuniones_Tutora/2026-10-12_Acta_Conversacion.md | Movido |  |
+| S1 | S1-T03 | 2026-10-12 | Víctor | Enviar el correo a Torvesa (giro, nota de respaldo, catálogo, permisos), para trabajar con datos oficiales | Correo electrónico · borrador en 11_Planificacion/2026-10-12_Correo_Torvesa_borrador.docx | Correo enviado con el catálogo adjunto | Movido |  |
+| S1 | S1-T04 | 2026-10-12 | Diego | Aceptar la invitación de GitHub y clonar el repo, para trabajar en la bóveda compartida | PC de Diego · pasos en GUIA_DIEGO.pdf (raíz) | Repo clonado + 00_Inbox/hola_diego.md | En curso |  |
+| S1 | S1-T05 | 2026-10-12 | Diego | Levantar el buscador RAG en su PC, para consultar la bóveda | PC de Diego · pasos en RAG_README.md (raíz) | Consulta de prueba con resultados | Movido |  |
+| S1 | S1-T06 | 2026-10-13 | Víctor | Buscar y verificar fuentes sobre el tiempo de respuesta a clientes (Oldroyd y estudios 2023+), para respaldar el problema (A9, A10) | 02_Fuentes/Problema/ · con 99_Scripts/busqueda/ | ≥5 fichas, ≥2 verificadas con página | En curso |  |
+| S1 | S1-T07 | 2026-10-13 | Víctor | Buscar fuentes sobre la digitalización de la construcción, para respaldar el contexto (A5, A6) | 02_Fuentes/Problema/ | ≥4 fichas | Hecho | 2026-10-12 |
+| S1 | S1-T08 | 2026-10-13 | Diego | Investigar cómo consolidar bóvedas de conocimiento, para diseñar la bóveda del sistema | 02_Fuentes/Tecnologia_IA/ · con 99_Scripts/busqueda/ | ≥5 fichas | Movido |  |
+| S1 | S1-T09 | 2026-10-13 | Diego | Leer el Documento madre y el Glosario, para entender el proyecto completo | 00_DOCUMENTO_MADRE.pdf y Glosario.pdf (raíz) | Dudas anotadas en el issue #10 | Movido |  |
+| S1 | S1-T10 | 2026-10-14 | Víctor | Revisar la respuesta de Torvesa y ajustar el campo del jueves y viernes, para saber qué se puede aplicar | Correo · 11_Planificacion/Cronograma_Tesis.xlsx | Campo confirmado o reprogramado | Movido |  |
+| S1 | S1-T11 | 2026-10-14 | Víctor | Corregir los instrumentos a la versión 0.2, para aplicarlos en Torvesa | 04_Instrumentos/ | 04_Instrumentos/2026-10-14_*_v0.2 (.md + Word) | Hecho | 2026-10-18 |
+| S1 | S1-T12 | 2026-10-14 | Víctor | Hacer el corte de fuentes: armar la matriz afirmación–fuente–estado, para decidir qué entra al capítulo 1 | 03_Matriz_Objetivos/ | 03_Matriz_Objetivos/2026-10-14_Matriz_Afirmaciones_v0.1.xlsx | Hecho | 2026-10-18 |
+| S1 | S1-T13 | 2026-10-14 | Diego | Investigar arquitecturas RAG para negocio, para proponer cómo el asistente consultará la bóveda | 02_Fuentes/Tecnologia_IA/ | ≥5 fichas | Movido |  |
+| S1 | S1-T14 | 2026-10-14 | Diego | Escribir un resumen de 1 página para Víctor sobre bóvedas y RAG, para compartir lo aprendido | 02_Fuentes/Tecnologia_IA/ | 02_Fuentes/Tecnologia_IA/2026-10-14_Resumen_Bovedas_RAG.md | Movido |  |
+| S1 | S1-T15 | 2026-10-15 | Víctor | Aplicar la encuesta a colaboradores y 2 entrevistas en Torvesa (si autorizó), para la línea base real | Torvesa (oficina, Quito) · registro en 05_Datos_Campo/LineaBase_2026-10/ | Hojas firmadas + 05_Datos_Campo/LineaBase_2026-10/registro_aplicacion.csv | Movido |  |
+| S1 | S1-T16 | 2026-10-15 | Diego | Cronometrar las cotizaciones del día en Torvesa (si autorizó), para medir el tiempo real (meta M2) | Torvesa (oficina, Quito) | 05_Datos_Campo/LineaBase_2026-10/P2A_cronometraje.csv | Movido |  |
+| S1 | S1-T17 | 2026-10-16 | Víctor | Llamar a los clientes para la encuesta corta (si autorizó), para conocer su experiencia | Teléfono · lista solo en 05_Datos_Campo/_crudo/ (privada) | Respuestas codificadas CLI-xx | Movido |  |
+| S1 | S1-T18 | 2026-10-16 | Diego | Revisar solicitudes y cotizaciones de los últimos 3 meses (solo fechas y horas), para medir el tiempo de respuesta (meta M1) | Torvesa (oficina, Quito) | 05_Datos_Campo/LineaBase_2026-10/P2B_muestra_documental.csv | Movido |  |
+| S1 | S1-T19 | 2026-10-17 | Víctor | Buscar el texto oficial de la ley de datos (LOPDP) y agregar sus artículos al consentimiento, para cumplir la ley | 02_Fuentes/Normativa/ y 04_Instrumentos/ | Ficha LOPDP + consentimiento v0.2 con artículos | Hecho | 2026-10-18 |
+| S1 | S1-T20 | 2026-10-17 | Víctor | Buscar la versión validada en español de la escala SUS, para medir la usabilidad correctamente | 02_Fuentes/Metodologia/ | Ficha verificada + encuesta I1 v0.2 con la traducción | Hecho | 2026-10-18 |
+| S1 | S1-T21 | 2026-10-17 | Víctor | Buscar fuentes de metodología (DSR, Design Thinking, Scrum, censo), para justificar el método | 02_Fuentes/Metodologia/ | ≥6 fichas | En curso |  |
+| S1 | S1-T22 | 2026-10-17 | Diego | Investigar flujos de información y diseño de procesos (BPMN), para dibujar el proceso de Torvesa | 02_Fuentes/Metodologia/ | ≥5 fichas | Movido |  |
+| S1 | S1-T23 | 2026-10-17 | Diego | Investigar CRMs móviles y herramientas existentes con sus precios, para comparar y calcular costos | 02_Fuentes/Casos_Estudio/ y 02_Fuentes/Costos_Viabilidad/ | Tabla de ≥6 herramientas con precio y fecha | Movido |  |
+| S1 | S1-T24 | 2026-10-18 | Ambos | Tabular y anonimizar los datos de campo, para que estén listos y sean confiables | 05_Datos_Campo/LineaBase_2026-10/ | CSV anonimizados + hashes + auditoría | Movido |  |
+| S1 | S1-T25 | 2026-10-18 | Víctor | Escribir un resumen de 1 página para Diego sobre el problema y sus fuentes | 02_Fuentes/Problema/ | 02_Fuentes/Problema/2026-10-18_Resumen_Problema.md | Hecho | 2026-10-18 |
+| S1 | S1-T26 | 2026-10-18 | Diego | Escribir un resumen de 1 página para Víctor sobre CRMs y flujos | 02_Fuentes/Casos_Estudio/ | 02_Fuentes/Casos_Estudio/2026-10-18_Resumen_CRM_Flujos.md | Movido |  |
+| S1 | S1-T27 | 2026-10-18 | Ambos | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Llamada Víctor–Diego · 11_Planificacion/Bitacora_Semanal.md y 11_Planificacion/Cronograma_Tesis.xlsx | Sección de la semana en la bitácora + hoja del sprint siguiente ajustada | En curso |  |
 | S2 | S2-T01 | 2026-10-19 | Víctor | Escribir el capítulo 1, parte 1 (problema y evidencias), para tener el primer borrador | 06_Capitulos/ | Cap1 v0.1 (primera mitad) | Pendiente |  |
 | S2 | S2-T02 | 2026-10-19 | Diego | Analizar los datos de campo (tablas y gráficos simples), para calcular la línea base | 05_Datos_Campo/LineaBase_2026-10/ | 05_Datos_Campo/LineaBase_2026-10/analisis/ (tablas y script) | Pendiente |  |
 | S2 | S2-T03 | 2026-10-20 | Víctor | Escribir el capítulo 1, parte 2 (justificación y objetivos) | 06_Capitulos/ | 06_Capitulos/2026-10-20_Cap1_Problema_v0.1.docx | Pendiente |  |
