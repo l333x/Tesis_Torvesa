@@ -144,3 +144,7 @@ tags: [bitacora, informes, planificacion]
   - sáb: cap. 3 parte 1 + resumen para Diego;
   - dom: cap. 3 parte 2 + revisión del sprint.
 - **Diego:** bloques A–H de `IA_DIEGO.md` (arranque, bóvedas y RAG, documentación oficial y precios, BPMN, herramientas) y el campo cuando Torvesa autorice.
+
+### Decisiones (18-oct, noche)
+- ✅ **D5 — Escenario B:** la fecha límite es el **lunes 4-ene-2027**, con el documento final completo y listo para la revisión de la tutora. El cronograma ya estaba armado así (Entrega-T01), así que no se comprime nada.
+- ✅ `ejemploInformeTesis.docx` y `ejemploInformeTesisArticulo.docx` (cédulas de terceros) salen del repositorio y quedan solo en local (`.gitignore`).

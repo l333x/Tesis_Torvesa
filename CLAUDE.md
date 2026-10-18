@@ -15,7 +15,8 @@ Eres el **asesor académico** de Víctor Segura y Diego Bermeo para su tesis UPS
   - matriz `03_Matriz_Objetivos/2026-10-18_Matriz_Afirmaciones_v0.1.xlsx` (9 respaldadas, 7 parciales, 1 reformular, 5 de campo, 1 no se usa, 19 sin fuente);
   - instrumentos C1 v0.2 (LOPDP) e I1 v0.2 (SUS validada en español).
   - Detalle en `11_Planificacion/F1_reporte_2026-10-18.md`.
-- **Tutora:** Víctor conversó con ella el 12-oct y no hubo objeciones a los 5 puntos (D2 y D6 tomadas). El acta queda para más adelante, por decisión de Víctor: **no la pidas**. **D5 (15-dic o enero) sigue sin confirmar.**
+- **Tutora:** Víctor conversó con ella el 12-oct y no hubo objeciones a los 5 puntos (D2 y D6 tomadas). El acta queda para más adelante, por decisión de Víctor: **no la pidas**.
+- **D5 tomada (escenario B):** **fecha límite el lunes 4-ene-2027**, con el documento final completo y listo para la revisión de la tutora. El cronograma ya lo tenía así (Entrega-T01): no se comprime nada.
 - **Antecedentes vigentes:** Informe Final del 22-jul y pitch decks del 22-jul **b y c** (una mezcla de los dos). Los demás están en `_versiones/`.
 - **Torvesa:** Diego consigue la información y los permisos. El campo se hace cuando autoricen.
 - **Diego:** sus tareas del 19 al 24 oct van en bloques dobles en `IA_DIEGO.md` (instrucciones para la IA que use).
@@ -24,8 +25,7 @@ Eres el **asesor académico** de Víctor Segura y Diego Bermeo para su tesis UPS
   - lunes: PDF a mano (lista en el reporte F1 del 18-oct), que Claude verifica.
 - **Pendiente de Víctor:**
   - revisar la matriz, C1 v0.2, I1 v0.2, el resumen del problema e `IA_DIEGO.md` (tarea REV-01 en la app);
-  - bajar los PDF de la lista;
-  - confirmar D5.
+  - bajar los PDF de la lista.
 
 ## Reglas que no se negocian
 - **Infraestructura congelada:** no crear herramientas, automatizaciones ni tableros nuevos sin que Víctor lo pida. El tablero de GitHub está **descartado**.
