@@ -43,7 +43,7 @@ Eres el **asesor académico** de Víctor Segura y Diego Bermeo para su tesis UPS
 - **Al cerrar cada día:** reporte `11_Planificacion/F1_reporte_AAAA-MM-DD.md` (durante la fase 1), fila en `09_Registro_Contribuciones`, auditoría PII, commit y push.
 - **Roles:**
   - **Víctor:** tesis, fuentes, metodología, modelo de negocio y finanzas.
-  - **Diego (GitHub `PiscesLivie`):** todo lo técnico. No tiene acceso a la bóveda 1 de Víctor.
+  - **Diego (GitHub `psiceslivie`):** todo lo técnico. No tiene acceso a la bóveda 1 de Víctor.
 
 ## Dónde está cada cosa
 - **Documento central para personas:** `00_DOCUMENTO_MADRE.pdf`. Se regenera cada domingo con `99_Scripts/gestion/generar_madre.py`, que va dentro de la tarea `Tesis_Informe_Domingo`.

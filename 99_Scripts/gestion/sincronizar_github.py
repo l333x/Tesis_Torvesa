@@ -7,7 +7,7 @@ Reglas:
 - Una tarea sin '#n' -> se crea su issue y se escribe '#n' en el cronograma.
 - '[x]' en el cronograma con el issue abierto -> se cierra el issue.
 - Issue cerrado en GitHub con '[ ]' en el cronograma -> se marca '[x]' con la fecha de cierre.
-- Responsables: @Victor -> l333x, @Diego -> PiscesLivie (solo si ya aceptó la invitación).
+- Responsables: @Victor -> l333x, @Diego -> psiceslivie (solo si ya aceptó la invitación).
 - El tablero (Project) se descartó el 2026-10-11 por decisión de Víctor: no se intenta crear.
 Requiere gh autenticado. No lee ni guarda tokens.
 """
@@ -20,7 +20,7 @@ from pathlib import Path
 BOVEDA = Path(__file__).resolve().parents[2]
 CRONO = BOVEDA / "11_Planificacion" / "CRONOGRAMA.md"
 REPO = "l333x/Tesis_Torvesa"
-USUARIOS = {"Victor": "l333x", "Diego": "PiscesLivie"}
+USUARIOS = {"Victor": "l333x", "Diego": "psiceslivie"}
 PROYECTO = "Tesis Torvesa"
 SIMULAR = "--simular" in sys.argv
 import shutil

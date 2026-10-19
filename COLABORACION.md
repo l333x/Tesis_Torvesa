@@ -29,8 +29,8 @@ git config --global user.email "<tu correo de GitHub>"
 gh auth login --hostname github.com --git-protocol ssh --web
 #   Generate a new SSH key? -> Yes · passphrase -> la tuya · Title -> PC-Diego-Tesis
 #   copia el código, Enter, pégalo en el navegador -> Authorize
-gh auth status            # debe decir: Logged in to github.com account PiscesLivie
-ssh -T git@github.com     # debe decir: Hi PiscesLivie! You've successfully authenticated
+gh auth status            # debe decir: Logged in to github.com account psiceslivie
+ssh -T git@github.com     # debe decir: Hi psiceslivie! You've successfully authenticated
 ```
 
 **4. Clonar el repo.** Elige una carpeta **fuera de OneDrive**, porque OneDrive y Git se pelean:
@@ -61,7 +61,7 @@ La primera vez descarga el modelo (~1,1 GB). Si da error SSL, mira la tabla «Si
 
 | Carpeta | Dueño | El otro puede… |
 |---|---|---|
-| `02_Fuentes`, `03_Matriz_Objetivos`, `04_Instrumentos`, `06_Capitulos`, `08_Reuniones_Tutora` | **Víctor** | leer y comentar (callout `> [!question] Diego:`) |
+| `02_Fuentes`, `03_Matriz_Objetivos`, `04_Instrumentos`, `06_Capitulos`, `08_Reuniones_Tutora` | **Víctor** | leer y comentar (callout `> [!question] Diego:`). **Excepción (19-oct):** Diego crea fichas nuevas y sus resúmenes en `02_Fuentes/Tecnologia_IA`, `Metodologia`, `Costos_Viabilidad` y `Casos_Estudio`; las fichas que ya existen solo las comenta |
 | `07_Flujos_Diseno`, `99_Scripts`, RAG (`RAG_README.md`) | **Diego** | leer y comentar (`> [!question] Víctor:`) |
 | `00_Inbox`, `09_Registro_Contribuciones`, `11_Planificacion` | ambos | agregar; cada uno edita solo sus propias entradas |
 | `01_Borrador_Aprobado` | nadie | solo lectura |

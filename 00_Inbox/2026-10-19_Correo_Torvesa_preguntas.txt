@@ -1,0 +1,58 @@
+CORREO PARA TORVESA - lo envía Diego (revisar antes de enviar)
+================================================================
+
+Para: Ing. Mentor Eduardo Torres Cunalata - Gerente, Torvesa Constructora
+Asunto: Tesis UPS - confirmación de los ingresos 2025 y datos pendientes
+
+----------------------------------------------------------------
+
+Estimado Ing. Torres:
+
+Reciba un cordial saludo. Muchas gracias por el archivo "Ingresos_Torvesa_2025" que nos compartió. Ya lo revisamos y nos sirve mucho para la tesis.
+
+Para poder usarlo en el documento que revisará la universidad, necesitamos confirmar algunos puntos. Dentro del archivo aparecen las frases "clientes ficticios", "contratos ficticios" y "resultado del modelo de avance de obra", y el tribunal podría observarlas. Le agradeceríamos mucho que nos ayude con lo siguiente:
+
+A. CONFIRMACIÓN DE LOS INGRESOS 2025
+
+1. ¿Los montos de cada contrato (columna "Monto sin IVA" de la hoja "Proyectos") son los valores reales de Torvesa, y solo se cambiaron los nombres de los clientes por confidencialidad?
+
+2. Los valores mes a mes, ¿salen de las planillas y facturas reales, o son una estimación repartida según el avance de obra? Si son una estimación, nos basta con el total real por contrato.
+
+3. ¿El total de 2025 (USD 1.482.812 sin IVA) coincide aproximadamente con lo declarado al SRI o a la Superintendencia de Compañías? Si nos puede compartir el estado de resultados 2025 o el total de ventas declarado, mejor.
+
+B. DATOS DE LA EMPRESA
+
+4. ¿Cuántos trabajadores tiene Torvesa hoy? En el archivo aparecen 33 y en nuestro diseño aprobado tenemos 30. ¿Cuántos de ellos atienden clientes o hacen cotizaciones?
+
+5. ¿Cuántos clientes tiene Torvesa? En 2025 aparecen 12 con contrato. Antes habíamos registrado 33: ¿esa cifra es el total histórico de clientes?
+
+6. Confirmación del giro del negocio: ¿Torvesa se dedica principalmente a la construcción de vías (vías internas, adoquinado, asfalto, lastrado, cunetas)? ¿Hace también otro tipo de obra?
+
+C. DATOS COMERCIALES (los más importantes para la tesis)
+
+7. ¿Cuántas cotizaciones o propuestas hizo Torvesa en 2025, aproximadamente? Con eso calculamos cuántas terminaron en contrato (en 2025 se firmaron 15 contratos).
+
+8. ¿Cuántas solicitudes de cotización llegan por semana, en promedio, y por qué medio (WhatsApp, llamada, correo, visita)?
+
+9. ¿Cuál es el margen o la utilidad aproximada de un contrato típico (en porcentaje)? Un rango es suficiente, por ejemplo "entre 10 % y 15 %".
+
+D. PERMISOS
+
+10. ¿Nos autoriza a aplicar las encuestas y entrevistas al personal y a revisar las fechas y horas de las solicitudes de los últimos 3 meses (sin nombres de clientes)? Le enviaremos la autorización para su firma.
+
+Toda la información se usará solo con fines académicos y de forma anonimizada, conforme a la Ley Orgánica de Protección de Datos Personales.
+
+Si le resulta más fácil, podemos conversar 15 minutos por teléfono o en una visita esta semana.
+
+Le agradecemos mucho su apoyo.
+
+Atentamente,
+
+Diego Bermeo Torres y Víctor Segura Heredia
+Estudiantes de Negocios Digitales - Universidad Politécnica Salesiana
+
+----------------------------------------------------------------
+NOTA PARA DIEGO (no va en el correo):
+- Envíalo el martes 20-oct. Si no responden hasta el viernes 24-oct, Víctor escala (llamada o carta de la tutora).
+- Las preguntas 1, 2, 7 y 9 son las que destraban el VAN/TIR. Si solo contestan algo, que sea eso.
+- Guarda la respuesta en 05_Datos_Campo/_crudo/ y avisa a Víctor el mismo día.

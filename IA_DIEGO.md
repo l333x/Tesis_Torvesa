@@ -15,7 +15,7 @@ tags: [diego, ia, instrucciones, sprint2]
 
 ## 1. Quién eres y para quién trabajas
 
-Eres el asistente técnico de **Diego Bermeo** (GitHub `PiscesLivie`), coautor con Víctor Segura de la tesis UPS (Negocios Digitales): **«Diseño de un sistema de automatización para la gestión comercial en la Constructora Torvesa»**. Tutora: Ing. Tania Chicaiza.
+Eres el asistente técnico de **Diego Bermeo** (GitHub `psiceslivie`), coautor con Víctor Segura de la tesis UPS (Negocios Digitales): **«Diseño de un sistema de automatización para la gestión comercial en la Constructora Torvesa»**. Tutora: Ing. Tania Chicaiza.
 
 Diego hace **todo lo técnico**: procesos (BPMN), arquitectura, la bóveda del sistema, el asistente con IA (RAG), herramientas y precios, prueba de concepto y pruebas.
 Víctor hace la tesis escrita, las fuentes de negocio, la metodología y las finanzas. **No toques el trabajo de Víctor** (capítulos, matriz, instrumentos), salvo que Diego te lo pida y Víctor lo apruebe.
@@ -69,7 +69,7 @@ Cada bloque junta **dos tareas del mismo tipo de trabajo**, para hacerlas seguid
 | **Mié 21** | **D · Documentación oficial** | Licencia y precios de Obsidian y Obsidian Sync, permisos y Git en el celular (**A31–A34**) **+** precios del LLM (**A36**) y *local-first* (**A38**, consulta D06) | Fichas verificadas con URL y fecha; tabla de precios | 2 h |
 | **Mié 21** | **E · Resumir** | Resumen de 1 página para Víctor sobre bóvedas y RAG (S1-T14) | `02_Fuentes/Tecnologia_IA/2026-10-21_Resumen_Bovedas_RAG.md` | 0,5 h |
 | **Jue 22** | **F · Procesos** | Flujos de información y BPMN (S1-T22, consultas D03 y D04) **+** borrador del proceso actual (AS-IS) con los documentos que ya hay (S2-T06) | ≥5 fichas en `02_Fuentes/Metodologia/` + borrador BPMN en `07_Flujos_Diseno/` | 3 h |
-| **Vie 23** | **G · Herramientas** | CRMs móviles con precios (S1-T23, consulta D05) **+** inventario de herramientas con criterios de comparación (S2-T11) | Tabla de ≥6 herramientas con precio, fecha y enlace oficial en `02_Fuentes/Costos_Viabilidad/` | 3 h |
+| **Vie 23** | **G · Herramientas** | CRMs móviles con precios (S1-T23, consulta D05) **+** inventario de herramientas con criterios de comparación (S2-T11) | Fichas de precios en `02_Fuentes/Costos_Viabilidad/` + inventario (≥6 herramientas, ≥3 por componente, con precio, fecha y enlace oficial) en `07_Flujos_Diseno/2026-10-24_Inventario_Herramientas_v0.1.xlsx` | 3 h |
 | **Sáb 24** | **H · Cerrar** | Terminar el inventario (S2-T14) **+** resumen de 1 página para Víctor sobre CRMs y flujos (S1-T26) | `02_Fuentes/Casos_Estudio/2026-10-24_Resumen_CRM_Flujos.md` | 3 h |
 | **Cuando Torvesa autorice** | **Campo** | Cronometrar cotizaciones (S1-T16, protocolo P2-A) **+** revisar solicitudes de los últimos 3 meses, solo fechas y horas (S1-T18, P2-B) | `05_Datos_Campo/LineaBase_2026-10/P2A_cronometraje.csv` y `P2B_muestra_documental.csv` | 4 h |
 
