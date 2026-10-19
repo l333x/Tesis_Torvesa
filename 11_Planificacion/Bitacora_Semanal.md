@@ -148,3 +148,19 @@ tags: [bitacora, informes, planificacion]
 ### Decisiones (18-oct, noche)
 - ✅ **D5 — Escenario B:** la fecha límite es el **lunes 4-ene-2027**, con el documento final completo y listo para la revisión de la tutora. El cronograma ya estaba armado así (Entrega-T01), así que no se comprime nada.
 - ✅ `ejemploInformeTesis.docx` y `ejemploInformeTesisArticulo.docx` (cédulas de terceros) salen del repositorio y quedan solo en local (`.gitignore`).
+
+### Análisis de avance y metas del sprint 2 (18-oct, noche)
+- **Avance:** 7 de 166 tareas (4 %); faltan 11 semanas para el 4-ene-2027.
+  - Fuentes: 30 verificadas de 60–100.
+  - Matriz: 16 de 42 con algo verificado; lo más débil es el cap. 2 (CRM, A21–A27).
+  - Instrumentos: C1 e I1 en v0.2.
+  - Capítulos: ninguno empezado.
+- **Ruta crítica:** caps. 1–3 → Revisión 1 (26–30 oct); campo → línea base → diseño (2–8 nov) → prueba de concepto (9–15 nov) → validación del diseño en operación experimental controlada (23 nov–6 dic) → medición posterior (7–13 dic) → tesis al 90 % (18 dic) → 4 de enero.
+- **Riesgo principal:** la autorización de Torvesa. El campo debería hacerse a más tardar la semana del 2-nov.
+  - Si Torvesa no responde hasta el **viernes 24-oct**, se escala: llamada de Víctor al Ing. Torres o carta de respaldo de la tutora. Se decide ese día.
+- **Metas al 25-oct:**
+  - caps. 1, 2 y 3 en v0.1, editados por Víctor;
+  - unas 55 fuentes verificadas;
+  - menos de 10 afirmaciones sin fuente;
+  - lienzo del modelo de negocio en borrador.
+- **Seguimiento a Diego:** el mensaje con su tabla se envió por WhatsApp el 18-oct. Si el martes 20 no ha hecho el bloque A (repo clonado), hay que hablar con él.
