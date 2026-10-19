@@ -164,3 +164,20 @@ tags: [bitacora, informes, planificacion]
   - menos de 10 afirmaciones sin fuente;
   - lienzo del modelo de negocio en borrador.
 - **Seguimiento a Diego:** el mensaje con su tabla se envió por WhatsApp el 18-oct. Si el martes 20 no ha hecho el bloque A (repo clonado), hay que hablar con él.
+
+## 2026-10-19 · Sprint 2, día 1 (lunes)
+
+### Resumen
+- **Qué se hizo (Víctor pidió adelantar la semana):**
+  - cap. I v0.1 en dos partes (contexto, empresa, problema, evidencias, delimitación, pregunta; justificación, objetivos, preguntas, metas y alcance), con control de cambios frente al diseño aprobado;
+  - cap. II v0.1 (marco teórico) con lo verificado y cap. III v0.1 completo (metodología);
+  - lienzo del modelo de negocio v0.1 (propuesta de valor para Torvesa + TEAMSLASH como anexo, D7);
+  - resumen del cap. I para Diego;
+  - 7 fuentes verificadas (37 en total) y matriz v0.2 (15 afirmaciones sin fuente; A30 y A35 salen por D6).
+- **Correcciones al diseño aprobado:** fuera los datos simulados, los «30–44 min», el «60 veces» y la ventana de «5–15 min» atribuida a Oldroyd; índice de digitalización atribuido a Manyika et al. (2015).
+- Detalle en `11_Planificacion/F1_reporte_2026-10-19.md`.
+
+### Atención de Víctor
+- Revisar en Word los caps. I, II y III y el lienzo (control de cambios activado).
+- Bajar los PDF de la lista del reporte del 19-oct (ya no hace falta Lewis y Sauro).
+- Decidir: plan de precios de la bóveda y la IA; TEAMSLASH como antecedente propio.

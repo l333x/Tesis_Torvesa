@@ -1,7 +1,7 @@
 ---
 titulo: Cronograma maestro (versión para la IA)
 tipo: documento_vivo
-actualizado: 2026-10-18
+actualizado: 2026-10-19
 fuente_de_verdad: 11_Planificacion/Cronograma_Tesis.xlsx
 tags: [cronograma, planificacion]
 ---
@@ -114,22 +114,22 @@ tags: [cronograma, planificacion]
 | S1 | S1-T25 | 2026-10-18 | Víctor | Escribir un resumen de 1 página para Diego sobre el problema y sus fuentes | 02_Fuentes/Problema/ | 02_Fuentes/Problema/2026-10-18_Resumen_Problema.md | Hecho | 2026-10-18 |
 | S1 | S1-T26 | 2026-10-18 | Diego | Escribir un resumen de 1 página para Víctor sobre CRMs y flujos | 02_Fuentes/Casos_Estudio/ | 02_Fuentes/Casos_Estudio/2026-10-18_Resumen_CRM_Flujos.md | Movido |  |
 | S1 | S1-T27 | 2026-10-18 | Ambos | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Llamada Víctor–Diego · 11_Planificacion/Bitacora_Semanal.md y 11_Planificacion/Cronograma_Tesis.xlsx | Sección de la semana en la bitácora + hoja del sprint siguiente ajustada | En curso |  |
-| S2 | S2-T01 | 2026-10-19 | Víctor | Escribir el capítulo 1, parte 1 (problema y evidencias), para tener el primer borrador | 06_Capitulos/ | Cap1 v0.1 (primera mitad) | Pendiente |  |
+| S2 | S2-T01 | 2026-10-19 | Víctor | Escribir el capítulo 1, parte 1 (problema y evidencias), para tener el primer borrador | 06_Capitulos/ | Cap1 v0.1 (primera mitad) | En curso |  |
 | S2 | S2-T02 | 2026-10-19 | Diego | Analizar los datos de campo (tablas y gráficos simples), para calcular la línea base | 05_Datos_Campo/LineaBase_2026-10/ | 05_Datos_Campo/LineaBase_2026-10/analisis/ (tablas y script) | Pendiente |  |
-| S2 | S2-T03 | 2026-10-20 | Víctor | Escribir el capítulo 1, parte 2 (justificación y objetivos) | 06_Capitulos/ | 06_Capitulos/2026-10-20_Cap1_Problema_v0.1.docx | Pendiente |  |
+| S2 | S2-T03 | 2026-10-20 | Víctor | Escribir el capítulo 1, parte 2 (justificación y objetivos) | 06_Capitulos/ | 06_Capitulos/2026-10-20_Cap1_Problema_v0.1.docx | En curso |  |
 | S2 | S2-T04 | 2026-10-20 | Diego | Terminar el análisis de datos y escribir lo que muestran, en lenguaje simple | 05_Datos_Campo/LineaBase_2026-10/ | 05_Datos_Campo/LineaBase_2026-10/analisis/2026-10-20_Resultados_LineaBase_v0.1.md | Pendiente |  |
-| S2 | S2-T05 | 2026-10-21 | Víctor | Escribir el capítulo 2, parte 1 (CRM, tiempo de respuesta, gestión del conocimiento) | 06_Capitulos/ | Cap2 v0.1 (primera mitad) | Pendiente |  |
+| S2 | S2-T05 | 2026-10-21 | Víctor | Escribir el capítulo 2, parte 1 (CRM, tiempo de respuesta, gestión del conocimiento) | 06_Capitulos/ | Cap2 v0.1 (primera mitad) | En curso |  |
 | S2 | S2-T06 | 2026-10-21 | Diego | Dibujar el proceso actual (AS-IS) en BPMN con lo dicho en las entrevistas | 07_Flujos_Diseno/ | AS-IS v0.1 (borrador) | Pendiente |  |
-| S2 | S2-T07 | 2026-10-22 | Víctor | Escribir el capítulo 2, parte 2 (IA, RAG, normativa) | 06_Capitulos/ | 06_Capitulos/2026-10-22_Cap2_Marco_Teorico_v0.1.docx | Pendiente |  |
+| S2 | S2-T07 | 2026-10-22 | Víctor | Escribir el capítulo 2, parte 2 (IA, RAG, normativa) | 06_Capitulos/ | 06_Capitulos/2026-10-22_Cap2_Marco_Teorico_v0.1.docx | En curso |  |
 | S2 | S2-T08 | 2026-10-22 | Diego | Terminar el proceso actual (AS-IS) y marcar dónde se pierde tiempo | 07_Flujos_Diseno/ | 07_Flujos_Diseno/2026-10-22_AS-IS_v0.1 | Pendiente |  |
-| S2 | S2-T09 | 2026-10-23 | Víctor | Buscar fuentes de adopción de IA y automatización comercial 2023–2026, para el marco teórico | 02_Fuentes/Tecnologia_IA/ | ≥5 fichas | Pendiente |  |
-| S2 | S2-T10 | 2026-10-23 | Víctor | Armar el lienzo del modelo de negocio y la propuesta de valor (primer borrador) | 06_Capitulos/Modelo_Negocio/ | 06_Capitulos/Modelo_Negocio/2026-10-23_Lienzo_Modelo_Negocio_v0.1.docx | Pendiente |  |
+| S2 | S2-T09 | 2026-10-23 | Víctor | Buscar fuentes de adopción de IA y automatización comercial 2023–2026, para el marco teórico | 02_Fuentes/Tecnologia_IA/ | ≥5 fichas | Hecho | 2026-10-19 |
+| S2 | S2-T10 | 2026-10-23 | Víctor | Armar el lienzo del modelo de negocio y la propuesta de valor (primer borrador) | 06_Capitulos/Modelo_Negocio/ | 06_Capitulos/Modelo_Negocio/2026-10-23_Lienzo_Modelo_Negocio_v0.1.docx | En curso |  |
 | S2 | S2-T11 | 2026-10-23 | Diego | Hacer el inventario de herramientas candidatas, con criterios de comparación | 07_Flujos_Diseno/ | Inventario v0.1 (borrador) | Pendiente |  |
-| S2 | S2-T12 | 2026-10-24 | Víctor | Escribir el capítulo 3, parte 1 (enfoque, DSR y población) | 06_Capitulos/ | Cap3 v0.1 (primera mitad) | Pendiente |  |
-| S2 | S2-T13 | 2026-10-24 | Víctor | Escribir un resumen de 1 página para Diego del capítulo 1 | 06_Capitulos/ | 06_Capitulos/2026-10-24_Resumen_Cap1.md | Pendiente |  |
+| S2 | S2-T12 | 2026-10-24 | Víctor | Escribir el capítulo 3, parte 1 (enfoque, DSR y población) | 06_Capitulos/ | Cap3 v0.1 (primera mitad) | En curso |  |
+| S2 | S2-T13 | 2026-10-24 | Víctor | Escribir un resumen de 1 página para Diego del capítulo 1 | 06_Capitulos/ | 06_Capitulos/2026-10-24_Resumen_Cap1.md | En curso |  |
 | S2 | S2-T14 | 2026-10-24 | Diego | Terminar el inventario de herramientas con precios y criterios | 07_Flujos_Diseno/ | 07_Flujos_Diseno/2026-10-24_Inventario_Herramientas_v0.1.xlsx | Pendiente |  |
 | S2 | S2-T15 | 2026-10-24 | Diego | Escribir un resumen de 1 página para Víctor del proceso actual | 07_Flujos_Diseno/ | 07_Flujos_Diseno/2026-10-24_Resumen_AS-IS.md | Pendiente |  |
-| S2 | S2-T16 | 2026-10-25 | Víctor | Escribir el capítulo 3, parte 2 (instrumentos, análisis y ética) | 06_Capitulos/ | 06_Capitulos/2026-10-25_Cap3_Metodologia_v0.1.docx | Pendiente |  |
+| S2 | S2-T16 | 2026-10-25 | Víctor | Escribir el capítulo 3, parte 2 (instrumentos, análisis y ética) | 06_Capitulos/ | 06_Capitulos/2026-10-25_Cap3_Metodologia_v0.1.docx | En curso |  |
 | S2 | S2-T17 | 2026-10-25 | Diego | Preparar las gráficas de datos para la Revisión 1 | 05_Datos_Campo/LineaBase_2026-10/ | 05_Datos_Campo/LineaBase_2026-10/analisis/figuras/ | Pendiente |  |
 | S2 | S2-T18 | 2026-10-25 | Ambos | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Llamada Víctor–Diego · 11_Planificacion/Bitacora_Semanal.md y 11_Planificacion/Cronograma_Tesis.xlsx | Sección de la semana en la bitácora + hoja del sprint siguiente ajustada | Pendiente |  |
 | S3 | S3-T01 | 2026-10-26 | Víctor | Preparar la presentación de avance (capítulos 1–3 y fuentes), para la Revisión 1 | 08_Reuniones_Tutora/ | 08_Reuniones_Tutora/2026-10-27_Presentacion_Revision1.pptx | Pendiente |  |

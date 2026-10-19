@@ -1,6 +1,6 @@
 ---
 titulo: Inicio — documento madre (versión Obsidian)
-actualizado: 2026-10-18
+actualizado: 2026-10-19
 tipo: portal
 tags: [inicio, portal]
 ---
@@ -10,46 +10,36 @@ tags: [inicio, portal]
 > Versión para leer en Obsidian. La versión completa, con gráficos, es [[00_DOCUMENTO_MADRE.pdf]] (se regenera cada domingo).
 
 ## Hoy
-- **Semana:** Sprint 1 · 12–18 oct · Recopilar información
-- **Avance:** 7/166 tareas · **Fuentes:** 539 (30 verificadas)
+- **Semana:** Sprint 2 · 19–25 oct · Redactar capítulos
+- **Avance:** 8/166 tareas · **Fuentes:** 544 (37 verificadas)
 - **Cronograma:** [[Cronograma_Tesis.xlsx]] · [[CRONOGRAMA]] (versión IA)
 
 ### Esta semana
 | Día | Tarea | Quién | Estado |
 |---|---|---|---|
-| lun 12-oct | Conversar con la tutora sobre los 5 cambios, para tener su aprobación | Víctor | Hecho |
-| lun 12-oct | Escribir el acta de la conversación, para que quede por escrito lo que decidió | Víctor | Movido |
-| lun 12-oct | Enviar el correo a Torvesa (giro, nota de respaldo, catálogo, permisos), para trabajar con datos oficiales | Víctor | Movido |
-| lun 12-oct | Aceptar la invitación de GitHub y clonar el repo, para trabajar en la bóveda compartida | Diego | En curso |
-| lun 12-oct | Levantar el buscador RAG en su PC, para consultar la bóveda | Diego | Movido |
-| mar 13-oct | Buscar y verificar fuentes sobre el tiempo de respuesta a clientes (Oldroyd y estudios 2023+), para respaldar el problema (A9, A10) | Víctor | En curso |
-| mar 13-oct | Buscar fuentes sobre la digitalización de la construcción, para respaldar el contexto (A5, A6) | Víctor | Hecho |
-| mar 13-oct | Investigar cómo consolidar bóvedas de conocimiento, para diseñar la bóveda del sistema | Diego | Movido |
-| mar 13-oct | Leer el Documento madre y el Glosario, para entender el proyecto completo | Diego | Movido |
-| mié 14-oct | Revisar la respuesta de Torvesa y ajustar el campo del jueves y viernes, para saber qué se puede aplicar | Víctor | Movido |
-| mié 14-oct | Corregir los instrumentos a la versión 0.2, para aplicarlos en Torvesa | Víctor | Hecho |
-| mié 14-oct | Hacer el corte de fuentes: armar la matriz afirmación–fuente–estado, para decidir qué entra al capítulo 1 | Víctor | Hecho |
-| mié 14-oct | Investigar arquitecturas RAG para negocio, para proponer cómo el asistente consultará la bóveda | Diego | Movido |
-| mié 14-oct | Escribir un resumen de 1 página para Víctor sobre bóvedas y RAG, para compartir lo aprendido | Diego | Movido |
-| jue 15-oct | Aplicar la encuesta a colaboradores y 2 entrevistas en Torvesa (si autorizó), para la línea base real | Víctor | Movido |
-| jue 15-oct | Cronometrar las cotizaciones del día en Torvesa (si autorizó), para medir el tiempo real (meta M2) | Diego | Movido |
-| vie 16-oct | Llamar a los clientes para la encuesta corta (si autorizó), para conocer su experiencia | Víctor | Movido |
-| vie 16-oct | Revisar solicitudes y cotizaciones de los últimos 3 meses (solo fechas y horas), para medir el tiempo de respuesta (meta M1) | Diego | Movido |
-| sáb 17-oct | Buscar el texto oficial de la ley de datos (LOPDP) y agregar sus artículos al consentimiento, para cumplir la ley | Víctor | Hecho |
-| sáb 17-oct | Buscar la versión validada en español de la escala SUS, para medir la usabilidad correctamente | Víctor | Hecho |
-| sáb 17-oct | Buscar fuentes de metodología (DSR, Design Thinking, Scrum, censo), para justificar el método | Víctor | En curso |
-| sáb 17-oct | Investigar flujos de información y diseño de procesos (BPMN), para dibujar el proceso de Torvesa | Diego | Movido |
-| sáb 17-oct | Investigar CRMs móviles y herramientas existentes con sus precios, para comparar y calcular costos | Diego | Movido |
-| dom 18-oct | Tabular y anonimizar los datos de campo, para que estén listos y sean confiables | Ambos | Movido |
-| dom 18-oct | Escribir un resumen de 1 página para Diego sobre el problema y sus fuentes | Víctor | Hecho |
-| dom 18-oct | Escribir un resumen de 1 página para Víctor sobre CRMs y flujos | Diego | Movido |
-| dom 18-oct | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Ambos | En curso |
+| lun 19-oct | Escribir el capítulo 1, parte 1 (problema y evidencias), para tener el primer borrador | Víctor | En curso |
+| lun 19-oct | Analizar los datos de campo (tablas y gráficos simples), para calcular la línea base | Diego | Pendiente |
+| mar 20-oct | Escribir el capítulo 1, parte 2 (justificación y objetivos) | Víctor | En curso |
+| mar 20-oct | Terminar el análisis de datos y escribir lo que muestran, en lenguaje simple | Diego | Pendiente |
+| mié 21-oct | Escribir el capítulo 2, parte 1 (CRM, tiempo de respuesta, gestión del conocimiento) | Víctor | En curso |
+| mié 21-oct | Dibujar el proceso actual (AS-IS) en BPMN con lo dicho en las entrevistas | Diego | Pendiente |
+| jue 22-oct | Escribir el capítulo 2, parte 2 (IA, RAG, normativa) | Víctor | En curso |
+| jue 22-oct | Terminar el proceso actual (AS-IS) y marcar dónde se pierde tiempo | Diego | Pendiente |
+| vie 23-oct | Buscar fuentes de adopción de IA y automatización comercial 2023–2026, para el marco teórico | Víctor | Hecho |
+| vie 23-oct | Armar el lienzo del modelo de negocio y la propuesta de valor (primer borrador) | Víctor | En curso |
+| vie 23-oct | Hacer el inventario de herramientas candidatas, con criterios de comparación | Diego | Pendiente |
+| sáb 24-oct | Escribir el capítulo 3, parte 1 (enfoque, DSR y población) | Víctor | En curso |
+| sáb 24-oct | Escribir un resumen de 1 página para Diego del capítulo 1 | Víctor | En curso |
+| sáb 24-oct | Terminar el inventario de herramientas con precios y criterios | Diego | Pendiente |
+| sáb 24-oct | Escribir un resumen de 1 página para Víctor del proceso actual | Diego | Pendiente |
+| dom 25-oct | Escribir el capítulo 3, parte 2 (instrumentos, análisis y ética) | Víctor | En curso |
+| dom 25-oct | Preparar las gráficas de datos para la Revisión 1 | Diego | Pendiente |
+| dom 25-oct | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Ambos | Pendiente |
 
 ### Necesita tu decisión
-- [ ] Bajar a mano los PDF de la lista de `F1_reporte_2026-10-18.md`.
-- [ ] Revisar la matriz, C1 v0.2, I1 v0.2, el resumen del problema y `IA_DIEGO.md`.
-- [ ] Confirmar con la tutora la fecha de entrega (D5).
-- [ ] Llamada de 20 min con Diego: «explícame lo tuyo».
+- [ ] Revisar en Word los caps. I, II y III y el lienzo (control de cambios activado).
+- [ ] Bajar los PDF de la lista del reporte del 19-oct (ya no hace falta Lewis y Sauro).
+- [ ] Decidir: plan de precios de la bóveda y la IA; TEAMSLASH como antecedente propio.
 
 ## Carpetas
 - [[00_Inbox/README|00_Inbox]] — Todo lo nuevo sin clasificar (Ambos)
@@ -71,9 +61,9 @@ tags: [inicio, portal]
 - [[Bitacora_Semanal]] · [[Registro_Contribuciones]] · [[2026-10-11_F0_Validacion_Tesis|Fase 0]]
 
 ## Capítulos
-- **Capítulo 1 · El problema** — Contexto de Torvesa, el problema (tiempo de respuesta, historial disperso), justificación y objetivos. *(aún no existe — sprint S2)*
-- **Capítulo 2 · Marco teórico** — CRM y CRM móvil, tiempo de respuesta, gestión del conocimiento, IA con búsqueda en documentos (RAG), normativa. *(aún no existe — sprint S2)*
-- **Capítulo 3 · Metodología** — Enfoque mixto con predominio cuantitativo, DSR (investigación en ciencia del diseño), población (dos censos), instrumentos, análisis y ética. *(aún no existe — sprint S2)*
+- **Capítulo 1 · El problema** — Contexto de Torvesa, el problema (tiempo de respuesta, historial disperso), justificación y objetivos. [[2026-10-19_Cap1_Introduccion_p1_v0.1]] [[2026-10-19_Cap1_Introduccion_p1_v0.1]] [[2026-10-19_Cap1_Introduccion_p2_v0.1]] [[2026-10-19_Cap1_Introduccion_p2_v0.1]] [[2026-10-19_Resumen_Cap1]] [[~$26-10-19_Cap1_Introduccion_p1_v0.1]]
+- **Capítulo 2 · Marco teórico** — CRM y CRM móvil, tiempo de respuesta, gestión del conocimiento, IA con búsqueda en documentos (RAG), normativa. [[2026-10-19_Cap2_Marco_Teorico_v0.1]] [[2026-10-19_Cap2_Marco_Teorico_v0.1]]
+- **Capítulo 3 · Metodología** — Enfoque mixto con predominio cuantitativo, DSR (investigación en ciencia del diseño), población (dos censos), instrumentos, análisis y ética. [[2026-10-19_Cap3_Metodologia_v0.1]] [[2026-10-19_Cap3_Metodologia_v0.1]]
 - **Capítulo 4 · Diagnóstico** — Cómo funciona hoy la atención comercial de Torvesa, con datos reales. *(aún no existe — sprint S7)*
 - **Capítulo 5 · Diseño del sistema y viabilidad** — Requisitos, procesos con el sistema (TO-BE), arquitectura, herramientas, costos, VAN y TIR, riesgos, ley de datos. *(aún no existe — sprint S4)*
 - **Capítulo 6 · Resultados de la validación** — Comparación del antes y el después de la validación del diseño en operación experimental controlada (metas M1–M6). *(aún no existe — sprint S9)*
