@@ -46,7 +46,9 @@ Reglas para que el texto salga bien: etiquetas cortas, el texto exacto entre com
 
 Descargadas el 20-oct (con permiso de Víctor) a `06_Capitulos/Figuras/`:
 - `2026-10-20_Fig_Flujo_Sistema_Propuesto_v0.1.jpeg` (2752×1536): texto correcto.
-- `2026-10-20_Fig_Componentes_Sistema_v0.1.jpeg` (2752×1536): **falta la flecha del asistente al vendedor**, porque la flecha va directo al registro. Se corrige en la v0.2 pidiéndoselo a Gemini en la misma conversación.
+- `2026-10-20_Fig_Componentes_Sistema_v0.1.jpeg` (2752×1536): faltaba la flecha del asistente al vendedor. Gemini **no logró** corregirla al editar (volvió a dibujar la flecha al registro), así que Claude la redibujó con un script: `2026-10-20_Fig_Componentes_Sistema_v0.2.jpeg`. **Lección:** Gemini hace bien el texto y el estilo, pero no corrige bien las flechas; se revisa cada conexión y se arregla aparte.
 
 ## Estado de Deep Research al cierre del 20-oct
-A los 15 minutos todavía no había mostrado ni el plan ni el informe. Si mañana sigue vacío, se relanza con un prompt más corto: un tema por consulta (p. ej., solo el 1, tiempo de respuesta).
+- El primer intento, con las 8 afirmaciones en un solo prompt largo, **falló**: devolvió un error genérico («solo puedo procesar texto»).
+- Se relanzó con **un solo tema**, el tiempo de respuesta a prospectos (A9 y A10), en la conversación «Investiga la evidencia empírica sobre el tiempo de respuesta…».
+- **Regla:** un tema por consulta. Los siguientes van en este orden: CRM móvil y en pymes (A21–A26); RAG y alucinaciones (A37); precios oficiales (A31, A32 y A36); Ley de Comercio Electrónico (A44); *local-first* (A38); *top-two-box* (A41).
