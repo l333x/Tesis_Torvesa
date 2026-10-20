@@ -181,3 +181,16 @@ tags: [bitacora, informes, planificacion]
 - Revisar en Word los caps. I, II y III y el lienzo (control de cambios activado).
 - Bajar los PDF de la lista del reporte del 19-oct (ya no hace falta Lewis y Sauro).
 - Decidir: plan de precios de la bóveda y la IA; TEAMSLASH como antecedente propio.
+
+## 2026-10-20 · Sprint 2, día 2 (martes)
+
+### Resumen
+- **Víctor aprobó en el chat:** las v0.1 de los caps. I, II y III y del lienzo; las frases nuevas de A28 y A29; DEC-16 (bóveda en el plan Estándar, asistente de IA solo en el Premium); y DEC-17 (TEAMSLASH como antecedente propio, sin cifras).
+- **Salió la v0.2** de los capítulos y del lienzo. Solo lo de hoy va marcado con control de cambios.
+- **NotebookLM:** cuaderno con 29 fuentes, resumen de audio, mapa mental y resumen en video para Diego. Reglas en `11_Planificacion/NotebookLM_Flujo.md`.
+- **Fuentes:** 40 verificadas (norma SHA-256, Peña-Ramírez 2024, Bakiyalakshmi 2026). Búsqueda documentada de A28 y A29. Matriz v0.3.
+- Detalle en `11_Planificacion/F1_reporte_2026-10-20.md`.
+
+### Atención
+- **Diego:** confirmar si TEAMSLASH guarda los datos en Google Sheets (lo que dice el Informe Final) o en PostgreSQL (lo que dice el pitch).
+- **Víctor:** bajar a mano los PDF de la lista del 19-oct y la revisión de *Infrastructures* (2025).
