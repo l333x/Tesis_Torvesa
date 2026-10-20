@@ -44,4 +44,9 @@ Reglas para que el texto salga bien: etiquetas cortas, el texto exacto entre com
 1. «Atención comercial con el sistema propuesto»: 7 pasos, del formulario al registro verificable.
 2. «Componentes del sistema»: TEAMSLASH, la bóveda, el asistente de IA, el registro verificable y la LOPDP.
 
-Están en la cuenta de Gemini de Víctor, en la conversación «Infografía de proceso comercial». **Falta descargarlas** a `06_Capitulos/Figuras/` («aún no existe — se crea al bajar la primera figura»). La descarga la hace Víctor o Claude, con su permiso.
+Descargadas el 20-oct (con permiso de Víctor) a `06_Capitulos/Figuras/`:
+- `2026-10-20_Fig_Flujo_Sistema_Propuesto_v0.1.jpeg` (2752×1536): texto correcto.
+- `2026-10-20_Fig_Componentes_Sistema_v0.1.jpeg` (2752×1536): **falta la flecha del asistente al vendedor**, porque la flecha va directo al registro. Se corrige en la v0.2 pidiéndoselo a Gemini en la misma conversación.
+
+## Estado de Deep Research al cierre del 20-oct
+A los 15 minutos todavía no había mostrado ni el plan ni el informe. Si mañana sigue vacío, se relanza con un prompt más corto: un tema por consulta (p. ej., solo el 1, tiempo de respuesta).
