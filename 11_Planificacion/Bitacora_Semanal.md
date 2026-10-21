@@ -194,3 +194,17 @@ tags: [bitacora, informes, planificacion]
 ### Atención
 - **Diego:** confirmar si TEAMSLASH guarda los datos en Google Sheets (lo que dice el Informe Final) o en PostgreSQL (lo que dice el pitch).
 - **Víctor:** bajar a mano los PDF de la lista del 19-oct y la revisión de *Infrastructures* (2025).
+
+## 2026-10-21 · Sprint 2, día 3 (miércoles)
+
+### Resumen
+- **Gemini Deep Research no sirvió:** falló otra vez y ya no aparece en el menú. Claude buscó con las APIs y Consensus.
+- **Fuentes:** 49 verificadas (+9). Ahora tienen respaldo RAG (Lewis, 2020), *local-first* (Kleppmann, 2019), Obsidian (licencia, precios y permisos), el plugin de Git en el móvil, la Ley de Comercio Electrónico, y el CRM en pymes (AlQershi, 2020; Gil-Gomez, 2020).
+- **Matriz v0.4:** 7 afirmaciones sin fuente (antes 15) y 17 respaldadas (antes 10).
+- **NotebookLM:** 37 fuentes.
+- Detalle en `11_Planificacion/F1_reporte_2026-10-21.md`.
+
+### Atención
+- **Contradicción en A23:** AlQershi et al. (2020) no dice que «solo» las dimensiones tecnológica y organizativa afecten el desempeño. Hay que reformular (frase propuesta en el reporte).
+- **A25:** Gil-Gomez et al. (2020) es una propuesta conceptual; no prueba nada.
+- **Víctor:** bajar Agag (2023), de Haan (2015) y Gil-Gomez (2020), que son abiertos pero con CAPTCHA; y pedir a la biblioteca UPS Ohiomah (2019), Habel (2025) y Rodriguez y Boyer (2020).

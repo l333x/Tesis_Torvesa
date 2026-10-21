@@ -12,6 +12,10 @@ tags: [fuentes, notebooklm, flujo]
 ## Cuaderno
 - **Tesis Torvesa · Fuentes verificadas**: https://notebook.google.com/notebook/60350819-2148-4462-ba2b-ccd47f2241eb (cuenta de Víctor, privado).
 - **Fuentes cargadas el 20-oct (26):** los 25 PDF de `02_Fuentes/_Textos/` y la LOPDP. La LOPDP se agregó por su enlace oficial (FAOLEX) porque el PDF pesa 71 MB.
+- **21-oct (+8, total 37):**
+  - los PDF `lewis_2020`, `kleppmann_2019` y `lce_2002`;
+  - por enlace, AlQershi et al. (2020) de MDPI y las páginas de Obsidian (licencia, precios, colaborar) y del plugin Obsidian Git.
+  - Taylor & Francis **no** se puede importar por enlace (solo trae el menú del sitio): Gil-Gomez (2020) entra cuando Víctor baje el PDF.
 - La conversión del anexo `sevillagonzalez_2020_anexo2.docx` no se subió.
 
 ## Qué se sube y qué no

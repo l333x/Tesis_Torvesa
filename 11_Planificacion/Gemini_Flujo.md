@@ -52,3 +52,8 @@ Descargadas el 20-oct (con permiso de Víctor) a `06_Capitulos/Figuras/`:
 - El primer intento, con las 8 afirmaciones en un solo prompt largo, **falló**: devolvió un error genérico («solo puedo procesar texto»).
 - Se relanzó con **un solo tema**, el tiempo de respuesta a prospectos (A9 y A10), en la conversación «Investiga la evidencia empírica sobre el tiempo de respuesta…».
 - **Regla:** un tema por consulta. Los siguientes van en este orden: CRM móvil y en pymes (A21–A26); RAG y alucinaciones (A37); precios oficiales (A31, A32 y A36); Ley de Comercio Electrónico (A44); *local-first* (A38); *top-two-box* (A41).
+
+## 21-oct: Deep Research descartado por ahora
+- El intento de un solo tema **también falló**: «No me han programado para poder ayudarte con eso».
+- El 21-oct la interfaz de Gemini cambió (modos «Chat» y «Tarea») y Deep Research ya no aparece en el menú de herramientas.
+- Los temas pendientes se buscaron con las APIs (Crossref, OpenAlex, Unpaywall) y Consensus: 9 fuentes verificadas en un día (`F1_reporte_2026-10-21.md`). **Ese es el camino por defecto.** Gemini queda para imágenes.
