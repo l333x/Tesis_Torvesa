@@ -37,3 +37,37 @@ Los mismos del reporte del 21-oct: Aviv et al. (2021), López y Yepes (2024), Al
 1. **¿Actualizas tú la matriz** con A36 (parcial) y Béchard en A37? No la toqué porque es tuya.
 2. **IVA:** ¿aplica IVA en Ecuador a los servicios digitales del exterior, como la API de IA? Lo dejé **sin fuente** en la tabla de precios porque es parte de las finanzas.
 3. Siguen abiertas las dudas 1 y 3 a 7 del reporte del 21-oct (error de `citekey()`, `ortega_2026a`, Riascos, Khoa y Baqar).
+
+---
+
+# Segunda parte · bloque F (procesos y AS-IS)
+
+## Qué se hizo
+- **Búsqueda D03 y D04** (`--solo-api --desde 2021`): salieron 114 candidatas. Quedaron así:
+  - **5 verificadas:** `nizio_2021`, `radhakrishnan_2025`, `mendoza_2024b`, `garcia_2026` y `loor_2025`;
+  - **7 candidatas:** se quedan por relevantes (motivo en `## Triaje (25-oct)` de cada ficha);
+  - **102 descartadas:** fuera de tema, preprints, tesis o fecha anterior a 2021 (motivo en `## Descarte (25-oct)`).
+- **Especificación oficial de BPMN:** `omg_2013` (OMG, BPMN 2.0.2), verificada en la p. 1. Es la «fuente oficial de BPMN» que pide el `[FALTA-FUENTE: … CTX-PROC]` del Cap. 2. La frase propuesta está en la ficha.
+- **AS-IS v0.1** en `07_Flujos_Diseno/` (S2-T06, S2-T08 y S2-T15 juntas):
+  - `2026-10-25_AS-IS_v0.1.md`: los pasos con su fuente, los 5 puntos donde se pierde tiempo, cómo se conectan con M1–M4 y las preguntas para validar en campo;
+  - `2026-10-25_AS-IS_v0.1.bpmn`: BPMN 2.0 estándar, se edita en demo.bpmn.io;
+  - `2026-10-25_AS-IS_v0.1.png`: la figura para la Revisión 1.
+  - Es un **borrador sin validar en campo**, armado con el Informe Final del 22-jul (antecedente vigente).
+- Total en la base: **71 verificadas**.
+
+## Afirmaciones con fuente
+- **CTX-PROC → propongo ✅:** OMG (2013, p. 1) como fuente oficial, más Nizioł et al. (2021, p. 199), Martínez Mendoza et al. (2023, p. 4836), Radhakrishnan (2025, resumen) y Zambrano Loor y García Vera (2025, p. 79). Así ya no hace falta Dumas et al. (2018). Los 4 videos candidatos de Bizagi no se usan.
+
+## PDF para bajar a mano
+- Moreira et al. (2023), *Business Process Automation in SMEs*, LNBIP. El repositorio pide JavaScript: http://hdl.handle.net/10400.2/14004
+- Radhakrishnan (2025), la versión publicada en IET (pp. 69–74), para citar otras páginas además del resumen: https://doi.org/10.1049/icp.2025.3640
+
+## Error de `buscar.py`
+Volvió a caerse con el `IndexError` de `citekey()` del que te hablé en el reporte del 21. No toqué tu script: lo corrí desde un envoltorio (fuera del repo) que agrega letras dobles solo para esa corrida. Por eso hay un citekey `anonimo_2023aa`.
+
+## Dudas para Víctor
+4. **Meta del seguimiento:** el punto ❹ del AS-IS (seguimiento de memoria) no lo mide ninguna meta, porque M3 solo cuenta hasta el primer contacto. ¿Lo dejamos así o se ajusta?
+5. **Citekeys por renombrar** (con `git mv`, si estás de acuerdo):
+   - `mendoza_2024b` → `martinez_2023`: el apellido es Martínez Mendoza y el número es de 2023;
+   - `garcia_2026` → `sanchezgarcia_2026`.
+6. **Para la Revisión 1:** el AS-IS va como «modelo preliminar». Las gráficas de datos (S2-T17) no llegan porque no hay datos de campo: Torvesa todavía no autoriza.
