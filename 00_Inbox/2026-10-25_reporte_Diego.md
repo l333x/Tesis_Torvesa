@@ -71,3 +71,42 @@ Volvió a caerse con el `IndexError` de `citekey()` del que te hablé en el repo
    - `mendoza_2024b` → `martinez_2023`: el apellido es Martínez Mendoza y el número es de 2023;
    - `garcia_2026` → `sanchezgarcia_2026`.
 6. **Para la Revisión 1:** el AS-IS va como «modelo preliminar». Las gráficas de datos (S2-T17) no llegan porque no hay datos de campo: Torvesa todavía no autoriza.
+
+---
+
+# Tercera parte · bloque G (herramientas)
+
+## Qué se hizo
+- **12 fichas verificadas** en `02_Fuentes/Costos_Viabilidad/`, todas con la página oficial y la fecha de consulta (25-oct):
+  - **CRM:** `hubspot_sf`, `zoho_sf`, `pipedrive_sf` y `kommo_sf`;
+  - **mensajería:** `meta_sf` (WhatsApp Business), `telegram_sf` y `slack_sf`;
+  - **bóveda:** `notion_sf` y `logseq_sf`, para comparar con las fichas de Obsidian del 21-oct;
+  - **condiciones de datos de los LLM** (lo que quedó pendiente para la LOPDP): `anthropic_2026`, `anthropic_sfb` y `openai_sfb`.
+- **Inventario v0.1** (S2-T11): `07_Flujos_Diseno/2026-10-25_Inventario_Herramientas_v0.1.xlsx`. Tiene 13 herramientas, al menos 3 por componente (bóveda, CRM, LLM y mensajería), con 4 hojas: inventario, criterios C1–C8, costo ilustrativo y pendientes. El cronograma pedía la fecha del 24; va con la de hoy, que es cuando se hizo.
+- **Búsqueda D05** (CRM móvil): 13 candidatas de OpenAlex. Quedaron así:
+  - **7 candidatas:** se quedan por relevantes (motivo en `## Triaje (25-oct)`);
+  - **6 descartadas:** fuera de tema o revista dudosa (motivo en `## Descarte (25-oct)`).
+- Total en la base: **83 verificadas**.
+
+## Hallazgos que importan para el diseño
+- **WhatsApp:** Kommo es el único CRM del inventario que se conecta con la plataforma oficial de WhatsApp Business. En las páginas de precios de HubSpot, Zoho y Pipedrive no aparece WhatsApp.
+- **Costo de WhatsApp:** desde el 1-oct-2026, Meta da 1 000 mensajes de servicio gratis al mes por número y cobra USD 0,0113 desde el 1 001 (tarifa de Ecuador). Lo que escribe el cliente no se cobra. Si Torvesa responde menos de 1 000 mensajes al mes, ese tramo sale gratis.
+- **Kommo pide un mínimo de 6 meses**, más que la validación en operación experimental.
+- **LOPDP en los LLM:** Anthropic y OpenAI no entrenan con los datos de la API. La diferencia está en la retención: OpenAI guarda registros de abuso hasta 30 días por defecto; Anthropic no guarda el contenido de las conversaciones por defecto, salvo en algunos modelos que exigen 30 días.
+- **Ofertas temporales:** HubSpot muestra Starter a USD 7 o 10 (oferta para clientes nuevos) frente a USD 20 de lista. Para el VAN se usa el precio de lista.
+
+## Decisión: proveedor de LLM
+- **Diego eligió Claude Sonnet 5.5 (Anthropic)**, gama media. Tiene el mismo precio que gpt-6.1-sol (USD 2 de entrada y 10 de salida por millón de tokens; unos USD 13 al mes con el supuesto de 1 000 consultas), y por defecto no guarda el contenido de las conversaciones ni entrena con ellas (`anthropic_2026`, `anthropic_sfb`).
+- **Propuesta para la matriz (la actualizas tú): A36 → ✅**, con `anthropic_sf` (precios) más `anthropic_2026` y `anthropic_sfb` (datos). Falta tu visto bueno.
+
+## Lo que queda para el bloque H
+- Definir pesos y puntuar con los criterios C1–C8.
+- Revisar las condiciones de datos del nivel pagado de Gemini y de los CRM.
+- Escribir el resumen de 1 página sobre CRM y flujos (S1-T26).
+
+## Error de `buscar.py`, otra vez
+En D05 se cayó con el mismo `IndexError` de `citekey()`. Esta vez no usé el envoltorio: OpenAlex alcanzó a guardar sus 13 resultados, pero Crossref se cayó y Semantic Scholar no devolvió nada. Cuando arregles `citekey()` (letras dobles después de la «z»), conviene repetir D05 con Crossref.
+
+## Dudas para Víctor
+7. **¿Afirmación para los CRM y la mensajería?** En la matriz no hay ninguna A# para el costo del CRM ni de WhatsApp, así que las fichas nuevas van sin afirmación (solo el objetivo 5.3). ¿Abrimos una o entran en A36 como «costos de herramientas»?
+8. **Supuestos del costo ilustrativo:** 3 usuarios, 1 000 consultas al mes y 600 mensajes de WhatsApp al mes. Son supuestos marcados en amarillo y se reemplazan con los datos de campo.
