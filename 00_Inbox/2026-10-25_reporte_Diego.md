@@ -110,3 +110,25 @@ En D05 se cayó con el mismo `IndexError` de `citekey()`. Esta vez no usé el en
 ## Dudas para Víctor
 7. **¿Afirmación para los CRM y la mensajería?** En la matriz no hay ninguna A# para el costo del CRM ni de WhatsApp, así que las fichas nuevas van sin afirmación (solo el objetivo 5.3). ¿Abrimos una o entran en A36 como «costos de herramientas»?
 8. **Supuestos del costo ilustrativo:** 3 usuarios, 1 000 consultas al mes y 600 mensajes de WhatsApp al mes. Son supuestos marcados en amarillo y se reemplazan con los datos de campo.
+
+---
+
+# Cuarta parte · bloque H (cierre)
+
+## Qué se hizo
+- **10 fichas verificadas** más en `02_Fuentes/Costos_Viabilidad/`, para los criterios que faltaban:
+  - **app móvil (C3):** `obsidian_sfc` y `notion_sfb`;
+  - **datos y LOPDP (C5):** `google_2026b` (nivel pagado de Gemini), `hubspot_2026`, `zoho_sfb`, `pipedrive_2026`, `kommo_2026`, `whatsapp_2025`, `slack_sfb` y `telegram_2026`.
+- **Inventario v0.2** (S2-T14): `07_Flujos_Diseno/2026-10-25_Inventario_Herramientas_v0.2.xlsx`. Es un archivo nuevo: la v0.1 no se tocó. Agrega la hoja **«Puntuación»** (pesos propuestos, puntaje de 1 a 3 por criterio y el porqué de cada nota) y cierra los pendientes de la v0.1.
+- **Resumen de 1 página para ti** (S1-T26): `02_Fuentes/Casos_Estudio/2026-10-25_Resumen_CRM_Flujos.md`.
+- Total en la base: **93 verificadas**.
+
+## Resultado del inventario
+- **Bóveda:** Obsidian (2,81).
+- **LLM:** Claude Sonnet 5.5 (2,70), que es el que eligió Diego. Con pesos iguales empata con Gemini (2,67).
+- **Mensajería:** WhatsApp para el cliente (3,00) y Slack para los avisos internos.
+- **CRM:** empate entre Zoho y Kommo (2,39). Con pesos iguales, Zoho queda primero.
+
+## Dudas para Víctor
+9. **¿Entra un CRM al diseño?** No está entre los componentes del diseño aprobado. Sin CRM, el punto ❹ del AS-IS (seguimiento) queda sin herramienta, y además ninguna meta lo mide (duda 4). Es para la tutora en la Revisión 1.
+10. **Pesos:** propuse C5 (datos y LOPDP) 25 %, C1 (costo) 15 %, C3 (app móvil) 15 %, C4 (WhatsApp) 15 %, C6 (madurez) 10 %, C8 (encaje con el diseño) 10 %, C2 (plan gratuito) 5 % y C7 (plazo de contrato) 5 %. Si los cambias en la fila 5 de la hoja «Puntuación», los puntajes se recalculan solos.
