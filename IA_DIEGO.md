@@ -1,7 +1,7 @@
 ---
 titulo: Instrucciones para la IA de Diego
-version: v0.1
-fecha: 2026-10-18
+version: v0.2
+fecha: 2026-10-27
 autor_borrador: Claude Opus 5.5 (pedido de Víctor); Víctor lo revisa
 para: la IA que use Diego (Claude Code, ChatGPT u otra)
 tags: [diego, ia, instrucciones, sprint2]
@@ -74,6 +74,33 @@ Cada bloque junta **dos tareas del mismo tipo de trabajo**, para hacerlas seguid
 | **Cuando Torvesa autorice** | **Campo** | Cronometrar cotizaciones (S1-T16, protocolo P2-A) **+** revisar solicitudes de los últimos 3 meses, solo fechas y horas (S1-T18, P2-B) | `05_Datos_Campo/LineaBase_2026-10/P2A_cronometraje.csv` y `P2B_muestra_documental.csv` | 4 h |
 
 **Torvesa:** Diego se encarga de conseguir la información de la empresa: el giro del negocio, la nota de respaldo firmada (número de colaboradores y de clientes), el catálogo y los permisos de campo. Cuando llegue, avisa a Víctor **el mismo día**, porque de eso dependen los instrumentos y el campo. El borrador del correo está en `11_Planificacion/2026-10-12_Correo_Torvesa_borrador.docx`.
+
+**Cómo quedaron los bloques A–H (revisado el 27-oct):** A y B el 19-oct; C el 21-oct; D a H el 25-oct, con 1 a 4 días de retraso pero completos. Quedan abiertos el campo (bloqueado: Torvesa no autoriza), el análisis y las gráficas de la línea base (bloqueados: no hay datos), el resumen de 1 página del AS-IS y la confirmación de TEAMSLASH (Google Sheets o PostgreSQL). Todo eso está reprogramado abajo.
+
+## 5b. Bloques del 28-oct al 8-nov
+
+Mismas reglas que arriba: dos tareas del mismo tipo por bloque y un entregable con nombre de archivo. Las tareas de Víctor no se tocan. Si algo se atrasa, se avisa a Víctor **el mismo día**. No se espera al domingo.
+
+| Día | Bloque | Tareas que junta | Entregable (archivo) | Cómo sé que terminé | Tiempo |
+|---|---|---|---|---|---|
+| **Lun 27 (noche)** | **I · Preparar la Revisión 1** | Confirmar si TEAMSLASH guarda en Google Sheets o en PostgreSQL (S3-T15) **+** ensayo con Víctor y revisión del sprint 2 (S3-T03 y S2-T18) | Respuesta por WhatsApp con captura o enlace al repositorio de TEAMSLASH | El ensayo dura ≤ 15 min y Diego explica el AS-IS y el inventario en 3 min | 1,25 h |
+| **Mié 28** | **J · Tutora y Torvesa** | Revisión 1 con la tutora (S3-T05): Diego presenta el AS-IS, el inventario de herramientas y los requerimientos técnicos **+** conseguir la respuesta de Torvesa (S3-T16) | Observaciones anotadas; autorización por escrito o fecha de campo | Víctor tiene la fecha del campo o se pide la carta de respaldo de la tutora el 30-oct | 2 h |
+| **Jue 29** | **K · Corregir procesos** | Corregir el AS-IS según las observaciones de la tutora (S3-T08) | `07_Flujos_Diseno/2026-10-29_AS-IS_v0.2.*` (archivo nuevo; la v0.1 no se toca) | Cada observación de la tutora cerrada o con motivo | 2 h |
+| **Vie 30** | **L · Requerimientos (texto)** | Revisar y completar el documento de elicitación v0.1, parte 1: requerimientos técnicos (no funcionales y restricciones) y TEAMSLASH (S3-T17) **+** leer el documento de patrones de la bóveda 1 de Víctor y anotar preguntas (S3-T10) | Cambios y comentarios en `07_Flujos_Diseno/2026-10-27_Elicitacion_Requerimientos_v0.1.docx`, con control de cambios. Lo guardas como `..._v0.1_Diego.docx`; Claude saca la v0.2 | Cada requerimiento técnico tiene criterio de aceptación medible y fuente (ficha, sesión o documento) | 2 h |
+| **Sáb 31** | **M · Modelos** | Diagrama de casos de uso y modelo conceptual para el anexo E de la elicitación (S3-T18) **+** plantilla de los flujos TO-BE (S3-T12) | `07_Flujos_Diseno/2026-10-31_Casos_Uso_v0.1.png` y `2026-10-31_Modelo_Conceptual_v0.1.png`, cada uno con su archivo editable; plantilla TO-BE | Cada caso de uso enlazado a un escenario ESC-xx del documento | 4 h |
+| **Dom 1-nov** | **N · Cerrar el sprint 3** | Resumen de 1 página del AS-IS para Víctor (S3-T19) **+** sesión de conceptos de negocio y revisión del sprint 3 (S3-T13 y S3-T14) | `07_Flujos_Diseno/2026-11-01_Resumen_AS-IS.md` | Víctor lo leyó; lista de funciones del sistema anotada | 2 h |
+| **Lun 2 y mié 4** | **O · TO-BE** | Procesos con el sistema, parte 1: recepción y asignación (S4-T01) **+** parte 3: recordatorios y reasignación (S4-T05) | `07_Flujos_Diseno/2026-11-04_TO-BE_v0.1.*` | Cubren los 6 pasos del flujo y cada paso tiene disparador y responsable | 2 h + 2 h |
+| **Mar 3** | **Campo** (si Torvesa autorizó) | Cronometrar cotizaciones (P2-A) **+** revisar solicitudes de los últimos 3 meses, solo fechas y horas (P2-B) (S4-T16) | `05_Datos_Campo/LineaBase_2026-10/P2A_cronometraje.csv` y `P2B_muestra_documental.csv` | Todas las cotizaciones observables registradas; nada personal fuera de `_crudo/` | 4 h |
+| **Mar 3 (o dom 8)** | **O · TO-BE** | Parte 2: cotización asistida e historial (S4-T03) | TO-BE v0.1 (parte 2) | Cubre los pasos 3 y 4 | 2 h |
+| **Jue 5 a sáb 7** | **P · Bóveda del sistema** | Carpetas y plantillas (S4-T07) **+** fichas de ejemplo con datos ficticios (S4-T09) **+** tableros y enlaces (S4-T11) | `07_Flujos_Diseno/Boveda_Sistema/` | Se ven los pendientes por vendedor y ninguna ficha tiene datos reales | 7 h |
+| **Dom 8** | **Q · Cerrar el sprint 4** | Analizar los datos de campo y hacer las gráficas de la línea base (S4-T17, solo si hubo campo) **+** resumen de 1 página de la bóveda (S4-T13) y revisión del sprint 4 (S4-T15) | `05_Datos_Campo/LineaBase_2026-10/analisis/` y `07_Flujos_Diseno/2026-11-08_Resumen_Boveda_Sistema.md` | Víctor entiende cada número; resumen leído | 4 h |
+
+**Lineamientos de los requerimientos (bloques L y M):**
+- **Formato:** «[Condición] [Sujeto] deberá [Acción] [Objeto] [Criterio medible]». Ejemplo: «Cuando llegue una solicitud por WhatsApp, el sistema deberá registrarla en la bóveda en un máximo de 1 minuto».
+- **Palabras que no se usan:** «amigable», «rápido», «fácil», «todos», «siempre», «si es posible», «entre otros». Esas palabras no se pueden comprobar.
+- **Origen:** cada requerimiento dice de dónde sale (interesado INT-xx, sesión SES-xx o fuente FNT-xx). Si no tiene origen, no entra.
+- **Sin inventar:** lo que salga de Torvesa sin confirmar se marca «por validar en campo». Lo de TEAMSLASH se marca como antecedente propio.
+- **Plantilla:** la de la materia (ISO/IEC/IEEE 29148 y SWEBOK v4). No se cambian los números de sección.
 
 ## 6. Cómo cerrar cada día
 

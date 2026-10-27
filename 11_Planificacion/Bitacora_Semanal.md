@@ -208,3 +208,47 @@ tags: [bitacora, informes, planificacion]
 - **Contradicción en A23:** AlQershi et al. (2020) no dice que «solo» las dimensiones tecnológica y organizativa afecten el desempeño. Hay que reformular (frase propuesta en el reporte).
 - **A25:** Gil-Gomez et al. (2020) es una propuesta conceptual; no prueba nada.
 - **Víctor:** bajar Agag (2023), de Haan (2015) y Gil-Gomez (2020), que son abiertos pero con CAPTCHA; y pedir a la biblioteca UPS Ohiomah (2019), Habel (2025) y Rodriguez y Boyer (2020).
+
+## 2026-10-22 a 2026-10-27 · Cierre del sprint 2 y arranque del sprint 3
+
+### Qué pasó del 22 al 27
+- **Víctor:** del 22 al 26 no hubo sesiones de trabajo, así que no hay bitácora ni reportes F1 de esos días. Los capítulos siguen en la v0.2 del 20-oct y la v0.3 espera su revisión.
+- **Diego (25-oct, domingo):** subió los bloques C a H de una vez, en 5 commits. Detalle en `00_Inbox/2026-10-25_reporte_Diego.md`.
+  - Unió la base de fuentes con la del 21-oct. Hay **93 verificadas**, contando las suyas.
+  - Tabla de precios de 3 proveedores de LLM; propone **Claude Sonnet 5.5** para A36, pero falta el visto bueno de Víctor.
+  - 6 fichas de BPMN, entre ellas la especificación oficial de la OMG, con lo que **CTX-PROC queda propuesta como respaldada**.
+  - **AS-IS v0.1** (`07_Flujos_Diseno/2026-10-25_AS-IS_v0.1.*`): borrador hecho con el Informe Final del 22-jul y sin validar en campo; marca 5 puntos donde se pierde tiempo.
+  - **Inventario de herramientas v0.1 y v0.2:** 13 herramientas, criterios C1–C8 con pesos y puntuación.
+  - Resúmenes de 1 página: bóvedas y RAG, y CRM y flujos.
+- **Torvesa:** sigue sin autorizar el campo. El escalamiento previsto para el 24-oct no quedó registrado.
+
+### Revisión del sprint 2 (19–25 oct), que quedó pendiente
+- **Qué se hizo:**
+  - **Víctor (con Claude):** caps. I, II y III y el lienzo en v0.2 (adelantados al 19 y 20-oct); 49 fuentes verificadas hasta el 21-oct; matriz v0.4 con 7 afirmaciones sin fuente.
+  - **Diego:** bloques A a H completos, con retraso, más el AS-IS v0.1 y el inventario v0.2.
+- **Qué no se hizo:**
+  - **campo y línea base:** S2-T02, T04 y T17 están bloqueadas porque Torvesa no autorizó;
+  - el resumen de 1 página del AS-IS (S2-T15);
+  - la confirmación de TEAMSLASH (Google Sheets o PostgreSQL);
+  - la llamada de revisión (S2-T18);
+  - la v0.3 de los capítulos, que espera a que Víctor revise la v0.2;
+  - las respuestas a las dudas 1 a 10 de Diego.
+- **Qué aprendimos:**
+  - Diego rinde mejor con bloques largos. El trabajo de una semana lo subió en un solo día, el domingo. Desde ahora el retraso se avisa el mismo día y se sube al cerrar cada bloque, sin esperar al domingo.
+  - El campo es la ruta crítica y depende de una sola persona en Torvesa. Hace falta un plan B: carta de respaldo de la tutora.
+  - Cuando el cronograma y `IA_DIEGO.md` dicen cosas distintas, Diego pierde tiempo preguntando (duda 1 del 19-oct). Desde el 27-oct manda `IA_DIEGO.md` §5b, que ya coincide con el Excel.
+
+### Replanificación (27-oct)
+- **En el cronograma:**
+  - las tareas de Diego hechas se marcaron con su fecha real;
+  - las bloqueadas quedan como «Movido», con una copia en el día nuevo (nota «reprogramada 27-oct»);
+  - tareas nuevas: S3-T15 a S3-T19 y S4-T16 y S4-T17.
+- **Fechas de Diego:**
+  - TEAMSLASH hoy;
+  - respuesta de Torvesa el 28-oct;
+  - elicitación de requerimientos el 30 y 31-oct;
+  - resumen del AS-IS el 1-nov;
+  - campo el 3-nov (si Torvesa autoriza);
+  - análisis de la línea base el 8-nov.
+- **Carga:** el 3-nov se pasa del límite (campo de 4 h más el TO-BE parte 2). Si hay campo, el TO-BE parte 2 se termina el 8-nov.
+- **Detalle por bloques:** `IA_DIEGO.md` §5b.
