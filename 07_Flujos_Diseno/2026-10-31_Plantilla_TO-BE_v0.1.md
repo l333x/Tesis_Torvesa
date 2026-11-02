@@ -34,7 +34,7 @@ Salen del Cap. 2 v0.3 («captación, asignación, aviso, primer contacto, cotiza
 > [!warning] Para Víctor: numeración
 > `IA_DIEGO.md` dice que la parte 2 «cubre los pasos 3 y 4». Con el orden del Cap. 2, la cotización y el historial son los pasos **P5 y P6**. Propongo usar la numeración de esta tabla. Si no, hay que corregir una de las dos.
 
-## Carriles (iguales en todas las partes)
+## Carriles (cada parte usa los que necesita, con estos nombres y en este orden)
 
 | Carril | Quién o qué | Tipo |
 |---|---|---|
@@ -42,6 +42,7 @@ Salen del Cap. 2 v0.3 («captación, asignación, aviso, primer contacto, cotiza
 | Coordinador comercial | INT-02 | Persona |
 | Quien cotiza | INT-03 | Persona |
 | Gerencia | INT-01 | Persona |
+| Otro vendedor o colaborador | INT-04 | Persona (traspaso, P6) |
 | Registro y alertas (TEAMSLASH) | Formulario, API, base de datos, Slack | Sistema |
 | Bóveda y asistente de IA | Obsidian, plantillas, LLM | Sistema |
 | Registro verificable | Eventos con huella SHA-256 | Sistema |

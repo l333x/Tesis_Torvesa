@@ -3,7 +3,7 @@ titulo: Reporte de Diego — 2-nov-2026
 fecha: 2026-11-02
 autor: Diego Bermeo
 ia: Claude (Claude Code)
-bloques: [L, N, M]
+bloques: [L, N, M, O]
 tags: [diego, reporte, sprint3, sprint4]
 ---
 
@@ -26,6 +26,21 @@ tags: [diego, reporte, sprint3, sprint4]
   - **Modelo conceptual:** `2026-10-31_Modelo_Conceptual_v0.1.png`, también con su `.drawio`. Tiene 9 conceptos, con colores según dónde vive cada uno.
   - **Explicación y tabla de trazabilidad** (caso de uso → actores → escenario → requerimientos): `2026-10-31_Casos_Uso_y_Modelo_Conceptual_v0.1.md`.
   - **Plantilla TO-BE:** `2026-10-31_Plantilla_TO-BE_v0.1.md` y `.bpmn`, con los 6 pasos P1–P6, los carriles, las reglas de dibujo y la ficha que se llena en cada parte.
+
+- **Bloque O, TO-BE v0.1 (S4-T01, S4-T03, S4-T05), adelantado al lunes:**
+  - Hay tres partes: `07_Flujos_Diseno/2026-11-04_TO-BE_v0.1_parte1`, `_parte2` y `_parte3`. Cada una tiene un `.bpmn` que se edita en bpmn.io o en Camunda, su `.png` y una ficha `.md`.
+    - **Parte 1:** recepción, asignación, aviso y primer contacto (P1–P4).
+    - **Parte 2:** cotización asistida y traspaso del cliente (P5–P6).
+    - **Parte 3:** recordatorios, seguimiento y reasignación.
+  - **Se cumple lo que pedía el bloque:** cada paso tiene disparador y responsable, y quedan cubiertos los 6 pasos del flujo y los 5 puntos del AS-IS.
+  - **Validación:** revisé con un script que el BPMN sea correcto (referencias, flujos dentro de cada pool, ningún nodo suelto). No lo abrí en bpmn.io.
+  - Lo que no está confirmado con Torvesa va marcado en el diagrama como «por validar» (PEN-08, CON-06 y la regla de asignación).
+  - **Quedan fuera:**
+    - el reporte semanal (RQ-08);
+    - la verificación de integridad (RQ-16);
+    - la eliminación de datos (RQ-19).
+
+    No son pasos del flujo de atención. Se pueden dibujar como parte 4.
 
 ## Afirmaciones (A31–A38)
 Hoy no se trabajaron fuentes.
@@ -53,6 +68,4 @@ Nada.
 ## Pendiente de Diego
 - **Bloque K:** espera las observaciones de la tutora.
 - **Campo:** sigue bloqueado; Torvesa no ha autorizado.
-- **Lo siguiente:**
-  - bloque O (TO-BE v0.1, partes 1 a 3);
-  - después, bloque P (bóveda del sistema).
+- **Lo siguiente:** bloque P (bóveda del sistema, jueves a sábado). Antes, Víctor revisa el TO-BE (S4-02).
