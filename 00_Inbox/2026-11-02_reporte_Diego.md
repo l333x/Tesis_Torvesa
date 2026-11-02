@@ -80,6 +80,10 @@ Nada.
    - **`_Contactos`:** ¿va en una bóveda aparte? Obsidian no tiene permisos por usuario (A33).
 10. **Orden de los bloques:** el bloque P (bóveda) se adelantó antes de que revises el TO-BE (S4-02). Si cambias algo de los flujos, ajusto la bóveda.
 
+11. **Lo más urgente:** leer `00_Inbox/2026-11-02_aviso_sin_encuestas_ni_entrevistas.md`.
+    - La directora de carrera dice que recoger datos de personas (encuestas, entrevistas y técnicas parecidas) lleva a otro proceso de autorización, más largo.
+    - Recomiendo no hacerlo. El aviso trae qué se cae y cómo se reemplaza cada meta.
+
 ## Pendiente de Diego
 - **Bloque K:** espera las observaciones de la tutora.
 - **Campo:** sigue bloqueado; Torvesa no ha autorizado.
