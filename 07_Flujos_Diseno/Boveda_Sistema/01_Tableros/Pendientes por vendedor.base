@@ -1,0 +1,44 @@
+filters:
+  and:
+    - 'clase == "solicitud"'
+    - 'estado != "Ganada"'
+    - 'estado != "Perdida"'
+properties:
+  cliente:
+    displayName: Cliente
+  estado:
+    displayName: Estado
+  tipo_obra:
+    displayName: Tipo de obra
+  canal:
+    displayName: Canal
+  hora_ingreso:
+    displayName: Ingreso
+  fecha_seguimiento:
+    displayName: Seguimiento
+  responsable:
+    displayName: Responsable
+views:
+  - type: table
+    name: Pendientes por vendedor
+    groupBy:
+      property: note.responsable
+      direction: ASC
+    order:
+      - file.name
+      - note.cliente
+      - note.estado
+      - note.tipo_obra
+      - note.hora_ingreso
+      - note.fecha_seguimiento
+  - type: table
+    name: Sin primer contacto
+    filters:
+      and:
+        - 'estado == "Nueva"'
+    order:
+      - file.name
+      - note.responsable
+      - note.cliente
+      - note.canal
+      - note.hora_ingreso

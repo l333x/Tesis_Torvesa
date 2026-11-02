@@ -1,0 +1,33 @@
+filters:
+  and:
+    - 'clase == "cotizacion"'
+properties:
+  solicitud:
+    displayName: Solicitud
+  cliente:
+    displayName: Cliente
+  plantilla:
+    displayName: Plantilla
+  hora_envio:
+    displayName: Enviada
+  resultado:
+    displayName: Resultado
+views:
+  - type: table
+    name: Esperan respuesta
+    filters:
+      and:
+        - 'resultado == "Pendiente"'
+    order:
+      - file.name
+      - note.cliente
+      - note.solicitud
+      - note.hora_envio
+  - type: table
+    name: Todas
+    order:
+      - file.name
+      - note.cliente
+      - note.plantilla
+      - note.hora_envio
+      - note.resultado

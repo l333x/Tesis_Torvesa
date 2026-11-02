@@ -1,0 +1,29 @@
+filters:
+  and:
+    - 'clase == "cliente"'
+properties:
+  tipo_cliente:
+    displayName: Tipo de cliente
+  tipo_obra_frecuente:
+    displayName: Obra más frecuente
+  responsable_actual:
+    displayName: Responsable actual
+  alta:
+    displayName: Alta
+views:
+  - type: table
+    name: Clientes
+    order:
+      - file.name
+      - note.tipo_cliente
+      - note.tipo_obra_frecuente
+      - note.responsable_actual
+      - note.alta
+  - type: table
+    name: Clientes por responsable
+    groupBy:
+      property: note.responsable_actual
+      direction: ASC
+    order:
+      - file.name
+      - note.tipo_obra_frecuente

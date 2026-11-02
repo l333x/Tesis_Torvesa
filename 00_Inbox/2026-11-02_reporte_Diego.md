@@ -3,7 +3,7 @@ titulo: Reporte de Diego — 2-nov-2026
 fecha: 2026-11-02
 autor: Diego Bermeo
 ia: Claude (Claude Code)
-bloques: [L, N, M, O]
+bloques: [L, N, M, O, P]
 tags: [diego, reporte, sprint3, sprint4]
 ---
 
@@ -42,6 +42,16 @@ tags: [diego, reporte, sprint3, sprint4]
 
     No son pasos del flujo de atención. Se pueden dibujar como parte 4.
 
+- **Bloque P, bóveda del sistema v0.1 (S4-T07, S4-T09, S4-T11), adelantado:** está en `07_Flujos_Diseno/Boveda_Sistema/` (29 archivos). Se abre en Obsidian con «Abrir carpeta como bóveda».
+  - **Carpetas:** clientes, solicitudes, cotizaciones, plantillas de cotización, equipo, `_Contactos` y plantillas de notas. Todo se explica en `00_Inicio.md`.
+  - **Ejemplos ficticios:** 4 clientes, 6 solicitudes en los 5 estados, 2 cotizaciones sin precios, 3 vendedores genéricos («Vendedor A, B y C») y 2 plantillas de cotización con rubros propuestos. Cada nota dice que es ficticia.
+  - **Tableros con Bases**, que viene con Obsidian; la sintaxis la revisé en la ayuda oficial el 2-nov:
+    - pendientes por vendedor, con una vista «Sin primer contacto»;
+    - clientes;
+    - cotizaciones.
+  - **Comprobado con un script** que reproduce el filtro del tablero: el Vendedor A tiene 2 pendientes, el B tiene 2 y el C ninguno. **Falta abrirla en Obsidian** para confirmar que los tableros se ven.
+  - **Decisión de diseño:** los datos personales van solo en `_Contactos`. La ficha `CLI-xxxx` no los tiene. Así el asistente no lee esa carpeta (RQ-21), y borrar a un cliente (ESC-08) es borrar una nota. Con esto cambia un poco el modelo conceptual: los datos marcados con «*» pasan de la ficha a una nota aparte. Va en su v0.2.
+
 ## Afirmaciones (A31–A38)
 Hoy no se trabajaron fuentes.
 
@@ -65,7 +75,16 @@ Nada.
    - Con el orden del Cap. 2 v0.3 (captación, asignación, aviso, primer contacto, cotización, traspaso), la cotización y el traspaso son P5 y P6.
    - Propongo P1–P6 como en la plantilla.
 
+9. **Bóveda, decisiones de costo y LOPDP:**
+   - **Sincronización en el celular:** el plugin de Git es inestable en el móvil (A34). Obsidian Sync cuesta USD 4 por usuario al mes con pago anual (A32). Hay que elegir uno: cambia el Cap. 5 y RQ-14.
+   - **`_Contactos`:** ¿va en una bóveda aparte? Obsidian no tiene permisos por usuario (A33).
+10. **Orden de los bloques:** el bloque P (bóveda) se adelantó antes de que revises el TO-BE (S4-02). Si cambias algo de los flujos, ajusto la bóveda.
+
 ## Pendiente de Diego
 - **Bloque K:** espera las observaciones de la tutora.
 - **Campo:** sigue bloqueado; Torvesa no ha autorizado.
-- **Lo siguiente:** bloque P (bóveda del sistema, jueves a sábado). Antes, Víctor revisa el TO-BE (S4-02).
+- **Lo siguiente:** bloque Q (domingo 8):
+  - el resumen de 1 página de la bóveda (S4-T13);
+  - la revisión del sprint 4.
+
+  El análisis de la línea base depende de que haya campo.
