@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="TO_BE_Plantilla" targetNamespace="https://github.com/l333x/Tesis_Torvesa" exporter="IA de Diego (Claude)" exporterVersion="0.1">
+<!-- Plantilla TO-BE v0.1 (2-nov-2026). Copiar como 2026-11-04_TO-BE_v0.1_parteN.bpmn; este archivo no se edita. -->
+<bpmn:collaboration id="Colab">
+<bpmn:participant id="P_cli" name="Prospecto o cliente" processRef="Proc_cli"/>
+<bpmn:participant id="P_tor" name="Constructora Torvesa con el sistema" processRef="Proc_tor"/>
+<bpmn:textAnnotation id="Nota"><bpmn:text>PLANTILLA: reemplazar por los pasos de la parte (P1–P6). Tareas con verbo + objeto; las tareas que cambian algo dejan un evento en «Registro verificable». Lo no confirmado con Torvesa va como anotación «Por validar en campo (PEN-xx)».</bpmn:text></bpmn:textAnnotation>
+</bpmn:collaboration>
+<bpmn:process id="Proc_cli" isExecutable="false"><bpmn:startEvent id="S_cli" name="Necesita una obra"/></bpmn:process>
+<bpmn:process id="Proc_tor" isExecutable="false"><bpmn:laneSet id="LS"><bpmn:lane id="L_coo" name="Coordinador comercial"></bpmn:lane><bpmn:lane id="L_cot" name="Quien cotiza"></bpmn:lane><bpmn:lane id="L_ger" name="Gerencia"></bpmn:lane><bpmn:lane id="L_reg" name="Registro y alertas (TEAMSLASH)"><bpmn:flowNodeRef>S_tor</bpmn:flowNodeRef></bpmn:lane><bpmn:lane id="L_bov" name="Bóveda y asistente de IA"></bpmn:lane><bpmn:lane id="L_ver" name="Registro verificable"></bpmn:lane></bpmn:laneSet><bpmn:startEvent id="S_tor" name="Llega una solicitud"><bpmn:messageEventDefinition id="MED1"/></bpmn:startEvent></bpmn:process>
+<bpmndi:BPMNDiagram id="Diag"><bpmndi:BPMNPlane id="Plano" bpmnElement="Colab">
+<bpmndi:BPMNShape id="P_cli_di" bpmnElement="P_cli" isHorizontal="true"><dc:Bounds x="160" y="60" width="1800" height="130"/></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="P_tor_di" bpmnElement="P_tor" isHorizontal="true"><dc:Bounds x="160" y="230" width="1800" height="780"/></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="L_coo_di" bpmnElement="L_coo" isHorizontal="true"><dc:Bounds x="190" y="230" width="1770" height="130"/></bpmndi:BPMNShape><bpmndi:BPMNShape id="L_cot_di" bpmnElement="L_cot" isHorizontal="true"><dc:Bounds x="190" y="360" width="1770" height="130"/></bpmndi:BPMNShape><bpmndi:BPMNShape id="L_ger_di" bpmnElement="L_ger" isHorizontal="true"><dc:Bounds x="190" y="490" width="1770" height="130"/></bpmndi:BPMNShape><bpmndi:BPMNShape id="L_reg_di" bpmnElement="L_reg" isHorizontal="true"><dc:Bounds x="190" y="620" width="1770" height="130"/></bpmndi:BPMNShape><bpmndi:BPMNShape id="L_bov_di" bpmnElement="L_bov" isHorizontal="true"><dc:Bounds x="190" y="750" width="1770" height="130"/></bpmndi:BPMNShape><bpmndi:BPMNShape id="L_ver_di" bpmnElement="L_ver" isHorizontal="true"><dc:Bounds x="190" y="880" width="1770" height="130"/></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="S_cli_di" bpmnElement="S_cli"><dc:Bounds x="230" y="107" width="36" height="36"/></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="S_tor_di" bpmnElement="S_tor"><dc:Bounds x="230" y="667" width="36" height="36"/></bpmndi:BPMNShape>
+<bpmndi:BPMNShape id="Nota_di" bpmnElement="Nota"><dc:Bounds x="560" y="80" width="620" height="80"/></bpmndi:BPMNShape>
+</bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</bpmn:definitions>
