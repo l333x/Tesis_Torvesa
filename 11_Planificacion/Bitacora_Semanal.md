@@ -252,3 +252,49 @@ tags: [bitacora, informes, planificacion]
   - análisis de la línea base el 8-nov.
 - **Carga:** el 3-nov se pasa del límite (campo de 4 h más el TO-BE parte 2). Si hay campo, el TO-BE parte 2 se termina el 8-nov.
 - **Detalle por bloques:** `IA_DIEGO.md` §5b.
+
+
+## 2026-10-28 a 2026-11-04 · Sprint 3 sin Revisión 1 y sprint 4 adelantado por Diego
+
+### Qué pasó
+- **Revisión 1:** no se hizo ni el 28 ni el 29-oct. Con los feriados del 2 y 3-nov no hubo cita. Se busca para el **jueves 5 o el viernes 6-nov**.
+- **29-oct (Víctor, con Claude):**
+  - versión del 29-oct de la presentación, la hoja de puntos y el guion;
+  - guía de puntos de la elicitación (`07_Flujos_Diseno/2026-10-29_Guia_Puntos_Elicitacion.*`).
+
+  Se suben con el commit del 4-nov.
+- **Diego (2-nov), bloques L a Q:**
+  - revisión técnica de la elicitación: TEAMSLASH v2 usa PostgreSQL y **no está en línea** (RIE-07); requerimiento nuevo RQ-24 (hora del primer contacto);
+  - resumen del AS-IS;
+  - casos de uso y modelo conceptual;
+  - TO-BE v0.1 en 3 partes;
+  - bóveda del sistema v0.1;
+  - resumen de la bóveda;
+  - su parte de la revisión del sprint 4, con el plan del sprint 5.
+
+  Detalle en `00_Inbox/2026-11-02_reporte_Diego.md`.
+- **Cambio de método (propuesta de Diego, 2-nov):** según la directora de carrera, recoger datos de personas lleva otra autorización, más larga. Se propone medir sin encuestas, entrevistas, observación, taller ni SUS (`00_Inbox/2026-11-02_aviso_sin_encuestas_ni_entrevistas.md`).
+  - **Víctor (4-nov):** se lleva a la tutora como propuesta, no como algo decidido.
+  - El Cap. III se reescribe después de su respuesta.
+
+### 4-nov (Víctor, con Claude)
+- **Revisión 1, versión del 4-nov** (`08_Reuniones_Tutora/2026-11-04_*`):
+  - presentación de 16 diapositivas, con 3 nuevas: la propuesta sin datos de personas, el TO-BE, y los casos de uso con la bóveda;
+  - hoja de puntos con una sección nueva y 9 decisiones;
+  - guion.
+- **Cronograma:**
+  - las tareas de Diego del 2-nov quedan como hechas;
+  - la Revisión 1 y su acta pasan al 5 o 6-nov;
+  - notas en S3-T16, S4-T16 y S4-T17 por el cambio de método.
+
+### Pendiente
+- **Víctor:**
+  - pedir la cita a la tutora y ensayar con Diego;
+  - responder las 11 dudas de Diego del 2-nov: RQ-02, RQ-24, la sincronización de la bóveda, `_Contactos` y el LLM (A36);
+  - patrones de la bóveda 1 (S3-04);
+  - matriz de decisión de herramientas, CAPEX y OPEX (S4-T08, T10 y T12).
+- **Después de la Revisión 1:**
+  - acta;
+  - Cap. III v0.4;
+  - elicitación v0.2;
+  - AS-IS v0.2 (bloque K de Diego).

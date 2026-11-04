@@ -1,7 +1,7 @@
 ---
 titulo: Cronograma maestro (versión para la IA)
 tipo: documento_vivo
-actualizado: 2026-11-01
+actualizado: 2026-11-04
 fuente_de_verdad: 11_Planificacion/Cronograma_Tesis.xlsx
 tags: [cronograma, planificacion]
 ---
@@ -40,9 +40,9 @@ tags: [cronograma, planificacion]
 - [ ] **S3-03** Preparar el proceso actual y las gráficas de datos para mostrarlos en la Revisión 1 · @Diego · entregable: 07_Flujos_Diseno/figuras · hecho: incluidas en la presentación · cierre: — · #21
 - [ ] **S3-04** Escribir cómo estructuré mi bóveda 1 (patrones, no datos), para que Diego diseñe la bóveda del sistema · @Victor · entregable: 07_Flujos_Diseno/2026-10-30_Patrones_Boveda1_v0.1.docx · hecho: Diego lo leyó y anotó preguntas · cierre: — · #60
 - [ ] **S3-05** Revisar el sprint 3 y explicarle a Diego los conceptos de negocio · @Victor @Diego · entregable: 11_Planificacion/Bitacora_Semanal.md · hecho: sesión hecha con Conceptos_Negocio.pdf · cierre: — · #61
-- [ ] **S4-01** Dibujar los procesos con el sistema (TO-BE), para definir cómo funcionará · @Diego · entregable: 07_Flujos_Diseno/2026-11-04_TO-BE_v0.1 · hecho: cubren los 6 pasos del flujo de atención · cierre: — · #22
+- [x] **S4-01** Dibujar los procesos con el sistema (TO-BE), para definir cómo funcionará · @Diego · entregable: 07_Flujos_Diseno/2026-11-04_TO-BE_v0.1 · hecho: cubren los 6 pasos del flujo de atención · cierre: — · #22
 - [ ] **S4-02** Validar los procesos TO-BE contra los requisitos · @Victor · entregable: comentarios en 07_Flujos_Diseno/ · hecho: cada requisito ligado a un flujo · cierre: — · #23
-- [ ] **S4-03** Construir la bóveda del sistema a partir de los flujos aprobados · @Diego · entregable: 07_Flujos_Diseno/Boveda_Sistema/ · hecho: estructura y plantillas funcionando · cierre: — · #24
+- [x] **S4-03** Construir la bóveda del sistema a partir de los flujos aprobados · @Diego · entregable: 07_Flujos_Diseno/Boveda_Sistema/ · hecho: estructura y plantillas funcionando · cierre: — · #24
 - [ ] **S4-04** Escribir los requisitos funcionales y no funcionales · @Victor · entregable: 06_Capitulos/2026-11-03_Requisitos_v0.1.docx · hecho: cada requisito con su origen · cierre: — · #25
 - [ ] **S4-05** Armar la matriz de decisión de herramientas en Excel (fórmulas vivas) · @Victor · entregable: 06_Capitulos/Modelo_Negocio/2026-11-05_Matriz_Decision_Herramientas_v0.1.xlsx · hecho: ponderaciones y sensibilidad · cierre: — · #26
 - [ ] **S4-06** Calcular CAPEX (inversión) y OPEX (gasto mensual) con fuente para cada precio · @Victor · entregable: 06_Capitulos/Modelo_Negocio/2026-11-07_Modelo_Financiero_v0.1.xlsx (hoja Costos) · hecho: cada precio con enlace y fecha · cierre: — · #27
@@ -132,7 +132,7 @@ tags: [cronograma, planificacion]
 | S2 | S2-T16 | 2026-10-25 | Víctor | Escribir el capítulo 3, parte 2 (instrumentos, análisis y ética) | 06_Capitulos/ | 06_Capitulos/2026-10-25_Cap3_Metodologia_v0.1.docx | Hecho | 2026-10-20 |
 | S2 | S2-T17 | 2026-10-25 | Diego | Preparar las gráficas de datos para la Revisión 1 | 05_Datos_Campo/LineaBase_2026-10/ | 05_Datos_Campo/LineaBase_2026-10/analisis/figuras/ | Movido |  |
 | S2 | S2-T18 | 2026-10-25 | Ambos | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Llamada Víctor–Diego · 11_Planificacion/Bitacora_Semanal.md y 11_Planificacion/Cronograma_Tesis.xlsx | Sección de la semana en la bitácora + hoja del sprint siguiente ajustada | Movido |  |
-| S3 | S3-T01 | 2026-10-26 | Víctor | Preparar la presentación de avance (capítulos 1–3 y fuentes), para la Revisión 1 | 08_Reuniones_Tutora/ | 08_Reuniones_Tutora/2026-10-27_Presentacion_Revision1.pptx | Pendiente |  |
+| S3 | S3-T01 | 2026-10-26 | Víctor | Preparar la presentación de avance (capítulos 1–3 y fuentes), para la Revisión 1 | 08_Reuniones_Tutora/ | 08_Reuniones_Tutora/2026-10-27_Presentacion_Revision1.pptx | Hecho | 2026-11-04 |
 | S3 | S3-T02 | 2026-10-26 | Diego | Exportar el proceso actual y las gráficas para la presentación | 07_Flujos_Diseno/ | Imágenes en la presentación | En curso |  |
 | S3 | S3-T03 | 2026-10-27 | Ambos | Ensayar la presentación de la Revisión 1 | Llamada Víctor–Diego | Ensayo cronometrado | Pendiente |  |
 | S3 | S3-T04 | 2026-10-27 | Víctor | Escribir cómo estructuré mi bóveda 1 (patrones, no datos), parte 1 | 07_Flujos_Diseno/ | Patrones v0.1 (primera mitad) | Pendiente |  |
@@ -143,27 +143,27 @@ tags: [cronograma, planificacion]
 | S3 | S3-T09 | 2026-10-30 | Víctor | Escribir cómo estructuré mi bóveda 1, parte 2 | 07_Flujos_Diseno/ | 07_Flujos_Diseno/2026-10-30_Patrones_Boveda1_v0.1.docx | Pendiente |  |
 | S3 | S3-T10 | 2026-10-30 | Diego | Leer el documento de patrones de la bóveda 1 y anotar preguntas | 07_Flujos_Diseno/ | Preguntas en el issue de S3-04 | Pendiente |  |
 | S3 | S3-T11 | 2026-10-31 | Víctor | Corregir los capítulos según las observaciones, parte 2 | 06_Capitulos/ | Capítulos v0.2 completos | Pendiente |  |
-| S3 | S3-T12 | 2026-10-31 | Diego | Preparar la plantilla de los flujos TO-BE (Mermaid o Miro) | 07_Flujos_Diseno/ | Plantilla de flujos | Pendiente |  |
+| S3 | S3-T12 | 2026-10-31 | Diego | Preparar la plantilla de los flujos TO-BE (Mermaid o Miro) | 07_Flujos_Diseno/ | Plantilla de flujos | Hecho | 2026-11-02 |
 | S3 | S3-T13 | 2026-11-01 | Ambos | Sesión: Víctor explica a Diego los conceptos de negocio (embudo, tiempo de respuesta, propuesta de valor) | Llamada Víctor–Diego · Conceptos_Negocio.pdf (raíz) | Diego traduce cada concepto a una función del sistema | Pendiente |  |
 | S3 | S3-T14 | 2026-11-01 | Ambos | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Llamada Víctor–Diego · 11_Planificacion/Bitacora_Semanal.md y 11_Planificacion/Cronograma_Tesis.xlsx | Sección de la semana en la bitácora + hoja del sprint siguiente ajustada | Pendiente |  |
-| S3 | S3-T15 | 2026-10-27 | Diego | Confirmar si TEAMSLASH guarda los datos en Google Sheets o en PostgreSQL, para el documento de elicitación | WhatsApp a Víctor · repositorio de TEAMSLASH | Respuesta con evidencia (captura o enlace) | Pendiente |  |
+| S3 | S3-T15 | 2026-10-27 | Diego | Confirmar si TEAMSLASH guarda los datos en Google Sheets o en PostgreSQL, para el documento de elicitación | WhatsApp a Víctor · repositorio de TEAMSLASH | Respuesta con evidencia (captura o enlace) | Hecho | 2026-11-02 |
 | S3 | S3-T16 | 2026-10-28 | Diego | Conseguir la respuesta de Torvesa (autorización de campo, nota de respaldo y catálogo), para medir la línea base | Torvesa (llamada o visita al Ing. Torres) | Autorización por escrito o fecha de campo comprometida | Pendiente |  |
-| S3 | S3-T17 | 2026-10-30 | Diego | Revisar y completar la elicitación y análisis de requerimientos v0.1, parte 1: requerimientos técnicos (no funcionales y restricciones) y TEAMSLASH | 07_Flujos_Diseno/2026-10-27_Elicitacion_Requerimientos_v0.1.docx (Word, control de cambios) | Cambios y comentarios de Diego en el Word | Pendiente |  |
-| S3 | S3-T18 | 2026-10-31 | Diego | Completar la elicitación v0.1, parte 2: diagrama de casos de uso y modelo conceptual | 07_Flujos_Diseno/ (editable en draw.io, demo.bpmn.io o Mermaid) | Casos de uso y modelo conceptual en PNG + archivo editable | Pendiente |  |
-| S3 | S3-T19 | 2026-11-01 | Diego | Escribir el resumen de 1 página del proceso actual (AS-IS) para Víctor | 07_Flujos_Diseno/ | 07_Flujos_Diseno/2026-11-01_Resumen_AS-IS.md | Pendiente |  |
-| S4 | S4-T01 | 2026-11-02 | Diego | Dibujar los procesos con el sistema (TO-BE), parte 1: recepción y asignación | 07_Flujos_Diseno/ | TO-BE v0.1 (parte 1) | Pendiente |  |
+| S3 | S3-T17 | 2026-10-30 | Diego | Revisar y completar la elicitación y análisis de requerimientos v0.1, parte 1: requerimientos técnicos (no funcionales y restricciones) y TEAMSLASH | 07_Flujos_Diseno/2026-10-27_Elicitacion_Requerimientos_v0.1.docx (Word, control de cambios) | Cambios y comentarios de Diego en el Word | Hecho | 2026-11-02 |
+| S3 | S3-T18 | 2026-10-31 | Diego | Completar la elicitación v0.1, parte 2: diagrama de casos de uso y modelo conceptual | 07_Flujos_Diseno/ (editable en draw.io, demo.bpmn.io o Mermaid) | Casos de uso y modelo conceptual en PNG + archivo editable | Hecho | 2026-11-02 |
+| S3 | S3-T19 | 2026-11-01 | Diego | Escribir el resumen de 1 página del proceso actual (AS-IS) para Víctor | 07_Flujos_Diseno/ | 07_Flujos_Diseno/2026-11-01_Resumen_AS-IS.md | Hecho | 2026-11-02 |
+| S4 | S4-T01 | 2026-11-02 | Diego | Dibujar los procesos con el sistema (TO-BE), parte 1: recepción y asignación | 07_Flujos_Diseno/ | TO-BE v0.1 (parte 1) | Hecho | 2026-11-02 |
 | S4 | S4-T02 | 2026-11-02 | Víctor | Escribir los requisitos funcionales (qué debe hacer el sistema) | 06_Capitulos/ | Requisitos v0.1 (funcionales) | Pendiente |  |
-| S4 | S4-T03 | 2026-11-03 | Diego | Dibujar los procesos TO-BE, parte 2: cotización asistida e historial | 07_Flujos_Diseno/ | TO-BE v0.1 (parte 2) | Pendiente |  |
+| S4 | S4-T03 | 2026-11-03 | Diego | Dibujar los procesos TO-BE, parte 2: cotización asistida e historial | 07_Flujos_Diseno/ | TO-BE v0.1 (parte 2) | Hecho | 2026-11-02 |
 | S4 | S4-T04 | 2026-11-03 | Víctor | Escribir los requisitos no funcionales (seguridad, sin conexión, ley de datos) | 06_Capitulos/ | 06_Capitulos/2026-11-03_Requisitos_v0.1.docx | Pendiente |  |
-| S4 | S4-T05 | 2026-11-04 | Diego | Dibujar los procesos TO-BE, parte 3: recordatorios y reasignación | 07_Flujos_Diseno/ | 07_Flujos_Diseno/2026-11-04_TO-BE_v0.1 | Pendiente |  |
+| S4 | S4-T05 | 2026-11-04 | Diego | Dibujar los procesos TO-BE, parte 3: recordatorios y reasignación | 07_Flujos_Diseno/ | 07_Flujos_Diseno/2026-11-04_TO-BE_v0.1 | Hecho | 2026-11-02 |
 | S4 | S4-T06 | 2026-11-04 | Víctor | Validar los flujos TO-BE contra los requisitos | 07_Flujos_Diseno/ | Comentarios en los flujos | Pendiente |  |
-| S4 | S4-T07 | 2026-11-05 | Diego | Construir la bóveda del sistema: carpetas y plantillas | 07_Flujos_Diseno/ | 07_Flujos_Diseno/Boveda_Sistema/ | Pendiente |  |
+| S4 | S4-T07 | 2026-11-05 | Diego | Construir la bóveda del sistema: carpetas y plantillas | 07_Flujos_Diseno/ | 07_Flujos_Diseno/Boveda_Sistema/ | Hecho | 2026-11-02 |
 | S4 | S4-T08 | 2026-11-05 | Víctor | Armar la matriz de decisión de herramientas en Excel (fórmulas vivas) | 06_Capitulos/Modelo_Negocio/ | 06_Capitulos/Modelo_Negocio/2026-11-05_Matriz_Decision_Herramientas_v0.1.xlsx | Pendiente |  |
-| S4 | S4-T09 | 2026-11-06 | Diego | Construir la bóveda del sistema: fichas de ejemplo con datos ficticios | 07_Flujos_Diseno/ | Fichas CLI-0001… | Pendiente |  |
+| S4 | S4-T09 | 2026-11-06 | Diego | Construir la bóveda del sistema: fichas de ejemplo con datos ficticios | 07_Flujos_Diseno/ | Fichas CLI-0001… | Hecho | 2026-11-02 |
 | S4 | S4-T10 | 2026-11-06 | Víctor | Calcular CAPEX (inversión inicial) con fuente para cada precio | 06_Capitulos/Modelo_Negocio/ | Hoja Costos del modelo financiero | Pendiente |  |
-| S4 | S4-T11 | 2026-11-07 | Diego | Construir la bóveda del sistema: tableros y enlaces | 07_Flujos_Diseno/ | Tableros de pendientes | Pendiente |  |
+| S4 | S4-T11 | 2026-11-07 | Diego | Construir la bóveda del sistema: tableros y enlaces | 07_Flujos_Diseno/ | Tableros de pendientes | Hecho | 2026-11-02 |
 | S4 | S4-T12 | 2026-11-07 | Víctor | Calcular OPEX (gasto mensual) con fuente para cada precio | 06_Capitulos/Modelo_Negocio/ | 06_Capitulos/Modelo_Negocio/2026-11-07_Modelo_Financiero_v0.1.xlsx | Pendiente |  |
-| S4 | S4-T13 | 2026-11-08 | Diego | Escribir un resumen de 1 página para Víctor de la bóveda del sistema | 07_Flujos_Diseno/ | 07_Flujos_Diseno/2026-11-08_Resumen_Boveda_Sistema.md | Pendiente |  |
+| S4 | S4-T13 | 2026-11-08 | Diego | Escribir un resumen de 1 página para Víctor de la bóveda del sistema | 07_Flujos_Diseno/ | 07_Flujos_Diseno/2026-11-08_Resumen_Boveda_Sistema.md | Hecho | 2026-11-02 |
 | S4 | S4-T14 | 2026-11-08 | Víctor | Escribir un resumen de 1 página para Diego de requisitos y costos | 06_Capitulos/Modelo_Negocio/ | 06_Capitulos/Modelo_Negocio/2026-11-08_Resumen_Costos.md | Pendiente |  |
 | S4 | S4-T15 | 2026-11-08 | Ambos | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Llamada Víctor–Diego · 11_Planificacion/Bitacora_Semanal.md y 11_Planificacion/Cronograma_Tesis.xlsx | Sección de la semana en la bitácora + hoja del sprint siguiente ajustada | Pendiente |  |
 | S4 | S4-T16 | 2026-11-03 | Diego | Hacer el campo en Torvesa (si autorizó): cronometrar cotizaciones (P2-A) y revisar solicitudes de los últimos 3 meses (P2-B) | Torvesa (oficina, Quito) | 05_Datos_Campo/LineaBase_2026-10/P2A_cronometraje.csv y P2B_muestra_documental.csv | Pendiente |  |
