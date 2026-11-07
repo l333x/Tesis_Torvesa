@@ -298,3 +298,28 @@ tags: [bitacora, informes, planificacion]
   - Cap. III v0.4;
   - elicitación v0.2;
   - AS-IS v0.2 (bloque K de Diego).
+
+## 2026-11-07 · Primer borrador de la tesis para la tutora
+
+### Qué pasó
+- La Revisión 1 **todavía no se hizo**. Víctor decide llevarle a la tutora un **primer borrador completo** para que corrija sobre el documento.
+- Torvesa sigue sin responder. El campo de Diego (S4-T16 y S4-T17) queda en espera, por decisión de Víctor.
+- **Primer borrador** (`06_Capitulos/2026-11-07_Tesis_Borrador1_v0.1.docx` y `.pdf`, 55 páginas, formato UPS):
+  - portada, nota para la tutora con el estado de cada capítulo, índice, resumen provisional;
+  - caps. I–III v0.3 con los cambios aceptados y sin comentarios internos;
+  - al inicio del Cap. III, un recuadro con la propuesta de medir sin datos de personas (DEC-21 a DEC-23);
+  - **Cap. IV Desarrollo técnico v0.1** (nuevo, `2026-11-07_Cap4_Desarrollo_Tecnico_v0.1.md`): AS-IS preliminar, 5 puntos críticos, 24 requisitos, casos de uso, modelo conceptual, TO-BE en 3 partes, componentes, bóveda, protección de datos y riesgos; costos y VAN/TIR quedan para el sprint 5;
+  - esquema de los caps. V y VI (`2026-11-07_Cap5_Cap6_Esquema_v0.1.md`);
+  - 59 referencias unidas; marcadores: FALTA-FUENTE 16, FALTA-DATO 30, DECIDIR-TUTORA 6, DECIDIR-VÍCTOR 3, VERIFICAR-PÁG 2.
+- **Presentación y guion, versión del 7-nov** (`08_Reuniones_Tutora/2026-11-07_*`): portada, diapositiva 2 y cronograma con el borrador; el guion pide entregar el borrador impreso y acordar cómo devuelve las observaciones.
+
+### Para revisar (Víctor)
+- Incoherencias que el borrador deja a la vista:
+  - el Cap. I dice «cuatro casos de prueba» y el cronograma dice 3;
+  - la validación aparece del 23-nov al 5-dic en el Cap. I y del 24-nov al 5-dic en la presentación.
+- ¿El censo de 5 personas del Informe Final fue real o era parte de lo simulado? (marcador en el Cap. IV).
+- Pedir la cita a la tutora (SOL-09, actualizado en la app).
+
+### Pendiente
+- **Víctor:** sprint 4 (requisitos, matriz de herramientas, CAPEX y OPEX), que alimentan la sección de viabilidad del Cap. IV.
+- **Después de la Revisión 1:** acta, Cap. III v0.4 y borrador v0.2 con las observaciones.
