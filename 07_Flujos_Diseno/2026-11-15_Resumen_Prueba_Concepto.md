@@ -54,3 +54,18 @@ tags: [diego, resumen, prueba-de-concepto, sprint5]
 
   Para el CAPEX y el OPEX hay que sacar sus precios de las páginas oficiales, con fecha de consulta. Aquí no van cifras.
 - **Para estimar beneficios**, el tiempo que ahorra el asistente sale de CP-01. Hasta que se ejecute (S8-04) es un supuesto, no un dato.
+
+## Enlaces para verlo
+
+| Qué | Enlace | Quién puede entrar |
+|---|---|---|
+| Página web con el formulario | https://teamslash-torvesa.vercel.app | Cualquiera |
+| Aviso de privacidad (borrador v0.1) | https://teamslash-torvesa.vercel.app/aviso-privacidad.html | Cualquiera |
+| Estado del servidor (debe decir `"status":"ok"`) | https://teamslash-api-production-772d.up.railway.app/health | Cualquiera |
+| Código del servidor | https://github.com/psiceslivie/teamslash-api (rama `rq18-consentimiento`) | Repo privado: Diego da acceso |
+| Código de la página web | https://github.com/psiceslivie/teamslash-landing | Repo privado: Diego da acceso |
+| Prueba de concepto (sincronización, bóveda y asistente) | https://github.com/psiceslivie/teamslash-poc | Repo privado: Diego da acceso |
+| Avisos, botones y reporte de los lunes | Canal de Slack del espacio «Constructora Torvesa» | Por invitación al espacio |
+
+- **Para probarlo:** se llena el formulario con datos inventados y se marca la casilla. A los segundos llega la tarjeta al canal de Slack.
+- **Lo que no se abre en el navegador:** el listado de solicitudes, el registro de eventos y el reporte semanal piden la clave de la API, que no va en este repositorio. Para verlos, se le piden a Diego o se miran en Slack.
