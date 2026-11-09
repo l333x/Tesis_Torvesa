@@ -1,6 +1,6 @@
 ---
 titulo: Inicio — documento madre (versión Obsidian)
-actualizado: 2026-11-01
+actualizado: 2026-11-08
 tipo: portal
 tags: [inicio, portal]
 ---
@@ -10,32 +10,30 @@ tags: [inicio, portal]
 > Versión para leer en Obsidian. La versión completa, con gráficos, es [[00_DOCUMENTO_MADRE.pdf]] (se regenera cada domingo).
 
 ## Hoy
-- **Semana:** Sprint 3 · 26 oct–1 nov · Revisión 1 con la tutora
-- **Avance:** 28/173 tareas · **Fuentes:** 786 (93 verificadas)
+- **Semana:** Sprint 4 · 2–8 nov · Diseñar el sistema
+- **Avance:** 41/173 tareas · **Fuentes:** 786 (93 verificadas)
 - **Cronograma:** [[Cronograma_Tesis.xlsx]] · [[CRONOGRAMA]] (versión IA)
 
 ### Esta semana
 | Día | Tarea | Quién | Estado |
 |---|---|---|---|
-| lun 26-oct | Preparar la presentación de avance (capítulos 1–3 y fuentes), para la Revisión 1 | Víctor | Pendiente |
-| lun 26-oct | Exportar el proceso actual y las gráficas para la presentación | Diego | En curso |
-| mar 27-oct | Ensayar la presentación de la Revisión 1 | Ambos | Pendiente |
-| mar 27-oct | Escribir cómo estructuré mi bóveda 1 (patrones, no datos), parte 1 | Víctor | Pendiente |
-| mié 28-oct | Asistir a la Revisión 1 con la tutora (fecha a confirmar) | Ambos | Pendiente |
-| mié 28-oct | Escribir el acta de la Revisión 1 | Víctor | Pendiente |
-| jue 29-oct | Corregir los capítulos según las observaciones, parte 1 | Víctor | Pendiente |
-| jue 29-oct | Corregir el proceso actual y las gráficas según las observaciones | Diego | Pendiente |
-| vie 30-oct | Escribir cómo estructuré mi bóveda 1, parte 2 | Víctor | Pendiente |
-| vie 30-oct | Leer el documento de patrones de la bóveda 1 y anotar preguntas | Diego | Pendiente |
-| sáb 31-oct | Corregir los capítulos según las observaciones, parte 2 | Víctor | Pendiente |
-| sáb 31-oct | Preparar la plantilla de los flujos TO-BE (Mermaid o Miro) | Diego | Pendiente |
-| dom 1-nov | Sesión: Víctor explica a Diego los conceptos de negocio (embudo, tiempo de respuesta, propuesta de valor) | Ambos | Pendiente |
-| dom 1-nov | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Ambos | Pendiente |
-| mar 27-oct | Confirmar si TEAMSLASH guarda los datos en Google Sheets o en PostgreSQL, para el documento de elicitación | Diego | Pendiente |
-| mié 28-oct | Conseguir la respuesta de Torvesa (autorización de campo, nota de respaldo y catálogo), para medir la línea base | Diego | Pendiente |
-| vie 30-oct | Revisar y completar la elicitación y análisis de requerimientos v0.1, parte 1: requerimientos técnicos (no funcionales y restricciones) y TEAMSLASH | Diego | Pendiente |
-| sáb 31-oct | Completar la elicitación v0.1, parte 2: diagrama de casos de uso y modelo conceptual | Diego | Pendiente |
-| dom 1-nov | Escribir el resumen de 1 página del proceso actual (AS-IS) para Víctor | Diego | Pendiente |
+| lun 2-nov | Dibujar los procesos con el sistema (TO-BE), parte 1: recepción y asignación | Diego | Hecho |
+| lun 2-nov | Escribir los requisitos funcionales (qué debe hacer el sistema) | Víctor | Pendiente |
+| mar 3-nov | Dibujar los procesos TO-BE, parte 2: cotización asistida e historial | Diego | Hecho |
+| mar 3-nov | Escribir los requisitos no funcionales (seguridad, sin conexión, ley de datos) | Víctor | Pendiente |
+| mié 4-nov | Dibujar los procesos TO-BE, parte 3: recordatorios y reasignación | Diego | Hecho |
+| mié 4-nov | Validar los flujos TO-BE contra los requisitos | Víctor | Pendiente |
+| jue 5-nov | Construir la bóveda del sistema: carpetas y plantillas | Diego | Hecho |
+| jue 5-nov | Armar la matriz de decisión de herramientas en Excel (fórmulas vivas) | Víctor | Pendiente |
+| vie 6-nov | Construir la bóveda del sistema: fichas de ejemplo con datos ficticios | Diego | Hecho |
+| vie 6-nov | Calcular CAPEX (inversión inicial) con fuente para cada precio | Víctor | Pendiente |
+| sáb 7-nov | Construir la bóveda del sistema: tableros y enlaces | Diego | Hecho |
+| sáb 7-nov | Calcular OPEX (gasto mensual) con fuente para cada precio | Víctor | Pendiente |
+| dom 8-nov | Escribir un resumen de 1 página para Víctor de la bóveda del sistema | Diego | Hecho |
+| dom 8-nov | Escribir un resumen de 1 página para Diego de requisitos y costos | Víctor | Pendiente |
+| dom 8-nov | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Ambos | Pendiente |
+| mar 3-nov | Hacer el campo en Torvesa (si autorizó): cronometrar cotizaciones (P2-A) y revisar solicitudes de los últimos 3 meses (P2-B) | Diego | Pendiente |
+| dom 8-nov | Analizar los datos de campo y preparar las gráficas de la línea base (M1–M4 y M6) | Diego | Pendiente |
 
 ## Carpetas
 - [[00_Inbox/README|00_Inbox]] — Todo lo nuevo sin clasificar (Ambos)
@@ -60,9 +58,9 @@ tags: [inicio, portal]
 - **Capítulo 1 · El problema** — Contexto de Torvesa, el problema (tiempo de respuesta, historial disperso), justificación y objetivos. [[2026-10-19_Cap1_Introduccion_p1_v0.1]] [[2026-10-19_Cap1_Introduccion_p1_v0.1]] [[2026-10-19_Cap1_Introduccion_p2_v0.1]] [[2026-10-19_Cap1_Introduccion_p2_v0.1]] [[2026-10-19_Resumen_Cap1]] [[2026-10-20_Cap1_Introduccion_p1_v0.2]] [[2026-10-20_Cap1_Introduccion_p1_v0.2]] [[2026-10-20_Cap1_Introduccion_p2_v0.2]] [[2026-10-20_Cap1_Introduccion_p2_v0.2]] [[2026-10-27_Cap1_Introduccion_p1_v0.3]] [[2026-10-27_Cap1_Introduccion_p1_v0.3]] [[2026-10-27_Cap1_Introduccion_p2_v0.3]] [[2026-10-27_Cap1_Introduccion_p2_v0.3]]
 - **Capítulo 2 · Marco teórico** — CRM y CRM móvil, tiempo de respuesta, gestión del conocimiento, IA con búsqueda en documentos (RAG), normativa. [[2026-10-19_Cap2_Marco_Teorico_v0.1]] [[2026-10-19_Cap2_Marco_Teorico_v0.1]] [[2026-10-20_Cap2_Marco_Teorico_v0.2]] [[2026-10-20_Cap2_Marco_Teorico_v0.2]] [[2026-10-27_Cap2_Marco_Teorico_v0.3]] [[2026-10-27_Cap2_Marco_Teorico_v0.3]]
 - **Capítulo 3 · Metodología** — Enfoque mixto con predominio cuantitativo, DSR (investigación en ciencia del diseño), población (dos censos), instrumentos, análisis y ética. [[2026-10-19_Cap3_Metodologia_v0.1]] [[2026-10-19_Cap3_Metodologia_v0.1]] [[2026-10-20_Cap3_Metodologia_v0.2]] [[2026-10-20_Cap3_Metodologia_v0.2]] [[2026-10-27_Cap3_Metodologia_v0.3]] [[2026-10-27_Cap3_Metodologia_v0.3]]
-- **Capítulo 4 · Diagnóstico** — Cómo funciona hoy la atención comercial de Torvesa, con datos reales. *(aún no existe — sprint S7)*
-- **Capítulo 5 · Diseño del sistema y viabilidad** — Requisitos, procesos con el sistema (TO-BE), arquitectura, herramientas, costos, VAN y TIR, riesgos, ley de datos. *(aún no existe — sprint S4)*
-- **Capítulo 6 · Resultados de la validación** — Comparación del antes y el después de la validación del diseño en operación experimental controlada (metas M1–M6). *(aún no existe — sprint S9)*
+- **Capítulo 4 · Diagnóstico** — Cómo funciona hoy la atención comercial de Torvesa, con datos reales. [[2026-11-07_Cap4_Desarrollo_Tecnico_v0.1]]
+- **Capítulo 5 · Diseño del sistema y viabilidad** — Requisitos, procesos con el sistema (TO-BE), arquitectura, herramientas, costos, VAN y TIR, riesgos, ley de datos. [[2026-11-07_Cap5_Cap6_Esquema_v0.1]]
+- **Capítulo 6 · Resultados de la validación** — Comparación del antes y el después de la validación del diseño en operación experimental controlada (metas M1–M6). [[2026-11-07_Cap5_Cap6_Esquema_v0.1]]
 
 ## Decisiones
 - **D1** Lo que el borrador llama «piloto» se llama «validación del diseño en operación experimental controlada»; nunca «implementación» — *Tomada*
