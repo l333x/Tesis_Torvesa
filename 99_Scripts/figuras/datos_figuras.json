@@ -1,0 +1,285 @@
+{
+  "_como_editar": "Cada figura tiene 'archivo' (nombre del PNG) y sus textos. Para cambiar una figura: cambia el texto y sube la versión en 'archivo' (v0.2 -> v0.3). El generador no pisa un PNG que ya existe, salvo con --forzar. Tipos de caja en los flujos: inicio, paso (persona), sistema, decision, alerta, fin, fin_mal. 'col' es la columna (0 = izquierda). En las flechas: [desde, hasta, etiqueta, opciones]; opciones: sal/ent = lado de salida/entrada (R, L, T, B) y punteada.",
+
+  "flujos": [
+    {
+      "archivo": "2026-11-10_Fig_Proceso_Actual_Tiempos_v0.1.png",
+      "titulo": "Proceso actual de atención a un cliente (versión simple, con tiempos)",
+      "carriles": ["Cliente", "Quien recibe (socio o ingeniero)", "Quien atiende y cotiza"],
+      "nodos": {
+        "a": ["Cliente", 0, "Escribe al WhatsApp personal", "inicio", {}],
+        "b": ["Quien recibe (socio o ingeniero)", 1, "Lee cuando puede (está en obra)", "paso", {"tiempo": "hoy: cada 3–4 h o al llegar a casa (3 de 5)", "critico": 1}],
+        "c": ["Quien recibe (socio o ingeniero)", 2, "¿Puede atenderlo?", "decision", {}],
+        "d": ["Quien recibe (socio o ingeniero)", 3, "Lo reenvía por WhatsApp", "paso", {"tiempo": "sin registro (supuesto)", "critico": 2}],
+        "e": ["Quien atiende y cotiza", 4, "Hace el primer contacto", "paso", {"tiempo": "hoy: sin dato"}],
+        "f": ["Quien atiende y cotiza", 5, "Cotiza casi desde cero", "paso", {"tiempo": "hoy: sin dato", "critico": 3}],
+        "g": ["Quien atiende y cotiza", 6, "Envía la cotización", "paso", {"tiempo": "medio: supuesto"}],
+        "h": ["Quien atiende y cotiza", 7, "Seguimiento, si se acuerda", "paso", {"critico": 4}],
+        "i": ["Cliente", 8, "¿Acepta?", "decision", {}],
+        "j": ["Cliente", 9, "Firma el contrato", "fin", {}],
+        "k": ["Quien recibe (socio o ingeniero)", 9, "Se va; nadie anota por qué", "fin_mal", {}]
+      },
+      "flechas": [
+        ["a", "b", "", {"sal": "R", "ent": "T"}], ["b", "c", "", {}], ["c", "d", "No", {}],
+        ["c", "e", "Sí", {"sal": "B", "ent": "L"}], ["d", "e", "", {"sal": "R", "ent": "T"}],
+        ["e", "f", "", {}], ["f", "g", "", {}], ["g", "h", "", {}],
+        ["h", "i", "", {"sal": "T", "ent": "L"}], ["i", "j", "Sí", {}],
+        ["i", "k", "No o no responde", {"sal": "B", "ent": "L"}]
+      ],
+      "nota": "Nota. Los números marcan dónde se pierde tiempo o información: 1 espera, 2 asignación informal, 3 cotización desde cero, 4 seguimiento de memoria. Además, si quien atiende se va, el historial se queda en su celular (5). «3 de 5»: censo de Torvesa, n = 5 (Bermeo y Segura, 2026, p. 10). «Sin dato»: se medirá con documentos de la empresa. Versión simple del diagrama BPMN completo."
+    },
+    {
+      "archivo": "2026-11-10_Fig_Proceso_Estrella_E1_v0.2.png",
+      "titulo": "Proceso estrella: primer contacto en menos de 15 minutos",
+      "carriles": ["Cliente", "Equipo comercial", "Sistema", "Gerencia"],
+      "nodos": {
+        "b": ["Cliente", 0, "Escribe por WhatsApp o llama", "inicio", {}],
+        "a": ["Cliente", 1, "Llena el formulario web", "inicio", {"tiempo": "con consentimiento"}],
+        "c": ["Equipo comercial", 0, "El coordinador la registra", "paso", {"tiempo": "objetivo: 1 min o menos", "opt": true}],
+        "d": ["Sistema", 1, "Da un código y guarda la hora", "sistema", {"tiempo": "objetivo: 5 s o menos"}],
+        "f": ["Sistema", 2, "Avisa al celular del equipo", "sistema", {"tiempo": "objetivo: 5 s o menos"}],
+        "t": ["Equipo comercial", 3, "¿Alguien pulsó «Tomar» antes de 15 min?", "decision", {"opt": true}],
+        "r": ["Sistema", 3, "Recuerda al equipo y avisa a gerencia", "alerta", {"tiempo": "minuto 15"}],
+        "s": ["Gerencia", 3, "Reasigna a otra persona", "paso", {"tiempo": "si pasan otros 15 min (supuesto)", "opt": true}],
+        "h": ["Equipo comercial", 4, "Contacta al cliente", "paso", {"tiempo": "meta: antes del minuto 15"}],
+        "i": ["Sistema", 4, "Guarda la hora del primer contacto", "sistema", {}],
+        "m": ["Equipo comercial", 5, "¿Cómo termina?", "decision", {}],
+        "n": ["Cliente", 6, "Acepta: se cierra como ganada", "fin", {}],
+        "o": ["Equipo comercial", 6, "Se cierra como perdida, con motivo obligatorio", "fin_mal", {}],
+        "g": ["Sistema", 6, "Recuerda el seguimiento", "sistema", {"tiempo": "en la fecha fijada"}],
+        "wk": ["Sistema", 7, "Envía el reporte a gerencia", "sistema", {"tiempo": "cada lunes, sin que nadie lo pida"}]
+      },
+      "flechas": [
+        ["b", "c", "", {}], ["a", "d", "", {}], ["c", "d", "", {"sal": "B", "ent": "L"}], ["d", "f", "", {}],
+        ["f", "t", "", {"sal": "T", "ent": "L"}], ["t", "h", "Sí", {}], ["t", "r", "No", {}], ["r", "s", "", {}],
+        ["s", "f", "nuevo aviso", {"sal": "L", "ent": "B", "punteada": true}],
+        ["h", "i", "", {}], ["h", "m", "", {}],
+        ["m", "n", "Gana", {"sal": "T", "ent": "L"}], ["m", "o", "Pierde", {}],
+        ["m", "g", "Sigue abierta", {"sal": "B", "ent": "L"}]
+      ],
+      "nota": "Nota. Los tiempos son objetivos de diseño; se medirán en la validación. La estrella marca un paso que se puede optimizar más adelante: registrar solos los mensajes de WhatsApp, asignar por turno en lugar de esperar a que alguien pulse «Tomar», y fijar con la empresa el segundo plazo. Cada paso queda en el registro, sin datos personales."
+    },
+    {
+      "archivo": "2026-11-10_Fig_Flujo_Cotizacion_v0.1.png",
+      "titulo": "Cotización con el asistente: una persona siempre revisa",
+      "carriles": ["Cliente", "Quien cotiza", "Sistema (bóveda y asistente)", "Gerencia"],
+      "nodos": {
+        "a": ["Quien cotiza", 0, "Pide un borrador desde la ficha", "inicio", {}],
+        "b": ["Sistema (bóveda y asistente)", 0, "Busca la plantilla y cotizaciones anteriores", "sistema", {}],
+        "c": ["Sistema (bóveda y asistente)", 1, "Arma el borrador, sin precios", "sistema", {"tiempo": "15 s en una prueba (datos ficticios)"}],
+        "d": ["Quien cotiza", 2, "Revisa y pone precios", "paso", {"tiempo": "sin dato: se mide en el caso de prueba"}],
+        "e": ["Quien cotiza", 3, "¿Gerencia aprueba antes de enviar?", "decision", {}],
+        "f": ["Gerencia", 3, "Aprueba la cotización", "paso", {"tiempo": "por confirmar con la empresa", "opt": true}],
+        "g": ["Quien cotiza", 4, "Envía la cotización", "paso", {}],
+        "h": ["Sistema (bóveda y asistente)", 5, "Guarda la huella y marca «Cotizada»", "sistema", {}],
+        "k": ["Cliente", 6, "¿Acepta?", "decision", {}],
+        "n": ["Cliente", 7, "Se cierra como ganada", "fin", {}],
+        "q": ["Quien cotiza", 6, "¿Dijo que no?", "decision", {}],
+        "o": ["Quien cotiza", 7, "Se cierra como perdida, con motivo", "fin_mal", {}],
+        "p": ["Sistema (bóveda y asistente)", 7, "Recuerda el seguimiento", "sistema", {"tiempo": "en la fecha fijada"}]
+      },
+      "flechas": [
+        ["a", "b", "", {}], ["b", "c", "", {}], ["c", "d", "", {"sal": "R", "ent": "B"}], ["d", "e", "", {}],
+        ["e", "g", "No", {}], ["e", "f", "Sí", {}], ["f", "g", "", {"sal": "R", "ent": "B"}],
+        ["g", "h", "", {"sal": "R", "ent": "T"}], ["g", "k", "", {"sal": "T", "ent": "L"}],
+        ["k", "n", "Sí", {}], ["k", "q", "No, o no responde", {}],
+        ["q", "o", "Sí", {}], ["q", "p", "No responde", {"sal": "B", "ent": "L"}]
+      ],
+      "nota": "Nota. El asistente nunca pone precios ni envía nada por su cuenta, y no recibe nombres, teléfonos ni correos. La aprobación de la gerencia está por confirmar con la empresa: si existe, es el paso que más puede demorar (estrella). Elaboración propia a partir del proceso con el sistema, parte 2."
+    },
+    {
+      "archivo": "2026-11-10_Fig_Flujo_Casos_Especiales_v0.1.png",
+      "titulo": "Dos casos especiales: un vendedor se va, o no está cuando llama su cliente",
+      "carriles": ["Gerencia", "Sistema", "Otro vendedor"],
+      "nodos": {
+        "a": ["Gerencia", 0, "Un vendedor deja la empresa", "inicio", {}],
+        "b": ["Gerencia", 1, "Desactiva su cuenta", "paso", {}],
+        "c": ["Sistema", 2, "Lista sus solicitudes abiertas", "sistema", {}],
+        "d": ["Gerencia", 3, "Las reasigna a otras personas", "paso", {}],
+        "e": ["Sistema", 4, "Avisa a cada nuevo responsable", "sistema", {"tiempo": "objetivo: 5 s o menos"}],
+        "f": ["Sistema", 5, "Las fichas siguen en la bóveda", "fin", {}],
+        "g": ["Otro vendedor", 0, "Llama un cliente y su vendedor no está", "inicio", {}],
+        "h": ["Otro vendedor", 1, "Busca la ficha del cliente", "paso", {"tiempo": "se mide en el caso de prueba"}],
+        "i": ["Otro vendedor", 2, "Lee el historial, también sin señal", "paso", {}],
+        "j": ["Otro vendedor", 3, "Atiende sin pedirle que repita", "fin", {}]
+      },
+      "flechas": [
+        ["a", "b", "", {}], ["b", "c", "", {"sal": "R", "ent": "T"}], ["c", "d", "", {"sal": "R", "ent": "B"}],
+        ["d", "e", "", {"sal": "R", "ent": "T"}], ["e", "f", "", {}],
+        ["g", "h", "", {}], ["h", "i", "", {}], ["i", "j", "", {}]
+      ],
+      "nota": "Nota. Son dos flujos independientes. En ambos, lo que sabía el vendedor ya no depende de su celular. Elaboración propia a partir del proceso con el sistema, partes 2 y 3."
+    }
+  ],
+
+  "filas": [
+    {
+      "archivo": "2026-11-10_Fig_Vista_General_v0.1.png",
+      "titulo": "Vista general: qué pasa hoy y qué pasa con el sistema",
+      "filas": [
+        {"nombre": "HOY", "color": "gris", "pasos": [
+          ["El cliente escribe a un WhatsApp personal", ""],
+          ["Alguien lo lee cuando puede", "cada 3–4 h o al llegar a casa (3 de 5)"],
+          ["Se reenvía sin dejar registro", "sin dato"],
+          ["La cotización se arma casi desde cero", "sin dato"],
+          ["Si el cliente se va, nadie anota por qué", ""]
+        ]},
+        {"nombre": "CON EL SISTEMA", "color": "azul", "pasos": [
+          ["La solicitud entra por el formulario o se registra desde el celular", "0 s"],
+          ["Aviso al celular del equipo", "5 s o menos"],
+          ["Alguien pulsa «Tomar» y contacta al cliente", "menos de 15 min"],
+          ["Si nadie la toma, se avisa a la gerencia", "minuto 15"],
+          ["El asistente propone el borrador y una persona lo revisa", "15 s en una prueba"],
+          ["Se cierra como ganada o perdida, con motivo", "al cerrar"],
+          ["Reporte a la gerencia", "cada lunes"]
+        ]}
+      ],
+      "nota": "Nota. «3 de 5»: censo de Torvesa, n = 5 (Bermeo y Segura, 2026, p. 10). Los tiempos con el sistema son objetivos de diseño, salvo los 15 segundos del borrador, que salen de una prueba con datos ficticios. Ninguno es todavía un resultado medido en la empresa."
+    },
+    {
+      "archivo": "2026-11-10_Fig_Recorrido_Prueba_Concepto_v0.2.png",
+      "titulo": "Recorrido de una solicitud en la prueba de concepto (datos ficticios)",
+      "filas": [
+        {"nombre": "", "color": "azul", "pasos": [
+          ["Cliente: formulario y consentimiento", ""],
+          ["Servidor: guarda con la hora de llegada", "objetivo: 5 s o menos"],
+          ["Mensajería: tarjeta al equipo", "objetivo: 5 s o menos"],
+          ["Equipo: pulsa «Tomar» (primer contacto)", "meta: menos de 15 min"],
+          ["Bóveda: ficha sin datos personales", ""],
+          ["Asistente: borrador sin precios", "15 s en una prueba"],
+          ["Persona: revisa y completa", "sin dato"]
+        ], "destacar": [6]}
+      ],
+      "nota": "Nota. Los tiempos de 5 segundos y 15 minutos son objetivos de diseño que aún no se han medido. Los 15 segundos del borrador salen de una sola prueba con datos ficticios (8 de noviembre de 2026)."
+    }
+  ],
+
+  "foda": {
+    "archivo": "2026-11-10_Fig_FODA_v0.1.png",
+    "F": ["F1. El flujo completo ya funciona en internet con datos ficticios: formulario, aviso, bóveda y borrador (prueba de concepto, 8-nov).",
+          "F2. Registro con huellas que detectó 3 de 3 alteraciones en la prueba (M5).",
+          "F3. Protección de datos desde el diseño: consentimiento obligatorio, el asistente no recibe nombres ni teléfonos (RQ-18, RQ-21).",
+          "F4. El asistente no pone precios ni envía nada solo: una persona revisa (RQ-12).",
+          "F5. Costo bajo: la bóveda usa Obsidian, gratuito para uso comercial (Obsidian, 2025)."],
+    "D": ["D1. Sin datos reales de Torvesa todavía: no hay línea base de M1 a M4 [FALTA-DATO].",
+          "D2. El censo es de 5 personas: sirve de antecedente, no de prueba.",
+          "D3. Depende de servicios de terceros (servidor, avisos, IA) con precios que pueden cambiar.",
+          "D4. El equipo es de dos estudiantes: el soporte después de la tesis no está resuelto.",
+          "D5. La clave de acceso del servidor está en la página pública: hay que separarla antes de usar datos reales (revisión del código, 10-nov)."],
+    "O": ["O1. La construcción vuelve a crecer en 2025 (+2,7 %) después de dos años de caída (Banco Central del Ecuador, 2026, p. 22).",
+          "O2. El cliente ya está conectado: 83,9 % usa internet (Kemp, 2026).",
+          "O3. Pocas pymes usan IA (Pérez-Campdesuñer et al., 2025; OECD, 2025, p. 6): quien ordene primero sus datos se adelanta.",
+          "O4. La LOPDP y su reglamento (2023) obligan a ordenar los datos personales: el sistema ayuda a cumplir (Ley Orgánica de Protección de Datos Personales [LOPDP], 2021; Reglamento General de la LOPDP, 2023).",
+          "O5. El mismo proceso sirve a otras constructoras, remodeladoras e inmobiliarias (ver el documento del proceso estrella)."],
+    "A": ["A1. Cortes de luz y mala señal en obra: en 2024 hubo cortes de hasta 12 horas (Tapia, 2024).",
+          "A2. Desconfianza o falta de autorización de la empresa: sin ella no hay validación (ruta crítica).",
+          "A3. Uso de IA con cuentas personales sin reglas en el 70 % de las organizaciones (Revelo, 2026): riesgo de fuga de datos de clientes.",
+          "A4. Competidores con CRM comerciales listos para usar [FALTA-FUENTE: oferta y precios de CRM para constructoras en Ecuador].",
+          "A5. Que el equipo de obra no adopte la herramienta si le quita tiempo: por eso la alerta es de texto simple (censo P7)."],
+    "estrategias": [
+      ["FO", "FO1", "Presentar la prueba de concepto funcionando a la gerencia ahora, mientras la demanda se recupera", "F1 + O1"],
+      ["FO", "FO2", "Vender el cumplimiento de la LOPDP como beneficio, no como costo", "F3 + O4"],
+      ["FO", "FO3", "Empaquetar el «primer contacto en 15 minutos» como servicio para otras empresas del sector", "F1 + O5"],
+      ["DO", "DO1", "Pedir a Torvesa solo fechas y horas de 3 meses, sin datos de clientes, para tener la línea base", "D1 + O4"],
+      ["DO", "DO2", "Elegir servicios con plan gratuito o por consumo y documentar una alternativa para cada uno", "D3"],
+      ["DO", "DO3", "Separar las claves del servidor antes de cualquier dato real", "D5 + O4"],
+      ["FA", "FA1", "Fichas sin conexión en el celular para trabajar con cortes de luz", "RQ-14 + A1"],
+      ["FA", "FA2", "Ofrecer el asistente con reglas claras como alternativa al uso de IA personal sin control", "F3 + F4 + A3"],
+      ["FA", "FA3", "Proponer una validación corta y reversible, de dos semanas, que no compromete a la empresa", "F1 + A2"],
+      ["DA", "DA1", "Empezar con lo mínimo que la gente usa: aviso de texto y botón «Tomar»", "D4 + A5"],
+      ["DA", "DA2", "Dejar manuales y la bóveda documentada para que el sistema no dependa de los autores", "D4"],
+      ["DA", "DA3", "Comparar con un CRM comercial en la matriz de herramientas, con precios oficiales", "A4"]
+    ],
+    "central": "Estrategia central: demostrar ahora, con una validación corta y reversible, que el primer contacto en menos de 15 minutos es posible y queda registrado.",
+    "nota": "Nota. Elaboración propia a partir de «La necesidad de Torvesa: contexto de Ecuador y FODA» (v0.1, 10-nov-2026), secciones 3.1 y 3.2. Los marcadores [FALTA-DATO] y [FALTA-FUENTE] se resuelven antes de la versión final."
+  },
+
+  "tablas": [
+    {
+      "archivo": "2026-11-10_Fig_Tabla_Requisitos_Prueba_Concepto_v0.1.png",
+      "titulo": "Requisitos ya comprobados en la prueba de concepto",
+      "columnas": ["Requisito", "Qué se comprobó", "Resultado"], "anchos": [3.2, 4.2, 4.6], "envolver": [30, 42, 48],
+      "filas": [
+        ["RQ-01 Registro de la solicitud", "La solicitud del formulario queda guardada con fecha y hora", "Funciona. Falta medir el criterio de 5 segundos"],
+        ["RQ-02 Aviso al responsable", "Llega una tarjeta al canal del equipo en Slack", "Funciona. Falta medir el criterio de 5 segundos"],
+        ["RQ-04 y RQ-05 Responsable y estados", "Botón «Tomar» en la tarjeta", "Funciona con los estados del servidor; «Cotizada» ya está programado, pero no entró en esta prueba"],
+        ["RQ-09 Ficha del cliente", "La solicitud pasa a la bóveda con una ficha sin datos personales", "Funciona. Los datos de contacto quedan en una carpeta aparte"],
+        ["RQ-11 Borrador con citas", "El asistente arma el borrador de una cocina ficticia", "Funciona. Citó la plantilla de remodelación y tardó 15 segundos"],
+        ["RQ-12 Revisión humana", "El borrador queda marcado como «Borrador»", "Funciona. El sistema no envía nada por su cuenta"],
+        ["RQ-15 y RQ-16 Registro con huellas", "Prueba automática de alteración y verificación en línea", "3 de 3 alteraciones detectadas"],
+        ["RQ-17 Registro sin datos personales", "Se buscan nombre, teléfono, correo y usuario en los eventos", "No aparecen; quien hizo el cambio queda con seudónimo"],
+        ["RQ-18 Consentimiento", "Se intenta enviar el formulario sin marcar la casilla", "Se rechaza. Con la casilla se guardan la fecha y la versión del aviso"],
+        ["RQ-21 Privacidad ante el asistente", "Revisión automática antes de cada llamada al asistente", "Funciona. Un teléfono escrito en la descripción no llegó al asistente"],
+        ["RQ-24 Hora del primer contacto", "Se pulsa «Tomar» en una solicitud ficticia", "Se guarda y no se sobrescribe. Falta confirmar cuándo cuenta como primer contacto"]
+      ],
+      "nota": "Nota. Prueba del 8 de noviembre de 2026, con datos ficticios; no reemplaza a los casos de prueba CP-01 a CP-03. Elaboración propia a partir del anexo B de los casos de prueba v0.1 (Bermeo, 2026)."
+    },
+    {
+      "archivo": "2026-11-10_Fig_Tabla_Censo_n5_v0.1.png",
+      "titulo": "Censo de validación de TEAMSLASH (gerencia y operación de Torvesa, n = 5)",
+      "columnas": ["Pregunta", "Hallazgo", "Frecuencia"], "anchos": [1.4, 7.6, 2.0], "envolver": [10, 80, 18],
+      "filas": [
+        ["P1 y P2", "Pasa más de la mitad de la jornada en obra; el 40 % revisa los mensajes cada 3 o 4 horas y el 20 % solo al llegar a casa", "60 % en obra"],
+        ["P3", "Los clientes escriben al WhatsApp personal de socios o ingenieros", "80 % (4 de 5)"],
+        ["P4", "El tiempo máximo aceptable para el primer contacto es de menos de 15 minutos", "80 % (4 de 5)"],
+        ["P5", "Considera crítico revisar cada semana los motivos de pérdida de clientes", "60 % (3 de 5)"],
+        ["P6", "Limitaciones en campo: falta de computadoras, mala conectividad y pantallas recargadas", "40 % cada una"],
+        ["P7", "Prefiere una alerta de texto simple o una tarjeta con enlace", "40 % y 40 %"],
+        ["P8", "Quiere a futuro un módulo de planillas y avance de obra con fotos", "80 % (4 de 5)"]
+      ],
+      "nota": "Nota. Censo de mayo de 2026, citado del Informe Final del proyecto integrador (22 de julio de 2026, p. 10). Es un antecedente y no una línea base: son 5 personas y no es una muestra."
+    },
+    {
+      "archivo": "2026-11-10_Fig_Tabla_Metas_M1_M6_v0.1.png",
+      "titulo": "Metas de la validación del diseño en operación experimental controlada",
+      "columnas": ["Meta", "Qué se busca", "Cómo se mide"], "anchos": [1.0, 6.0, 5.0], "envolver": [6, 62, 52],
+      "filas": [
+        ["M1", "Que la mitad de los clientes reciba respuesta en menos de 15 minutos", "Horas de llegada y de primer contacto guardadas por el sistema"],
+        ["M2", "Que hacer una cotización con ayuda de la IA tome menos que hoy (30 a 44 minutos)", "Cronómetro en el caso de prueba CP-01"],
+        ["M3", "Que se pierdan menos clientes antes del primer contacto", "Registro de solicitudes"],
+        ["M4", "Que cualquier vendedor encuentre el historial de un cliente ajeno, más rápido y con más aciertos", "Caso de prueba CP-02"],
+        ["M5", "Que el sistema detecte el 100 % de los cambios hechos a escondidas en su registro", "Caso de prueba CP-03 (ya: 3 de 3 en la prueba de concepto)"],
+        ["M6", "Que la usabilidad del sistema llegue al menos a 68 puntos SUS", "Por decidir con la tutora: evaluación heurística en lugar del cuestionario SUS"]
+      ],
+      "nota": "Nota. Las metas son las del diseño aprobado (Glosario de la tesis). La forma de medir sigue la propuesta de no recoger datos de personas, que todavía debe aprobar la tutora."
+    }
+  ],
+
+  "piramide": {
+    "archivo": "2026-11-10_Fig_Proceso_Estrella_E2_v0.1.png",
+    "titulo": "E2 · Los tres niveles del producto",
+    "niveles": [["Nivel 1 · Primer contacto garantizado", "el proceso estrella"],
+                ["Nivel 2 · Memoria comercial", "bóveda, historial, sin conexión"],
+                ["Nivel 3 · Cotización asistida", "IA, siempre revisada por una persona"]],
+    "lateral": "Cada nivel necesita el anterior",
+    "nota": "Nota. Elaboración propia a partir del documento del proceso estrella (v0.1, 10-nov-2026)."
+  },
+  "nucleo": {
+    "archivo": "2026-11-10_Fig_Proceso_Estrella_E3_v0.1.png",
+    "titulo": "E3 · Escalabilidad: un núcleo, cinco configuraciones",
+    "centro": "Núcleo igual para todas\n\ncaptura, aviso, responsable, 15 min,\nmotivo, reporte, registro",
+    "tarjetas": [["Torvesa", "Tipos de obra; formulario de la web;\nregistro manual de WhatsApp"],
+                 ["Otra constructora", "Plantillas y catálogo propios;\nsu canal de avisos"],
+                 ["Remodelación", "Formulario con fotos y medidas;\nplantillas por ambiente"],
+                 ["Inmobiliaria", "Estado «Visita agendada»;\nasignación por proyecto"],
+                 ["Ferretería o proveedor", "Plantilla de lista de materiales;\ncatálogo de precios; recompra"]],
+    "banda": "Cada empresa con su base de datos y su bóveda; nunca se mezclan clientes (LOPDP)"
+  },
+  "linea": {
+    "archivo": "2026-11-10_Fig_Proceso_Estrella_E4_v0.1.png",
+    "titulo": "E4 · Línea de tiempo del escalamiento",
+    "hoy": "Hoy: 3 de 5 revisan los mensajes cada 3–4 h o al llegar a casa (censo n = 5)",
+    "hitos": [["0 s", "llega la solicitud", "azul"], ["≤ 5 s", "aviso", "azul"], ["0–15 min", "alguien pulsa «Tomar»\ny contacta", "azul"],
+              ["15 min", "recordatorio + aviso\na la gerencia", "cobre"], ["después", "reasignación", "cobre"], ["lunes", "reporte", "verde"]],
+    "nota": "Nota. Elaboración propia a partir del documento del proceso estrella (v0.1, 10-nov-2026); censo: Bermeo y Segura (2026, p. 10)."
+  },
+  "ciclo": {
+    "archivo": "2026-11-10_Fig_Proceso_Estrella_E5_v0.1.png",
+    "titulo": "E5 · Ciclo de mejora del proceso",
+    "cajas": [["Planificar", "fijar el plazo objetivo y la lista\nde motivos de pérdida"],
+              ["Hacer", "atender con el proceso estrella"],
+              ["Verificar", "reporte del lunes (mediana,\n% dentro del plazo, motivos)"],
+              ["Actuar", "la gerencia corrige (reasigna turnos,\najusta plantillas, cambia el plazo)"]],
+    "nota": "Nota. Elaboración propia a partir del documento del proceso estrella (v0.1, 10-nov-2026)."
+  }
+}

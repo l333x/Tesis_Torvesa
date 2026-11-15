@@ -1,0 +1,166 @@
+﻿lista,nombre,desc,vence,etiquetas
+Hecho,S1 · Víctor: 7 tareas hechas,"- S1-T01 Conversar con la tutora sobre los 5 cambios, para tener su aprobación
+- S1-T07 Buscar fuentes sobre la digitalización de la construcción, para respaldar el contexto (A5, A6)
+- S1-T11 Corregir los instrumentos a la versión 0.2, para aplicarlos en Torvesa
+- S1-T12 Hacer el corte de fuentes: armar la matriz afirmación–fuente–estado, para decidir qué entra al capítulo 1
+- S1-T19 Buscar el texto oficial de la ley de datos (LOPDP) y agregar sus artículos al consentimiento, para cumplir la ley
+- S1-T20 Buscar la versión validada en español de la escala SUS, para medir la usabilidad correctamente
+- S1-T25 Escribir un resumen de 1 página para Diego sobre el problema y sus fuentes",2026-10-18,Víctor
+Hecho,S1 · Diego: 9 tareas hechas,"- S1-T04 Aceptar la invitación de GitHub y clonar el repo, para trabajar en la bóveda compartida
+- S1-T05 Levantar el buscador RAG en su PC, para consultar la bóveda
+- S1-T08 Investigar cómo consolidar bóvedas de conocimiento, para diseñar la bóveda del sistema
+- S1-T09 Leer el Documento madre y el Glosario, para entender el proyecto completo
+- S1-T13 Investigar arquitecturas RAG para negocio, para proponer cómo el asistente consultará la bóveda
+- S1-T14 Escribir un resumen de 1 página para Víctor sobre bóvedas y RAG, para compartir lo aprendido
+- S1-T22 Investigar flujos de información y diseño de procesos (BPMN), para dibujar el proceso de Torvesa
+- S1-T23 Investigar CRMs móviles y herramientas existentes con sus precios, para comparar y calcular costos
+- S1-T26 Escribir un resumen de 1 página para Víctor sobre CRMs y flujos",2026-10-18,Diego
+Hecho,S2 · Víctor: 8 tareas hechas,"- S2-T01 Escribir el capítulo 1, parte 1 (problema y evidencias), para tener el primer borrador
+- S2-T03 Escribir el capítulo 1, parte 2 (justificación y objetivos)
+- S2-T05 Escribir el capítulo 2, parte 1 (CRM, tiempo de respuesta, gestión del conocimiento)
+- S2-T07 Escribir el capítulo 2, parte 2 (IA, RAG, normativa)
+- S2-T09 Buscar fuentes de adopción de IA y automatización comercial 2023–2026, para el marco teórico
+- S2-T10 Armar el lienzo del modelo de negocio y la propuesta de valor (primer borrador)
+- S2-T12 Escribir el capítulo 3, parte 1 (enfoque, DSR y población)
+- S2-T16 Escribir el capítulo 3, parte 2 (instrumentos, análisis y ética)",2026-10-25,Víctor
+Hecho,S2 · Diego: 4 tareas hechas,"- S2-T06 Dibujar el proceso actual (AS-IS) en BPMN con lo dicho en las entrevistas
+- S2-T08 Terminar el proceso actual (AS-IS) y marcar dónde se pierde tiempo
+- S2-T11 Hacer el inventario de herramientas candidatas, con criterios de comparación
+- S2-T14 Terminar el inventario de herramientas con precios y criterios",2026-10-25,Diego
+Hecho,S3 · Víctor: 1 tareas hechas,"- S3-T01 Preparar la presentación de avance (capítulos 1–3 y fuentes), para la Revisión 1",2026-11-01,Víctor
+Hecho,S3 · Diego: 5 tareas hechas,"- S3-T12 Preparar la plantilla de los flujos TO-BE (Mermaid o Miro)
+- S3-T15 Confirmar si TEAMSLASH guarda los datos en Google Sheets o en PostgreSQL, para el documento de elicitación
+- S3-T17 Revisar y completar la elicitación y análisis de requerimientos v0.1, parte 1: requerimientos técnicos (no funcionales y restricciones) y TEAMSLASH
+- S3-T18 Completar la elicitación v0.1, parte 2: diagrama de casos de uso y modelo conceptual
+- S3-T19 Escribir el resumen de 1 página del proceso actual (AS-IS) para Víctor",2026-11-01,Diego
+Hecho,S4 · Diego: 7 tareas hechas,"- S4-T01 Dibujar los procesos con el sistema (TO-BE), parte 1: recepción y asignación
+- S4-T03 Dibujar los procesos TO-BE, parte 2: cotización asistida e historial
+- S4-T05 Dibujar los procesos TO-BE, parte 3: recordatorios y reasignación
+- S4-T07 Construir la bóveda del sistema: carpetas y plantillas
+- S4-T09 Construir la bóveda del sistema: fichas de ejemplo con datos ficticios
+- S4-T11 Construir la bóveda del sistema: tableros y enlaces
+- S4-T13 Escribir un resumen de 1 página para Víctor de la bóveda del sistema",2026-11-08,Diego
+Hecho,S5 · Diego: 3 tareas hechas,"- S5-T02 Construir la prueba de concepto, parte 1: formulario → servidor
+- S5-T04 Construir la prueba de concepto, parte 2: servidor → bóveda
+- S5-T06 Construir la prueba de concepto, parte 3: borrador de cotización con IA",2026-11-15,Diego
+Hecho,Borrador 1 de la tesis (7-nov) y borrador 2 (10-nov),"65 páginas. Cap. IV v0.2 con censo, contexto, FODA, proceso estrella y viabilidad.",2026-11-10,Víctor
+En curso,"POR APROBAR · Requisitos funcionales y no funcionales (S4-T02, S4-T04)","- S4-T02 Escribir los requisitos funcionales (qué debe hacer el sistema) — Cubierto por la elicitación v0.1 (27-oct) y el Cap. IV: 24 requisitos
+- S4-T04 Escribir los requisitos no funcionales (seguridad, sin conexión, ley de datos) — Cubierto por la elicitación v0.1 y el Cap. IV",2026-11-15,Víctor
+En curso,"POR APROBAR · Matriz de herramientas, CAPEX y OPEX v0.1 (S4-T08, T10, T12)","- S4-T08 Armar la matriz de decisión de herramientas en Excel (fórmulas vivas) — Matriz de herramientas v0.1 (10-nov)
+- S4-T10 Calcular CAPEX (inversión inicial) con fuente para cada precio — Modelo financiero v0.1, hoja CAPEX (10-nov)
+- S4-T12 Calcular OPEX (gasto mensual) con fuente para cada precio — Modelo financiero v0.1, hoja OPEX (10-nov)",2026-11-15,Víctor
+En curso,"POR APROBAR · Beneficios, VAN, TIR y sensibilidad v0.1 (S5-T01, T03, T05)","- S5-T01 Estimar los beneficios con supuestos explícitos (horas ahorradas, clientes no perdidos) — Modelo financiero v0.1, hoja Beneficios (10-nov); son supuestos
+- S5-T03 Calcular VAN, TIR y período de recuperación en 3 escenarios — Modelo financiero v0.1: VAN, TIR y recuperación en 3 escenarios (10-nov)
+- S5-T05 Hacer el análisis de sensibilidad (qué pasa si cambian los supuestos) — Modelo financiero v0.1, hoja Sensibilidad (10-nov)",2026-11-15,Víctor
+En curso,POR APROBAR · Casos de prueba v0.1 de Diego (S5-T13),- S5-T13 Diseñar los 3 casos de prueba — Casos de prueba v0.1 de Diego (8-nov); el cierre es la aprobación de Víctor,2026-11-14,Víctor
+En curso,S1-T06 · Buscar y verificar fuentes sobre el tiempo de respuesta a clientes (Oldroyd y es,,2026-11-10,Víctor
+En curso,"S1-T21 · Buscar fuentes de metodología (DSR, Design Thinking, Scrum, censo), para justifi",,2026-11-10,Víctor
+En curso,"S1-T27 · Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explíc",,2026-11-10,Ambos
+En curso,S2-T13 · Escribir un resumen de 1 página para Diego del capítulo 1,,2026-11-10,Víctor
+En curso,S3-T02 · Exportar el proceso actual y las gráficas para la presentación,El proceso actual está exportado; las gráficas dependen del campo,2026-11-10,Diego
+En curso,"S4-T15 · Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explíc",Diego escribió su parte (2-nov); falta la de Víctor y la llamada,2026-11-10,Ambos
+En curso,S5-T07 · Escribir la matriz de riesgos,Tabla de riesgos en el Cap. IV v0.2; falta la matriz completa en Excel,2026-11-12,Víctor
+En curso,"S5-T08 · Construir la prueba de concepto, parte 4: alertas y registro de eventos","Registro de eventos hecho (8-nov); el recordatorio está programado, sin publicar",2026-11-12,Diego
+En curso,S5-T11 · Escribir el pitch de 1 página para inversionista,Pitch de 1 y 3 minutos v0.1 (10-nov); falta la página para inversionista,2026-11-14,Víctor
+En curso,S5-T14 · Intercambiar resúmenes de 1 página (finanzas ↔ prueba de concepto),Diego entregó su resumen (8-nov); falta el de Víctor,2026-11-15,Ambos
+Pendiente esta semana,"S3-T04 · Escribir cómo estructuré mi bóveda 1 (patrones, no datos), parte 1",Atrasada.,2026-11-10,Víctor
+Pendiente esta semana,"S3-T09 · Escribir cómo estructuré mi bóveda 1, parte 2",Atrasada.,2026-11-10,Víctor
+Pendiente esta semana,S3-T10 · Leer el documento de patrones de la bóveda 1 y anotar preguntas,Atrasada.,2026-11-10,Diego
+Pendiente esta semana,"S3-T13 · Sesión: Víctor explica a Diego los conceptos de negocio (embudo, tiempo de respu",Atrasada.,2026-11-10,Ambos
+Pendiente esta semana,"S3-T14 · Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explíc",Atrasada.,2026-11-10,Ambos
+Pendiente esta semana,S4-T06 · Validar los flujos TO-BE contra los requisitos,Atrasada.,2026-11-10,Víctor
+Pendiente esta semana,S4-T14 · Escribir un resumen de 1 página para Diego de requisitos y costos,Atrasada.,2026-11-10,Víctor
+Pendiente esta semana,S5-T09 · Escribir el capítulo de normativa (LOPDP),,2026-11-13,Víctor
+Pendiente esta semana,S5-T10 · Probar la prueba de concepto completa y corregir errores,,2026-11-13,Diego
+Pendiente esta semana,S5-T12 · Terminar el capítulo de normativa,,2026-11-14,Víctor
+Pendiente esta semana,"S5-T15 · Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explíc",,2026-11-15,Ambos
+Pendiente esta semana,Enviar a la tutora el mensaje para la cita (SOL-09),Vencía el 9-nov. Es la ruta crítica.,2026-11-10,Víctor
+Pendiente esta semana,"Mensaje a Diego: acceso a teamslash-poc, separar claves y rama publicada",Texto listo en 00_Inbox/2026-11-10_respuestas_Victor_a_Diego_PROPUESTA.md,2026-11-10,Víctor
+Pendiente esta semana,Separar las claves del servidor antes de usar datos reales,La clave de la página pública también permite leer las solicitudes.,2026-11-15,Diego
+Pendiente (por sprint),S6 · Víctor: 4 tareas (16-11 a 22-11),"- S6-T05 (18-11) Escribir el acta de la Revisión 2
+- S6-T06 (19-11) Preparar el protocolo de la validación del diseño en operación experimental controlada
+- S6-T08 (20-11) Pedir a Torvesa la autorización y las fechas de la validación
+- S6-T10 (21-11) Incorporar las observaciones de la Revisión 2 (documento)",2026-11-22,Víctor
+Pendiente (por sprint),S6 · Diego: 4 tareas (16-11 a 22-11),"- S6-T03 (17-11) Estabilizar la prueba de concepto para la demostración
+- S6-T07 (19-11) Dejar estable la prueba de concepto para la validación
+- S6-T09 (20-11) Probar la prueba de concepto con los 3 casos de prueba antes de la validación
+- S6-T11 (21-11) Incorporar las observaciones de la Revisión 2 (técnicas)",2026-11-22,Diego
+Pendiente (por sprint),S6 · Ambos: 4 tareas (16-11 a 22-11),"- S6-T01 (16-11) Preparar la presentación de la Revisión 2 (diseño, flujos, datos y viabilidad)
+- S6-T02 (17-11) Ensayar la presentación de la Revisión 2
+- S6-T04 (18-11) Asistir a la Revisión 2 con la tutora (fecha a confirmar)
+- S6-T12 (22-11) Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente",2026-11-22,Ambos
+Pendiente (por sprint),S7 · Víctor: 5 tareas (23-11 a 29-11),"- S7-T04 (24-11) Escribir el capítulo de diagnóstico, parte 1 (línea base real)
+- S7-T07 (25-11) Escribir el capítulo de diagnóstico, parte 2
+- S7-T09 (26-11) Incorporar observaciones pendientes del documento
+- S7-T11 (27-11) Revisar el capítulo de diagnóstico
+- S7-T13 (28-11) Escribir un resumen de 1 página para Diego del diagnóstico",2026-11-29,Víctor
+Pendiente (por sprint),S7 · Diego: 7 tareas (23-11 a 29-11),"- S7-T01 (22-11) Preparar el sistema para la validación (accesos, respaldo)
+- S7-T03 (24-11) Arrancar la validación del diseño en operación experimental controlada
+- S7-T05 (25-11) Monitorear la validación y anotar incidencias
+- S7-T06 (25-11) Incorporar observaciones técnicas pendientes
+- S7-T08 (26-11) Monitorear la validación y anotar incidencias
+- S7-T10 (27-11) Monitorear la validación y anotar incidencias
+- S7-T12 (28-11) Monitorear la validación y empezar a documentar las herramientas",2026-11-29,Diego
+Pendiente (por sprint),S7 · Ambos: 2 tareas (23-11 a 29-11),"- S7-T02 (23-11) Capacitar al equipo de Torvesa para la validación
+- S7-T14 (29-11) Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente",2026-11-29,Ambos
+Pendiente (por sprint),S8 · Víctor: 6 tareas (30-11 a 06-12),"- S8-T03 (30-11) Escribir el capítulo de diseño y viabilidad, parte 1 (arquitectura y flujos)
+- S8-T06 (01-12) Escribir el capítulo de diseño y viabilidad, parte 2 (costos y VAN/TIR)
+- S8-T09 (02-12) Escribir el capítulo de diseño y viabilidad, parte 3 (normativa y riesgos)
+- S8-T12 (03-12) Revisar los documentos técnicos de Diego
+- S8-T14 (04-12) Terminar el capítulo de diseño y viabilidad
+- S8-T16 (05-12) Preparar los instrumentos de la medición «después»",2026-12-06,Víctor
+Pendiente (por sprint),S8 · Diego: 10 tareas (30-11 a 06-12),"- S8-T01 (30-11) Documentar las herramientas elegidas y descartadas, con justificación
+- S8-T02 (30-11) Monitorear la validación
+- S8-T04 (01-12) Documentar el modelo de datos y el registro de eventos
+- S8-T05 (01-12) Monitorear la validación
+- S8-T07 (02-12) Documentar las plantillas de cotización y el asistente de IA
+- S8-T08 (02-12) Monitorear la validación
+- S8-T10 (03-12) Ejecutar los casos de prueba
+- S8-T11 (03-12) Monitorear la validación
+- S8-T13 (04-12) Escribir el manual básico de usuario
+- S8-T15 (05-12) Cerrar la validación: congelar el registro y respaldar los datos",2026-12-06,Diego
+Pendiente (por sprint),S8 · Ambos: 2 tareas (30-11 a 06-12),"- S8-T17 (06-12) Intercambiar resúmenes de 1 página (capítulo 5 ↔ documentación técnica)
+- S8-T18 (06-12) Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente",2026-12-06,Ambos
+Pendiente (por sprint),S9 · Víctor: 3 tareas (07-12 a 13-12),"- S9-T04 (10-12) Comparar el antes y el después (análisis pre-post)
+- S9-T06 (11-12) Terminar el análisis pre-post
+- S9-T08 (12-12) Escribir el capítulo de resultados",2026-12-13,Víctor
+Pendiente (por sprint),S9 · Diego: 3 tareas (07-12 a 13-12),"- S9-T05 (10-12) Hacer pruebas de carga simuladas con scripts
+- S9-T07 (11-12) Hacer pruebas de uso y preparar las gráficas de resultados
+- S9-T09 (12-12) Revisar el capítulo de resultados (parte técnica)",2026-12-13,Diego
+Pendiente (por sprint),S9 · Ambos: 4 tareas (07-12 a 13-12),"- S9-T01 (07-12) Hacer la medición «después», día 1 (encuesta a colaboradores y SUS)
+- S9-T02 (08-12) Hacer la medición «después», día 2 (prueba de recuperación)
+- S9-T03 (09-12) Hacer la medición «después», día 3 (clientes y entrevistas de cierre)
+- S9-T10 (13-12) Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente",2026-12-13,Ambos
+Pendiente (por sprint),S10 · Víctor: 3 tareas (14-12 a 20-12),"- S10-T01 (14-12) Enviar a la tutora la tesis completa para revisión
+- S10-T03 (15-12) Ciclo con la tutora: recibir observaciones
+- S10-T05 (17-12) Ciclo con la tutora: segunda revisión",2026-12-20,Víctor
+Pendiente (por sprint),S10 · Diego: 1 tareas (14-12 a 20-12),- S10-T02 (14-12) Revisar anexos técnicos y figuras,2026-12-20,Diego
+Pendiente (por sprint),S10 · Ambos: 4 tareas (14-12 a 20-12),"- S10-T04 (16-12) Corregir según las observaciones
+- S10-T06 (18-12) HITO: dejar la tesis al 90 %
+- S10-T07 (19-12) Integrar todo y revisar coherencia entre capítulos
+- S10-T08 (20-12) Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente",2026-12-20,Ambos
+Pendiente (por sprint),Holgura · Víctor: 3 tareas (21-12 a 03-01),"- Holgura-T01 (22-12) Revisar las citas del capítulo 1 y 2 contra sus fichas
+- Holgura-T03 (26-12) Revisar las citas de los capítulos 3–6
+- Holgura-T04 (29-12) Revisar la bibliografía en APA 7",2027-01-03,Víctor
+Pendiente (por sprint),Holgura · Diego: 2 tareas (21-12 a 03-01),"- Holgura-T02 (23-12) Revisar los anexos técnicos y su numeración
+- Holgura-T05 (30-12) Revisar figuras, tablas y diagramas",2027-01-03,Diego
+Pendiente (por sprint),Holgura · Ambos: 1 tareas (21-12 a 03-01),- Holgura-T06 (02-01) Leer la tesis completa una vez más,2027-01-03,Ambos
+Pendiente (por sprint),Entrega · Víctor: 2 tareas (04-01 a 10-01),"- Entrega-T01 (04-01) Enviar la versión final a la tutora
+- Entrega-T03 (07-01) Conseguir la firma de la tutora",2027-01-10,Víctor
+Pendiente (por sprint),Entrega · Ambos: 2 tareas (04-01 a 10-01),"- Entrega-T02 (06-01) Hacer las últimas correcciones
+- Entrega-T04 (08-01) Entregar la tesis a la carrera",2027-01-10,Ambos
+Pendiente (por sprint),◆ HITO · Revisión 2 con la tutora,Fecha a confirmar,2026-11-18,Hito
+Pendiente (por sprint),◆ HITO · Inicio de la validación del diseño,Depende de la autorización de Torvesa,2026-11-23,Hito
+Pendiente (por sprint),◆ HITO · Cierre de la validación del diseño,,2026-12-05,Hito
+Pendiente (por sprint),◆ HITO · Tesis al 90 %,,2026-12-18,Hito
+Pendiente (por sprint),◆ HITO · Entrega a la tutora (fecha límite),Documento final completo,2027-01-04,Hito
+Pendiente (por sprint),◆ HITO · Entrega a la carrera,,2027-01-08,Hito
+Bloqueado · espera de Torvesa o de la tutora,"ESPERA A LA TUTORA · Revisión 1, acta y correcciones (5 tareas)","- S3-T03 Ensayar la presentación de la Revisión 1 — Espera la cita con la tutora (SOL-09 sin enviar)
+- S3-T05 Asistir a la Revisión 1 con la tutora (fecha a confirmar) — Revisión 1 sin fecha: falta pedir la cita a la tutora
+- S3-T06 Escribir el acta de la Revisión 1 — Depende de la Revisión 1
+- S3-T07 Corregir los capítulos según las observaciones, parte 1 — Depende de las observaciones de la tutora
+- S3-T08 Corregir el proceso actual y las gráficas según las observaciones — Depende de las observaciones de la tutora
+- S3-T11 Corregir los capítulos según las observaciones, parte 2 — Depende de las observaciones de la tutora",,Ambos
+Bloqueado · espera de Torvesa o de la tutora,"ESPERA A TORVESA · Autorización, campo y línea base (3 tareas)","- S3-T16 Conseguir la respuesta de Torvesa (autorización de campo, nota de respaldo y catálogo), para medir la línea base — Torvesa no responde
+- S4-T16 Hacer el campo en Torvesa (si autorizó): cronometrar cotizaciones (P2-A) y revisar solicitudes de los últimos 3 meses (P2-B) — Torvesa no autoriza todavía el campo
+- S4-T17 Analizar los datos de campo y preparar las gráficas de la línea base (M1–M4 y M6) — Depende del campo en Torvesa",,Diego

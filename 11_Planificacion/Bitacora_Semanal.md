@@ -323,3 +323,60 @@ tags: [bitacora, informes, planificacion]
 ### Pendiente
 - **Víctor:** sprint 4 (requisitos, matriz de herramientas, CAPEX y OPEX), que alimentan la sección de viabilidad del Cap. IV.
 - **Después de la Revisión 1:** acta, Cap. III v0.4 y borrador v0.2 con las observaciones.
+
+## 2026-11-10 · Borrador 2, finanzas, FODA y prototipo revisado
+
+### Qué pasó (Víctor, con Claude)
+- **Repos del prototipo:** acceso con `l333x` a `teamslash-landing` y `teamslash-api`; `teamslash-poc` da «no encontrado» (falta la invitación de Diego). Servidor y página en línea.
+- **Hallazgos del código:** la clave de la API está en la página pública y también permite leer y modificar solicitudes; RQ-05 a RQ-08 ya están programados en la rama `rq18-consentimiento`, sin unir a `main`.
+- **Respuestas a las 7 preguntas de Diego:** propuesta en `00_Inbox/2026-11-10_respuestas_Victor_a_Diego_PROPUESTA.md`. **Víctor aún no las aprueba.**
+- **Finanzas y herramientas** (`06_Capitulos/Modelo_Negocio/2026-11-10_*`): matriz de 11 alternativas (gana el stack del prototipo, 4,14 de 5) y modelo financiero con supuestos: VAN −10.282 / 11.557 / 66.526 USD (pesimista / base / optimista). El caso depende de recuperar unas 3 obras al año; todos los montos de Torvesa son supuestos.
+- **Necesidad, FODA, proceso estrella, guía de negociación y pitch** v0.1 (`06_Capitulos/` y `Modelo_Negocio/`). 18 fichas nuevas en `02_Fuentes/`.
+- **Figuras** (`06_Capitulos/Figuras/2026-11-10_*`) y tablero privado de Miro: https://miro.com/app/board/uXjVEP28Oyg=/ (falta revisar a ojo que nada se salga de su marco).
+- **Borrador 2 de la tesis** (`06_Capitulos/2026-11-10_Tesis_Borrador2_v0.2.docx` y `.pdf`): Cap. IV v0.2 y Caps. V–VI v0.2; caps. I–III sin cambios. Marcadores: FALTA-FUENTE 19, FALTA-DATO 35, DECIDIR-TUTORA 9, DECIDIR-VÍCTOR 7, VERIFICAR-PÁG 3.
+
+### Pendiente
+- **Víctor:** enviar SOL-09 a la tutora; mensaje a Diego (invitación, claves, rama publicada); aprobar o cambiar las respuestas a Diego; revisar el borrador 2.
+- **Sin verificar:** IVA 15 % (decreto), aporte IESS, normas ISO, A9 (Oldroyd), uso de WhatsApp en Ecuador, precio de Odoo.
+- **Claude:** cronograma (tareas de Diego del sprint 5 como hechas), registro de contribuciones, auditoría PII, commit y push al cerrar el día.
+
+### 10-nov, segunda ronda (tarde)
+- **Estudio de costos v0.2** (`06_Capitulos/Modelo_Negocio/2026-11-10_Estudio_Costos_v0.2.*`): TEAMSLASH como negocio (punto de equilibrio: 27, 51 y 126 clientes según el tamaño), Torvesa como cliente (VAN base USD 12.388 por su cuenta y USD 15.832 como servicio), y bóveda, asistente y AWS. Los precios de venta y los sueldos son supuestos.
+- **Gantt** (`11_Planificacion/2026-11-10_Gantt_Tesis_v0.1.xlsx`), **revisión del cronograma** con 29 cambios propuestos (sin aplicar) y tablero privado de Trello: https://trello.com/b/VdkwofqC. Avance real: 36 %.
+- **Flujos revisados** (`07_Flujos_Diseno/2026-11-10_Revision_Flujos.md`): 6 figuras nuevas con tiempos; `99_Scripts/figuras/Generar_Figuras.bat` las regenera (herramienta nueva, pedida por Víctor).
+- **Por qué nosotros** v0.1, **documento maestro para IA** (`11_Planificacion/2026-11-10_Documento_Maestro_Para_IA.*`) y **borrador 2 v0.3** (66 páginas; solo cambia la figura del proceso central; el Cap. IV sigue con las cifras del modelo v0.1).
+- Copia de todo en el Escritorio: `REVISION TRAS FABLE` (copias; la bóveda es la fuente).
+- **Pendiente de Víctor:** decidir si el Cap. IV pasa a las cifras v0.2, cuál tablero de Trello se queda y los 29 cambios del cronograma.
+
+### 2026-11-15 (domingo) · Modelo de negocio con un solo cliente, datos reales
+- **Pedido de Víctor:** partir de una sola empresa (Torvesa), vender primero la idea (necesidad y oportunidad) y después la viabilidad; dos planes (Estándar y Premium, el Premium cubre lo que el Estándar no); cobrar el trabajo de los fundadores; 80 % real; Excel que la directora de carrera (Contabilidad y Auditoría) entienda sin explicación; escalamiento al final con techo de 20 empresas.
+- **Modelo financiero v0.2** (`06_Capitulos/Modelo_Negocio/2026-11-15_Modelo_Financiero_v0.2.xlsx`): estructura de estudio financiero (inversión → costos → precio → ingresos → estado de resultados → flujo → evaluación), panel con listas desplegables, 63 supuestos con tipo y fuente, nombres en las fórmulas, glosario y 30 fuentes. Escenario base: Estándar USD 175/mes (VAN negativo: no devuelve el levantamiento); **Premium USD 275/mes + USD 311, VAN USD 427, TIR 26 %, B/C 1,03**; Torvesa VAN USD 13.618, se paga con 1,9 obras al año; el sistema costaría el 56 % de la utilidad de una constructora pequeña típica. Real: 71 % de lo que depende de nosotros; 6 % de lo de Torvesa.
+- **Análisis financiero v0.2**, **caso de negocio v0.1**, **Por qué nosotros v0.2**, **exposición de 1 página** (.md/.docx/.pdf) y **matriz de herramientas v0.2** (portada + hoja «Por qué nosotros»). Estudio de costos v0.3 (techo de 20 y precio por tipo de empresa) queda para el escalamiento.
+- **Fuentes:** +24 fichas verificadas (sueldos TI, IESS, Código del Trabajo, IR y RIMPE, retenciones, GEM Ecuador 2025, BLS, CB Insights, INEC REEM 2025, Damodaran, Superintendencia de Compañías, SRI, Kommo, Leadsales, Callbell). Tablas: `2026-11-15_Datos_Reales_Frente_A1.md` y `2026-11-15_Datos_Torvesa_Publicos.md`.
+- **Hallazgos que contradicen el borrador:** TMAR 12 % no se sostiene (prima de riesgo de Ecuador 17,18 %); margen neto del sector 1,9 %, no 10 %; aporte patronal 12,15 %; Torvesa no está en la Superintendencia de Compañías y el SRI la registra como constructora de **vías** (F4210).
+- **Pendiente de Víctor:** confirmar con Diego la actividad y el tipo de sociedad de Torvesa; pedir formularios 101 de 2023–2025; horas reales del levantamiento; decidir independientes o SAS, margen, plazo de recuperación y precios por tipo de empresa.
+
+### 15-nov, segunda ronda · Presentación de 1 minuto, Trello y Gantt
+- **Presentación de 1 minuto** (`06_Capitulos/Modelo_Negocio/2026-11-15_Presentacion_1min_v0.1.pptx/.pdf/.md`): 5 diapositivas (necesidad → oportunidad → planes → viabilidad → cierre y pedido), guion en las notas. Cubre S5-T11 y sirve de base para S6-T01.
+- **Gantt v0.2** (`11_Planificacion/2026-11-15_Gantt_Tesis_v0.2.xlsx`; la v0.1 queda igual): estado al 15-nov, S4-T08/T10/T12 y S5-T01/T03/T05 apuntan a la v0.2, S5-T11 y S5-T14 por aprobar, y 6 filas NUEVA que salen del modelo de negocio (1 hecha, 5 pendientes). `Cronograma_Tesis.xlsx` no se tocó.
+- **Trello** (https://trello.com/b/VdkwofqC, ahora «(15-nov)»): 8 tarjetas actualizadas y 6 nuevas (1 en Hecho y 5 en «Pendiente esta semana»). Nadie lo había tocado desde el 10-nov.
+
+### 15-nov, tercera ronda · Puesta al día: borrador 3, Revisión 2 y paquete para la profe
+- **Pedido de Víctor:** terminar lo atrasado, dejar lista la semana siguiente, una carpeta del estudio de costos para presentarle a la profe esta semana y un borrador 3 bien estructurado para la tutora. Se trabajó en 2 frentes en paralelo. Los archivos nuevos van fechados 16-nov, inicio de la semana de presentación.
+- **Frente A · Borrador 3** (`06_Capitulos/2026-11-16_Tesis_Borrador3_v0.1.docx/.pdf`, 76 páginas, 78 referencias, 9 anexos), con nota para la tutora (DEC-18 a DEC-23):
+  - Cap. I v0.4: 3 casos de prueba; Torvesa con marcador por F4210.
+  - Cap. III v0.4.
+  - Cap. IV v0.4: cifras del modelo v0.2, LOPDP con 10 obligaciones, trazabilidad (19 requisitos cubiertos, 3 huecos: RQ-08, 16 y 19) y riesgos.
+  - Caps. V y VI v0.3 con criterios y conclusiones provisionales.
+  - Matriz de riesgos v0.1 en Excel: 18 riesgos.
+  - Marcadores: FALTA-FUENTE 21, FALTA-DATO 53, DECIDIR-TUTORA 9, DECIDIR-VÍCTOR 7, VERIFICAR-PÁG 3. Cambios en `06_Capitulos/2026-11-16_Cambios_Borrador3.md`.
+- **Frente B:**
+  - carpeta del Escritorio `PARA LA PROFE - Estudio de costos` (16 archivos) con guía de lectura (`Modelo_Negocio/2026-11-16_Guia_Lectura_Profe.*`);
+  - presentación de la Revisión 2 (10 diapositivas) y guion con 10 preguntas probables (`08_Reuniones_Tutora/2026-11-16_Revision2_*`);
+  - protocolo de la validación v0.1 (`11_Planificacion/2026-11-16_Protocolo_Validacion_v0.1.*`);
+  - resúmenes de 1 página para Diego (Cap. I y requisitos y costos);
+  - agenda de la revisión de sprint S5 y plantilla del acta de la Revisión 2;
+  - 3 mensajes **en borrador, sin enviar** (`00_Inbox/2026-11-16_*_BORRADOR.md`): tutora (SOL-09), Torvesa vía Diego y Diego.
+- **Carpeta** `PARA LA TUTORA - Borrador 3 y Revision 2` en el Escritorio.
+- **Gantt v0.3** (`11_Planificacion/2026-11-15_Gantt_Tesis_v0.3.xlsx`): avance ponderado 43 % frente a 40 % del tiempo, si Víctor aprueba lo entregado (21 tareas por aprobar). Quedan 6 atrasadas: S3-T04 y S3-T09 (bóveda 1, solo Víctor), S3-T10 y S5-T10 (Diego), S3-T13 (sesión de negocio) y S3-T14 (revisión de sprint; su agenda ya está, falta la reunión). Trello: 12 tarjetas actualizadas y 2 nuevas.
+- **Pendiente de Víctor:** revisar el borrador 3 y la carpeta de la profe; enviar los 3 mensajes; ensayar la Revisión 2; aprobar los casos de prueba; decidir RQ-25, el margen y el plazo; leer el Reglamento de la LOPDP (Decreto 904).
