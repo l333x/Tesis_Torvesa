@@ -61,12 +61,13 @@ Me tocan las diapositivas 4, 5 y 6. Ya tengo mi guion de ensayo: `00_Inbox/2026-
 
 ## 6. Claves del servidor (S7-T01)
 
-**Hecho en el código, falta ponerlo en línea.** Hasta hoy la clave del formulario, que cualquiera ve en el navegador, también permitía listar, leer y cambiar todas las solicitudes. Ahora:
+**Hecho y en línea desde el 16-nov.** Hasta hoy la clave del formulario, que cualquiera ve en el navegador, también permitía listar, leer y cambiar todas las solicitudes. Ahora:
 
 - **Clave pública** (formulario): **solo crea** solicitudes.
 - **Clave privada** (prueba de concepto y equipo): lee, lista y modifica. Nunca va en el navegador.
 - Las dos claves son nuevas, porque la anterior ya era visible en la página.
 - Prueba nueva `test/claves.smoke.js`: la clave pública recibe 401 al listar, leer, modificar o ver el registro; la privada puede todo. Todas las pruebas de la API pasan.
-- Commits locales: `teamslash-api` 8c6a406 (rama `rq18-consentimiento`) y `teamslash-landing` 7aade8f. Se ponen en línea en este orden: API, variables en Railway, formulario.
+- Commits: `teamslash-api` 8c6a406 (rama `rq18-consentimiento`) y `teamslash-landing` 7aade8f, ya desplegados en Railway y Vercel.
+- **Comprobado en línea (16-nov):** la clave vieja ya no sirve; la pública crea solicitudes (prueba ficticia SOL-0006) pero recibe 401 al leer; la privada lee, y `sincronizar.py` funciona con ella.
 
-Con esto, la fila del Cap. IV (Art. 37 de la LOPDP, «falta separar la clave del servidor») puede pasar a **cumplido** cuando esté en línea. Te aviso ese día.
+Con esto, la fila del Cap. IV (Art. 37 de la LOPDP, «falta separar la clave del servidor») ya puede pasar a **cumplido**.
