@@ -31,14 +31,14 @@ Cómo salen los números:
 | 5 | R, S, T y U | Despliegue con consentimiento, prueba de concepto, registro con huellas, casos de prueba | 8-nov | — | 3,4 | 4,5 ** |
 | 6 | — | Claves separadas y este reporte | 15-nov | — | 1,0 | 1,0 |
 | | | **Total del trabajo técnico** | | | **≈ 14,9** | **≈ 45,5** |
-| | | Reuniones con Víctor, con la tutora y gestión con Torvesa | | | — | **[Diego completa]** |
+| | | Reuniones con Víctor, con la tutora y gestión con Torvesa | | | — | **≈ 5,0** |
 
 \* El registro del 2-nov solo tiene la parte final de la sesión (los commits de 11:28 a 12:10); el trabajo de esos bloques empezó antes.
 \** 3,4 h de sesión más ≈ 1 h de configuración a mano: la app nueva de Slack, las variables de Railway y Vercel.
 
 **No cuento** la sesión del 18-oct (1,4 h) del archivo de ingresos simulado: no es levantamiento y esos datos no se usan.
 
-**Para el modelo financiero:** si se suman las reuniones, mi parte queda en unas **50 h**. Si el supuesto es de 200 h entre los dos, revisa si el resto cuadra con tus horas.
+**Para el modelo financiero:** con las reuniones, mi parte queda en **≈ 50,5 h** (45,5 técnicas + 5 de reuniones). Si el supuesto es de 200 h entre los dos, revisa si el resto cuadra con tus horas.
 
 ## 3. Mensaje a Torvesa
 
@@ -57,7 +57,7 @@ Si estás de acuerdo, saca la v0.2 del borrador y yo la envío.
 
 ## 5. Revisión con la tutora
 
-Me tocan las diapositivas 4, 5 y 6. Ya tengo mi guion de ensayo: `00_Inbox/2026-11-15_Guion_Diego_Diapositivas_4a6.md`. Para el ensayo por llamada: **[Diego confirma martes o miércoles y la hora]**.
+Me tocan las diapositivas 4, 5 y 6. Ya tengo mi guion de ensayo: `00_Inbox/2026-11-15_Guion_Diego_Diapositivas_4a6.md`. El ensayo por llamada va el **miércoles 18-nov**; la hora la cuadramos por WhatsApp.
 
 ## 6. Claves del servidor (S7-T01)
 
