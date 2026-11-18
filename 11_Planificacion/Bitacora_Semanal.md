@@ -380,3 +380,20 @@ tags: [bitacora, informes, planificacion]
 - **Carpeta** `PARA LA TUTORA - Borrador 3 y Revision 2` en el Escritorio.
 - **Gantt v0.3** (`11_Planificacion/2026-11-15_Gantt_Tesis_v0.3.xlsx`): avance ponderado 43 % frente a 40 % del tiempo, si Víctor aprueba lo entregado (21 tareas por aprobar). Quedan 6 atrasadas: S3-T04 y S3-T09 (bóveda 1, solo Víctor), S3-T10 y S5-T10 (Diego), S3-T13 (sesión de negocio) y S3-T14 (revisión de sprint; su agenda ya está, falta la reunión). Trello: 12 tarjetas actualizadas y 2 nuevas.
 - **Pendiente de Víctor:** revisar el borrador 3 y la carpeta de la profe; enviar los 3 mensajes; ensayar la Revisión 2; aprobar los casos de prueba; decidir RQ-25, el margen y el plazo; leer el Reglamento de la LOPDP (Decreto 904).
+
+## 2026-11-18 · Preparación de la Revisión 2 (reunión con la tutora el jueves 19-nov)
+
+### Qué pasó (Víctor, con Claude)
+- **Lo que trajo Diego (15 y 16-nov):** horas del levantamiento (≈ 50,5 h con reuniones), claves del servidor separadas y comprobadas en línea (S7-T01), CP-03 con 20 alteraciones al azar, propuesta de que la evaluación heurística sea el CP-04, tres cambios al mensaje a Torvesa y su guion de las diapositivas 4 a 6. Ensayo por llamada previsto para hoy.
+- **Presentación v0.2** (`08_Reuniones_Tutora/2026-11-18_Revision2_Presentacion_v0.2.pptx/.pdf`; la v0.1 queda igual):
+  - diapositiva 2: «tres casos de prueba listos y un cuarto si acepta la heurística»;
+  - diapositiva 6: cuatro tarjetas (CP-04 · M6, condicionado a DEC-23) y CP-03 con 20 alteraciones;
+  - diapositiva 9: la validación empieza con la autorización de Torvesa (prevista del 23-nov al 5-dic); avance de 37 a 43 % con el 45 % del tiempo; claves separadas como avance;
+  - notas del orador de las diapositivas 5, 6 y 9.
+- **Guion v0.2** (`2026-11-18_Revision2_Guion_v0.2.md/.docx/.pdf`): preguntas 4 y 10 al día y pregunta nueva 11 (¿se llega si Torvesa no autoriza?).
+- **Mensaje a Torvesa v0.2** (`00_Inbox/2026-11-18_Mensaje_Torvesa_via_Diego_v0.2_BORRADOR.md`): mensaje 1 con los datos de la empresa, listo para enviar; mensaje 2 con las fechas, después de DEC-21.
+- Carpeta del Escritorio `PARA LA TUTORA - Borrador 3 y Revision 2` con la presentación y el guion v0.2.
+
+### Pendiente
+- **Víctor:** ensayar con Diego hoy; aprobar el mensaje 1 a Torvesa para que Diego lo envíe; en la reunión, anotar DEC-18 a DEC-23 en la plantilla del acta.
+- **Después de la reunión:** acta de la Revisión 2, respuestas a la app, Cap. IV (fila del Art. 37 de la LOPDP a cumplido) y borrador 4 con las observaciones.
