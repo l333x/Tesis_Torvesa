@@ -397,3 +397,12 @@ tags: [bitacora, informes, planificacion]
 ### Pendiente
 - **Víctor:** ensayar con Diego hoy; aprobar el mensaje 1 a Torvesa para que Diego lo envíe; en la reunión, anotar DEC-18 a DEC-23 en la plantilla del acta.
 - **Después de la reunión:** acta de la Revisión 2, respuestas a la app, Cap. IV (fila del Art. 37 de la LOPDP a cumplido) y borrador 4 con las observaciones.
+
+### 18-nov, segunda ronda · Lo previo a la validación, en Word y PDF
+- **Pedido de Víctor:** lo pendiente antes de que arranque la validación y los documentos para la reunión, en Word y PDF.
+- **Lista de lo previo** (`11_Planificacion/2026-11-18_Previo_Validacion_v0.1.md/.docx/.pdf`): ruta de 12 pasos con responsable, lugar, fecha y dependencia; lo que da Torvesa, lo que decide la tutora y lo que deja listo Diego. Figura en `11_Planificacion/Informes/_figuras/2026-11-18_Ruta_Previo_Validacion.png`.
+- **Resumen para la tutora** (`08_Reuniones_Tutora/2026-11-18_Resumen_Tutora_Revision2_v0.1.*`): qué se trae, lo principal en cuatro líneas, las seis decisiones con nuestra propuesta y dos pedidos.
+- **Protocolo v0.2** (`11_Planificacion/2026-11-18_Protocolo_Validacion_v0.2.*`; la v0.1 queda igual): fechas atadas a la autorización, CP-03 con 20 alteraciones, CP-04 condicionado a DEC-23, claves separadas hechas.
+- **Mensajes a Torvesa v0.2** en Word y PDF; el adjunto apunta al protocolo v0.2.
+- Todo copiado a la carpeta del Escritorio (00, 04, 07 y 08).
+- **Por confirmar con Diego:** cuentas individuales, respaldo y unión de la rama `rq18-consentimiento` a la principal.

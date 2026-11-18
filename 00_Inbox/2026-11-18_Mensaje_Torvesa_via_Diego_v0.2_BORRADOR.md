@@ -47,7 +47,7 @@ Es una validación controlada: la pueden detener cuando quieran, ningún mensaje
 Muchas gracias.
 Diego Bermeo y Víctor Segura
 
-*Adjunto:* protocolo de la validación en PDF (`11_Planificacion/2026-11-16_Protocolo_Validacion_v0.1.pdf`), una vez revisado con la tutora.
+*Adjunto:* protocolo de la validación en PDF (`11_Planificacion/2026-11-18_Protocolo_Validacion_v0.2.pdf`, o la versión que salga después de la reunión con la tutora).
 
 ---
 *Nota para Víctor y Diego:*
