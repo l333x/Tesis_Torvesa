@@ -1,0 +1,2212 @@
+{
+ "materia": "Herramientas de Gestión Empresarial",
+ "codigo": "GE",
+ "examen": "2026-11-23",
+ "temas": [
+  {
+   "id": "GE-T1",
+   "titulo": "Introducción a la gestión por procesos",
+   "unidad": "I",
+   "resumen": "La gestión por procesos organiza el trabajo a partir de los procesos y no solo por departamentos, para generar valor al cliente. Un proceso transforma entradas en salidas con recursos y controles, y tiene 7 elementos.",
+   "analogia": "Tu flujo de compras: requerimiento (entrada) → cotizar, cuadro, aprobar (actividades) → OC (salida) para el área que pidió (cliente interno). Gestión por procesos = que alguien sea dueño de todo el flujo, no solo de su pedazo."
+  },
+  {
+   "id": "GE-T2",
+   "titulo": "Clasificación de procesos y mapa de procesos",
+   "unidad": "I",
+   "resumen": "Hay 3 tipos de procesos: estratégicos (rumbo), misionales o clave (valor directo al cliente) y de apoyo (recursos). El mapa de procesos es una representación gráfica y macro de todos los procesos; no es un organigrama ni muestra el detalle.",
+   "analogia": "El minimapa de Valorant: ves los sitios y cómo se conectan, no cada paso. El IGL es estratégico, los que ganan la ronda son misionales y la economía/utilidad es apoyo. Compras va abajo: apoyo."
+  },
+  {
+   "id": "GE-T3",
+   "titulo": "Caracterización de un proceso",
+   "unidad": "I",
+   "resumen": "La caracterización es la ficha que describe un proceso específico (14 elementos: objetivo, alcance, proveedores, entradas, KPI, riesgos...). Va después del mapa y antes del diagrama de flujo; su nivel es táctico.",
+   "analogia": "Mapa de Teyvat = mapa de procesos; ficha del personaje = caracterización; guía de rotación paso a paso = diagrama de flujo."
+  },
+  {
+   "id": "GE-T4",
+   "titulo": "Cadena de valor (Porter, 1985)",
+   "unidad": "I",
+   "resumen": "Modelo de Michael Porter (1985) que descompone las actividades para ver cuáles generan valor y cuáles costos. Tiene 5 actividades primarias y 4 de apoyo, y termina en el margen; si el valor percibido supera el costo hay ventaja competitiva.",
+   "analogia": "Minecraft: minar y guardar (logística interna), craftear (operaciones), llevar a la aldea (logística externa), tradear (marketing y ventas), reparar (posventa). Tu base, la redstone y conseguir materiales son apoyo."
+  },
+  {
+   "id": "GE-T5",
+   "titulo": "Análisis de procesos: eficiencia, valor agregado y cuellos de botella",
+   "unidad": "I",
+   "resumen": "Eficiencia = menos recursos sin perder calidad; eficacia = lograr el objetivo; efectividad = ambas. Las actividades son VA, NNVA (necesarias por ley o control) o NVA (eliminar). El cuello de botella es la etapa de menor capacidad que limita todo el proceso.",
+   "analogia": "Si el aprobador firma una vez por semana, la OC sale a su ritmo: cuello de botella. Emitir la OC es VA, la debida diligencia es NNVA y buscar la proforma perdida es NVA."
+  },
+  {
+   "id": "GE-T6",
+   "titulo": "Estructura del manual de procesos",
+   "unidad": "I",
+   "resumen": "Documento institucional que reúne y estandariza los procesos. Se elabora en 9 etapas (validar lo hace el responsable y aprobar la dirección) y tiene 13 apartados (el organigrama es opcional). No reemplaza al manual de procedimientos.",
+   "analogia": "Es la política oficial de compras («sin PO no hay factura», pagos los viernes): permite que tu reemplazo en vacaciones no improvise."
+  },
+  {
+   "id": "GE-T7",
+   "titulo": "Diagnóstico de la gestión del talento humano",
+   "unidad": "II",
+   "resumen": "Proceso sistemático que analiza la situación actual del talento para hallar fortalezas, debilidades y problemas. Tiene 5 etapas y 7 herramientas, y debe ser constructivo (no busca culpables). Autores de GTH: Chiavenato (activo), Dessler (ciclo completo) y Armstrong (estrategia).",
+   "analogia": "Revisar tu party de Genshin antes del jefe semanal: niveles, artefactos y sinergia. Si pierdes, no culpas al personaje: buscas qué falló."
+  },
+  {
+   "id": "GE-T8",
+   "titulo": "Diseño de perfiles de puesto",
+   "unidad": "II",
+   "resumen": "Define las características que debe reunir la persona para un cargo. Puesto = tareas, cargo = nombre y perfil = documento de requisitos. Se diseña en 7 etapas, se valida con jefe, Talento Humano y dirección, y distingue competencias técnicas (hard) y conductuales (soft).",
+   "analogia": "El ejemplo de la profe es tu cargo: «Analista de Compras» es el cargo, «gestionar adquisiciones» el puesto y Ing. Comercial + 2 años + ERP el perfil."
+  },
+  {
+   "id": "GE-T9",
+   "titulo": "Reclutamiento y selección",
+   "unidad": "II",
+   "resumen": "Reclutar es atraer candidatos y seleccionar es elegir: son etapas consecutivas. El proceso tiene 10 etapas, de la necesidad a la inducción; el reclutamiento puede ser interno, externo o mixto, y hay 5 tipos de entrevista.",
+   "analogia": "Reclutar = pedir cotizaciones (llegan 120 CV); seleccionar = cuadro comparativo y adjudicar al de mejor ajuste; verificar referencias = debida diligencia."
+  },
+  {
+   "id": "GE-T10",
+   "titulo": "Capacitación y desarrollo",
+   "unidad": "II",
+   "resumen": "La capacitación mejora el desempeño en el cargo actual (corto plazo) y el desarrollo prepara para roles futuros (mediano y largo plazo). El proceso es DNC → planificación → ejecución → evaluación, y el impacto se mide con los 4 niveles de Kirkpatrick.",
+   "analogia": "Capacitación = subir talentos del personaje que ya usas; desarrollo = farmear para tu team futuro. Que te guste la guía (reacción) no sirve si no subes estrellas del Abismo (resultados)."
+  },
+  {
+   "id": "GE-T11",
+   "titulo": "Evaluación del desempeño",
+   "unidad": "II",
+   "resumen": "Es un proceso sistemático, periódico y con criterios objetivos. Su ciclo tiene 7 pasos, con la retroalimentación como núcleo y el plan de mejora al final. Métodos: escalas gráficas, MBO, por competencias y 180/270/360°. Cuidado con el efecto halo.",
+   "analogia": "Las stats de fin de partida son una escala, la meta de subir de rango es MBO y la opinión de todo tu equipo es 360°. Efecto halo: creer que el de más kills fue el mejor aunque nunca jugó objetivo."
+  },
+  {
+   "id": "GE-T12",
+   "titulo": "Estrategias de motivación",
+   "unidad": "II",
+   "resumen": "La motivación son factores internos y externos que impulsan, orientan y mantienen la conducta. Es intrínseca o extrínseca. Teorías: Maslow (5 niveles), Herzberg (higiénicos vs. motivadores), McGregor (X/Y) y McClelland (logro, poder, afiliación). El salario solo no compra el compromiso.",
+   "analogia": "El salario es como el ping: si es malo te quejas y te vas (higiénico), pero un buen ping no te hace jugar más. Lo que motiva es subir de rango y que te reconozcan (motivadores)."
+  }
+ ],
+ "preguntas": [
+  {
+   "id": "GE-001",
+   "tema": "GE-T1",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Según las diapositivas, la gestión por procesos es:",
+   "opciones": [
+    "Un enfoque que organiza el trabajo únicamente por departamentos o áreas funcionales",
+    "Una representación gráfica de los procesos de una organización y sus relaciones",
+    "Un enfoque de administración que organiza el trabajo a partir de sus procesos para generar valor al cliente",
+    "Un documento institucional que reúne y estandariza los procesos de la empresa"
+   ],
+   "correcta": 2,
+   "explicacion": "Es la definición de I, p. 11. Organizar solo por departamentos es la gestión funcional; la representación gráfica es el mapa de procesos y el documento institucional es el manual de procesos.",
+   "fuente": "Unidad I, p. 11"
+  },
+  {
+   "id": "GE-002",
+   "tema": "GE-T1",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "En la gestión por procesos, ¿quién tiene la responsabilidad?",
+   "opciones": [
+    "Los dueños del proceso",
+    "El gerente general únicamente",
+    "Los auditores internos",
+    "Los jefes funcionales"
+   ],
+   "correcta": 0,
+   "explicacion": "Según la tabla de I, p. 14, en la gestión por procesos responden los dueños del proceso. Los jefes funcionales corresponden a la gestión funcional; el gerente y los auditores no aparecen en la comparación.",
+   "fuente": "Unidad I, p. 14"
+  },
+  {
+   "id": "GE-003",
+   "tema": "GE-T1",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En la comparación gestión funcional vs. gestión por procesos, los indicadores de la gestión por procesos son:",
+   "opciones": [
+    "Departamentales",
+    "Locales",
+    "Individuales por cargo",
+    "Integrales"
+   ],
+   "correcta": 3,
+   "explicacion": "En la gestión por procesos los indicadores son integrales porque miden el flujo completo de valor; los locales son propios de la gestión funcional (I, p. 14).",
+   "fuente": "Unidad I, p. 14"
+  },
+  {
+   "id": "GE-004",
+   "tema": "GE-T1",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál de estas opciones NO es uno de los 7 principios de la gestión por procesos?",
+   "opciones": [
+    "Orientación al cliente",
+    "Especialización y autonomía de cada departamento",
+    "Trabajo transversal entre áreas",
+    "Toma de decisiones basada en datos"
+   ],
+   "correcta": 1,
+   "explicacion": "La especialización departamental es justamente la lógica funcional que la gestión por procesos supera. Los otros tres están en la lista de 7 principios (I, p. 15).",
+   "fuente": "Unidad I, p. 15"
+  },
+  {
+   "id": "GE-005",
+   "tema": "GE-T1",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En los elementos de un proceso, los «controles» son:",
+   "opciones": [
+    "Productos o servicios",
+    "Políticas, normas y procedimientos",
+    "Personas, equipos y tecnología",
+    "Recursos, información y materiales"
+   ],
+   "correcta": 1,
+   "explicacion": "Según la tabla de I, p. 32, los controles son políticas, normas y procedimientos. Personas, equipos y tecnología son los recursos; información y materiales son las entradas; productos o servicios son las salidas.",
+   "fuente": "Unidad I, p. 32"
+  },
+  {
+   "id": "GE-006",
+   "tema": "GE-T1",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Qué pregunta pasa a hacerse la empresa cuando adopta la gestión por procesos?",
+   "opciones": [
+    "¿Cuántos cargos tiene cada área?",
+    "¿Qué jefe es responsable de cada área?",
+    "¿Qué hace cada departamento?",
+    "¿Cómo fluye el trabajo desde que el cliente hace una solicitud hasta que recibe el producto o servicio?"
+   ],
+   "correcta": 3,
+   "explicacion": "I, p. 12: deja de preguntar «¿qué hace cada departamento?» (visión funcional) y se pregunta por el flujo del trabajo hasta el cliente. Las otras dos opciones son preguntas de estructura jerárquica.",
+   "fuente": "Unidad I, p. 12"
+  },
+  {
+   "id": "GE-007",
+   "tema": "GE-T1",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "En la estructura general de un proceso (I, p. 33), ¿cuál es el orden correcto?",
+   "opciones": [
+    "Proveedores → Entradas → Actividades → Salidas → Clientes",
+    "Proveedores → Actividades → Entradas → Salidas → Clientes",
+    "Clientes → Entradas → Actividades → Salidas → Proveedores",
+    "Entradas → Proveedores → Actividades → Clientes → Salidas"
+   ],
+   "correcta": 0,
+   "explicacion": "El flujo va de quien provee, a lo que entra, a lo que se hace, a lo que sale y a quien lo recibe. Las demás alteran el orden lógico (por ejemplo, no se puede actuar antes de recibir las entradas).",
+   "fuente": "Unidad I, p. 33"
+  },
+  {
+   "id": "GE-008",
+   "tema": "GE-T1",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "Un proceso es un conjunto de actividades relacionadas que transforma ______ en salidas utilizando recursos y controles.",
+   "respuesta": "entradas",
+   "aceptadas": [
+    "entradas",
+    "inputs",
+    "las entradas",
+    "entrada"
+   ],
+   "explicacion": "Definición de proceso: las entradas (inputs) se transforman en salidas (outputs).",
+   "fuente": "Unidad I, p. 16"
+  },
+  {
+   "id": "GE-009",
+   "tema": "GE-T1",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "La gestión por procesos tiene como objetivo optimizar cada área o departamento por separado.",
+   "correcta": false,
+   "explicacion": "Falso. Optimizar áreas es el objetivo de la gestión funcional; la gestión por procesos optimiza el flujo de valor (I, p. 14).",
+   "fuente": "Unidad I, p. 14"
+  },
+  {
+   "id": "GE-010",
+   "tema": "GE-T2",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "En un mapa de procesos, el proceso de Compras se clasifica como:",
+   "opciones": [
+    "Proceso estratégico",
+    "Proceso misional (clave)",
+    "Proceso de apoyo",
+    "Proceso operativo de valor directo"
+   ],
+   "correcta": 2,
+   "explicacion": "I, p. 25 lista Compras entre los procesos de apoyo: proporciona recursos para que funcionen los demás. Los estratégicos definen el rumbo y los misionales u operativos generan directamente el producto.",
+   "fuente": "Unidad I, p. 25"
+  },
+  {
+   "id": "GE-011",
+   "tema": "GE-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según las diapositivas, la «gestión financiera» es un ejemplo de proceso:",
+   "opciones": [
+    "Misional",
+    "De apoyo",
+    "Estratégico",
+    "De logística"
+   ],
+   "correcta": 2,
+   "explicacion": "I, p. 23 pone la gestión financiera entre los estratégicos, junto con la planeación, la calidad y la dirección general. Ojo: la contabilidad sí es de apoyo (I, p. 25); por eso es una trampa común.",
+   "fuente": "Unidad I, pp. 23 y 25"
+  },
+  {
+   "id": "GE-012",
+   "tema": "GE-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es la diferencia entre un mapa de procesos y un organigrama?",
+   "opciones": [
+    "El organigrama muestra la jerarquía de cargos y departamentos; el mapa muestra cómo fluye el trabajo y cómo interactúan los procesos",
+    "El mapa muestra la jerarquía de cargos; el organigrama muestra el flujo de trabajo",
+    "Son lo mismo, pero el mapa usa colores",
+    "El organigrama detalla las actividades paso a paso y el mapa solo los departamentos"
+   ],
+   "correcta": 0,
+   "explicacion": "I, p. 30 lo llama una de las principales fuentes de confusión: el organigrama es estructura jerárquica y el mapa es flujo de valor. La tercera opción invierte los conceptos y la cuarta confunde el organigrama con un diagrama de flujo.",
+   "fuente": "Unidad I, p. 30"
+  },
+  {
+   "id": "GE-013",
+   "tema": "GE-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Qué NO hace un mapa de procesos?",
+   "opciones": [
+    "Clasificar los procesos según su función",
+    "Adaptarse a cualquier tipo de organización",
+    "Ofrecer una visión macro de la organización",
+    "Mostrar el detalle de las actividades de cada proceso"
+   ],
+   "correcta": 3,
+   "explicacion": "I, pp. 19 y 28: el mapa no describe las actividades detalladas; eso lo hacen la caracterización y el diagrama de flujo. Las otras tres opciones están en la lista «No olvidar».",
+   "fuente": "Unidad I, pp. 19 y 28"
+  },
+  {
+   "id": "GE-014",
+   "tema": "GE-T2",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "En los componentes de un mapa de procesos, ¿qué aparece como salida?",
+   "opciones": [
+    "Las necesidades y expectativas del cliente",
+    "El cliente satisfecho",
+    "Los proveedores",
+    "Los procesos de apoyo"
+   ],
+   "correcta": 1,
+   "explicacion": "I, p. 22: la entrada es el cliente con sus necesidades y la salida es el cliente satisfecho. Las necesidades van a la entrada y los procesos de apoyo están en la parte inferior del mapa.",
+   "fuente": "Unidad I, p. 22"
+  },
+  {
+   "id": "GE-015",
+   "tema": "GE-T2",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Uno de los beneficios del mapa de procesos es servir como base para sistemas de gestión de calidad como:",
+   "opciones": [
+    "ISO 27001",
+    "ISO 9001",
+    "ISO 45001",
+    "ISO 14001"
+   ],
+   "correcta": 1,
+   "explicacion": "I, p. 28 menciona expresamente la ISO 9001 (calidad). Las otras normas existen, pero tratan de ambiente, seguridad de la información y seguridad laboral, y no aparecen en las diapositivas.",
+   "fuente": "Unidad I, p. 28"
+  },
+  {
+   "id": "GE-016",
+   "tema": "GE-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Qué hacen los procesos estratégicos dentro del mapa, según la síntesis de I, p. 29?",
+   "opciones": [
+    "Transforman materias primas en productos",
+    "Entregan el servicio al cliente",
+    "Suministran los recursos necesarios",
+    "Proporcionan dirección y control"
+   ],
+   "correcta": 3,
+   "explicacion": "Síntesis de I, p. 29: los misionales entregan el servicio, los estratégicos dan dirección y control, y los de apoyo suministran recursos. Transformar materias primas es la actividad de «operaciones» en la cadena de valor.",
+   "fuente": "Unidad I, p. 29"
+  },
+  {
+   "id": "GE-017",
+   "tema": "GE-T2",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "Los procesos ______ (o clave) generan directamente el producto o servicio que recibe el cliente.",
+   "respuesta": "misionales",
+   "aceptadas": [
+    "misionales",
+    "misional",
+    "operativos",
+    "operativo"
+   ],
+   "explicacion": "Los misionales u operativos crean el valor principal que la organización ofrece al mercado.",
+   "fuente": "Unidad I, pp. 21 y 24"
+  },
+  {
+   "id": "GE-018",
+   "tema": "GE-T2",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Aunque el cliente no interactúa directamente con los procesos de apoyo, son indispensables para el desempeño de la organización.",
+   "correcta": true,
+   "explicacion": "Verdadero. Es casi textual de I, p. 25.",
+   "fuente": "Unidad I, p. 25"
+  },
+  {
+   "id": "GE-019",
+   "tema": "GE-T3",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Qué pregunta responde la caracterización de un proceso?",
+   "opciones": [
+    "Cómo es cada proceso y cuáles son sus elementos principales",
+    "Qué actividades generan más valor para el cliente",
+    "Qué procesos tiene la organización y cómo se relacionan",
+    "Cómo se ejecuta paso a paso el proceso"
+   ],
+   "correcta": 0,
+   "explicacion": "I, p. 35: el mapa responde qué procesos hay; la caracterización, cómo es cada uno. El paso a paso es el diagrama de flujo y el valor de las actividades lo analiza la cadena de valor.",
+   "fuente": "Unidad I, p. 35"
+  },
+  {
+   "id": "GE-020",
+   "tema": "GE-T3",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "En la ficha de caracterización, el «alcance» indica:",
+   "opciones": [
+    "Los indicadores que miden el desempeño",
+    "La persona o el cargo encargado",
+    "Dónde inicia y dónde termina el proceso",
+    "El propósito del proceso"
+   ],
+   "correcta": 2,
+   "explicacion": "I, p. 43: el alcance marca el inicio y el fin. El propósito es el objetivo, el encargado es el responsable y la medición son los indicadores (KPI).",
+   "fuente": "Unidad I, p. 43"
+  },
+  {
+   "id": "GE-021",
+   "tema": "GE-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según la tabla de I, p. 62, ¿en qué nivel se ubica la caracterización del proceso?",
+   "opciones": [
+    "Operativo",
+    "Estratégico",
+    "Táctico",
+    "Organizacional"
+   ],
+   "correcta": 2,
+   "explicacion": "En I, p. 62 el mapa y la cadena de valor son estratégicos, la caracterización es táctica y el diagrama de flujo es operativo. «Organizacional» es el nivel del manual de funciones (I, p. 100).",
+   "fuente": "Unidad I, p. 62"
+  },
+  {
+   "id": "GE-022",
+   "tema": "GE-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Uno de los errores comunes es «confundir actividades con objetivos». ¿Cuál es la diferencia correcta?",
+   "opciones": [
+    "El objetivo explica para qué existe el proceso; las actividades describen cómo se ejecuta",
+    "El objetivo describe cómo se ejecuta; las actividades explican para qué existe",
+    "Objetivo y actividades son sinónimos en la ficha",
+    "El objetivo indica dónde inicia y termina; las actividades, quién es el responsable"
+   ],
+   "correcta": 0,
+   "explicacion": "I, p. 40: objetivo = para qué y actividades = cómo. La segunda opción lo invierte y la cuarta confunde el objetivo con el alcance.",
+   "fuente": "Unidad I, p. 40"
+  },
+  {
+   "id": "GE-023",
+   "tema": "GE-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es el orden correcto de uso de las tres herramientas complementarias?",
+   "opciones": [
+    "Diagrama de flujo → mapa de procesos → caracterización",
+    "Mapa de procesos → diagrama de flujo → caracterización",
+    "Caracterización → mapa de procesos → diagrama de flujo",
+    "Mapa de procesos → caracterización → diagrama de flujo"
+   ],
+   "correcta": 3,
+   "explicacion": "I, p. 42: primero se identifica el proceso en el mapa, luego se caracteriza y, si hace falta detalle operativo, se documenta con un diagrama de flujo.",
+   "fuente": "Unidad I, p. 42"
+  },
+  {
+   "id": "GE-024",
+   "tema": "GE-T3",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Si el objetivo del proceso es reducir los tiempos de atención y se mide el consumo de papel, ¿qué error se comete?",
+   "opciones": [
+    "Definir un alcance muy amplio",
+    "Seleccionar indicadores que no miden el objetivo",
+    "No diferenciar proveedores y clientes",
+    "Confundir actividades con objetivos"
+   ],
+   "correcta": 1,
+   "explicacion": "Es el ejemplo literal de I, p. 41 para el error «indicadores que no miden el objetivo». Los otros tres también son errores comunes, pero no describen este caso.",
+   "fuente": "Unidad I, p. 41"
+  },
+  {
+   "id": "GE-025",
+   "tema": "GE-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según la tabla de I, p. 44, ¿qué nivel de detalle tiene la caracterización?",
+   "opciones": [
+    "Alto (visión global)",
+    "Medio",
+    "Alto (visión operativa)",
+    "Bajo"
+   ],
+   "correcta": 1,
+   "explicacion": "I, p. 44: el mapa tiene un detalle alto con visión global, la caracterización un detalle medio y el diagrama de flujo un detalle alto con visión operativa. «Bajo» no aparece en la tabla.",
+   "fuente": "Unidad I, p. 44"
+  },
+  {
+   "id": "GE-026",
+   "tema": "GE-T3",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "La caracterización de un proceso es el siguiente paso después de elaborar el ______.",
+   "respuesta": "mapa de procesos",
+   "aceptadas": [
+    "mapa de procesos",
+    "mapa",
+    "el mapa de procesos",
+    "el mapa"
+   ],
+   "explicacion": "Primero el mapa (qué procesos hay), luego la caracterización (cómo es cada uno).",
+   "fuente": "Unidad I, p. 35"
+  },
+  {
+   "id": "GE-027",
+   "tema": "GE-T3",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "En la ficha de caracterización, los ______ son las situaciones que pueden afectar el cumplimiento del objetivo.",
+   "respuesta": "riesgos",
+   "aceptadas": [
+    "riesgos",
+    "los riesgos",
+    "riesgo"
+   ],
+   "explicacion": "El elemento 13 de la ficha (I, p. 43). No identificarlos es uno de los errores comunes.",
+   "fuente": "Unidad I, pp. 41 y 43"
+  },
+  {
+   "id": "GE-028",
+   "tema": "GE-T4",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Quién desarrolló el modelo de la cadena de valor y en qué año?",
+   "opciones": [
+    "Gary Dessler, en 2020",
+    "Idalberto Chiavenato, en 2020",
+    "Kaplan y Norton, en 1992",
+    "Michael Porter, en 1985"
+   ],
+   "correcta": 3,
+   "explicacion": "I, p. 46: Michael Porter, 1985. Chiavenato y Dessler aparecen en la Unidad II (talento humano). Kaplan y Norton son autores del Balanced Scorecard (fuera de las diapositivas).",
+   "fuente": "Unidad I, p. 46"
+  },
+  {
+   "id": "GE-029",
+   "tema": "GE-T4",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Cuántas actividades primarias y cuántas de apoyo tiene la cadena de valor de Porter?",
+   "opciones": [
+    "5 primarias y 4 de apoyo",
+    "4 primarias y 5 de apoyo",
+    "6 primarias y 3 de apoyo",
+    "3 primarias y 6 de apoyo"
+   ],
+   "correcta": 0,
+   "explicacion": "Primarias: logística interna, operaciones, logística externa, marketing y ventas y servicio posventa (5). Apoyo: infraestructura, talento humano, desarrollo tecnológico y abastecimiento (4).",
+   "fuente": "Unidad I, pp. 50-54"
+  },
+  {
+   "id": "GE-030",
+   "tema": "GE-T4",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "La recepción, el almacenamiento y el manejo de materias primas corresponden a:",
+   "opciones": [
+    "Logística externa",
+    "Abastecimiento (compras)",
+    "Logística interna",
+    "Operaciones"
+   ],
+   "correcta": 2,
+   "explicacion": "I, p. 50: la logística interna trata los insumos que entran. La externa lleva el producto al cliente, las operaciones transforman y el abastecimiento (de apoyo) compra los recursos.",
+   "fuente": "Unidad I, p. 50"
+  },
+  {
+   "id": "GE-031",
+   "tema": "GE-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En la cadena de valor, el abastecimiento (compras) es una actividad:",
+   "opciones": [
+    "De logística interna",
+    "De operaciones",
+    "De apoyo",
+    "Primaria"
+   ],
+   "correcta": 2,
+   "explicacion": "I, pp. 54-55: el abastecimiento es una de las 4 actividades de apoyo. Es una trampa común pensar que es primaria porque compra materia prima, pero no participa directamente en crear, vender ni entregar el producto.",
+   "fuente": "Unidad I, p. 54"
+  },
+  {
+   "id": "GE-032",
+   "tema": "GE-T4",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "El empaque, la distribución, el transporte y la entrega son ejemplos de:",
+   "opciones": [
+    "Logística externa",
+    "Logística interna",
+    "Servicio posventa",
+    "Marketing y ventas"
+   ],
+   "correcta": 0,
+   "explicacion": "I, p. 51: la logística externa hace llegar el producto al cliente. La interna recibe insumos, el marketing da a conocer el producto y la posventa atiende después de la compra.",
+   "fuente": "Unidad I, p. 51"
+  },
+  {
+   "id": "GE-033",
+   "tema": "GE-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Frente a la gestión por procesos, la cadena de valor busca principalmente:",
+   "opciones": [
+    "Enfocarse en cómo se ejecutan los procesos",
+    "Mejorar la eficiencia y eficacia del flujo de trabajo",
+    "Analizar procesos completos",
+    "Generar ventaja competitiva"
+   ],
+   "correcta": 3,
+   "explicacion": "I, p. 58: la cadena de valor busca ventaja competitiva y analiza actividades específicas. Las otras tres opciones describen la gestión por procesos.",
+   "fuente": "Unidad I, p. 58"
+  },
+  {
+   "id": "GE-034",
+   "tema": "GE-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es una limitación de la cadena de valor según las diapositivas?",
+   "opciones": [
+    "Analiza solo a los proveedores y no las actividades internas",
+    "Fue diseñada inicialmente para empresas manufactureras, por lo que en servicios hay que adaptarla",
+    "Solo sirve para empresas de servicios",
+    "No permite identificar actividades que no agregan valor"
+   ],
+   "correcta": 1,
+   "explicacion": "I, p. 60. La segunda opción es lo contrario; identificar las actividades sin valor es una de sus ventajas (I, p. 59), y la limitación real es que mira sobre todo lo interno, no a los proveedores.",
+   "fuente": "Unidad I, p. 60"
+  },
+  {
+   "id": "GE-035",
+   "tema": "GE-T4",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "La gestión del talento humano, en la cadena de valor de Porter, comprende:",
+   "opciones": [
+    "Gerencia, finanzas, contabilidad y asesoría legal",
+    "Reclutamiento, capacitación, evaluación y motivación",
+    "Compra de materias primas, equipos y maquinaria",
+    "I+D, innovación, sistemas de información y automatización"
+   ],
+   "correcta": 1,
+   "explicacion": "I, p. 53. Gerencia y finanzas son infraestructura de la empresa; I+D es desarrollo tecnológico y la compra de materias primas es abastecimiento.",
+   "fuente": "Unidad I, p. 53"
+  },
+  {
+   "id": "GE-036",
+   "tema": "GE-T4",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "Si el valor percibido por el cliente es mayor que el costo de realizar las actividades, la empresa obtiene una ______.",
+   "respuesta": "ventaja competitiva",
+   "aceptadas": [
+    "ventaja competitiva",
+    "ventaja",
+    "una ventaja competitiva"
+   ],
+   "explicacion": "Es la idea central de Porter sobre la cadena de valor.",
+   "fuente": "Unidad I, p. 46"
+  },
+  {
+   "id": "GE-037",
+   "tema": "GE-T4",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "En la representación de la cadena de valor, al final aparece el ______ (valor generado).",
+   "respuesta": "margen",
+   "aceptadas": [
+    "margen",
+    "el margen"
+   ],
+   "explicacion": "El margen es la diferencia entre el valor que se crea y el costo de las actividades.",
+   "fuente": "Unidad I, pp. 55 y 61"
+  },
+  {
+   "id": "GE-038",
+   "tema": "GE-T4",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Las actividades de apoyo de la cadena de valor generan valor directamente para el cliente.",
+   "correcta": false,
+   "explicacion": "Falso. No generan valor directamente; permiten que las actividades primarias funcionen correctamente (I, p. 53).",
+   "fuente": "Unidad I, p. 53"
+  },
+  {
+   "id": "GE-039",
+   "tema": "GE-T5",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "La eficiencia es:",
+   "opciones": [
+    "Lograr el objetivo o resultado esperado sin importar los recursos",
+    "La etapa que limita la capacidad del proceso",
+    "La actividad que el cliente está dispuesto a pagar",
+    "La capacidad de realizar un proceso con la menor cantidad posible de recursos sin afectar la calidad"
+   ],
+   "correcta": 3,
+   "explicacion": "I, p. 68. Lograr el objetivo es la eficacia, la etapa que limita es el cuello de botella y lo que el cliente paga es el valor agregado.",
+   "fuente": "Unidad I, p. 68"
+  },
+  {
+   "id": "GE-040",
+   "tema": "GE-T5",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Un restaurante entrega una pizza en 15 minutos, pero llega fría. El proceso fue:",
+   "opciones": [
+    "Eficiente en tiempo, pero no eficaz",
+    "Eficaz, pero no eficiente",
+    "Eficiente y eficaz",
+    "Ni eficiente ni eficaz en ningún aspecto"
+   ],
+   "correcta": 0,
+   "explicacion": "Ejemplo de I, p. 71: fue rápido (eficiente en tiempo), pero no cumplió la calidad esperada (no eficaz).",
+   "fuente": "Unidad I, p. 71"
+  },
+  {
+   "id": "GE-041",
+   "tema": "GE-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Una fábrica tiene corte 100 piezas/h, ensamble 90, pintura 45 y empaque 80. ¿Cuál es la producción total por hora?",
+   "opciones": [
+    "90 piezas",
+    "80 piezas",
+    "45 piezas",
+    "100 piezas"
+   ],
+   "correcta": 2,
+   "explicacion": "I, p. 79: el proceso avanza al ritmo de su etapa más lenta (el cuello de botella), que es pintura con 45. Las demás etapas pueden más, pero no compensan.",
+   "fuente": "Unidad I, p. 79"
+  },
+  {
+   "id": "GE-042",
+   "tema": "GE-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En una compra en línea, «verificar el pago por seguridad» es una actividad:",
+   "opciones": [
+    "De logística externa",
+    "VA (agrega valor)",
+    "NNVA (no agrega valor, pero es necesaria)",
+    "NVA (no agrega valor y debe eliminarse)"
+   ],
+   "correcta": 2,
+   "explicacion": "Tabla de I, p. 77: es NNVA porque el cliente no la paga, pero es obligatoria por seguridad o control. Esperar un día una aprobación innecesaria sí sería NVA.",
+   "fuente": "Unidad I, p. 77"
+  },
+  {
+   "id": "GE-043",
+   "tema": "GE-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En la matriz de efectividad, el cuadrante «eficaz e ineficiente» significa:",
+   "opciones": [
+    "Se alcanzan los objetivos, pero se desperdician los recursos",
+    "No se alcanzan los objetivos y se desperdician recursos",
+    "No se alcanzan los objetivos, pero no se desperdician recursos",
+    "Se alcanzan los objetivos y se usan bien los recursos"
+   ],
+   "correcta": 0,
+   "explicacion": "I, p. 73: eficaz = logra el objetivo; ineficiente = gasta de más. La segunda opción es «ineficaz y eficiente», la tercera es «eficiente y eficaz» y la cuarta es «ineficaz e ineficiente».",
+   "fuente": "Unidad I, p. 73"
+  },
+  {
+   "id": "GE-044",
+   "tema": "GE-T5",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "¿Cuál de estas herramientas NO aparece en la lista de herramientas del análisis de procesos?",
+   "opciones": [
+    "Diagrama de Pareto",
+    "Diagrama de Ishikawa",
+    "Diagrama SIPOC",
+    "Matriz BCG"
+   ],
+   "correcta": 3,
+   "explicacion": "I, p. 81 lista 9 herramientas: mapa, diagrama de flujo, SIPOC, caracterización, Ishikawa, Pareto, KPI, cronometraje y análisis de valor agregado. La matriz BCG no está en la lista.",
+   "fuente": "Unidad I, p. 81"
+  },
+  {
+   "id": "GE-045",
+   "tema": "GE-T5",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "La eficacia responde a la pregunta:",
+   "opciones": [
+    "¿Cuántos recursos se usaron?",
+    "¿Se logró el objetivo?",
+    "¿Cómo se hizo?",
+    "¿Dónde se ralentiza el flujo?"
+   ],
+   "correcta": 1,
+   "explicacion": "I, p. 70: la eficacia se enfoca en el resultado (¿se logró?), mientras que la eficiencia se enfoca en el proceso (¿cómo se hizo?, recursos). Dónde se ralentiza el flujo es una pregunta sobre el cuello de botella.",
+   "fuente": "Unidad I, p. 70"
+  },
+  {
+   "id": "GE-046",
+   "tema": "GE-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál de estas es una señal para identificar un cuello de botella?",
+   "opciones": [
+    "Todas las etapas con la misma capacidad",
+    "Acumulación constante de trabajo antes de una etapa",
+    "Personal con poca carga de trabajo en esa etapa",
+    "Reducción de los tiempos de espera"
+   ],
+   "correcta": 1,
+   "explicacion": "I, p. 80 lista como señales la acumulación antes de una etapa, el personal sobrecargado y los retrasos repetidos. Las demás opciones describen lo opuesto a un cuello de botella.",
+   "fuente": "Unidad I, p. 80"
+  },
+  {
+   "id": "GE-047",
+   "tema": "GE-T5",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "En una cafetería, ¿cuál de estas actividades NO agrega valor?",
+   "opciones": [
+    "Decorar el postre",
+    "Preparar el café",
+    "Empacar el producto",
+    "Buscar documentos extraviados"
+   ],
+   "correcta": 3,
+   "explicacion": "I, p. 75: buscar documentos extraviados consume recursos sin aumentar el valor percibido. Preparar, decorar y empacar transforman el producto y el cliente los valora.",
+   "fuente": "Unidad I, p. 75"
+  },
+  {
+   "id": "GE-048",
+   "tema": "GE-T5",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "Un ______ es la actividad, recurso o etapa que limita la capacidad de todo el proceso.",
+   "respuesta": "cuello de botella",
+   "aceptadas": [
+    "cuello de botella",
+    "cuellos de botella",
+    "el cuello de botella"
+   ],
+   "explicacion": "Es el punto donde el flujo se ralentiza porque su capacidad es menor que la de las demás etapas.",
+   "fuente": "Unidad I, p. 78"
+  },
+  {
+   "id": "GE-049",
+   "tema": "GE-T5",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "Según el modelo de efectividad total, efectividad = eficiencia + ______.",
+   "respuesta": "eficacia",
+   "aceptadas": [
+    "eficacia",
+    "la eficacia"
+   ],
+   "explicacion": "Efectividad es lograr los objetivos (eficacia) usando bien los recursos (eficiencia).",
+   "fuente": "Unidad I, p. 73"
+  },
+  {
+   "id": "GE-050",
+   "tema": "GE-T5",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Las actividades NNVA no agregan valor, pero son ______ por requisitos legales, de seguridad o control.",
+   "respuesta": "necesarias",
+   "aceptadas": [
+    "necesarias",
+    "obligatorias",
+    "necesaria",
+    "obligatoria"
+   ],
+   "explicacion": "NNVA = no agrega valor, pero es necesaria. Por ejemplo, verificar el pago por seguridad.",
+   "fuente": "Unidad I, p. 76"
+  },
+  {
+   "id": "GE-051",
+   "tema": "GE-T5",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Eficiencia, valor agregado y cuello de botella son tres formas de nombrar el mismo concepto.",
+   "correcta": false,
+   "explicacion": "Falso. Son tres dimensiones distintas: un criterio de desempeño, un criterio para evaluar actividades y una restricción de capacidad (I, p. 65).",
+   "fuente": "Unidad I, p. 65"
+  },
+  {
+   "id": "GE-052",
+   "tema": "GE-T6",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Quién aprueba oficialmente el manual de procesos?",
+   "opciones": [
+    "La dirección",
+    "El área de Talento Humano",
+    "El responsable del proceso",
+    "Los auditores internos"
+   ],
+   "correcta": 0,
+   "explicacion": "I, p. 93, etapa 7: la dirección autoriza su utilización. El responsable del proceso interviene antes, en la etapa 6, para validar que el documento refleje la realidad.",
+   "fuente": "Unidad I, p. 93"
+  },
+  {
+   "id": "GE-053",
+   "tema": "GE-T6",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En la etapa «validar el proceso» del manual, ¿quién verifica que la documentación represente el funcionamiento real?",
+   "opciones": [
+    "La dirección",
+    "Un consultor externo",
+    "El responsable del proceso",
+    "Los nuevos colaboradores"
+   ],
+   "correcta": 2,
+   "explicacion": "I, p. 93, etapa 6: el responsable valida. La dirección aprueba en la etapa siguiente y los consultores o colaboradores nuevos son usuarios del manual, no validadores.",
+   "fuente": "Unidad I, p. 93"
+  },
+  {
+   "id": "GE-054",
+   "tema": "GE-T6",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Qué apartado del contenido del manual de procesos aparece marcado como opcional?",
+   "opciones": [
+    "El mapa de procesos",
+    "Los registros",
+    "El organigrama",
+    "Los indicadores"
+   ],
+   "correcta": 2,
+   "explicacion": "I, pp. 95 y 98: «7. Organigrama (opcional)». El mapa, los indicadores y los registros forman parte normal del contenido.",
+   "fuente": "Unidad I, pp. 95 y 98"
+  },
+  {
+   "id": "GE-055",
+   "tema": "GE-T6",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Qué manual tiene como unidad de análisis el cargo?",
+   "opciones": [
+    "El manual de funciones",
+    "El manual de calidad",
+    "El manual de procedimientos",
+    "El manual de procesos"
+   ],
+   "correcta": 0,
+   "explicacion": "Tabla de I, p. 100: en el manual de funciones la unidad es el cargo; en el de procedimientos, el procedimiento; en el de procesos, el proceso. El manual de calidad no se compara en la tabla.",
+   "fuente": "Unidad I, p. 100"
+  },
+  {
+   "id": "GE-056",
+   "tema": "GE-T6",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según la tabla comparativa, ¿en qué nivel se ubica el manual de procesos?",
+   "opciones": [
+    "Operativo",
+    "Organizacional",
+    "Solo operativo y de detalle",
+    "Estratégico y táctico"
+   ],
+   "correcta": 3,
+   "explicacion": "I, p. 100: el manual de funciones es organizacional, el de procedimientos es operativo y el de procesos es estratégico y táctico.",
+   "fuente": "Unidad I, p. 100"
+  },
+  {
+   "id": "GE-057",
+   "tema": "GE-T6",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuántos apartados tiene normalmente el contenido de un manual de procesos?",
+   "opciones": [
+    "14",
+    "13",
+    "9",
+    "11"
+   ],
+   "correcta": 1,
+   "explicacion": "I, p. 95: 13 apartados, de la portada a los anexos. Las 9 son las etapas de elaboración y los 14 son los elementos de la ficha de caracterización; no los mezcles.",
+   "fuente": "Unidad I, p. 95"
+  },
+  {
+   "id": "GE-058",
+   "tema": "GE-T6",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "¿Cuál de estos es un beneficio del manual de procesos según I, p. 90?",
+   "opciones": [
+    "Eliminación total de las auditorías",
+    "Menos dependencia del conocimiento individual",
+    "Mayor variabilidad en la ejecución",
+    "Reemplazo del manual de procedimientos"
+   ],
+   "correcta": 1,
+   "explicacion": "I, p. 90: el manual reduce la dependencia de lo que sabe una sola persona y da menor (no mayor) variabilidad. Facilita las auditorías, no las elimina, y no reemplaza al de procedimientos (I, p. 101).",
+   "fuente": "Unidad I, pp. 90 y 101"
+  },
+  {
+   "id": "GE-059",
+   "tema": "GE-T6",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "En el manual de procesos, cada indicador especifica nombre, fórmula, meta, responsable y ______.",
+   "respuesta": "frecuencia",
+   "aceptadas": [
+    "frecuencia",
+    "la frecuencia"
+   ],
+   "explicacion": "Son los 5 datos del apartado 11 (Indicadores).",
+   "fuente": "Unidad I, p. 99"
+  },
+  {
+   "id": "GE-060",
+   "tema": "GE-T6",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "El manual de procesos reemplaza al manual de procedimientos.",
+   "correcta": false,
+   "explicacion": "Falso. No lo reemplaza: ofrece una visión integral y suele incorporar los procedimientos más relevantes (I, p. 101).",
+   "fuente": "Unidad I, p. 101"
+  },
+  {
+   "id": "GE-061",
+   "tema": "GE-T7",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Para Chiavenato (2020), la gestión del talento humano consiste en:",
+   "opciones": [
+    "Controlar a los empleados midiendo exclusivamente el tiempo trabajado",
+    "Adquirir, capacitar, evaluar y compensar, atendiendo relaciones laborales, salud, seguridad y equidad",
+    "Un enfoque estratégico e integrado para mejorar el desempeño mediante el desarrollo de capacidades humanas",
+    "Administrar a las personas como el principal patrimonio de la organización y la fuente de su ventaja competitiva"
+   ],
+   "correcta": 3,
+   "explicacion": "II, p. 5: Chiavenato es «el activo». La segunda opción es Dessler («el ciclo completo»), la tercera es Armstrong («la estrategia») y la cuarta es la antigua administración de personal.",
+   "fuente": "Unidad II, p. 5"
+  },
+  {
+   "id": "GE-062",
+   "tema": "GE-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Qué autor define la GTH como «el proceso de adquirir, capacitar, evaluar y compensar» (el ciclo completo)?",
+   "opciones": [
+    "Dessler (2020)",
+    "Michael Porter (1985)",
+    "Armstrong (2022)",
+    "Chiavenato (2020)"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 5: Dessler es el ciclo completo, Chiavenato el activo y Armstrong la estrategia. Porter es el autor de la cadena de valor (Unidad I).",
+   "fuente": "Unidad II, p. 5"
+  },
+  {
+   "id": "GE-063",
+   "tema": "GE-T7",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Cuál es la primera etapa del diagnóstico de la gestión del talento humano?",
+   "opciones": [
+    "Identificar problemas",
+    "Elaborar propuestas de mejora",
+    "Definir el objetivo",
+    "Recolectar información"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 11: (1) definir el objetivo, (2) recolectar información, (3) analizar, (4) identificar problemas y (5) elaborar propuestas. No se puede recolectar sin saber qué se quiere evaluar.",
+   "fuente": "Unidad II, p. 11"
+  },
+  {
+   "id": "GE-064",
+   "tema": "GE-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Como herramienta de diagnóstico, el benchmarking sirve para:",
+   "opciones": [
+    "Profundizar en las opiniones individuales",
+    "Analizar fortalezas, oportunidades, debilidades y amenazas del talento",
+    "Comparar las prácticas de la empresa con las de los líderes del sector",
+    "Medir la satisfacción y el clima laboral a escala"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 12. Medir el clima a escala corresponde a las encuestas, profundizar en opiniones a las entrevistas y el análisis de fortalezas y amenazas a la matriz FODA.",
+   "fuente": "Unidad II, p. 12"
+  },
+  {
+   "id": "GE-065",
+   "tema": "GE-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Un diagnóstico efectivo es «constructivo». Esto significa que:",
+   "opciones": [
+    "Es periódico y orientado a la mejora: no busca culpables, sino oportunidades",
+    "Abarca toda la organización y sus metas",
+    "Se basa en evidencias, datos y una metodología definida",
+    "Involucra a directivos y colaboradores"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 7. Basarse en evidencias es «objetivo y sistemático», involucrar a todos es «integral y participativo» y abarcar toda la organización es «estratégica e integral» (característica de la gestión efectiva).",
+   "fuente": "Unidad II, p. 7"
+  },
+  {
+   "id": "GE-066",
+   "tema": "GE-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En la antigua «administración de personal», las personas se veían como:",
+   "opciones": [
+    "La principal inversión",
+    "El motor del desarrollo",
+    "Un socio estratégico",
+    "Un costo operativo"
+   ],
+   "correcta": 3,
+   "explicacion": "II, p. 8: antes las personas eran un costo operativo y solo se medía el tiempo trabajado. Hoy, en la gestión estratégica, son la principal inversión y se mide el desempeño.",
+   "fuente": "Unidad II, p. 8"
+  },
+  {
+   "id": "GE-067",
+   "tema": "GE-T7",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Según las diapositivas, la «barrera final» para implementar una gestión del talento eficaz es:",
+   "opciones": [
+    "El entorno dinámico",
+    "El patrocinio: el compromiso de la alta dirección",
+    "La complejidad analítica",
+    "El factor económico"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 17: sin apoyo gerencial, las políticas quedan solo en el papel. Las otras tres opciones también son barreras, pero no la «final».",
+   "fuente": "Unidad II, p. 17"
+  },
+  {
+   "id": "GE-068",
+   "tema": "GE-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál de estos NO es uno de los 5 objetivos de la GTH presentados en II, p. 6?",
+   "opciones": [
+    "Alineación de objetivos individuales con los organizacionales",
+    "Reducir salarios para bajar costos",
+    "Atracción y selección",
+    "Retención"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 6 presenta cinco objetivos: atracción y selección, desarrollo, retención, alineación y diagnóstico. Reducir salarios no está entre ellos.",
+   "fuente": "Unidad II, p. 6"
+  },
+  {
+   "id": "GE-069",
+   "tema": "GE-T7",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "La ______ mide la frecuencia con la que renuncia el personal; el ausentismo mide la frecuencia de faltas o retrasos.",
+   "respuesta": "rotación",
+   "aceptadas": [
+    "rotacion",
+    "la rotacion",
+    "rotacion del personal",
+    "rotacion de personal"
+   ],
+   "explicacion": "Las dos son áreas que evalúa el diagnóstico de la GTH (tabla de II, p. 9).",
+   "fuente": "Unidad II, p. 9"
+  },
+  {
+   "id": "GE-070",
+   "tema": "GE-T7",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "En el ciclo de los 10 procesos de la GTH, un error en un proceso afecta a todos los demás.",
+   "correcta": true,
+   "explicacion": "Verdadero. Lo dice el encabezado de II, p. 10: cada etapa alimenta a las siguientes.",
+   "fuente": "Unidad II, p. 10"
+  },
+  {
+   "id": "GE-071",
+   "tema": "GE-T8",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "En el ejemplo de las diapositivas, «Analista de Compras» corresponde a:",
+   "opciones": [
+    "El perfil de puesto",
+    "El puesto",
+    "La función principal",
+    "El cargo"
+   ],
+   "correcta": 3,
+   "explicacion": "II, pp. 22-23: el cargo es el nombre o la etiqueta. El puesto es «gestionar las adquisiciones» (las tareas) y el perfil es el documento con los requisitos de la persona.",
+   "fuente": "Unidad II, pp. 22-23"
+  },
+  {
+   "id": "GE-072",
+   "tema": "GE-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "El perfil de puesto se define como:",
+   "opciones": [
+    "El documento maestro que describe las características que debe cumplir la persona para ocupar el puesto",
+    "El conjunto de tareas, funciones y responsabilidades asignadas dentro de la estructura",
+    "La lista de cargos de la empresa ordenada jerárquicamente",
+    "El nombre con el que se identifica el puesto"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 22. La segunda opción define el puesto, la tercera el cargo y la cuarta se parece a un organigrama.",
+   "fuente": "Unidad II, p. 22"
+  },
+  {
+   "id": "GE-073",
+   "tema": "GE-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Quiénes validan el perfil de puesto («triangulación de la validez»)?",
+   "opciones": [
+    "Solo Talento Humano",
+    "El jefe del área, el auditor y el sindicato",
+    "El jefe del área, Talento Humano y la dirección",
+    "El ocupante del cargo, sus compañeros y los clientes"
+   ],
+   "correcta": 2,
+   "explicacion": "II, pp. 33 y 36: un perfil es efectivo solo con el consenso de estos tres pilares. El jefe aporta la realidad operativa, Talento Humano la metodología y la equidad, y la dirección la alineación estratégica.",
+   "fuente": "Unidad II, pp. 33 y 36"
+  },
+  {
+   "id": "GE-074",
+   "tema": "GE-T8",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Cuál de estos grupos contiene solo competencias conductuales (soft skills)?",
+   "opciones": [
+    "Excel avanzado, logística y negociación con ERP",
+    "Excel, contabilidad y manejo de ERP",
+    "Liderazgo, comunicación e inteligencia emocional",
+    "Programación, inglés y legislación laboral"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 29: las conductuales son comportamientos de desempeño e interacción («el sistema operativo»). Excel, ERP, contabilidad, programación e inglés son competencias técnicas («el motor»).",
+   "fuente": "Unidad II, p. 29"
+  },
+  {
+   "id": "GE-075",
+   "tema": "GE-T8",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "La limitación de los perfiles llamada «barreras artificiales» consiste en:",
+   "opciones": [
+    "Exigir requisitos innecesarios que reducen candidatos sin mejorar la calidad",
+    "Que los perfiles se desactualizan si la empresa cambia",
+    "Que no existen perfiles definidos y hay duplicidad de funciones",
+    "Que los perfiles muy rígidos limitan la innovación"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 37. La segunda opción es la obsolescencia y la tercera es la rigidez. La cuarta es un problema de no tener perfiles (II, p. 24), no una limitación del perfil.",
+   "fuente": "Unidad II, p. 37"
+  },
+  {
+   "id": "GE-076",
+   "tema": "GE-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es la última de las 7 etapas para diseñar un perfil de puesto?",
+   "opciones": [
+    "Identificar competencias",
+    "Validar el perfil",
+    "Establecer requisitos",
+    "Actualizar periódicamente"
+   ],
+   "correcta": 3,
+   "explicacion": "II, pp. 31-34: analizar, recopilar, definir funciones, identificar competencias, establecer requisitos, validar y actualizar periódicamente (la séptima).",
+   "fuente": "Unidad II, pp. 31-34"
+  },
+  {
+   "id": "GE-077",
+   "tema": "GE-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "El anuncio «Se necesita Supervisor de Bodega. Se requiere experiencia. Buen sueldo.» es un mal ejemplo porque:",
+   "opciones": [
+    "Menciona el sueldo",
+    "Es demasiado general y no incluye requisitos técnicos ni conductuales",
+    "Usa un cargo que no existe",
+    "Pide experiencia"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 40 señala dos errores fatales: no tiene objetivo, funciones ni responsabilidades, y faltan los requisitos técnicos y conductuales. Pedir experiencia no es el problema; lo es no especificarla.",
+   "fuente": "Unidad II, p. 40"
+  },
+  {
+   "id": "GE-078",
+   "tema": "GE-T8",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "En las «3 capas» del perfil de puesto, la identificación del cargo y el objetivo del puesto pertenecen a la capa:",
+   "opciones": [
+    "Personal",
+    "Estratégica",
+    "Funcional",
+    "Operativa"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 27: la capa estratégica tiene la identificación y el objetivo; la funcional, las funciones, responsabilidades, indicadores y condiciones; y la personal, la formación, experiencia, conocimientos y competencias. «Operativa» no es una de las capas.",
+   "fuente": "Unidad II, p. 27"
+  },
+  {
+   "id": "GE-079",
+   "tema": "GE-T8",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "Las competencias ______ (hard skills) son conocimientos y habilidades específicas para ejecutar el trabajo.",
+   "respuesta": "técnicas",
+   "aceptadas": [
+    "tecnicas",
+    "tecnica",
+    "duras"
+   ],
+   "explicacion": "Son «el motor»: Excel, ERP, contabilidad. Las conductuales (soft skills) son «el sistema operativo».",
+   "fuente": "Unidad II, p. 29"
+  },
+  {
+   "id": "GE-080",
+   "tema": "GE-T9",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "El reclutamiento se diferencia de la selección porque el reclutamiento busca:",
+   "opciones": [
+    "Elegir al candidato con mejor ajuste",
+    "Firmar el contrato",
+    "Integrar al nuevo colaborador",
+    "Atraer y generar una base de postulantes"
+   ],
+   "correcta": 3,
+   "explicacion": "II, p. 47: reclutar = atraer (120 hojas de vida) y seleccionar = elegir (1 perfil). La firma del contrato y la integración son las etapas 9 y 10 (contratación e inducción).",
+   "fuente": "Unidad II, p. 47"
+  },
+  {
+   "id": "GE-081",
+   "tema": "GE-T9",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es una ventaja del reclutamiento interno?",
+   "opciones": [
+    "Menor costo y menor tiempo de adaptación",
+    "Nuevas competencias para la organización",
+    "Mayor diversidad de candidatos",
+    "Incorporación de nuevas ideas"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 51: el interno es más barato, motiva y ya se conoce el desempeño del candidato. Las otras tres son ventajas del reclutamiento externo (II, p. 53).",
+   "fuente": "Unidad II, pp. 51 y 53"
+  },
+  {
+   "id": "GE-082",
+   "tema": "GE-T9",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "La entrevista que analiza comportamientos pasados para predecir el desempeño futuro es la:",
+   "opciones": [
+    "Entrevista no estructurada",
+    "Entrevista de panel",
+    "Entrevista por competencias",
+    "Entrevista estructurada"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 58. En la estructurada todos responden las mismas preguntas, en la de panel evalúan varios entrevistadores y la no estructurada es una conversación flexible.",
+   "fuente": "Unidad II, p. 58"
+  },
+  {
+   "id": "GE-083",
+   "tema": "GE-T9",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "La técnica de selección que observa el comportamiento en ejercicios prácticos y grupales se llama:",
+   "opciones": [
+    "Prueba técnica",
+    "Prueba psicométrica",
+    "Assessment Center",
+    "Revisión del currículo"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 61. Las psicométricas evalúan aptitudes y personalidad, las técnicas miden conocimientos específicos y la revisión del currículo verifica experiencia y formación.",
+   "fuente": "Unidad II, p. 61"
+  },
+  {
+   "id": "GE-084",
+   "tema": "GE-T9",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Cuál es la última de las 10 etapas del proceso de reclutamiento y selección?",
+   "opciones": [
+    "La inducción",
+    "La verificación de referencias",
+    "La contratación",
+    "La selección del candidato"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 60: «el proceso no termina con la contratación» (etapa 9); la etapa 10 es la inducción, que integra al nuevo colaborador.",
+   "fuente": "Unidad II, p. 60"
+  },
+  {
+   "id": "GE-085",
+   "tema": "GE-T9",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según las diapositivas, el mejor candidato es:",
+   "opciones": [
+    "Quien pide el menor salario",
+    "Quien tiene más años de experiencia",
+    "Quien tiene más títulos académicos",
+    "Quien presenta el mejor ajuste entre competencias, conocimientos, potencial y necesidades del cargo"
+   ],
+   "correcta": 3,
+   "explicacion": "II, p. 59 dice expresamente que el mejor no siempre es el de más títulos o años de experiencia, sino el de mejor ajuste. El salario no se menciona como criterio.",
+   "fuente": "Unidad II, p. 59"
+  },
+  {
+   "id": "GE-086",
+   "tema": "GE-T9",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Como las entrevistas por sí solas pueden tener sesgos del entrevistador, las diapositivas recomiendan:",
+   "opciones": [
+    "Hacer el proceso lo más largo posible",
+    "Combinarlas con pruebas objetivas",
+    "Contratar solo por recomendaciones",
+    "Eliminar las entrevistas"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 63. Contratar solo por recomendaciones es un error frecuente (II, p. 64) y un proceso muy largo hace perder a los mejores candidatos (II, p. 63).",
+   "fuente": "Unidad II, pp. 63-64"
+  },
+  {
+   "id": "GE-087",
+   "tema": "GE-T9",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál de estos es un ejemplo de reclutamiento externo?",
+   "opciones": [
+    "Ascensos",
+    "Portales de empleo y universidades",
+    "Promociones",
+    "Transferencias"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 52: portales, universidades, redes profesionales, agencias y referencias son fuentes externas. Ascensos, promociones y transferencias son internos (II, p. 50).",
+   "fuente": "Unidad II, pp. 50 y 52"
+  },
+  {
+   "id": "GE-088",
+   "tema": "GE-T9",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "El reclutamiento ______ combina el reclutamiento interno y el externo para ampliar las posibilidades de encontrar al candidato adecuado.",
+   "respuesta": "mixto",
+   "aceptadas": [
+    "mixto",
+    "reclutamiento mixto"
+   ],
+   "explicacion": "Los 3 tipos son interno, externo y mixto.",
+   "fuente": "Unidad II, p. 54"
+  },
+  {
+   "id": "GE-089",
+   "tema": "GE-T9",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "En la entrevista ______, todas las personas responden las mismas preguntas.",
+   "respuesta": "estructurada",
+   "aceptadas": [
+    "estructurada",
+    "entrevista estructurada"
+   ],
+   "explicacion": "La semiestructurada combina preguntas planificadas con preguntas abiertas; la no estructurada es una conversación flexible.",
+   "fuente": "Unidad II, p. 58"
+  },
+  {
+   "id": "GE-090",
+   "tema": "GE-T9",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "El proceso de reclutamiento y selección termina con la firma del contrato.",
+   "correcta": false,
+   "explicacion": "Falso. Después de la contratación (etapa 9) viene la inducción (etapa 10): «el proceso no termina con la contratación» (II, p. 60).",
+   "fuente": "Unidad II, p. 60"
+  },
+  {
+   "id": "GE-091",
+   "tema": "GE-T10",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Frente a la capacitación, el desarrollo se caracteriza por:",
+   "opciones": [
+    "Enseñar a usar el nuevo software contable",
+    "Corto plazo, enfocado en el cargo actual",
+    "Corregir brechas de conocimiento del puesto actual",
+    "Mediano y largo plazo, enfocado en nuevos roles y retos"
+   ],
+   "correcta": 3,
+   "explicacion": "II, p. 68: el desarrollo mira al futuro y potencia el crecimiento profesional. Las otras tres opciones describen la capacitación (corto plazo, cargo actual, cerrar brechas, el ejemplo del software).",
+   "fuente": "Unidad II, p. 68"
+  },
+  {
+   "id": "GE-092",
+   "tema": "GE-T10",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Cuál es la primera etapa del proceso de capacitación?",
+   "opciones": [
+    "La detección de necesidades de capacitación (DNC)",
+    "La ejecución",
+    "La evaluación",
+    "La planificación"
+   ],
+   "correcta": 0,
+   "explicacion": "II, pp. 73-74: DNC → planificación → ejecución → evaluación. Las diapositivas la llaman etapa crítica: capacitar sin diagnóstico puede no resolver nada.",
+   "fuente": "Unidad II, pp. 73-74"
+  },
+  {
+   "id": "GE-093",
+   "tema": "GE-T10",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En el modelo de Kirkpatrick, el nivel que mide la aplicación real de lo aprendido en el puesto de trabajo es:",
+   "opciones": [
+    "Resultados",
+    "Aprendizaje",
+    "Comportamiento",
+    "Reacción"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 80: reacción = satisfacción; aprendizaje = conocimientos adquiridos; comportamiento = aplicación en el puesto; resultados = impacto en los indicadores.",
+   "fuente": "Unidad II, p. 80"
+  },
+  {
+   "id": "GE-094",
+   "tema": "GE-T10",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según las diapositivas, ¿cuál es el error más común al evaluar una capacitación?",
+   "opciones": [
+    "Hacer una DNC antes de capacitar",
+    "Medir el impacto en la productividad (nivel 4)",
+    "Medir únicamente si el colaborador quedó satisfecho con el curso (nivel 1)",
+    "Evaluar el comportamiento en el puesto"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 80: el error común es quedarse en el nivel 1 (reacción); la estrategia real mide el nivel 4. Las otras opciones son buenas prácticas.",
+   "fuente": "Unidad II, p. 80"
+  },
+  {
+   "id": "GE-095",
+   "tema": "GE-T10",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Dentro del «desarrollo relacional», el mentoring se define como:",
+   "opciones": [
+    "La guía de un experto",
+    "El aprendizaje en el mismo puesto de trabajo",
+    "El acompañamiento individual",
+    "La combinación de formación presencial y virtual"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 77: mentoring = guía de un experto; coaching = acompañamiento individual. Aprender en el puesto es aprendizaje práctico y la mezcla presencial-virtual es blended learning.",
+   "fuente": "Unidad II, p. 77"
+  },
+  {
+   "id": "GE-096",
+   "tema": "GE-T10",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "El error de capacitación llamado modelo «talla única» consiste en:",
+   "opciones": [
+    "Elegir temas desconectados de la estrategia",
+    "Capacitar sin una DNC previa",
+    "Ver la formación como un gasto operativo",
+    "Ofrecer el mismo curso a todos por igual"
+   ],
+   "correcta": 3,
+   "explicacion": "II, p. 84. Las otras tres opciones también son errores de la misma lista, pero tienen otro nombre; «talla única» es solo el del curso igual para todos.",
+   "fuente": "Unidad II, p. 84"
+  },
+  {
+   "id": "GE-097",
+   "tema": "GE-T10",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Según las limitaciones del modelo, invertir en formación sin ofrecer condiciones para retener al talento es:",
+   "opciones": [
+    "Una evaluación de impacto",
+    "Subsidiar a la competencia",
+    "Una ventaja competitiva sostenible",
+    "Un plan de sucesión"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 83: si capacitas y no retienes, la persona se va con lo aprendido a otra empresa. Las demás opciones no tienen relación con esta limitación.",
+   "fuente": "Unidad II, p. 83"
+  },
+  {
+   "id": "GE-098",
+   "tema": "GE-T10",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "La rotación de puestos (desempeñar múltiples funciones) pertenece al grupo de métodos de:",
+   "opciones": [
+    "Desarrollo relacional",
+    "Aprendizaje práctico",
+    "Formación tradicional",
+    "Evaluación del desempeño"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 77: el aprendizaje práctico incluye la capacitación en el puesto, la rotación, los talleres y las simulaciones. La formación tradicional es presencial, virtual o mixta, y la relacional es mentoring y coaching.",
+   "fuente": "Unidad II, p. 77"
+  },
+  {
+   "id": "GE-099",
+   "tema": "GE-T10",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "La modalidad de formación mixta (presencial y virtual) se conoce como ______ learning.",
+   "respuesta": "blended",
+   "aceptadas": [
+    "blended",
+    "blended learning"
+   ],
+   "explicacion": "Aparece dentro de la «formación tradicional» en los métodos de capacitación.",
+   "fuente": "Unidad II, p. 77"
+  },
+  {
+   "id": "GE-100",
+   "tema": "GE-T10",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "El modelo de 4 niveles para evaluar el impacto de la capacitación (reacción, aprendizaje, comportamiento y resultados) es de ______.",
+   "respuesta": "Kirkpatrick",
+   "aceptadas": [
+    "kirkpatrick",
+    "modelo de kirkpatrick",
+    "kirpatrick"
+   ],
+   "explicacion": "Su mensaje: no basta medir la satisfacción (nivel 1); lo estratégico es medir resultados (nivel 4).",
+   "fuente": "Unidad II, p. 80"
+  },
+  {
+   "id": "GE-101",
+   "tema": "GE-T11",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "La evaluación de 270° incluye a:",
+   "opciones": [
+    "Jefe inmediato y autoevaluación",
+    "Solo compañeros y subordinados",
+    "Jefe, autoevaluación, compañeros, subordinados y clientes",
+    "Jefe inmediato, autoevaluación y compañeros"
+   ],
+   "correcta": 3,
+   "explicacion": "Matriz de II, p. 101: 180° = jefe + autoevaluación; 270° = + compañeros; 360° = + subordinados + clientes.",
+   "fuente": "Unidad II, p. 101"
+  },
+  {
+   "id": "GE-102",
+   "tema": "GE-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Qué paso del ciclo de evaluación se considera «el núcleo del proceso»?",
+   "opciones": [
+    "La retroalimentación (paso 6)",
+    "Aplicar la evaluación (paso 4)",
+    "Definir objetivos (paso 1)",
+    "El plan de mejora (paso 7)"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 97: en la retroalimentación «los datos se transforman en desarrollo». El plan de mejora viene después y es imprescindible, pero no se llama núcleo.",
+   "fuente": "Unidad II, p. 97"
+  },
+  {
+   "id": "GE-103",
+   "tema": "GE-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Con el método MBO, la meta acordada era subir las ventas 15 % y se logró 16 %. ¿Cuál es el cumplimiento?",
+   "opciones": [
+    "93 % de la meta",
+    "100 % de la meta",
+    "107 % de la meta",
+    "116 % de la meta"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 99: 16 ÷ 15 ≈ 1,07, es decir, 107 %. El 116 % sale de confundir el resultado con un porcentaje sobre 100 y el 93 % de invertir la división.",
+   "fuente": "Unidad II, p. 99"
+  },
+  {
+   "id": "GE-104",
+   "tema": "GE-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "El «efecto halo» en la evaluación del desempeño es:",
+   "opciones": [
+    "No tener un plan de mejora posterior",
+    "Usar criterios difusos y poco claros",
+    "Un sesgo en el que un único aspecto sobresaliente distorsiona la evaluación de todas las demás áreas",
+    "Evaluar al colaborador una sola vez al año"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 104. Las otras tres opciones son los «desafíos estructurales» de la misma diapositiva (aislamiento anual, criterios difusos y callejón sin salida), no el efecto halo.",
+   "fuente": "Unidad II, p. 104"
+  },
+  {
+   "id": "GE-105",
+   "tema": "GE-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Para Dessler (2020), la evaluación del desempeño es:",
+   "opciones": [
+    "Comparar el desempeño del empleado contra estándares objetivos previamente establecidos",
+    "Medir solo el tiempo trabajado",
+    "Una apreciación sistemática basada en el potencial de desarrollo futuro",
+    "Un sistema de mejora continua mediante retroalimentación"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 90: Dessler = estándares. La segunda opción es Chiavenato (potencial) y la tercera es Armstrong (mejora continua).",
+   "fuente": "Unidad II, p. 90"
+  },
+  {
+   "id": "GE-106",
+   "tema": "GE-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál de estas opciones NO es uno de los «6 errores fatales» en la evaluación?",
+   "opciones": [
+    "Evaluar una sola vez al año sin seguimiento",
+    "Calificar según preferencias personales o afinidad",
+    "Evaluar únicamente basándose en la antigüedad",
+    "Usar indicadores objetivos y medibles"
+   ],
+   "correcta": 3,
+   "explicacion": "II, p. 105: el error es operar sin indicadores objetivos; usarlos es lo correcto. Las otras tres opciones sí están en la lista de errores.",
+   "fuente": "Unidad II, p. 105"
+  },
+  {
+   "id": "GE-107",
+   "tema": "GE-T11",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "En el caso de servicios financieros, donde se evaluaba a los asesores solo por el número de ventas, ¿cuál fue la solución?",
+   "opciones": [
+    "Eliminar la evaluación del desempeño",
+    "Un scorecard equilibrado con cumplimiento comercial, satisfacción del cliente, calidad, trabajo en equipo y procedimientos",
+    "Evaluar solo la satisfacción del cliente",
+    "Subir la meta de ventas"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 106: se rediseñaron los criterios con 5 indicadores para dejar de premiar la «toxicidad por volumen». Cambiar a un solo criterio repetiría el sesgo.",
+   "fuente": "Unidad II, p. 106"
+  },
+  {
+   "id": "GE-108",
+   "tema": "GE-T11",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Cuál de estos es un aspecto cualitativo (de comportamiento) en el espectro de evaluación?",
+   "opciones": [
+    "Puntualidad y asistencia",
+    "Compromiso",
+    "Productividad",
+    "Cumplimiento de objetivos"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 93: los cualitativos son las competencias técnicas, las conductuales, el compromiso y la innovación. Productividad, puntualidad y cumplimiento de objetivos son cuantitativos (resultados).",
+   "fuente": "Unidad II, p. 93"
+  },
+  {
+   "id": "GE-109",
+   "tema": "GE-T11",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Según II, p. 89, la evaluación del desempeño combina:",
+   "opciones": [
+    "Criterios subjetivos + medición anual + sanción = disciplina",
+    "Antigüedad + afinidad + experiencia = ascenso",
+    "Satisfacción + reacción + aprendizaje = resultados",
+    "Proceso sistemático + medición periódica + criterios objetivos = alineación estratégica"
+   ],
+   "correcta": 3,
+   "explicacion": "Es la «fórmula» de II, p. 89. La segunda y la tercera opción usan elementos de los errores fatales; la cuarta mezcla niveles de Kirkpatrick (capacitación).",
+   "fuente": "Unidad II, p. 89"
+  },
+  {
+   "id": "GE-110",
+   "tema": "GE-T11",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "La evaluación de ______ incluye al jefe, la autoevaluación, los compañeros, los subordinados y los clientes.",
+   "respuesta": "360 grados",
+   "aceptadas": [
+    "360",
+    "360 grados",
+    "360°",
+    "360 °",
+    "trescientos sesenta grados"
+   ],
+   "explicacion": "Da una visión integral y holística y elimina los puntos ciegos.",
+   "fuente": "Unidad II, pp. 101-102"
+  },
+  {
+   "id": "GE-111",
+   "tema": "GE-T11",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "El paso 7 y último del ciclo de evaluación del desempeño es el plan de ______.",
+   "respuesta": "mejora",
+   "aceptadas": [
+    "mejora",
+    "la mejora"
+   ],
+   "explicacion": "«La evaluación pierde su utilidad si no culmina en acciones concretas.»",
+   "fuente": "Unidad II, p. 98"
+  },
+  {
+   "id": "GE-112",
+   "tema": "GE-T11",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Las escalas gráficas son uno de los métodos de evaluación más sencillos y universalmente utilizados.",
+   "correcta": true,
+   "explicacion": "Verdadero. Es la característica que da II, p. 99.",
+   "fuente": "Unidad II, p. 99"
+  },
+  {
+   "id": "GE-113",
+   "tema": "GE-T12",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Según Herzberg, el salario es un factor:",
+   "opciones": [
+    "Higiénico",
+    "De logro",
+    "Motivador",
+    "De autorrealización"
+   ],
+   "correcta": 0,
+   "explicacion": "II, pp. 112-113: los higiénicos (salario, políticas, condiciones) evitan la insatisfacción, pero no motivan por sí solos. Los motivadores son el logro, el reconocimiento y el crecimiento; autorrealización es de Maslow y logro de McClelland.",
+   "fuente": "Unidad II, pp. 112-113"
+  },
+  {
+   "id": "GE-114",
+   "tema": "GE-T12",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Cuáles son las 3 necesidades predominantes de McClelland?",
+   "opciones": [
+    "Fisiológicas, seguridad y sociales",
+    "Higiénicos, motivadores y salariales",
+    "Logro, poder y afiliación",
+    "Teoría X, Teoría Y y Teoría Z"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 112. Fisiológicas, seguridad y sociales son niveles de Maslow; higiénicos y motivadores son de Herzberg; X y Y son de McGregor (la Z no está en las diapositivas).",
+   "fuente": "Unidad II, p. 112"
+  },
+  {
+   "id": "GE-115",
+   "tema": "GE-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según McGregor, la Teoría Y asume que el trabajador:",
+   "opciones": [
+    "Evade el trabajo y necesita control",
+    "Necesita supervisión constante",
+    "Busca responsabilidad y es capaz de autocontrolarse",
+    "Solo trabaja por dinero"
+   ],
+   "correcta": 2,
+   "explicacion": "II, p. 112: la Y asume búsqueda de responsabilidad y autocontrol, y es la que exigen las estrategias modernas. Las otras tres opciones describen la Teoría X.",
+   "fuente": "Unidad II, p. 112"
+  },
+  {
+   "id": "GE-116",
+   "tema": "GE-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En la aplicación empresarial de Maslow, el trabajo en equipo y la pertenencia corresponden al nivel:",
+   "opciones": [
+    "Sociales",
+    "Autorrealización",
+    "Fisiológicas",
+    "Seguridad"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 112: fisiológicas = salario básico; seguridad = estabilidad; sociales = trabajo en equipo y pertenencia; reconocimiento = ascensos y premios; autorrealización = desarrollo e innovación.",
+   "fuente": "Unidad II, p. 112"
+  },
+  {
+   "id": "GE-117",
+   "tema": "GE-T12",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Un vendedor que sube sus ventas específicamente para obtener una comisión muestra motivación:",
+   "opciones": [
+    "Intrínseca",
+    "De autorrealización",
+    "De afiliación",
+    "Extrínseca"
+   ],
+   "correcta": 3,
+   "explicacion": "II, p. 111: la extrínseca proviene de factores externos (salario, bonos, comisiones). El ejemplo de motivación intrínseca es el ingeniero que investiga por gusto.",
+   "fuente": "Unidad II, p. 111"
+  },
+  {
+   "id": "GE-118",
+   "tema": "GE-T12",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "En el caso de la empresa de software, ¿por qué falló el aumento salarial del 15 %?",
+   "opciones": [
+    "Porque el aumento fue demasiado bajo",
+    "Porque trató una necesidad de desarrollo (motivador) con una herramienta de seguridad (higiénico)",
+    "Porque los programadores querían más bonos",
+    "Porque no se aplicó la Teoría X"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 117: el diagnóstico erróneo fue «se van por dinero». Las entrevistas mostraron que buscaban flexibilidad, aprendizaje y crecimiento (II, p. 118); por eso no era un problema de monto ni de bonos.",
+   "fuente": "Unidad II, pp. 117-118"
+  },
+  {
+   "id": "GE-119",
+   "tema": "GE-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En los 8 pilares de la motivación moderna, la flexibilidad laboral (teletrabajo, horarios flexibles) pertenece al grupo:",
+   "opciones": [
+    "Cimientos (estabilidad y claridad)",
+    "Impulsores (recompensa y adaptación)",
+    "Evolución (compromiso a largo plazo)",
+    "Factores higiénicos de Herzberg"
+   ],
+   "correcta": 1,
+   "explicacion": "II, p. 114: los cimientos son bienestar y comunicación; los impulsores, incentivos, flexibilidad y reconocimiento; y la evolución, desarrollo, crecimiento y participación.",
+   "fuente": "Unidad II, p. 114"
+  },
+  {
+   "id": "GE-120",
+   "tema": "GE-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es el nivel más alto de la jerarquía de Maslow, según las diapositivas?",
+   "opciones": [
+    "Seguridad (estabilidad)",
+    "Sociales (pertenencia)",
+    "Reconocimiento (ascensos y premios)",
+    "Autorrealización (desarrollo profesional e innovación)"
+   ],
+   "correcta": 3,
+   "explicacion": "II, p. 112: el orden es fisiológicas → seguridad → sociales → reconocimiento → autorrealización, y la autorrealización está en la cima.",
+   "fuente": "Unidad II, p. 112"
+  },
+  {
+   "id": "GE-121",
+   "tema": "GE-T12",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Según las limitaciones de las estrategias de motivación, un exceso de recompensas individuales puede:",
+   "opciones": [
+    "Generar competencia desleal y destruir el trabajo en equipo",
+    "Reemplazar la necesidad de un buen liderazgo",
+    "Aumentar siempre el compromiso",
+    "Eliminar la rotación por completo"
+   ],
+   "correcta": 0,
+   "explicacion": "II, p. 116 (riesgo de competencia). La misma diapositiva dice que los incentivos tienen efecto nulo si el liderazgo o el clima son tóxicos, así que no reemplazan al liderazgo.",
+   "fuente": "Unidad II, p. 116"
+  },
+  {
+   "id": "GE-122",
+   "tema": "GE-T12",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "La motivación ______ surge del interior de la persona, como el gusto por aprender o resolver problemas.",
+   "respuesta": "intrínseca",
+   "aceptadas": [
+    "intrinseca"
+   ],
+   "explicacion": "La extrínseca viene de factores externos (salario, bonos, premios).",
+   "fuente": "Unidad II, p. 111"
+  },
+  {
+   "id": "GE-123",
+   "tema": "GE-T12",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Según McGregor, las estrategias modernas de motivación exigen aplicar la Teoría ______.",
+   "respuesta": "Y",
+   "aceptadas": [
+    "y",
+    "teoria y"
+   ],
+   "explicacion": "La Teoría Y asume que la persona busca responsabilidad y autocontrol; la X, que evade el trabajo.",
+   "fuente": "Unidad II, p. 112"
+  },
+  {
+   "id": "GE-124",
+   "tema": "GE-T12",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Según las diapositivas, subir el salario aumenta el compromiso a largo plazo aunque el trabajo siga siendo poco desafiante.",
+   "correcta": false,
+   "explicacion": "Falso. Subir el salario puede reducir la insatisfacción inmediata, pero no aumenta el compromiso a largo plazo si no hay desafío ni crecimiento (II, p. 113).",
+   "fuente": "Unidad II, p. 113"
+  }
+ ],
+ "tarjetas": [
+  {
+   "tema": "GE-T1",
+   "frente": "Gestión por procesos (definición)",
+   "reverso": "Enfoque que organiza el trabajo a partir de los procesos (no solo por departamentos) para generar valor al cliente y lograr los objetivos (I, p. 11)."
+  },
+  {
+   "tema": "GE-T1",
+   "frente": "5 verbos de la gestión por procesos",
+   "reverso": "Identificar, diseñar, ejecutar, controlar y mejorar continuamente (I, p. 13)."
+  },
+  {
+   "tema": "GE-T1",
+   "frente": "7 elementos de un proceso",
+   "reverso": "Entradas, actividades, recursos, responsables, controles, salidas y clientes (I, p. 31)."
+  },
+  {
+   "tema": "GE-T1",
+   "frente": "Funcional vs. por procesos: responsabilidad e indicadores",
+   "reverso": "Funcional: jefes funcionales e indicadores locales. Por procesos: dueños del proceso e indicadores integrales (I, p. 14)."
+  },
+  {
+   "tema": "GE-T2",
+   "frente": "3 tipos de procesos",
+   "reverso": "Estratégicos (rumbo), misionales o clave (valor directo al cliente) y de apoyo (recursos) (I, p. 21)."
+  },
+  {
+   "tema": "GE-T2",
+   "frente": "¿Compras y contabilidad son…?",
+   "reverso": "Procesos de apoyo. La gestión financiera, en cambio, es estratégica (I, pp. 23 y 25)."
+  },
+  {
+   "tema": "GE-T2",
+   "frente": "Mapa de procesos vs. organigrama",
+   "reverso": "Mapa: cómo fluye el trabajo y cómo interactúan los procesos. Organigrama: jerarquía de cargos y departamentos (I, p. 30)."
+  },
+  {
+   "tema": "GE-T2",
+   "frente": "6 componentes del mapa",
+   "reverso": "Cliente (entrada), necesidades y expectativas, estratégicos, misionales, apoyo y cliente satisfecho (salida) (I, p. 22)."
+  },
+  {
+   "tema": "GE-T3",
+   "frente": "Caracterización (definición)",
+   "reverso": "Ficha o documento que describe de forma estructurada los elementos de un proceso específico (I, p. 36)."
+  },
+  {
+   "tema": "GE-T3",
+   "frente": "Alcance",
+   "reverso": "Dónde inicia y dónde termina el proceso (I, p. 43)."
+  },
+  {
+   "tema": "GE-T3",
+   "frente": "Niveles: mapa, cadena, caracterización, diagrama",
+   "reverso": "Mapa y cadena de valor: estratégico. Caracterización: táctico. Diagrama de flujo: operativo (I, p. 62)."
+  },
+  {
+   "tema": "GE-T3",
+   "frente": "¿Cuántos elementos tiene la ficha de caracterización?",
+   "reverso": "14: nombre, código, objetivo, alcance, responsable, proveedores, entradas, actividades, salidas, clientes, recursos, KPI, riesgos y documentos (I, p. 43)."
+  },
+  {
+   "tema": "GE-T4",
+   "frente": "Cadena de valor: autor y año",
+   "reverso": "Michael Porter, 1985 (I, p. 46)."
+  },
+  {
+   "tema": "GE-T4",
+   "frente": "5 actividades primarias",
+   "reverso": "Logística interna, operaciones, logística externa, marketing y ventas, y servicio posventa (I, pp. 50-52)."
+  },
+  {
+   "tema": "GE-T4",
+   "frente": "4 actividades de apoyo",
+   "reverso": "Infraestructura de la empresa, gestión del talento humano, desarrollo tecnológico y abastecimiento (compras) (I, pp. 53-54)."
+  },
+  {
+   "tema": "GE-T4",
+   "frente": "Valor (definición)",
+   "reverso": "El beneficio que el cliente percibe al adquirir un producto o servicio (I, p. 49)."
+  },
+  {
+   "tema": "GE-T5",
+   "frente": "Eficiencia vs. eficacia",
+   "reverso": "Eficiencia: optimiza recursos, se enfoca en el proceso (¿cómo se hizo?). Eficacia: logra el objetivo, se enfoca en el resultado (¿se logró?) (I, p. 70)."
+  },
+  {
+   "tema": "GE-T5",
+   "frente": "VA / NNVA / NVA",
+   "reverso": "VA: el cliente paga por ella. NNVA: no agrega valor, pero es obligatoria (ley, seguridad o control). NVA: eliminar o reducir (I, p. 76)."
+  },
+  {
+   "tema": "GE-T5",
+   "frente": "Cuello de botella",
+   "reverso": "Actividad, recurso o etapa de menor capacidad que limita todo el proceso. Ejemplo: pintura 45/h, producción total 45/h (I, pp. 78-79)."
+  },
+  {
+   "tema": "GE-T5",
+   "frente": "Efectividad",
+   "reverso": "Eficiencia + eficacia: lograr los objetivos usando bien los recursos (I, p. 73)."
+  },
+  {
+   "tema": "GE-T6",
+   "frente": "Manual de procesos (definición)",
+   "reverso": "Documento institucional que reúne de forma organizada los procesos: cómo se ejecutan, responsables, entradas, actividades, salidas, controles e indicadores (I, p. 83)."
+  },
+  {
+   "tema": "GE-T6",
+   "frente": "¿Quién valida y quién aprueba el manual?",
+   "reverso": "Valida el responsable del proceso (etapa 6); aprueba la dirección (etapa 7) (I, p. 93)."
+  },
+  {
+   "tema": "GE-T6",
+   "frente": "Unidad de análisis de los 3 manuales",
+   "reverso": "Funciones: cargo. Procedimientos: procedimiento. Procesos: proceso (I, p. 100)."
+  },
+  {
+   "tema": "GE-T7",
+   "frente": "Diagnóstico de la GTH (definición)",
+   "reverso": "Proceso sistemático que analiza la situación actual del talento para identificar fortalezas, debilidades, oportunidades y problemas (II, p. 3)."
+  },
+  {
+   "tema": "GE-T7",
+   "frente": "Chiavenato / Dessler / Armstrong (GTH)",
+   "reverso": "Chiavenato 2020: el activo. Dessler 2020: el ciclo completo. Armstrong 2022: la estrategia (II, p. 5)."
+  },
+  {
+   "tema": "GE-T7",
+   "frente": "5 etapas del diagnóstico",
+   "reverso": "Definir el objetivo, recolectar información, analizar, identificar problemas y elaborar propuestas de mejora (II, p. 11)."
+  },
+  {
+   "tema": "GE-T7",
+   "frente": "7 herramientas del diagnóstico",
+   "reverso": "Encuestas, entrevistas, observación, evaluación del desempeño, FODA, KPI y benchmarking (II, p. 12)."
+  },
+  {
+   "tema": "GE-T8",
+   "frente": "Puesto / cargo / perfil",
+   "reverso": "Puesto: tareas y responsabilidades. Cargo: el nombre. Perfil: documento con lo que debe cumplir la persona (II, p. 22)."
+  },
+  {
+   "tema": "GE-T8",
+   "frente": "Hard skills vs. soft skills",
+   "reverso": "Técnicas: conocimientos específicos («el motor»). Conductuales: comportamientos de desempeño e interacción («el sistema operativo») (II, p. 29)."
+  },
+  {
+   "tema": "GE-T8",
+   "frente": "Triangulación de la validez del perfil",
+   "reverso": "Jefe del área, Talento Humano y dirección (II, p. 36)."
+  },
+  {
+   "tema": "GE-T9",
+   "frente": "Reclutamiento vs. selección",
+   "reverso": "Reclutamiento: atraer (base de postulantes). Selección: elegir (mejor ajuste) (II, p. 47)."
+  },
+  {
+   "tema": "GE-T9",
+   "frente": "5 tipos de entrevista",
+   "reverso": "Estructurada, semiestructurada, no estructurada, panel y por competencias (II, p. 58)."
+  },
+  {
+   "tema": "GE-T9",
+   "frente": "Assessment Center",
+   "reverso": "Técnica que observa el comportamiento en ejercicios prácticos y grupales (II, p. 61)."
+  },
+  {
+   "tema": "GE-T10",
+   "frente": "Capacitación vs. desarrollo",
+   "reverso": "Capacitación: corto plazo, cargo actual, corregir brechas. Desarrollo: mediano y largo plazo, nuevos roles, crecimiento (II, p. 68)."
+  },
+  {
+   "tema": "GE-T10",
+   "frente": "Proceso de capacitación (4 etapas)",
+   "reverso": "DNC → planificación → ejecución → evaluación (II, p. 73)."
+  },
+  {
+   "tema": "GE-T10",
+   "frente": "Kirkpatrick: 4 niveles",
+   "reverso": "Reacción, aprendizaje, comportamiento y resultados. El error es medir solo el nivel 1 (II, p. 80)."
+  },
+  {
+   "tema": "GE-T11",
+   "frente": "Ciclo de evaluación: 7 pasos",
+   "reverso": "Definir objetivos, definir criterios e indicadores, seleccionar el método, aplicar, analizar resultados, retroalimentar (núcleo) y plan de mejora (II, p. 94)."
+  },
+  {
+   "tema": "GE-T11",
+   "frente": "180° / 270° / 360°",
+   "reverso": "180: jefe + auto. 270: + compañeros. 360: + subordinados + clientes (II, p. 101)."
+  },
+  {
+   "tema": "GE-T11",
+   "frente": "Efecto halo",
+   "reverso": "Sesgo en el que un solo aspecto sobresaliente distorsiona la evaluación de todo lo demás (II, p. 104)."
+  },
+  {
+   "tema": "GE-T12",
+   "frente": "Herzberg: higiénicos vs. motivadores",
+   "reverso": "Higiénicos (salario, políticas, condiciones): evitan la insatisfacción. Motivadores (logro, reconocimiento, crecimiento): generan compromiso (II, pp. 112-113)."
+  },
+  {
+   "tema": "GE-T12",
+   "frente": "Maslow (5 niveles, aplicación empresarial)",
+   "reverso": "Fisiológicas (salario básico) → seguridad (estabilidad) → sociales (pertenencia) → reconocimiento (ascensos) → autorrealización (desarrollo) (II, p. 112)."
+  },
+  {
+   "tema": "GE-T12",
+   "frente": "McGregor y McClelland",
+   "reverso": "McGregor: Teoría X (control) vs. Y (responsabilidad; la moderna). McClelland: logro, poder y afiliación (II, p. 112)."
+  }
+ ]
+}

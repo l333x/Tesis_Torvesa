@@ -1,0 +1,2363 @@
+{
+ "materia": "Ingeniería de Requerimientos, Usabilidad y UX",
+ "codigo": "IR",
+ "examen": "2026-11-26",
+ "temas": [
+  {
+   "id": "IR-T1",
+   "titulo": "Qué es un requerimiento y sus tipos",
+   "unidad": "Intro y Importancia",
+   "resumen": "RF = qué hace; RNF = cómo lo hace (cualidades); de dominio = negocio o ley; emergente = surge de la interacción de componentes.",
+   "analogia": "Jett hace dash (RF); el dash sale sin lag (RNF)."
+  },
+  {
+   "id": "IR-T2",
+   "titulo": "SWEBOK, proceso y ciclo de vida",
+   "unidad": "Importancia",
+   "resumen": "SWEBOK (IEEE Computer Society, 15 áreas). 5 etapas: elicitación, análisis, especificación, validación, gestión. SDLC de 7 fases. Regla 1-10-100.",
+   "analogia": "Plano de la base en Minecraft antes de picar."
+  },
+  {
+   "id": "IR-T3",
+   "titulo": "Errores comunes y UX",
+   "unidad": "Importancia",
+   "resumen": "Ambigüedad, incompletitud, inconsistencia, goldplating, suposiciones, requerimiento como solución, sin prioridad, sin criterios, ignorar RNF, no gestionar cambios. La UX empieza en los requerimientos.",
+   "analogia": "Goldplating = subir un artefacto de un personaje que no usas."
+  },
+  {
+   "id": "IR-T4",
+   "titulo": "Elicitación y técnicas",
+   "unidad": "Elicitación y Técnicas",
+   "resumen": "Entrevista (profundidad), encuesta (amplitud), observación (lo que hacen). Brainstorming, focus group (6-10), análisis de documentos, prototipos.",
+   "analogia": "Observación = ver la repetición de la partida (VOD)."
+  },
+  {
+   "id": "IR-T5",
+   "titulo": "Especificación",
+   "unidad": "Especificación y Plantilla",
+   "resumen": "8 características (claro, verificable, consistente, completo, no ambiguo, necesario, trazable, factible), 8 campos, lista de 12 puntos y palabras prohibidas.",
+   "analogia": "Ficha completa del personaje: nombre, elemento, rol, requisitos."
+  },
+  {
+   "id": "IR-T6",
+   "titulo": "Representación",
+   "unidad": "Representación",
+   "resumen": "Lenguaje natural estructurado (Cuando... el sistema debe... para que...), listas organizadas y tablas simples; se combinan según el lector.",
+   "analogia": "Contarlo, listarlo por capítulos o ponerlo en Excel."
+  },
+  {
+   "id": "IR-T7",
+   "titulo": "Priorización: criterios y MoSCoW",
+   "unidad": "Priorización",
+   "resumen": "Valor, complejidad e impacto. Must, Should, Could, Won't (this time). Must ≤ 60 % del esfuerzo.",
+   "analogia": "Compra de ronda en Valorant."
+  },
+  {
+   "id": "IR-T8",
+   "titulo": "Kano, matriz y conflictos",
+   "unidad": "Priorización",
+   "resumen": "Básicos, rendimiento, deleite, indiferentes, inversos. Quick wins, estratégicos, fill-ins, evitar. Resolver conflictos con negociación, datos, trade-off, escalamiento.",
+   "analogia": "Guardar el progreso en Genshin es básico; un evento sorpresa es deleite."
+  },
+  {
+   "id": "IR-T9",
+   "titulo": "Problem Statement (PMBOK) e interesados",
+   "unidad": "Plantilla Problem Statement",
+   "resumen": "Definir el problema antes de pedir requerimientos: alcance, impacto, interesados (poder contra interés), brecha actual-deseado y causa raíz.",
+   "analogia": "Antes de comprar, el área explica qué falla, a quién afecta y por qué."
+  }
+ ],
+ "preguntas": [
+  {
+   "id": "IR-001",
+   "tema": "IR-T1",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Según el IEEE Std 610.12, un requerimiento es:",
+   "opciones": [
+    "Una funcionalidad que el programador decide agregar",
+    "Una condición o capacidad que un sistema debe satisfacer para cumplir un contrato, estándar o especificación",
+    "Un documento que firma el cliente al final del proyecto",
+    "Una prueba unitaria del sistema"
+   ],
+   "correcta": 1,
+   "explicacion": "Es la definición textual de la clase. Las otras describen cosas distintas (goldplating, acta, prueba).",
+   "fuente": "Intro, p. 2"
+  },
+  {
+   "id": "IR-002",
+   "tema": "IR-T1",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "«El sistema debe permitir al usuario filtrar productos por categoría y precio» es un requerimiento:",
+   "opciones": [
+    "No funcional de usabilidad",
+    "De dominio",
+    "Funcional",
+    "Emergente"
+   ],
+   "correcta": 2,
+   "explicacion": "Describe QUÉ hace el sistema (una acción del usuario). Es el RF-03 del ejemplo de clase.",
+   "fuente": "Intro, p. 6"
+  },
+  {
+   "id": "IR-003",
+   "tema": "IR-T1",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "«La transacción debe completarse en menos de 3 segundos con 99,9 % de disponibilidad» es:",
+   "opciones": [
+    "Funcional",
+    "No funcional",
+    "De dominio",
+    "Un criterio de priorización"
+   ],
+   "correcta": 1,
+   "explicacion": "Habla de cómo lo hace (rendimiento y disponibilidad). Caso de banca móvil.",
+   "fuente": "Intro, p. 9"
+  },
+  {
+   "id": "IR-004",
+   "tema": "IR-T1",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«Aplicar el IVA según la legislación local» es un requerimiento:",
+   "opciones": [
+    "Funcional",
+    "Emergente",
+    "De dominio",
+    "Inverso"
+   ],
+   "correcta": 2,
+   "explicacion": "Los de dominio vienen del contexto del negocio: regulaciones, normas legales.",
+   "fuente": "Especificación, p. 5; Importancia, p. 4"
+  },
+  {
+   "id": "IR-005",
+   "tema": "IR-T1",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Los requerimientos que surgen de la interacción entre componentes y no se pueden atribuir a un solo subsistema son:",
+   "opciones": [
+    "De dominio",
+    "Emergentes",
+    "Funcionales",
+    "De rendimiento"
+   ],
+   "correcta": 1,
+   "explicacion": "Definición de la clase de Importancia.",
+   "fuente": "Importancia, p. 4"
+  },
+  {
+   "id": "IR-006",
+   "tema": "IR-T1",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "La pregunta clave de un requerimiento no funcional es:",
+   "opciones": [
+    "¿Qué hace el sistema?",
+    "¿Quién paga el sistema?",
+    "¿Cómo lo hace el sistema?",
+    "¿Cuándo se entrega?"
+   ],
+   "correcta": 2,
+   "explicacion": "RF: ¿qué hace? RNF: ¿cómo lo hace?",
+   "fuente": "Intro, p. 8"
+  },
+  {
+   "id": "IR-007",
+   "tema": "IR-T1",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál NO es una característica de los requerimientos funcionales según la clase?",
+   "opciones": [
+    "Expresados con verbos de acción",
+    "Identificados con un ID único",
+    "Vinculados a casos de uso",
+    "Relacionados con la ISO 25010 y los SLA"
+   ],
+   "correcta": 3,
+   "explicacion": "ISO 25010 y SLA se relacionan con los RNF.",
+   "fuente": "Intro, pp. 6 y 8"
+  },
+  {
+   "id": "IR-008",
+   "tema": "IR-T1",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Uptime, tolerancia a fallos y SLA pertenecen a la familia de RNF de:",
+   "opciones": [
+    "Rendimiento",
+    "Disponibilidad",
+    "Mantenibilidad",
+    "Escalabilidad"
+   ],
+   "correcta": 1,
+   "explicacion": "Disponibilidad: uptime, tolerancia a fallos, SLA.",
+   "fuente": "Intro, p. 7"
+  },
+  {
+   "id": "IR-009",
+   "tema": "IR-T1",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«La plataforma soporta 10 000 usuarios concurrentes sin degradación» (Amazon) corresponde sobre todo a:",
+   "opciones": [
+    "Escalabilidad o rendimiento",
+    "Usabilidad",
+    "Seguridad",
+    "Requerimiento de dominio"
+   ],
+   "correcta": 0,
+   "explicacion": "Capacidad de crecer bajo mayor demanda.",
+   "fuente": "Intro, pp. 7 y 9"
+  },
+  {
+   "id": "IR-010",
+   "tema": "IR-T1",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Una prueba de rendimiento o de carga se usa principalmente para verificar requerimientos:",
+   "opciones": [
+    "Funcionales",
+    "No funcionales",
+    "De dominio",
+    "Emergentes"
+   ],
+   "correcta": 1,
+   "explicacion": "La tabla comparativa: RF → prueba funcional/unitaria; RNF → rendimiento/carga.",
+   "fuente": "Intro, p. 8"
+  },
+  {
+   "id": "IR-011",
+   "tema": "IR-T1",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "Los requerimientos ______ describen lo que el sistema debe hacer.",
+   "respuesta": "funcionales",
+   "aceptadas": [
+    "funcionales",
+    "funcional",
+    "rf"
+   ],
+   "explicacion": "RF = qué hace.",
+   "fuente": "Intro, p. 5"
+  },
+  {
+   "id": "IR-012",
+   "tema": "IR-T1",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Autenticación, cifrado y autorización son ejemplos de RNF de ______.",
+   "respuesta": "seguridad",
+   "aceptadas": [
+    "seguridad"
+   ],
+   "explicacion": "Familia de seguridad.",
+   "fuente": "Intro, p. 7"
+  },
+  {
+   "id": "IR-013",
+   "tema": "IR-T1",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Según el SWEBOK v4, un requerimiento es una ______ que debe exhibir el software para resolver un problema del mundo real.",
+   "respuesta": "propiedad",
+   "aceptadas": [
+    "propiedad"
+   ],
+   "explicacion": "Definición SWEBOK.",
+   "fuente": "Importancia, p. 4"
+  },
+  {
+   "id": "IR-014",
+   "tema": "IR-T1",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Un requerimiento también representa un estado de acuerdo entre clientes y el equipo de desarrollo.",
+   "correcta": true,
+   "explicacion": "Es uno de los tres puntos de la definición en clase.",
+   "fuente": "Intro, p. 2"
+  },
+  {
+   "id": "IR-015",
+   "tema": "IR-T1",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "«El sistema debe cifrar las contraseñas» es un requerimiento funcional porque tiene un verbo.",
+   "correcta": false,
+   "explicacion": "Es una cualidad de seguridad, o sea RNF. El verbo no decide el tipo.",
+   "fuente": "Intro, p. 7"
+  },
+  {
+   "id": "IR-016",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "El SWEBOK es una guía publicada por:",
+   "opciones": [
+    "La ISO",
+    "La IEEE Computer Society",
+    "El PMI",
+    "La Universidad de Stanford"
+   ],
+   "correcta": 1,
+   "explicacion": "Software Engineering Body of Knowledge de la IEEE Computer Society.",
+   "fuente": "Importancia, p. 3"
+  },
+  {
+   "id": "IR-017",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuántas áreas de conocimiento (Knowledge Areas) tiene el SWEBOK según la clase?",
+   "opciones": [
+    "5",
+    "10",
+    "15",
+    "7"
+   ],
+   "correcta": 2,
+   "explicacion": "Requerimientos es 1 de 15 áreas.",
+   "fuente": "Importancia, p. 3"
+  },
+  {
+   "id": "IR-018",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "El orden correcto de las etapas de la Ingeniería de Requerimientos (SWEBOK v4) es:",
+   "opciones": [
+    "Análisis, elicitación, validación, especificación, gestión",
+    "Elicitación, análisis, especificación, validación, gestión",
+    "Especificación, elicitación, análisis, gestión, validación",
+    "Elicitación, especificación, análisis, gestión, validación"
+   ],
+   "correcta": 1,
+   "explicacion": "E-A-E-V-G: El Analista Escribe, Valida y Gestiona.",
+   "fuente": "Elicitación, p. 4"
+  },
+  {
+   "id": "IR-019",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Detectar conflictos, omisiones e inconsistencias y negociar prioridades corresponde a la etapa de:",
+   "opciones": [
+    "Elicitación",
+    "Análisis",
+    "Validación",
+    "Gestión"
+   ],
+   "correcta": 1,
+   "explicacion": "Análisis.",
+   "fuente": "Importancia, p. 6"
+  },
+  {
+   "id": "IR-020",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Confirmar que los requerimientos reflejan las necesidades reales mediante revisiones, prototipos y pruebas de aceptación es:",
+   "opciones": [
+    "Especificación",
+    "Validación",
+    "Gestión",
+    "Elicitación"
+   ],
+   "correcta": 1,
+   "explicacion": "Validación.",
+   "fuente": "Importancia, p. 6"
+  },
+  {
+   "id": "IR-021",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Controlar cambios, mantener la trazabilidad y evaluar el impacto de modificaciones es la etapa de:",
+   "opciones": [
+    "Gestión",
+    "Análisis",
+    "Diseño",
+    "Testing"
+   ],
+   "correcta": 0,
+   "explicacion": "Gestión.",
+   "fuente": "Importancia, p. 6"
+  },
+  {
+   "id": "IR-022",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según la regla 1-10-100 de la clase, corregir en testing un error de requerimientos cuesta:",
+   "opciones": [
+    "5x",
+    "10x",
+    "20x",
+    "100x"
+   ],
+   "correcta": 2,
+   "explicacion": "1x req, 5x diseño, 10x implementación, 20x testing, 100x producción.",
+   "fuente": "Importancia, p. 9"
+  },
+  {
+   "id": "IR-023",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Según la regla 1-10-100, la fase donde un error es más caro de corregir es:",
+   "opciones": [
+    "Diseño",
+    "Implementación",
+    "Testing",
+    "Producción"
+   ],
+   "correcta": 3,
+   "explicacion": "Producción: 100x (recall, parches, pérdida de clientes).",
+   "fuente": "Importancia, p. 9"
+  },
+  {
+   "id": "IR-024",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es la secuencia correcta del ciclo de vida (SDLC) de la clase?",
+   "opciones": [
+    "Requerimientos, planificación, diseño, testing, implementación, despliegue, mantenimiento",
+    "Planificación, requerimientos, diseño, implementación, testing, despliegue, mantenimiento",
+    "Planificación, diseño, requerimientos, implementación, despliegue, testing, mantenimiento",
+    "Diseño, planificación, requerimientos, testing, implementación, mantenimiento, despliegue"
+   ],
+   "correcta": 1,
+   "explicacion": "7 fases en ese orden.",
+   "fuente": "Importancia, p. 7"
+  },
+  {
+   "id": "IR-025",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "El 40-50 % del esfuerzo de desarrollo gastado en trabajo evitable por requerimientos deficientes se llama:",
+   "opciones": [
+    "Scope creep",
+    "Retrabajo",
+    "Goldplating",
+    "Parálisis por análisis"
+   ],
+   "correcta": 1,
+   "explicacion": "Retrabajo.",
+   "fuente": "Importancia, p. 10"
+  },
+  {
+   "id": "IR-026",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Requerimientos ambiguos que permiten que el alcance crezca sin control producen:",
+   "opciones": [
+    "Scope creep",
+    "Integración tardía",
+    "Replanificación",
+    "Trazabilidad"
+   ],
+   "correcta": 0,
+   "explicacion": "Scope creep.",
+   "fuente": "Importancia, p. 10"
+  },
+  {
+   "id": "IR-027",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "La trazabilidad bidireccional según la clase va de:",
+   "opciones": [
+    "Cliente → contrato → factura",
+    "Origen → requerimiento → diseño → código → prueba",
+    "Prueba → despliegue → mantenimiento",
+    "Diseño → código → cliente"
+   ],
+   "correcta": 1,
+   "explicacion": "Factor de éxito listado en la clase.",
+   "fuente": "Importancia, p. 8"
+  },
+  {
+   "id": "IR-028",
+   "tema": "IR-T2",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Qué norma conecta el SWEBOK v4 con los procesos de requisitos?",
+   "opciones": [
+    "ISO 9001",
+    "ISO/IEC/IEEE 29148",
+    "ISO 27001",
+    "ISO 14001"
+   ],
+   "correcta": 1,
+   "explicacion": "ISO/IEC/IEEE 29148:2018.",
+   "fuente": "Elicitación, p. 3"
+  },
+  {
+   "id": "IR-029",
+   "tema": "IR-T2",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Un error en requerimientos se propaga en todas las fases como un efecto ______.",
+   "respuesta": "domino",
+   "aceptadas": [
+    "domino",
+    "dominó"
+   ],
+   "explicacion": "Efecto dominó.",
+   "fuente": "Importancia, p. 7"
+  },
+  {
+   "id": "IR-030",
+   "tema": "IR-T2",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "La primera etapa de la Ingeniería de Requerimientos es la ______.",
+   "respuesta": "elicitacion",
+   "aceptadas": [
+    "elicitacion",
+    "elicitación"
+   ],
+   "explicacion": "Elicitación.",
+   "fuente": "Elicitación, p. 4"
+  },
+  {
+   "id": "IR-031",
+   "tema": "IR-T2",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Según la clase, cada dólar invertido en requerimientos ahorra entre $10 y $______ en fases posteriores.",
+   "respuesta": "100",
+   "aceptadas": [
+    "100",
+    "cien"
+   ],
+   "explicacion": "Entre 10 y 100.",
+   "fuente": "Importancia, p. 9"
+  },
+  {
+   "id": "IR-032",
+   "tema": "IR-T2",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Según la clase, el 56 % de los defectos de software se originan en la fase de requerimientos.",
+   "correcta": true,
+   "explicacion": "Dato de Importancia, p. 8.",
+   "fuente": "Importancia, p. 8"
+  },
+  {
+   "id": "IR-033",
+   "tema": "IR-T2",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Testing es una de las 5 etapas de la Ingeniería de Requerimientos.",
+   "correcta": false,
+   "explicacion": "Testing es fase del SDLC. Las etapas de la IR son elicitación, análisis, especificación, validación y gestión.",
+   "fuente": "Importancia, pp. 6-7"
+  },
+  {
+   "id": "IR-034",
+   "tema": "IR-T3",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "«El sistema debe ser rápido» es un ejemplo de:",
+   "opciones": [
+    "Inconsistencia",
+    "Ambigüedad",
+    "Goldplating",
+    "Requerimiento emergente"
+   ],
+   "correcta": 1,
+   "explicacion": "Sin métrica, cada uno interpreta distinto.",
+   "fuente": "Importancia, p. 11"
+  },
+  {
+   "id": "IR-035",
+   "tema": "IR-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Agregar funcionalidades que nadie pidió se conoce como:",
+   "opciones": [
+    "Scope creep",
+    "Goldplating",
+    "Retrabajo",
+    "Incompletitud"
+   ],
+   "correcta": 1,
+   "explicacion": "Goldplating: el equipo «mejora» con features innecesarias.",
+   "fuente": "Importancia, p. 11"
+  },
+  {
+   "id": "IR-036",
+   "tema": "IR-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«El sistema debe usar MySQL» es un error de tipo:",
+   "opciones": [
+    "Requerimiento como solución",
+    "Ambigüedad",
+    "Sin priorización",
+    "Suposición no documentada"
+   ],
+   "correcta": 0,
+   "explicacion": "Prescribe tecnología; debería decir «almacenar datos de forma persistente y consultable».",
+   "fuente": "Importancia, p. 12"
+  },
+  {
+   "id": "IR-037",
+   "tema": "IR-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "El equipo asume que siempre habrá internet, no lo escribe, y la app falla offline. Es:",
+   "opciones": [
+    "Inconsistencia",
+    "Goldplating",
+    "Suposición no documentada",
+    "Falta de stakeholders"
+   ],
+   "correcta": 2,
+   "explicacion": "Ejemplo textual de la clase.",
+   "fuente": "Importancia, p. 11"
+  },
+  {
+   "id": "IR-038",
+   "tema": "IR-T3",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Req A: «solo usuarios premium pueden exportar». Req B: «todos los usuarios pueden generar reportes PDF». El error es:",
+   "opciones": [
+    "Ambigüedad",
+    "Inconsistencia",
+    "Incompletitud",
+    "Sin criterios de aceptación"
+   ],
+   "correcta": 1,
+   "explicacion": "Se contradicen.",
+   "fuente": "Importancia, p. 11"
+  },
+  {
+   "id": "IR-039",
+   "tema": "IR-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Documentar solo los happy paths e ignorar errores, casos límite y estados offline es:",
+   "opciones": [
+    "Incompletitud",
+    "Inconsistencia",
+    "Goldplating",
+    "Scope creep"
+   ],
+   "correcta": 0,
+   "explicacion": "Incompletitud.",
+   "fuente": "Importancia, p. 11"
+  },
+  {
+   "id": "IR-040",
+   "tema": "IR-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según la clase, ¿qué norma define la usabilidad como atributo de calidad del software?",
+   "opciones": [
+    "ISO 25010",
+    "ISO 29148",
+    "IEEE 610.12",
+    "ISO 9241-11"
+   ],
+   "correcta": 0,
+   "explicacion": "La diapositiva dice ISO 25010.",
+   "fuente": "Importancia, p. 13"
+  },
+  {
+   "id": "IR-041",
+   "tema": "IR-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál de estos requerimientos incorpora mejor la UX según el ejemplo de clase?",
+   "opciones": [
+    "El usuario puede buscar productos",
+    "El sistema debe ser intuitivo",
+    "El usuario puede buscar productos con autocompletado, resultados en < 200 ms, filtros y sugerencias si no hay resultados",
+    "El buscador debe usar Elasticsearch"
+   ],
+   "correcta": 2,
+   "explicacion": "Es el ejemplo «Bien» de la clase.",
+   "fuente": "Importancia, p. 13"
+  },
+  {
+   "id": "IR-042",
+   "tema": "IR-T3",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según la clase, apps con buena UX generan hasta:",
+   "opciones": [
+    "10 % menos ventas",
+    "60 % menos tickets de soporte",
+    "100 % más usuarios",
+    "50 % más bugs"
+   ],
+   "correcta": 1,
+   "explicacion": "Hasta 60 % menos tickets; cada uno cuesta $5-$50.",
+   "fuente": "Importancia, p. 14"
+  },
+  {
+   "id": "IR-043",
+   "tema": "IR-T3",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Cambios informales por chat o pasillo, sin evaluar impacto ni aprobación, son el error de no ______ cambios.",
+   "respuesta": "gestionar",
+   "aceptadas": [
+    "gestionar"
+   ],
+   "explicacion": "No gestionar cambios.",
+   "fuente": "Importancia, p. 12"
+  },
+  {
+   "id": "IR-044",
+   "tema": "IR-T3",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "La experiencia de usuario no es una fase posterior al diseño: comienza en los ______.",
+   "respuesta": "requerimientos",
+   "aceptadas": [
+    "requerimientos",
+    "requisitos"
+   ],
+   "explicacion": "UX dentro de requerimientos.",
+   "fuente": "Importancia, p. 13"
+  },
+  {
+   "id": "IR-045",
+   "tema": "IR-T3",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "El cliente que paga siempre es quien usa el sistema.",
+   "correcta": false,
+   "explicacion": "La clase dice: el cliente que paga no siempre es quien usa el sistema (falta de stakeholders clave).",
+   "fuente": "Importancia, p. 12"
+  },
+  {
+   "id": "IR-046",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "La elicitación consiste en:",
+   "opciones": [
+    "Programar los requerimientos",
+    "Identificar y obtener los requisitos de los stakeholders",
+    "Probar el sistema",
+    "Priorizar con MoSCoW"
+   ],
+   "correcta": 1,
+   "explicacion": "Identificar y obtener; construir comprensión compartida.",
+   "fuente": "Elicitación, p. 5"
+  },
+  {
+   "id": "IR-047",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "La técnica que detecta lo que los usuarios HACEN, no solo lo que dicen que hacen, es:",
+   "opciones": [
+    "Entrevista",
+    "Encuesta",
+    "Observación",
+    "Brainstorming"
+   ],
+   "correcta": 2,
+   "explicacion": "Observación en el contexto real.",
+   "fuente": "Elicitación, p. 12"
+  },
+  {
+   "id": "IR-048",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Las dos modalidades de observación son:",
+   "opciones": [
+    "Abierta y cerrada",
+    "Pasiva y participante",
+    "Individual y grupal",
+    "Formal e informal"
+   ],
+   "correcta": 1,
+   "explicacion": "Pasiva (sin intervenir) y participante (el analista se involucra).",
+   "fuente": "Elicitación, p. 12"
+  },
+  {
+   "id": "IR-049",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Para cuantificar opiniones de muchos usuarios dispersos conviene:",
+   "opciones": [
+    "Entrevista",
+    "Encuesta",
+    "Observación participante",
+    "Focus group"
+   ],
+   "correcta": 1,
+   "explicacion": "Encuesta: amplitud, cuantitativa.",
+   "fuente": "Elicitación, p. 11"
+  },
+  {
+   "id": "IR-050",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Un paso de preparación de la ENCUESTA según la clase es:",
+   "opciones": [
+    "Cerrar con una síntesis validada",
+    "Pilotar con un grupo pequeño",
+    "Moderador neutral",
+    "No criticar ideas"
+   ],
+   "correcta": 1,
+   "explicacion": "Pilotar con un grupo pequeño. La síntesis es de la entrevista.",
+   "fuente": "Elicitación, p. 11"
+  },
+  {
+   "id": "IR-051",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Un riesgo de la entrevista es:",
+   "opciones": [
+    "Sesgo del entrevistador y del entrevistado",
+    "Que cuantifica demasiado",
+    "Que no permite aclarar dudas",
+    "Que requiere 6 a 10 personas"
+   ],
+   "correcta": 0,
+   "explicacion": "Riesgos: sesgo, dependencia de la habilidad del analista, tiempo.",
+   "fuente": "Elicitación, p. 10"
+  },
+  {
+   "id": "IR-052",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Un focus group tiene típicamente:",
+   "opciones": [
+    "1 persona",
+    "2 a 4 personas",
+    "6 a 10 personas",
+    "Más de 50 personas"
+   ],
+   "correcta": 2,
+   "explicacion": "Grupo pequeño de 6 a 10 con moderador.",
+   "fuente": "Técnicas, p. 5"
+  },
+  {
+   "id": "IR-053",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál NO es una regla del brainstorming?",
+   "opciones": [
+    "No criticar durante la generación",
+    "Cantidad antes que calidad",
+    "Votar y descartar cada idea apenas surge",
+    "Construir sobre las ideas de otros"
+   ],
+   "correcta": 2,
+   "explicacion": "Las ideas se filtran DESPUÉS; durante la sesión no se critica.",
+   "fuente": "Técnicas, p. 4"
+  },
+  {
+   "id": "IR-054",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según el SWEBOK v4, el análisis de documentos es clave para identificar requisitos:",
+   "opciones": [
+    "Emergentes",
+    "No funcionales",
+    "De deleite",
+    "Inversos"
+   ],
+   "correcta": 1,
+   "explicacion": "La diapositiva lo dice para RNF.",
+   "fuente": "Técnicas, p. 6"
+  },
+  {
+   "id": "IR-055",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Los wireframes y bocetos en papel son prototipos de:",
+   "opciones": [
+    "Alta fidelidad",
+    "Baja fidelidad",
+    "Producción",
+    "Rendimiento"
+   ],
+   "correcta": 1,
+   "explicacion": "Baja fidelidad; los mockups interactivos son de alta.",
+   "fuente": "Técnicas, p. 7"
+  },
+  {
+   "id": "IR-056",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Para comprender el dominio y las reglas de negocio conviene usar:",
+   "opciones": [
+    "Brainstorming",
+    "Análisis de documentos",
+    "Focus group",
+    "Prototipos de alta fidelidad"
+   ],
+   "correcta": 1,
+   "explicacion": "Cuándo usar cada técnica.",
+   "fuente": "Técnicas, p. 8"
+  },
+  {
+   "id": "IR-057",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál de estos es un stakeholder típico que muchos olvidan?",
+   "opciones": [
+    "Reguladores y auditores",
+    "El compilador",
+    "El servidor",
+    "El lenguaje de programación"
+   ],
+   "correcta": 0,
+   "explicacion": "Lista de stakeholders típicos.",
+   "fuente": "Elicitación, p. 7"
+  },
+  {
+   "id": "IR-058",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Según el SWEBOK v4, ¿qué se recomienda sobre los métodos de elicitación?",
+   "opciones": [
+    "Usar solo entrevistas",
+    "Ningún método aislado es suficiente; se deben combinar",
+    "Usar solo encuestas porque son cuantitativas",
+    "Evitar la observación"
+   ],
+   "correcta": 1,
+   "explicacion": "Combinar y triangular fuentes.",
+   "fuente": "Elicitación, pp. 8 y 13"
+  },
+  {
+   "id": "IR-059",
+   "tema": "IR-T4",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "El analista solo busca datos que confirman lo que ya pensaba. Ese riesgo se llama:",
+   "opciones": [
+    "Goldplating",
+    "Sesgo de confirmación",
+    "Scope creep",
+    "Retrabajo"
+   ],
+   "correcta": 1,
+   "explicacion": "Riesgo común al elicitar.",
+   "fuente": "Técnicas, p. 9"
+  },
+  {
+   "id": "IR-060",
+   "tema": "IR-T4",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "La entrevista puede ser estructurada, semiestructurada o ______.",
+   "respuesta": "abierta",
+   "aceptadas": [
+    "abierta",
+    "no estructurada"
+   ],
+   "explicacion": "Tres tipos.",
+   "fuente": "Elicitación, p. 9"
+  },
+  {
+   "id": "IR-061",
+   "tema": "IR-T4",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "El SWEBOK v4 recomienda ______ información de múltiples fuentes.",
+   "respuesta": "triangular",
+   "aceptadas": [
+    "triangular"
+   ],
+   "explicacion": "Triangular.",
+   "fuente": "Elicitación, p. 8"
+  },
+  {
+   "id": "IR-062",
+   "tema": "IR-T4",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "En el focus group, el moderador debe ser ______.",
+   "respuesta": "neutral",
+   "aceptadas": [
+    "neutral",
+    "neutro"
+   ],
+   "explicacion": "Moderador neutral.",
+   "fuente": "Técnicas, p. 5"
+  },
+  {
+   "id": "IR-063",
+   "tema": "IR-T4",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Elicitar es solo preguntarle al cliente qué quiere.",
+   "correcta": false,
+   "explicacion": "No es solo preguntar: es construir comprensión compartida.",
+   "fuente": "Elicitación, p. 5"
+  },
+  {
+   "id": "IR-064",
+   "tema": "IR-T4",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Al cerrar una entrevista se recomienda hacer una síntesis validada con el entrevistado.",
+   "correcta": true,
+   "explicacion": "Parte de la preparación.",
+   "fuente": "Elicitación, p. 9"
+  },
+  {
+   "id": "IR-065",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál de estas NO está entre las 8 características de un buen requerimiento de la clase de Especificación?",
+   "opciones": [
+    "Claro",
+    "Trazable",
+    "Rentable",
+    "Factible"
+   ],
+   "correcta": 2,
+   "explicacion": "Las 8: claro, verificable, consistente, completo, no ambiguo, necesario, trazable, factible.",
+   "fuente": "Especificación, p. 6"
+  },
+  {
+   "id": "IR-066",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«El 90 % de los usuarios debe completar el registro en menos de 3 minutos» es el buen ejemplo de la característica:",
+   "opciones": [
+    "Claro",
+    "Verificable",
+    "Consistente",
+    "Necesario"
+   ],
+   "correcta": 1,
+   "explicacion": "Verificable: se puede comprobar con una medida.",
+   "fuente": "Especificación, p. 8"
+  },
+  {
+   "id": "IR-067",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«Registro con email» frente a «registro solo con cédula» viola la característica:",
+   "opciones": [
+    "Factible",
+    "Consistente",
+    "Trazable",
+    "Necesario"
+   ],
+   "correcta": 1,
+   "explicacion": "Consistente: no contradice a otros.",
+   "fuente": "Especificación, p. 9"
+  },
+  {
+   "id": "IR-068",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Cuál es el campo que permite comprobar con una prueba si se cumple el requerimiento?",
+   "opciones": [
+    "Actor",
+    "Criterio de aceptación",
+    "Título",
+    "Dependencias"
+   ],
+   "correcta": 1,
+   "explicacion": "Criterio de aceptación.",
+   "fuente": "Especificación, p. 11"
+  },
+  {
+   "id": "IR-069",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En el ejemplo RF-005 de clase (recuperar contraseña), el criterio de aceptación es:",
+   "opciones": [
+    "El usuario queda contento",
+    "El enlace llega en < 60 s y expira a los 30 min",
+    "Usar SendGrid",
+    "Prioridad alta"
+   ],
+   "correcta": 1,
+   "explicacion": "Ejemplo textual.",
+   "fuente": "Especificación, p. 12"
+  },
+  {
+   "id": "IR-070",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuántos campos tiene la estructura básica de un requerimiento vista en clase?",
+   "opciones": [
+    "5",
+    "6",
+    "8",
+    "12"
+   ],
+   "correcta": 2,
+   "explicacion": "ID, título, descripción, tipo, prioridad, criterio, actor, dependencias.",
+   "fuente": "Especificación, p. 11"
+  },
+  {
+   "id": "IR-071",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "En la lista de 12 puntos de la plantilla, «no impone diseño innecesario» corresponde a:",
+   "opciones": [
+    "Apropiado",
+    "Singular",
+    "Conforme",
+    "Vinculante"
+   ],
+   "correcta": 0,
+   "explicacion": "Apropiado: nivel de detalle adecuado y sin diseño innecesario.",
+   "fuente": "Plantilla de elicitación, sec. 11.1"
+  },
+  {
+   "id": "IR-072",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "«Expresa una sola capacidad, característica o restricción» es la característica:",
+   "opciones": [
+    "Completo",
+    "Singular",
+    "Inequívoco",
+    "Correcto"
+   ],
+   "correcta": 1,
+   "explicacion": "Singular.",
+   "fuente": "Plantilla de elicitación, sec. 11.1"
+  },
+  {
+   "id": "IR-073",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Las tres características que la plantilla toma del SWEBOK (no de la ISO 29148) son:",
+   "opciones": [
+    "Vinculante, vocabulario y aceptable",
+    "Necesario, factible y verificable",
+    "Claro, consistente y trazable",
+    "Completo, conciso y validable"
+   ],
+   "correcta": 0,
+   "explicacion": "Marcadas «(SWEBOK)» en la sec. 11.1.",
+   "fuente": "Plantilla de elicitación, sec. 11.1"
+  },
+  {
+   "id": "IR-074",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "«Si es posible» y «según corresponda» son, según la revisión del lenguaje:",
+   "opciones": [
+    "Superlativos",
+    "Vacíos o escapatorias",
+    "Totalidades",
+    "Comparativos"
+   ],
+   "correcta": 1,
+   "explicacion": "Vacíos o escapatorias.",
+   "fuente": "Plantilla de elicitación, sec. 11.3"
+  },
+  {
+   "id": "IR-075",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "«Todos», «siempre» y «nunca» son:",
+   "opciones": [
+    "Totalidades",
+    "Pronombres vagos",
+    "Términos abiertos",
+    "Lenguaje subjetivo"
+   ],
+   "correcta": 0,
+   "explicacion": "Totalidades.",
+   "fuente": "Plantilla de elicitación, sec. 11.3; TP, sec. 5"
+  },
+  {
+   "id": "IR-076",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "La técnica de preguntar «¿por qué?» varias veces hasta encontrar la necesidad real se llama:",
+   "opciones": [
+    "MoSCoW",
+    "5 porqués",
+    "Kano",
+    "Brainstorming"
+   ],
+   "correcta": 1,
+   "explicacion": "5 porqués; se usa cuando el enunciado describe una solución.",
+   "fuente": "Plantilla de elicitación, sec. 11.4"
+  },
+  {
+   "id": "IR-077",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es un error común al especificar según la clase?",
+   "opciones": [
+    "Usar identificadores únicos",
+    "Confundir requerimientos con funcionalidades del competidor",
+    "Incluir criterios de aceptación",
+    "Mantener un glosario"
+   ],
+   "correcta": 1,
+   "explicacion": "Lista de errores comunes al especificar.",
+   "fuente": "Especificación, p. 13"
+  },
+  {
+   "id": "IR-078",
+   "tema": "IR-T5",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "La especificación es el insumo principal para el equipo de:",
+   "opciones": [
+    "Marketing",
+    "QA",
+    "Finanzas",
+    "Ventas"
+   ],
+   "correcta": 1,
+   "explicacion": "Importancia de una buena especificación.",
+   "fuente": "Especificación, p. 4"
+  },
+  {
+   "id": "IR-079",
+   "tema": "IR-T5",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "La especificación sirve de ______ entre el cliente y el equipo de desarrollo.",
+   "respuesta": "contrato",
+   "aceptadas": [
+    "contrato"
+   ],
+   "explicacion": "Contrato.",
+   "fuente": "Especificación, p. 3"
+  },
+  {
+   "id": "IR-080",
+   "tema": "IR-T5",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Un requerimiento ______ es técnica y económicamente viable.",
+   "respuesta": "factible",
+   "aceptadas": [
+    "factible"
+   ],
+   "explicacion": "Factible.",
+   "fuente": "Especificación, p. 10"
+  },
+  {
+   "id": "IR-081",
+   "tema": "IR-T5",
+   "tipo": "completar",
+   "dificultad": 3,
+   "enunciado": "En la lista de 12 puntos, «sigue la plantilla y el estilo de redacción acordados» es la característica ______.",
+   "respuesta": "conforme",
+   "aceptadas": [
+    "conforme"
+   ],
+   "explicacion": "Conforme.",
+   "fuente": "Plantilla de elicitación, sec. 11.1"
+  },
+  {
+   "id": "IR-082",
+   "tema": "IR-T5",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Palabras como «rápido», «fácil», «amigable» e «intuitivo» hacen que un requerimiento no sea ______.",
+   "respuesta": "claro",
+   "aceptadas": [
+    "claro",
+    "verificable",
+    "inequivoco",
+    "inequívoco",
+    "no ambiguo"
+   ],
+   "explicacion": "Característica Claro (y verificable).",
+   "fuente": "Especificación, p. 7"
+  },
+  {
+   "id": "IR-083",
+   "tema": "IR-T5",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Un buen criterio de aceptación incluye una medida que se puede comprobar con una prueba.",
+   "correcta": true,
+   "explicacion": "TP de Representación, sec. 4.",
+   "fuente": "Plantilla TP, p. 4"
+  },
+  {
+   "id": "IR-084",
+   "tema": "IR-T5",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "El conector «y/o» es recomendable porque cubre más casos.",
+   "correcta": false,
+   "explicacion": "Es un conector ambiguo; se recomienda separar en varios requerimientos.",
+   "fuente": "Plantilla de elicitación, sec. 11.3"
+  },
+  {
+   "id": "IR-085",
+   "tema": "IR-T6",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "La forma de representación más común en la industria según la clase es:",
+   "opciones": [
+    "Modelos formales",
+    "Lenguaje natural estructurado",
+    "Diagramas BPMN",
+    "Código fuente"
+   ],
+   "correcta": 1,
+   "explicacion": "Lenguaje natural con plantilla y sintaxis controlada.",
+   "fuente": "Representación, p. 5"
+  },
+  {
+   "id": "IR-086",
+   "tema": "IR-T6",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "La plantilla del lenguaje natural estructurado es:",
+   "opciones": [
+    "Como [rol] quiero [acción] para [beneficio]",
+    "Cuando [condición], el sistema debe [acción] [objeto] para que [beneficio]",
+    "Dado [contexto] cuando [evento] entonces [resultado]",
+    "Si [x] entonces [y]"
+   ],
+   "correcta": 1,
+   "explicacion": "Es la de la clase. La primera es user story y la tercera es Gherkin.",
+   "fuente": "Representación, p. 5"
+  },
+  {
+   "id": "IR-087",
+   "tema": "IR-T6",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Una limitación de las listas organizadas es que:",
+   "opciones": [
+    "Son difíciles de leer",
+    "No muestran relaciones entre requerimientos y pueden ocultar dependencias",
+    "Requieren herramientas especiales",
+    "Son la forma más ambigua"
+   ],
+   "correcta": 1,
+   "explicacion": "Limitaciones de las listas.",
+   "fuente": "Representación, p. 10"
+  },
+  {
+   "id": "IR-088",
+   "tema": "IR-T6",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En una tabla simple de requerimientos:",
+   "opciones": [
+    "Cada columna es un requerimiento y cada fila un atributo",
+    "Cada fila es un requerimiento y cada columna un atributo",
+    "Se escribe un párrafo por requerimiento",
+    "Solo van los no funcionales"
+   ],
+   "correcta": 1,
+   "explicacion": "Fila = requerimiento; columna = atributo.",
+   "fuente": "Representación, p. 11"
+  },
+  {
+   "id": "IR-089",
+   "tema": "IR-T6",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Para presentar los requerimientos AL CLIENTE se recomienda:",
+   "opciones": [
+    "Tablas simples",
+    "Lenguaje natural estructurado",
+    "Listas organizadas",
+    "Modelos formales"
+   ],
+   "correcta": 1,
+   "explicacion": "Cliente → lenguaje natural; visión general → listas; gestión y trazabilidad → tablas.",
+   "fuente": "Representación, p. 14"
+  },
+  {
+   "id": "IR-090",
+   "tema": "IR-T6",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Para GESTIÓN Y TRAZABILIDAD se recomienda:",
+   "opciones": [
+    "Tablas simples",
+    "Lenguaje natural",
+    "Prototipos",
+    "Listas organizadas"
+   ],
+   "correcta": 0,
+   "explicacion": "Tablas (Excel, Jira, Confluence).",
+   "fuente": "Representación, p. 14"
+  },
+  {
+   "id": "IR-091",
+   "tema": "IR-T6",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Las listas organizadas permiten agrupar por:",
+   "opciones": [
+    "Módulo, tipo, actor o prioridad",
+    "Solo por fecha",
+    "Solo por costo",
+    "Color"
+   ],
+   "correcta": 0,
+   "explicacion": "Cuatro formas de agrupar.",
+   "fuente": "Representación, p. 8"
+  },
+  {
+   "id": "IR-092",
+   "tema": "IR-T6",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Una limitación del lenguaje natural es:",
+   "opciones": [
+    "No es accesible para no técnicos",
+    "Dificulta el procesamiento automático",
+    "Necesita herramientas especiales",
+    "No se puede leer"
+   ],
+   "correcta": 1,
+   "explicacion": "Limitaciones: ambigüedad si no se sigue la plantilla, procesamiento automático, repetitivo.",
+   "fuente": "Representación, p. 7"
+  },
+  {
+   "id": "IR-093",
+   "tema": "IR-T6",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Según la clase, un buen documento de especificación suele incluir:",
+   "opciones": [
+    "Solo tablas",
+    "Las tres formas: lenguaje natural, listas y tablas",
+    "Solo user stories",
+    "Solo diagramas"
+   ],
+   "correcta": 1,
+   "explicacion": "No son excluyentes.",
+   "fuente": "Representación, p. 14"
+  },
+  {
+   "id": "IR-094",
+   "tema": "IR-T6",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Una buena práctica común a las tres formas es mantener un ______ de términos del proyecto.",
+   "respuesta": "glosario",
+   "aceptadas": [
+    "glosario"
+   ],
+   "explicacion": "Glosario.",
+   "fuente": "Representación, p. 15"
+  },
+  {
+   "id": "IR-095",
+   "tema": "IR-T6",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "El SWEBOK recomienda elegir la representación según el ______ y el propósito.",
+   "respuesta": "lector",
+   "aceptadas": [
+    "lector",
+    "publico",
+    "público"
+   ],
+   "explicacion": "Lector y propósito.",
+   "fuente": "Representación, p. 14"
+  },
+  {
+   "id": "IR-096",
+   "tema": "IR-T6",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Según la clase, hay que documentar las decisiones tomadas y no solo el resultado.",
+   "correcta": true,
+   "explicacion": "Buenas prácticas.",
+   "fuente": "Representación, p. 15"
+  },
+  {
+   "id": "IR-097",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "Según la clase, priorizar es:",
+   "opciones": [
+    "Una actividad solo técnica",
+    "Una actividad de negociación, no solo técnica",
+    "Responsabilidad exclusiva del programador",
+    "Algo que se hace una sola vez"
+   ],
+   "correcta": 1,
+   "explicacion": "Negociación.",
+   "fuente": "Priorización, p. 3"
+  },
+  {
+   "id": "IR-098",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "El SWEBOK incluye la priorización como parte fundamental de:",
+   "opciones": [
+    "La especificación",
+    "El análisis de requerimientos",
+    "El testing",
+    "El despliegue"
+   ],
+   "correcta": 1,
+   "explicacion": "Parte del análisis.",
+   "fuente": "Priorización, p. 3"
+  },
+  {
+   "id": "IR-099",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«¿Es un requisito legal o regulatorio?» es una pregunta del criterio de:",
+   "opciones": [
+    "Complejidad técnica",
+    "Valor de negocio",
+    "Esfuerzo",
+    "Riesgo técnico"
+   ],
+   "correcta": 1,
+   "explicacion": "Valor de negocio.",
+   "fuente": "Priorización, p. 5"
+  },
+  {
+   "id": "IR-100",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«¿Este requerimiento habilita otros requerimientos importantes?» (efecto dominó) es del criterio:",
+   "opciones": [
+    "Impacto",
+    "Valor de negocio",
+    "Complejidad técnica",
+    "MoSCoW"
+   ],
+   "correcta": 0,
+   "explicacion": "Impacto.",
+   "fuente": "Priorización, p. 7"
+  },
+  {
+   "id": "IR-101",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«¿Se necesita tecnología nueva o desconocida para el equipo?» pertenece al criterio de:",
+   "opciones": [
+    "Impacto",
+    "Complejidad técnica",
+    "Valor de negocio",
+    "Kano"
+   ],
+   "correcta": 1,
+   "explicacion": "Complejidad técnica.",
+   "fuente": "Priorización, p. 6"
+  },
+  {
+   "id": "IR-102",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "En MoSCoW, «Won't have» significa:",
+   "opciones": [
+    "Nunca se hará",
+    "No en esta versión (this time)",
+    "Es opcional",
+    "Es un requerimiento inverso"
+   ],
+   "correcta": 1,
+   "explicacion": "Won't have (this time).",
+   "fuente": "Priorización, p. 8"
+  },
+  {
+   "id": "IR-103",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Filtros avanzados, wishlist y reseñas en un e-commerce son ejemplos de:",
+   "opciones": [
+    "Must",
+    "Should",
+    "Could",
+    "Won't"
+   ],
+   "correcta": 1,
+   "explicacion": "Importante pero no esencial para el lanzamiento.",
+   "fuente": "Priorización, p. 8"
+  },
+  {
+   "id": "IR-104",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Modo oscuro, compartir en redes y cupones son ejemplos de:",
+   "opciones": [
+    "Must",
+    "Should",
+    "Could",
+    "Won't"
+   ],
+   "correcta": 2,
+   "explicacion": "Deseable si hay tiempo y presupuesto.",
+   "fuente": "Priorización, p. 8"
+  },
+  {
+   "id": "IR-105",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "La regla general de MoSCoW dice que los Must no deben superar el:",
+   "opciones": [
+    "40 % del esfuerzo",
+    "50 % del esfuerzo",
+    "60 % del esfuerzo",
+    "80 % del esfuerzo"
+   ],
+   "correcta": 2,
+   "explicacion": "60 %.",
+   "fuente": "Priorización, p. 8"
+  },
+  {
+   "id": "IR-106",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Total 120 h. Los Must suman 78 h. ¿Qué pasa?",
+   "opciones": [
+    "Cumple: 65 % es menor que 60 %",
+    "No cumple: 65 % supera el 60 %; hay que reclasificar al menos 6 h",
+    "Cumple exactamente",
+    "No se puede calcular"
+   ],
+   "correcta": 1,
+   "explicacion": "78/120 = 65 %. El 60 % de 120 es 72 → bajar al menos 6 h.",
+   "fuente": "Priorización, p. 8"
+  },
+  {
+   "id": "IR-107",
+   "tema": "IR-T7",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Por qué conviene implementar primero los requerimientos de mayor riesgo?",
+   "opciones": [
+    "Porque son más baratos",
+    "Para detectar problemas temprano",
+    "Porque el cliente lo exige siempre",
+    "Para evitar las pruebas"
+   ],
+   "correcta": 1,
+   "explicacion": "Razón «Riesgo».",
+   "fuente": "Priorización, p. 4"
+  },
+  {
+   "id": "IR-108",
+   "tema": "IR-T7",
+   "tipo": "completar",
+   "dificultad": 1,
+   "enunciado": "En MoSCoW, la categoría obligatoria, sin la cual el producto no funciona, es ______ have.",
+   "respuesta": "must",
+   "aceptadas": [
+    "must"
+   ],
+   "explicacion": "Must have.",
+   "fuente": "Priorización, p. 8"
+  },
+  {
+   "id": "IR-109",
+   "tema": "IR-T7",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Sin priorización todo parece urgente y el alcance crece sin control: eso se llama scope ______.",
+   "respuesta": "creep",
+   "aceptadas": [
+    "creep"
+   ],
+   "explicacion": "Scope creep.",
+   "fuente": "Priorización, p. 4"
+  },
+  {
+   "id": "IR-110",
+   "tema": "IR-T7",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Los sprints de las metodologías ágiles requieren saber qué es más importante.",
+   "correcta": true,
+   "explicacion": "Razón para priorizar.",
+   "fuente": "Priorización, p. 4"
+  },
+  {
+   "id": "IR-111",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "En Kano, las funciones que se esperan, cuya ausencia molesta pero cuya presencia no deleita, son:",
+   "opciones": [
+    "De deleite",
+    "Básicas",
+    "De rendimiento",
+    "Indiferentes"
+   ],
+   "correcta": 1,
+   "explicacion": "Básicos: la app no crashea, los pagos funcionan.",
+   "fuente": "Priorización, p. 9"
+  },
+  {
+   "id": "IR-112",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En Kano, «más es mejor; la satisfacción crece proporcionalmente» describe:",
+   "opciones": [
+    "Básicos",
+    "De rendimiento (lineales)",
+    "De deleite",
+    "Inversos"
+   ],
+   "correcta": 1,
+   "explicacion": "Velocidad de carga, variedad de productos.",
+   "fuente": "Priorización, p. 9"
+  },
+  {
+   "id": "IR-113",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Anuncios invasivos y notificaciones excesivas son ejemplos de requerimientos:",
+   "opciones": [
+    "Indiferentes",
+    "Inversos",
+    "Básicos",
+    "De deleite"
+   ],
+   "correcta": 1,
+   "explicacion": "Su presencia genera insatisfacción.",
+   "fuente": "Priorización, p. 9"
+  },
+  {
+   "id": "IR-114",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Recomendaciones con IA y un probador con realidad aumentada son ejemplos de:",
+   "opciones": [
+    "De deleite (atractivos)",
+    "Básicos",
+    "Inversos",
+    "De rendimiento"
+   ],
+   "correcta": 0,
+   "explicacion": "No esperados, sorprenden.",
+   "fuente": "Priorización, p. 9"
+  },
+  {
+   "id": "IR-115",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Un encuestado responde «Lo espero» con la función presente y «Me disgusta» con la función ausente. La categoría es:",
+   "opciones": [
+    "D",
+    "R",
+    "B",
+    "I"
+   ],
+   "correcta": 2,
+   "explicacion": "Ejemplo del enunciado del deber.",
+   "fuente": "Tabla de evaluación Kano"
+  },
+  {
+   "id": "IR-116",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "«Me gusta» con la función presente y «Me disgusta» ausente da:",
+   "opciones": [
+    "R (rendimiento)",
+    "D (deleite)",
+    "B (básico)",
+    "C (cuestionable)"
+   ],
+   "correcta": 0,
+   "explicacion": "Fila Me gusta, columna Me disgusta = R.",
+   "fuente": "Tabla de evaluación Kano"
+  },
+  {
+   "id": "IR-117",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "«Me gusta» presente y «Me es indiferente» ausente da:",
+   "opciones": [
+    "B",
+    "D",
+    "I",
+    "Inv"
+   ],
+   "correcta": 1,
+   "explicacion": "Primera fila, columnas centrales = D.",
+   "fuente": "Tabla de evaluación Kano"
+  },
+  {
+   "id": "IR-118",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "«Me gusta» en ambas preguntas (presente y ausente) da:",
+   "opciones": [
+    "D",
+    "R",
+    "C (cuestionable, se descarta)",
+    "I"
+   ],
+   "correcta": 2,
+   "explicacion": "Respuesta contradictoria.",
+   "fuente": "Tabla de evaluación Kano"
+  },
+  {
+   "id": "IR-119",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "«Me disgusta» con la función presente y «Lo espero» ausente da:",
+   "opciones": [
+    "Inv",
+    "B",
+    "I",
+    "C"
+   ],
+   "correcta": 0,
+   "explicacion": "Última fila = Inv (excepto la esquina C).",
+   "fuente": "Tabla de evaluación Kano"
+  },
+  {
+   "id": "IR-120",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En la matriz valor contra esfuerzo, alto valor con bajo esfuerzo es:",
+   "opciones": [
+    "Proyecto estratégico",
+    "Quick win",
+    "Fill-in",
+    "Evitar"
+   ],
+   "correcta": 1,
+   "explicacion": "Hacer primero: máximo ROI.",
+   "fuente": "Priorización, p. 10"
+  },
+  {
+   "id": "IR-121",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Alto valor con alto esfuerzo es:",
+   "opciones": [
+    "Quick win",
+    "Proyecto estratégico: planificar y dividir en fases",
+    "Fill-in",
+    "Evitar"
+   ],
+   "correcta": 1,
+   "explicacion": "Estratégico.",
+   "fuente": "Priorización, p. 10"
+  },
+  {
+   "id": "IR-122",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Bajo valor con bajo esfuerzo es:",
+   "opciones": [
+    "Fill-in: hacer si sobra tiempo",
+    "Evitar",
+    "Quick win",
+    "Estratégico"
+   ],
+   "correcta": 0,
+   "explicacion": "Fill-in.",
+   "fuente": "Priorización, p. 10"
+  },
+  {
+   "id": "IR-123",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "El orden de implementación según la matriz es:",
+   "opciones": [
+    "Estratégicos, quick wins, fill-ins, evitar",
+    "Quick wins, estratégicos, fill-ins, evitar",
+    "Fill-ins, quick wins, estratégicos, evitar",
+    "Quick wins, fill-ins, estratégicos, evitar"
+   ],
+   "correcta": 1,
+   "explicacion": "1) Quick wins → 2) Estratégicos → 3) Fill-ins → 4) Evitar.",
+   "fuente": "Priorización, p. 10"
+  },
+  {
+   "id": "IR-124",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "«2FA solo para transacciones, no para login» es un ejemplo de resolución de conflictos por:",
+   "opciones": [
+    "Escalamiento",
+    "Compromiso (trade-off)",
+    "Prototipado",
+    "Negociación directa"
+   ],
+   "correcta": 1,
+   "explicacion": "Cada parte cede algo.",
+   "fuente": "Priorización, p. 12"
+  },
+  {
+   "id": "IR-125",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Si no hay acuerdo entre stakeholders, el sponsor o product owner decide. Esto es:",
+   "opciones": [
+    "Escalamiento",
+    "Trade-off",
+    "Priorización objetiva",
+    "Goldplating"
+   ],
+   "correcta": 0,
+   "explicacion": "Escalamiento.",
+   "fuente": "Priorización, p. 12"
+  },
+  {
+   "id": "IR-126",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Marketing quiere muchos datos del usuario y Legal exige minimizarlos. Es un:",
+   "opciones": [
+    "Requerimiento emergente",
+    "Conflicto entre requerimientos",
+    "Error de goldplating",
+    "Quick win"
+   ],
+   "correcta": 1,
+   "explicacion": "Ejemplo de conflicto (GDPR; aquí sería la LOPDP).",
+   "fuente": "Priorización, p. 11"
+  },
+  {
+   "id": "IR-127",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es un error común al priorizar?",
+   "opciones": [
+    "Revisar prioridades en cada sprint",
+    "Priorizar por quien grita más fuerte",
+    "Usar técnicas formales",
+    "Considerar dependencias"
+   ],
+   "correcta": 1,
+   "explicacion": "El más insistente no siempre tiene lo más importante.",
+   "fuente": "Priorización, p. 13"
+  },
+  {
+   "id": "IR-128",
+   "tema": "IR-T8",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "Un requerimiento de baja prioridad es prerrequisito de uno de alta. Si se deja para el final, el error es:",
+   "opciones": [
+    "Ignorar dependencias",
+    "Goldplating",
+    "Priorizar por intuición",
+    "Escalamiento"
+   ],
+   "correcta": 0,
+   "explicacion": "Ignorar dependencias.",
+   "fuente": "Priorización, p. 13"
+  },
+  {
+   "id": "IR-129",
+   "tema": "IR-T8",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "En Kano, la respuesta contradictoria que se descarta se marca como ______.",
+   "respuesta": "cuestionable",
+   "aceptadas": [
+    "cuestionable",
+    "c"
+   ],
+   "explicacion": "C = cuestionable.",
+   "fuente": "Tabla de evaluación Kano"
+  },
+  {
+   "id": "IR-130",
+   "tema": "IR-T8",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "En el deber, el esfuerzo alto es el que supera el ______ de horas de los 10 requerimientos.",
+   "respuesta": "promedio",
+   "aceptadas": [
+    "promedio",
+    "media"
+   ],
+   "explicacion": "Promedio.",
+   "fuente": "Enunciado del Deber 1"
+  },
+  {
+   "id": "IR-131",
+   "tema": "IR-T8",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Registrar qué se decidió, por qué y quién aprobó sirve para la ______.",
+   "respuesta": "trazabilidad",
+   "aceptadas": [
+    "trazabilidad"
+   ],
+   "explicacion": "Documentar la decisión.",
+   "fuente": "Priorización, p. 12"
+  },
+  {
+   "id": "IR-132",
+   "tema": "IR-T8",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "La tecnología del backend o la versión de la base de datos suelen ser indiferentes para el usuario.",
+   "correcta": true,
+   "explicacion": "Ejemplo de indiferentes.",
+   "fuente": "Priorización, p. 9"
+  },
+  {
+   "id": "IR-133",
+   "tema": "IR-T8",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Priorizar solo por valor, sin considerar la complejidad, es una buena práctica.",
+   "correcta": false,
+   "explicacion": "Es un error común: algo de alto valor y altísimo esfuerzo puede no ser viable ahora.",
+   "fuente": "Priorización, p. 13"
+  },
+  {
+   "id": "IR-134",
+   "tema": "IR-T9",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En la matriz poder contra interés, un interesado de poder alto e interés alto se debe:",
+   "opciones": [
+    "Monitorear",
+    "Mantener informado",
+    "Gestionar de cerca",
+    "Mantener satisfecho"
+   ],
+   "correcta": 2,
+   "explicacion": "Alto poder y alto interés = manage closely.",
+   "fuente": "Plantilla Problem Statement PMBOK"
+  },
+  {
+   "id": "IR-135",
+   "tema": "IR-T9",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Poder alto e interés bajo corresponde a:",
+   "opciones": [
+    "Mantener satisfecho",
+    "Gestionar de cerca",
+    "Monitorear",
+    "Mantener informado"
+   ],
+   "correcta": 0,
+   "explicacion": "Keep satisfied.",
+   "fuente": "Plantilla Problem Statement PMBOK"
+  },
+  {
+   "id": "IR-136",
+   "tema": "IR-T9",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Poder bajo e interés alto corresponde a:",
+   "opciones": [
+    "Monitorear",
+    "Mantener informado",
+    "Gestionar de cerca",
+    "Mantener satisfecho"
+   ],
+   "correcta": 1,
+   "explicacion": "Keep informed.",
+   "fuente": "Plantilla Problem Statement PMBOK"
+  },
+  {
+   "id": "IR-137",
+   "tema": "IR-T9",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "El análisis de brechas (gap analysis) compara:",
+   "opciones": [
+    "Dos proveedores",
+    "El estado actual con el estado deseado y las acciones requeridas",
+    "Los RF con los RNF",
+    "El costo con el precio"
+   ],
+   "correcta": 1,
+   "explicacion": "Estado actual → deseado → acciones.",
+   "fuente": "Plantilla Problem Statement PMBOK"
+  },
+  {
+   "id": "IR-138",
+   "tema": "IR-T9",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Qué técnicas sugiere la plantilla para encontrar la causa raíz?",
+   "opciones": [
+    "MoSCoW y Kano",
+    "5 porqués, espina de pescado o causa-efecto",
+    "Brainstorming y focus group",
+    "SLA y uptime"
+   ],
+   "correcta": 1,
+   "explicacion": "Sección Root Cause.",
+   "fuente": "Plantilla Problem Statement PMBOK"
+  },
+  {
+   "id": "IR-139",
+   "tema": "IR-T9",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "El documento que lista a todos los interesados con su rol, poder e interés se llama ______ de interesados.",
+   "respuesta": "registro",
+   "aceptadas": [
+    "registro",
+    "stakeholder register"
+   ],
+   "explicacion": "Stakeholder Register.",
+   "fuente": "Plantilla Problem Statement PMBOK"
+  },
+  {
+   "id": "IR-140",
+   "tema": "IR-T9",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Según la plantilla, la definición del problema debe ser específica, medible y relevante para los objetivos de la organización.",
+   "correcta": true,
+   "explicacion": "Problem Definition.",
+   "fuente": "Plantilla Problem Statement PMBOK"
+  }
+ ],
+ "tarjetas": [
+  {
+   "tema": "IR-T1",
+   "frente": "Requerimiento (IEEE 610.12)",
+   "reverso": "Condición o capacidad que un sistema debe satisfacer para cumplir un contrato, estándar o especificación"
+  },
+  {
+   "tema": "IR-T1",
+   "frente": "RF frente a RNF",
+   "reverso": "RF: qué hace (comportamiento). RNF: cómo lo hace (cualidades)"
+  },
+  {
+   "tema": "IR-T1",
+   "frente": "Requerimiento de dominio",
+   "reverso": "Restricción del negocio: regulaciones, normas legales (IVA)"
+  },
+  {
+   "tema": "IR-T1",
+   "frente": "Requerimiento emergente",
+   "reverso": "Surge de la interacción entre componentes; no se atribuye a un subsistema"
+  },
+  {
+   "tema": "IR-T1",
+   "frente": "6 familias de RNF",
+   "reverso": "Rendimiento, seguridad, usabilidad, disponibilidad, escalabilidad, mantenibilidad"
+  },
+  {
+   "tema": "IR-T2",
+   "frente": "SWEBOK",
+   "reverso": "Guía de la IEEE Computer Society; 15 áreas; requerimientos es una"
+  },
+  {
+   "tema": "IR-T2",
+   "frente": "5 etapas de la IR",
+   "reverso": "Elicitación, análisis, especificación, validación, gestión (E-A-E-V-G)"
+  },
+  {
+   "tema": "IR-T2",
+   "frente": "SDLC (7 fases)",
+   "reverso": "Planificación, requerimientos, diseño, implementación, testing, despliegue, mantenimiento"
+  },
+  {
+   "tema": "IR-T2",
+   "frente": "Regla 1-10-100",
+   "reverso": "Req 1x, diseño 5x, implementación 10x, testing 20x, producción 100x"
+  },
+  {
+   "tema": "IR-T2",
+   "frente": "Norma ISO de requisitos",
+   "reverso": "ISO/IEC/IEEE 29148:2018"
+  },
+  {
+   "tema": "IR-T3",
+   "frente": "Goldplating",
+   "reverso": "Agregar funcionalidades que nadie pidió"
+  },
+  {
+   "tema": "IR-T3",
+   "frente": "Scope creep",
+   "reverso": "El alcance crece sin control por requerimientos ambiguos"
+  },
+  {
+   "tema": "IR-T3",
+   "frente": "Requerimiento como solución",
+   "reverso": "«Debe usar MySQL» en vez de «almacenar datos de forma persistente»"
+  },
+  {
+   "tema": "IR-T3",
+   "frente": "Norma de la usabilidad",
+   "reverso": "ISO 25010 (atributo de calidad)"
+  },
+  {
+   "tema": "IR-T4",
+   "frente": "Entrevista, encuesta, observación",
+   "reverso": "Profundidad (pocos), amplitud (muchos, cuantitativa), contexto real (lo que hacen)"
+  },
+  {
+   "tema": "IR-T4",
+   "frente": "Modalidades de observación",
+   "reverso": "Pasiva y participante"
+  },
+  {
+   "tema": "IR-T4",
+   "frente": "Focus group",
+   "reverso": "6 a 10 personas, moderador neutral, guion, observadores"
+  },
+  {
+   "tema": "IR-T4",
+   "frente": "4 reglas del brainstorming",
+   "reverso": "No criticar, cantidad antes que calidad, construir sobre otros, registrar todo"
+  },
+  {
+   "tema": "IR-T4",
+   "frente": "Prototipos",
+   "reverso": "Baja fidelidad (papel, wireframe) y alta (mockup interactivo)"
+  },
+  {
+   "tema": "IR-T4",
+   "frente": "6 stakeholders típicos",
+   "reverso": "Usuarios finales, clientes que pagan, desarrollo y operaciones, negocio/patrocinadores, reguladores/auditores, proveedores/sistemas externos"
+  },
+  {
+   "tema": "IR-T5",
+   "frente": "8 características (Especificación)",
+   "reverso": "Claro, verificable, consistente, completo, no ambiguo, necesario, trazable, factible"
+  },
+  {
+   "tema": "IR-T5",
+   "frente": "8 campos de un requerimiento",
+   "reverso": "ID, título, descripción, tipo, prioridad, criterio de aceptación, actor, dependencias"
+  },
+  {
+   "tema": "IR-T5",
+   "frente": "Lista de 12 puntos",
+   "reverso": "Necesario, apropiado, inequívoco, completo, singular, factible, verificable, correcto, conforme + vinculante, vocabulario, aceptable (SWEBOK)"
+  },
+  {
+   "tema": "IR-T5",
+   "frente": "Palabras prohibidas",
+   "reverso": "Rápido, fácil, amigable, el mejor, si es posible, según corresponda, y/o, todos, siempre, nunca"
+  },
+  {
+   "tema": "IR-T5",
+   "frente": "5 porqués",
+   "reverso": "Preguntar «¿por qué?» hasta pasar de la solución pedida al problema real"
+  },
+  {
+   "tema": "IR-T6",
+   "frente": "Plantilla de lenguaje natural",
+   "reverso": "Cuando [condición], el sistema debe [acción] [objeto] para que [beneficio]"
+  },
+  {
+   "tema": "IR-T6",
+   "frente": "¿Qué forma para quién?",
+   "reverso": "Cliente: lenguaje natural. Visión general: listas. Gestión y trazabilidad: tablas"
+  },
+  {
+   "tema": "IR-T7",
+   "frente": "3 criterios de prioridad",
+   "reverso": "Valor de negocio, complejidad técnica, impacto"
+  },
+  {
+   "tema": "IR-T7",
+   "frente": "MoSCoW",
+   "reverso": "Must, Should, Could, Won't (this time). Must ≤ 60 % del esfuerzo"
+  },
+  {
+   "tema": "IR-T8",
+   "frente": "5 categorías Kano",
+   "reverso": "Básicos, de rendimiento, de deleite, indiferentes, inversos"
+  },
+  {
+   "tema": "IR-T8",
+   "frente": "Kano: Lo espero / Me disgusta",
+   "reverso": "B (básico)"
+  },
+  {
+   "tema": "IR-T8",
+   "frente": "Kano: Me gusta / Me disgusta",
+   "reverso": "R (rendimiento)"
+  },
+  {
+   "tema": "IR-T8",
+   "frente": "Kano: Me gusta / indiferente, tolerarlo o lo espero",
+   "reverso": "D (deleite)"
+  },
+  {
+   "tema": "IR-T8",
+   "frente": "Matriz valor contra esfuerzo",
+   "reverso": "Quick win, estratégico, fill-in, evitar (en ese orden)"
+  },
+  {
+   "tema": "IR-T8",
+   "frente": "7 formas de resolver conflictos",
+   "reverso": "Negociación, priorización objetiva, trade-off, escalamiento, solución creativa, prototipado, documentar la decisión"
+  },
+  {
+   "tema": "IR-T9",
+   "frente": "Matriz poder contra interés",
+   "reverso": "Alto/alto: gestionar de cerca. Alto poder/bajo interés: mantener satisfecho. Bajo poder/alto interés: mantener informado. Bajo/bajo: monitorear"
+  },
+  {
+   "tema": "IR-T9",
+   "frente": "Secciones del Problem Statement",
+   "reverso": "Definición, antecedentes, alcance, impacto, interesados, tiempo y lugar, brechas, causa raíz, evidencia"
+  }
+ ]
+}

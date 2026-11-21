@@ -58,3 +58,6 @@ desktop.ini
 # --- Búsqueda: PDF descargados y textos completos (pueden ser de bases con licencia: no se redistribuyen) ---
 00_Inbox/descargas/
 02_Fuentes/_Textos/
+
+# --- Material de clase (diapositivas de los docentes): queda local, no se sube ---
+12_Estudio/**/diapositivas/
