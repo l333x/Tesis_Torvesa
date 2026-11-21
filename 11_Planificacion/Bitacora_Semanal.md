@@ -406,3 +406,35 @@ tags: [bitacora, informes, planificacion]
 - **Mensajes a Torvesa v0.2** en Word y PDF; el adjunto apunta al protocolo v0.2.
 - Todo copiado a la carpeta del Escritorio (00, 04, 07 y 08).
 - **Por confirmar con Diego:** cuentas individuales, respaldo y unión de la rama `rq18-consentimiento` a la principal.
+
+## 2026-11-20 (viernes) · La Revisión 2 se movió, decisiones de Víctor y trabajo de clase
+
+### Qué pasó (Víctor, con Claude)
+- **Revisión 2:** no se hizo el 19-nov. Falta la fecha nueva.
+  - Mensaje a la tutora en borrador: `00_Inbox/2026-11-20_Mensaje_Tutora_Reprogramar_Revision2_BORRADOR.md`. Pide fecha desde el lunes 23-nov y pone primero la DEC-21.
+  - Quedan bloqueadas el acta (S6-T05) y las observaciones (S6-T10 y S6-T11).
+  - DEC-18 a DEC-23 siguen abiertas.
+- **Decisiones de Víctor:**
+  - aprobó el **mensaje 1 a Torvesa** (datos de la empresa), que envía Diego; el mensaje 2 (fechas) espera la DEC-21;
+  - **DEC-24 (S6-N02):** independientes al inicio, margen de 20 % y 36 meses para recuperar el levantamiento, como ya usa el modelo v0.2.
+- **Mensaje a Diego** en borrador: `00_Inbox/2026-11-20_Mensaje_a_Diego_BORRADOR.md`. Lleva el envío del mensaje 1, la Revisión 2 movida, lo previo del sistema (RQ-20, respaldo, rama RQ-18, casos de prueba) y sus horas al día.
+- **Gantt v0.4** (`11_Planificacion/2026-11-20_Gantt_Tesis_v0.4.xlsx`; la v0.3 queda igual). Cambian 9 filas: S6-N02 hecha; S6-T04, T05, T10 y T11 bloqueadas; S6-T08, N01, N03 y N04 en curso. `Cronograma_Tesis.xlsx` no se tocó.
+- **Trabajo de clase, fuera de la tesis:** proyecto final de Procesos para Negocios Digitales (prof. Caiza).
+  - Son 14 diapositivas en PDF, en estilo McKinsey, con el proceso estrella, las horas, el costo, la rentabilidad, el Gantt y la captura real del Trello.
+  - Está en `Documents\Proyecto_Final_Procesos_Torvesa` y tiene una copia en el Escritorio.
+  - El método quedó guardado como skill `diapositivas-pdf`.
+
+### Riesgo
+- **La validación del 23-nov ya no es segura.** Depende de la DEC-21 (tutora) y de la autorización de Torvesa. Si la tutora responde la semana del 23, la validación se corre a la semana del 30-nov y se come parte de la holgura del 21-dic. Se decide cuando haya fecha.
+
+### Pendiente hasta el domingo 22-nov
+- **Víctor:**
+  - enviar el mensaje a la tutora y el mensaje a Diego;
+  - anotar sus horas del levantamiento (S6-N03);
+  - revisión del sprint 6 con Diego el domingo (S6-T12).
+- **Diego:**
+  - enviar el mensaje 1 a Torvesa;
+  - RQ-20, respaldo y rama RQ-18 (REV2-04);
+  - los 3 casos de prueba (S6-T09);
+  - sus horas al día.
+- **Claude, cuando haya fecha o respuesta:** acta de la Revisión 2, Gantt, app y presentación. El domingo, el informe y el documento madre (tarea automática).
