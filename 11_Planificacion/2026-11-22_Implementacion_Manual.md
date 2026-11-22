@@ -38,3 +38,10 @@ tags: [manual, implementacion, skills, diseno, seguridad]
   - corregir la etiqueta del "6 %";
   - quitar la firma electrónica contada dos veces;
   - sacar los supuestos escritos dentro de las fórmulas.
+
+## 23-nov: uso y mejoras
+- **Skill nueva `investigacion-web`:** búsqueda en internet con rutas por tipo de fuente, verificación con página y fecha, y cuándo parar. Toma las ideas útiles de agent-reach sin instalarlo; la ruta académica (OpenAlex) se probó y funciona.
+- **El crédito de unslop** quedó en una línea discreta al final de cada archivo de `diseno-paginas`, como pide la licencia.
+- **`tablero-excel` ya se usó:** modelo financiero v0.3, estudio de costos v0.4, matriz v0.3 y tablero v0.2, todos sin errores. Detalle en `06_Capitulos/Modelo_Negocio/2026-11-23_Cambios_Excel_v0.3.md`.
+- **Repo de Diego:** PR en borrador https://github.com/psiceslivie/teamslash-api/pull/1 (DT-01, DT-03, atajos, `AGENTS.md`, `docs/TAREAS_DIEGO.md`). Detalle en `07_Flujos_Diseno/2026-11-23_Repo_Diego_Mejoras_v0.1.md`.
+- **Strix:** se le pide a Diego que lo use, solo contra una copia local.

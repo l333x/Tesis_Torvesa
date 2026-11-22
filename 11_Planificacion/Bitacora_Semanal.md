@@ -508,3 +508,16 @@ tags: [bitacora, informes, planificacion]
 - **Documentos actualizados:** `MANUAL_TESIS.md` (regla de claridad) y `CLAUDE.md` (sección "Skills y método de trabajo").
 - **Repositorios de referencia:** quedaron en `F:\IA\repos_referencia\`, solo para leer.
 - **Manual v1.1:** lleva la columna Estado.
+
+## 2026-11-23 (lunes, madrugada) · Diego, Excel v0.3 y repo
+- **Deber 1 de Diego:** comparado con el de Víctor en `07_Flujos_Diseno/2026-11-23_Comparacion_Deber1_Victor_Diego.md`.
+  - Coinciden los datos de Kano.
+  - Diego tiene 4 errores: APA 2026a/b/c, fechas viejas, códigos OBJ/NEC/CON sin explicar y "23 requisitos".
+  - Diferencias para decidir: Must 4 contra 6, 130 h contra 108 h y dos listas de 12 puntos distintas.
+- **Mensaje a Diego** en `00_Inbox/2026-11-23_Mensaje_a_Diego_BORRADOR.md`: correcciones, guía del Deber 2, PR, Strix y Torvesa.
+- **Excel v0.3:** precio Premium 270, VAN 380, TIR 24,6 % y 4,5 % de datos propios de Torvesa (el censo).
+- **Repo de Diego:**
+  - PR #1 en borrador hacia `rq18-consentimiento`;
+  - **hay claves antiguas en el historial de la landing:** Diego tiene que confirmar o rotar;
+  - la seguridad tiene 5 fallas comprobadas, todas en `docs/TAREAS_DIEGO.md`.
+- **Skill `investigacion-web`** creada.
