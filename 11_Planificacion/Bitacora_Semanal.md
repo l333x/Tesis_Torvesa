@@ -499,3 +499,12 @@ tags: [bitacora, informes, planificacion]
   - **Se recomienda no adoptar agent-reach** (sin fuentes académicas, copia cookies) **ni los hooks de everything-claude-code** (bloquean los .md).
 - **Manual de implementación v1.0** (`11_Planificacion/2026-11-22_Manual_Implementacion_v1.0.pdf`, 23 páginas): 13 secciones, plan de 12 mejoras y anexos.
 - **Ninguna propuesta se aplicó:** la infraestructura sigue congelada hasta que Víctor elija.
+
+### 22-nov, cierre: manual aplicado
+- Víctor aprobó aplicar el manual y 10 de las 12 mejoras quedaron hechas. El detalle está en `11_Planificacion/2026-11-22_Implementacion_Manual.md`.
+- **Skills nuevas:** `diseno-paginas` (con el DESIGN.md único) y `tablero-excel`.
+- **Skills ampliadas:** `voz-victor`, con los rasgos de 2.ª generación y el revisor nuevo, y `diapositivas-pdf`, con las reglas de gráficos.
+- **IA_DIEGO.md §8:** seguridad, revisión de código, atajos, formulario y el plan de Strix, que está preparado pero no se ejecutó.
+- **Documentos actualizados:** `MANUAL_TESIS.md` (regla de claridad) y `CLAUDE.md` (sección "Skills y método de trabajo").
+- **Repositorios de referencia:** quedaron en `F:\IA\repos_referencia\`, solo para leer.
+- **Manual v1.1:** lleva la columna Estado.

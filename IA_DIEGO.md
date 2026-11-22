@@ -1,10 +1,10 @@
 ---
 titulo: Instrucciones para la IA de Diego
-version: v0.2
-fecha: 2026-10-27
+version: v0.3
+fecha: 2026-11-22
 autor_borrador: Claude Opus 5.5 (pedido de Víctor); Víctor lo revisa
 para: la IA que use Diego (Claude Code, ChatGPT u otra)
-tags: [diego, ia, instrucciones, sprint2]
+tags: [diego, ia, instrucciones, seguridad, revision-codigo]
 ---
 
 # Instrucciones para la IA de Diego
@@ -119,3 +119,80 @@ Mismas reglas que arriba: dos tareas del mismo tipo por bloque y un entregable c
 - No programar la prueba de concepto: es del **sprint 5**.
 - No editar `CLAUDE.md`, `00_INICIO.md`, el cronograma (`.xlsx`) ni los capítulos: los mantiene Víctor.
 - No usar Google Académico de forma automática (sus términos lo prohíben) ni Sci-Hub.
+
+## 8. Código de la prueba de concepto: seguridad, revisión y formulario (desde el 22-nov-2026)
+
+Esta sección sale del manual de implementación (`11_Planificacion/2026-11-22_Manual_Implementacion_v1.0.pdf`, sección 9) y de los repositorios de referencia que están en la máquina de Víctor (`F:\IA\repos_referencia\`, solo lectura). Vale para el repositorio del sistema (la API en Node.js en Railway, PostgreSQL, el formulario, Slack y el asistente con RAG), no para la bóveda.
+
+### 8.1 Lista de seguridad antes de cada commit
+Fuentes: `everything-claude-code/skills/security-review/SKILL.md` y `rules/security.md`; `ponytail/skills/ponytail/SKILL.md`; `strix/strix/skills/scan_modes/quick.md`.
+- [ ] **Secretos:** ninguno en el código ni en el historial de git. Viven en las variables de Railway, y `.env` está en `.gitignore`.
+- [ ] **Si un secreto se expuso:** parar, rotarlo de inmediato y buscar el mismo error en todo el código.
+- [ ] **Entradas:** toda entrada del formulario y del webhook se valida con un esquema y una lista blanca de campos y estados.
+- [ ] **PostgreSQL:** consultas siempre parametrizadas, nunca armadas uniendo texto.
+- [ ] **Límite de peticiones:** en todos los endpoints, más estricto en el del asistente con IA.
+- [ ] **Logs:** sin contraseñas, tokens ni datos personales. Al usuario se le muestran errores genéricos, sin el detalle técnico.
+- [ ] **Lógica delicada:** el cálculo de la huella SHA-256, la verificación del registro y los estados tienen una prueba pequeña que falla si se rompen.
+- [ ] **Asistente con RAG:**
+  - los documentos de la bóveda son entrada no confiable (pueden traer instrucciones escondidas);
+  - la salida del modelo no se muestra como HTML sin escapar;
+  - el modelo tiene solo los permisos mínimos;
+  - nada se envía al cliente sin aprobación humana (RQ-12).
+- [ ] **Orden para probar:**
+  1. saltarse la autenticación;
+  2. ver datos de otro usuario;
+  3. ejecución remota;
+  4. inyección SQL;
+  5. peticiones forzadas desde los webhooks;
+  6. secretos expuestos.
+
+### 8.2 Cómo se escribe una revisión de código (para que la lean Víctor y la tutora)
+Formato de `ponytail/skills/ponytail-review/SKILL.md` (MIT), en español:
+- **Cada hallazgo necesita un caso concreto:** "esta entrada produce este error". Sin caso no hay hallazgo.
+- **Se agrupa en tres niveles:** **Debe arreglarse**, **Conviene** y **Opcional**, numerados.
+- **Cada hallazgo tiene 4 partes:**
+  1. qué es;
+  2. cuál es el problema;
+  3. cómo se arregla;
+  4. qué pasa si no se arregla.
+- **Orden de importancia:**
+  1. que sea correcto;
+  2. que sea seguro;
+  3. que aguante la carga;
+  4. que esté probado;
+  5. que sea rápido;
+  6. que no sobre código.
+- **Se cierra** con un **veredicto** de una línea y con **lo que no se revisó**.
+- **Sin código sin explicar:** si hace falta mostrar código, va una línea que diga qué hace.
+
+### 8.3 Atajos marcados
+Cuando el código toma un atajo consciente, se anota en un comentario así:
+```
+// atajo: <el límite>, <cuándo mejorarlo>
+// ejemplo: atajo: el recordatorio revisa cada 60 s, mejorar si hay más de 50 solicitudes abiertas
+```
+Un atajo sin "cuándo" se marca `atajo-sin-plazo` para decidirlo con Víctor. Antes de cada entrega se juntan todos con `grep -rn "atajo:" src/`, y esa lista alimenta las limitaciones técnicas del capítulo V de la tesis.
+
+### 8.4 Lista del formulario web
+Fuente: `ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/references/quick-reference.md`, sección 8 (MIT). La lista completa está en la skill `diseno-paginas` de Víctor.
+- [ ] Etiqueta visible en cada campo; el texto de ejemplo no la reemplaza.
+- [ ] El error aparece debajo de su campo y dice cómo arreglarlo.
+- [ ] Se valida al salir del campo, no mientras se escribe.
+- [ ] Si el envío falla, se conserva todo lo escrito.
+- [ ] El botón de enviar solo se desactiva mientras la petición está en curso.
+- [ ] La casilla de consentimiento (RQ-18) empieza sin marcar y enlaza al aviso de privacidad.
+- [ ] Si se agota el tiempo, hay un aviso claro con opción de reintentar.
+
+### 8.5 Prueba de seguridad con Strix (solo si Víctor y Diego la aprueban)
+Strix (`usestrix/strix`, Apache 2.0) usa agentes de IA que **atacan de verdad**. Por eso tiene reglas fijas:
+- **Contra qué:** nunca contra Railway de producción, la bóveda real ni sistemas ajenos (eso es ilegal). Solo contra una **copia local** con datos simulados.
+- **Qué necesita:** Docker con permisos elevados (NET_ADMIN, NET_RAW) y una clave de API de un modelo.
+- **Telemetría:** viene encendida y hay que apagarla.
+1. Levantar con Docker una copia local de la API y de PostgreSQL, con **datos simulados**, un canal de Slack de pruebas y claves de prueba.
+2. Instalar con versión fija por `pipx` o `uv` (`strix-agent`), **no** con `curl | bash`.
+3. Variables: `STRIX_TELEMETRY=0`, una clave de API con límite de gasto y `--max-budget 5`.
+4. Primera pasada solo sobre el código: `strix -n --target ./api --scan-mode quick`.
+5. Segunda pasada contra la copia local, con el alcance escrito en `--instruction` ("solo esta API local, no enviar mensajes a Slack reales").
+6. Para el asistente, leer antes `strix/strix/skills/vulnerabilities/llm_prompt_injection.md` y `strix/strix/skills/technologies/llm_applications.md`.
+7. Verificar a mano cada hallazgo, arreglarlo y volver a correr. Que no encuentre nada solo quiere decir "nada probado en lo analizado".
+8. En la tesis se escribe como "pruebas de seguridad del diseño en un entorno controlado".

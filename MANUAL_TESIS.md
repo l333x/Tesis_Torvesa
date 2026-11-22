@@ -129,6 +129,14 @@ La IA **cuenta los marcadores** de cada versión y los reporta: «Cap. I v0.2: 3
 - **Tiempos verbales:** pasado para lo que se hizo (método y resultados); presente para lo que dicen los autores y para las conclusiones vigentes.
 - **Voz activa** siempre que se pueda.
 - **Siglas:** definirlas la primera vez («Design Science Research [DSR]»), solo si se usan tres veces o más. No definir las de uso común.
+- **Regla de claridad (desde el 22-nov-2026):** la tesis tiene que entenderse sin conocer el proyecto.
+  - **Primera aparición:** todo código propio (M1–M6, RQ, CP, CU, OE, TEAMSLASH, AS-IS/TO-BE) y todo término técnico (backlog, sprint, bóveda, línea base, fuga, prueba de concepto) se explican la primera vez que aparecen en el cuerpo.
+  - **Listas:** van en la "Lista de siglas, abreviaturas y códigos" y en el "Glosario de términos" del borrador.
+  - **Códigos internos:** DEC-xx, A1–A47 y los nombres de archivo solo van dentro de las marcas.
+  - **Control de versiones:** `06_Capitulos/CONTROL_VERSIONES_TESIS.md`.
+- **Redacción sin rasgos de IA:** se aplica la skill `voz-victor` en registro académico y se corre su revisor (`revisar_voz.py`) sobre el Word antes de cada entrega.
+  - Se usa la forma impersonal, sin muletillas.
+  - Los punto y coma de las enumeraciones académicas están permitidos.
 - **Números:**
   - En letras del cero al nueve; en cifras del 10 en adelante.
   - **Siempre en cifras:** porcentajes, decimales, dinero, fechas, tiempos, puntajes, estadísticos y unidades.
@@ -361,7 +369,9 @@ Hay dos capas. Las dos se preparan.
 
 ### 11.3 Forma
 - [ ] Tablas y figuras numeradas, mencionadas antes de aparecer, con nota de origen.
-- [ ] Siglas definidas la primera vez.
+- [ ] Siglas definidas la primera vez, y cada sigla y código nuevo en la lista de siglas o en el glosario del borrador.
+- [ ] El revisor de voz no marca rasgos prohibidos en el texto corrido.
+- [ ] Las limitaciones técnicas del capítulo V incluyen los atajos marcados en el código de la prueba de concepto (`atajo:`, ver `IA_DIEGO.md` §8.3).
 - [ ] Los números siguen la regla de §4.
 - [ ] Los títulos siguen la numeración UPS.
 

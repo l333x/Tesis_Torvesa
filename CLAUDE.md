@@ -73,5 +73,21 @@ Eres el **asesor académico** de Víctor Segura y Diego Bermeo para su tesis UPS
 - **RAG local:** `99_Scripts/rag/rag.py` (entorno `F:\IA\venvs\tesis_rag`). Las herramientas de Python usan ese entorno con `PYTHONUTF8=1`.
 - **Respaldos:** `F:\Respaldos_Tesis` (diarios a las 22:00 y al iniciar sesión).
 
+## Skills y método de trabajo (desde el 22-nov-2026, aprobado por Víctor)
+- **Manual:** `11_Planificacion/2026-11-22_Manual_Implementacion_v1.0.pdf`. El estado de las 12 mejoras está en `11_Planificacion/2026-11-22_Implementacion_Manual.md`.
+- **Skills** (`C:\Users\vasha\.claude\skills\`):
+  - `voz-victor`: redacción con su voz, rasgos de IA de 1.ª y 2.ª generación y revisor `revisar_voz.py`;
+  - `diseno-paginas`: páginas, artefactos, formularios y gráficos (método unslop, CC BY 4.0, con crédito a Damir Sokolovsky);
+  - `tablero-excel`: Excel con Tablero, Datos, Cómo usar y Glosario, y verificación por COM;
+  - `diapositivas-pdf`;
+  - `estudio-gamificado`.
+- **Sistema de diseño único:** `C:\Users\vasha\.claude\skills\diseno-paginas\DESIGN.md`. Lo usan las diapositivas, las páginas, los Excel y las figuras.
+- **Repositorios de referencia:** `F:\IA\repos_referencia\` (ver `LEEME.md` ahí). **Solo se leen**: nada de ahí se ejecuta, se instala ni se copia a `~/.claude` sin pedido de Víctor.
+- **Descartados, para no volver a evaluarlos:**
+  - **agent-reach:** copia cookies del navegador, no tiene fuentes académicas, choca con los términos de X, Reddit y LinkedIn, y se instala con instrucciones remotas para el agente;
+  - **los hooks y plugins de everything-claude-code, ponytail y taste-skill:** bloquean los `.md` o inyectan instrucciones en cada sesión. De esos repos solo se usan sus reglas, ya adaptadas a las skills.
+- **Diego:** la seguridad, la revisión de código, los atajos y el formulario están en `IA_DIEGO.md` §8. Strix solo se usa contra una copia local con datos simulados, y con la aprobación de los dos.
+- **Contexto:** pedidos grandes en frentes con agentes en paralelo. Las skills quedan cortas, con el detalle en `references/`. Cada respuesta cierra con una o dos líneas sobre lo que no se revisó.
+
 ## Bóveda personal (Compras/Segundo Cerebro)
 Es otro proyecto, con su propio `CLAUDE.md` y su propia memoria: `F:\Obsidian\Mejor elemento de compras`, que se abre con el lanzador «Claude Bóveda 1». Desde aquí no se lee ni se toca.
