@@ -34,3 +34,31 @@ tags: [borrador, cambios, tesis]
   - publicar la huella semanal.
   - El caso de prueba v0.1 está en el Cap. V.
 - Al terminar el Deber 2, la validación de las historias con Torvesa puede alimentar el Anexo 10.
+
+## Versión 0.2 (22-nov, noche): claridad para un lector sin contexto
+- Víctor pidió que la tesis se entienda sin conocer el proyecto. Se hizo un barrido de las siglas y los códigos del texto (87 formas distintas) y de su primera aparición.
+- **Capítulos v0.6** (Cap. II y V–VI en v0.5):
+  - TEAMSLASH explicado (plataforma de los autores: formulario web, servidor con base de datos y alertas por Slack), sin "landing", "API" ni "PostgreSQL";
+  - Obsidian;
+  - huella SHA-256;
+  - casos de prueba;
+  - validación en operación experimental controlada;
+  - un párrafo nuevo con las seis metas M1–M6 antes de usarlas;
+  - línea base;
+  - prospecto;
+  - AS-IS y TO-BE en OE1 y OE2;
+  - fuga;
+  - [VAN] y [TIR];
+  - sprints;
+  - SUS (escala de 10 preguntas);
+  - FODA;
+  - prueba de concepto;
+  - CIIU;
+  - SWEBOK;
+  - MoSCoW y Kano explicados;
+  - backlog e historia de usuario;
+  - RUC.
+  - Se quitó "DEC-24" del cuerpo.
+- **Material nuevo al inicio:** "Control de versiones", "Lista de siglas, abreviaturas y códigos" (37 entradas) y "Glosario de términos" (17).
+- **Nota para la lectora:** explica que A1–A47 y DEC-xx solo viven en las marcas.
+- **Resultado:** `2026-11-22_Tesis_Borrador4_v0.2.docx` y `.pdf`, de 83 páginas. Las marcas son las mismas que en la v0.1.
