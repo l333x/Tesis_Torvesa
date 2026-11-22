@@ -483,3 +483,19 @@ tags: [bitacora, informes, planificacion]
   - hacer el recorrido con una persona de Torvesa;
   - pedirle a Torvesa los datos y la autorización.
 - **Claude, cuando haya respuesta de la tutora:** acta, capítulo III según la DEC-21 y Gantt.
+
+### 22-nov, noche: claridad de la tesis, Excel, repositorios y manual
+- **Borrador 4 v0.2 (83 páginas):**
+  - cada sigla, código y término se explica en su primer uso;
+  - al inicio van el control de versiones, la lista de 37 siglas y códigos y el glosario de 17 términos;
+  - en la bóveda queda `06_Capitulos/CONTROL_VERSIONES_TESIS.md`.
+- **Excel:** la revisión está en `06_Capitulos/Modelo_Negocio/2026-11-22_Revision_Excel_y_Tablero_v0.1.md`. Ningún libro tiene errores de cálculo, pero hay incoherencias:
+  - el estudio de costos v0.3 contradice al modelo v0.2;
+  - **el "6 % de datos reales de Torvesa" es en realidad 0 datos de Torvesa** (el único "dato" es un promedio del sector);
+  - el precio Premium se lleva el 30,8 % del beneficio de Torvesa, sobre el límite del 25 %;
+  - la firma electrónica se cuenta dos veces.
+  - **Tablero nuevo:** `2026-11-22_Tablero_Costos_v0.1.xlsx` (plan × escenario, 12 tarjetas, 4 gráficos, Datos con origen celda por celda).
+- **Repositorios:** se analizaron 9 (solo lectura). El informe está en `11_Planificacion/2026-11-22_Informe_Repositorios_v0.1.md`, con 12 propuestas y 60 reglas.
+  - **Se recomienda no adoptar agent-reach** (sin fuentes académicas, copia cookies) **ni los hooks de everything-claude-code** (bloquean los .md).
+- **Manual de implementación v1.0** (`11_Planificacion/2026-11-22_Manual_Implementacion_v1.0.pdf`, 23 páginas): 13 secciones, plan de 12 mejoras y anexos.
+- **Ninguna propuesta se aplicó:** la infraestructura sigue congelada hasta que Víctor elija.

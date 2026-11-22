@@ -1,0 +1,505 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Manual de implementación</title><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--ink:#1B2430;--ink2:#3A4452;--mute:#6B7280;--paper:#FBF8F2;--sand:#E8DDC8;--line:#D6CBB5;--copper:#B5652B;--brick:#9C3D27;--sage:#4E7A5A;--sky:#3F6585;--gold:#E3A35F;--white:#FFFDF8}
+@page{size:A4;margin:18mm 17mm 18mm 17mm}@page :first{margin:0}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff}
+body{font-family:"Source Sans 3",sans-serif;color:var(--ink);font-size:10.6pt;line-height:1.5;counter-reset:sec;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1,h2,h3,h4{font-family:"Archivo",sans-serif;letter-spacing:-.01em;color:var(--ink)}
+.pag{break-before:page}
+h2{font-size:20pt;line-height:1.15;margin:0 0 10px;padding-bottom:6px;border-bottom:3px solid var(--copper)}
+h2:not(.sin-num)::before{counter-increment:sec;content:counter(sec) ". ";color:var(--copper)}
+h3{font-size:12.5pt;margin:16px 0 6px}
+h4{font-size:11pt;margin:0 0 6px}
+p{margin:0 0 8px}
+.lead{font-size:12pt;color:var(--ink2)}
+.peq{font-size:9pt;color:var(--mute)}
+code{font-family:Consolas,monospace;font-size:9pt;background:#F1ECE2;padding:0 3px;border-radius:2px}
+ul,ol{margin:0 0 8px 0;padding-left:20px}
+li{margin-bottom:3px}
+ul.check{list-style:none;padding-left:2px}
+ul.check li::before{content:"\2610  ";color:var(--copper)}
+table{border-collapse:collapse;width:100%;margin:6px 0 12px;font-size:9.6pt;break-inside:auto}
+tr{break-inside:avoid}
+th{font-family:Archivo;font-weight:700;text-align:left;padding:5px 7px;border-bottom:2px solid var(--ink);vertical-align:bottom}
+td{padding:5px 7px;border-bottom:1px solid var(--line);vertical-align:top}
+table.compacta{font-size:8.8pt}
+.caja{background:#F4EFE5;border-left:4px solid var(--copper);padding:9px 12px;margin:10px 0;font-size:10pt;break-inside:avoid}
+.caja.aviso{border-left-color:var(--brick)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tarjeta,.card{border:1px solid var(--line);border-radius:4px;padding:10px 12px;background:var(--white);break-inside:avoid}
+.tarjeta .et{font-family:Archivo;font-weight:700;font-size:9pt;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.t-cobre{border-top:4px solid var(--copper)} .t-cobre .et{color:var(--copper)}
+.t-ladrillo{border-top:4px solid var(--brick)} .t-ladrillo .et{color:var(--brick)}
+.t-salvia{border-top:4px solid var(--sage)} .t-salvia .et{color:var(--sage)}
+.card ul.check{font-size:9.4pt}
+ol.indice{columns:2;font-family:Archivo;font-size:10.5pt}
+.portada{height:296mm;position:relative;background:var(--ink);color:#F3EDE2;margin:0;padding:70mm 24mm 0;overflow:hidden}
+.portada .tag{display:inline-block;font-family:Archivo;font-size:9pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:var(--gold);padding:5px 10px}
+.portada h1{font-size:38pt;line-height:1.05;color:#F3EDE2;margin:22px 0 16px;max-width:150mm}
+.portada h1 span{color:var(--gold)}
+.portada .bajada{font-size:13pt;color:#D9D1C3;max-width:140mm}
+.portada .meta{position:absolute;left:22mm;bottom:30mm;font-size:10.5pt;line-height:1.6;color:#CFC6B6}
+.portada .meta b{color:#fff;font-size:12pt}
+.portada .regla{width:50px;height:4px;background:var(--gold);margin-bottom:12px}
+.fig{margin:8px 0 12px;text-align:center;break-inside:avoid}
+.reglas h4{margin-top:10px;color:var(--copper)}
+.reglas ol{font-size:9.3pt}
+</style></head><body><!-- PORTADA -->
+<section class="portada">
+  <div class="tag">Manual de implementación · versión 1.0</div>
+  <h1>Cómo trabajamos la tesis <span>a nivel senior</span></h1>
+  <p class="bajada">Flujos, reglas y herramientas para la tesis de la Constructora Torvesa: documentos, redacción, diseño, Excel, fuentes, seguridad del código y trabajo con IA. Incluye lo que vale la pena de 9 repositorios analizados el 22 de noviembre de 2026.</p>
+  <div class="meta">
+    <div class="regla"></div>
+    <b>Víctor Segura · Diego Bermeo</b><br>
+    Tesis: Diseño de un sistema de automatización para la gestión comercial en la Constructora Torvesa<br>
+    Universidad Politécnica Salesiana · Quito, 22 de noviembre de 2026<br>
+    Redactado con Claude (Opus 5.5); lo revisa Víctor
+  </div>
+</section>
+
+<!-- CÓMO USAR -->
+<section class="pag">
+<h2 class="sin-num">Cómo usar este manual</h2>
+<p>Este manual junta en un solo lugar cómo hacemos las cosas en la tesis y cómo las vamos a mejorar. Está pensado para leerse por partes. Si vas a escribir un capítulo, lee la sección 4 y la 5. Si vas a armar una presentación o una página, la 6. Si vas a tocar un Excel, la 7. Si eres Diego y vas a revisar el código, la 9.</p>
+<p>Cada sección tiene la misma forma: primero la regla, después el porqué y al final una lista de revisión que se puede seguir con el documento abierto. Las reglas que vienen de los repositorios analizados llevan la ruta del archivo de origen, para que cualquiera pueda comprobarlas.</p>
+<div class="caja aviso"><b>Lo que este manual no cambia.</b> La infraestructura sigue congelada: nada de este documento se instala ni se automatiza sin que Víctor lo apruebe. La sección 12 trae las 12 propuestas en orden, con esfuerzo y riesgo, para decidir una por una.</div>
+<h3>Índice</h3>
+<ol class="indice">
+  <li>Resumen ejecutivo</li>
+  <li>Mapa del sistema de trabajo</li>
+  <li>Reglas que no se negocian</li>
+  <li>Documentos de la tesis: versiones y claridad</li>
+  <li>Redacción con voz propia y sin rasgos de IA</li>
+  <li>Diseño visual: páginas, diapositivas y gráficos</li>
+  <li>Excel y tableros</li>
+  <li>Fuentes e investigación</li>
+  <li>Código y seguridad de la prueba de concepto</li>
+  <li>Trabajo con IA: contexto, tokens y agentes en paralelo</li>
+  <li>Herramientas del día a día</li>
+  <li>Plan de implementación</li>
+  <li>Listas de revisión de bolsillo</li>
+</ol>
+<p class="peq">Anexos: A, las 60 reglas extraídas de los repositorios. B, los repositorios analizados, sus licencias y riesgos. C, glosario.</p>
+</section>
+
+<!-- 1 RESUMEN -->
+<section class="pag">
+<h2>Resumen ejecutivo</h2>
+<p class="lead">Ya trabajamos con un método que funciona: la bóveda guarda todo, cada documento tiene versión y nada se inventa. Lo que falta es que ese método sea igual de fuerte en el diseño, en los Excel y en el código, y que cueste menos tiempo y menos tokens.</p>
+<div class="grid3">
+  <div class="tarjeta t-cobre"><div class="et">Lo que ya funciona</div><p>reglas que sostienen la tesis: fuentes verificadas, versiones que no se pisan, datos simulados fuera, bóveda como única verdad y voz propia en los textos.</p></div>
+  <div class="tarjeta t-ladrillo"><div class="et">Lo que falta</div><p>frentes sin método escrito: diseño de páginas y gráficos, tableros en Excel, seguridad del código y uso eficiente del contexto de la IA.</p></div>
+  <div class="tarjeta t-salvia"><div class="et">Lo que proponemos</div><p>mejoras concretas, en orden, con su esfuerzo en horas y su riesgo. Ninguna instala software y todas se pueden deshacer.</p></div>
+</div>
+<h3>Las decisiones de fondo</h3>
+<table>
+<tr><th>Tema</th><th>Decisión que recomienda este manual</th></tr>
+<tr><td>Redacción</td><td>Ampliar la skill <code>voz-victor</code> con los rasgos de IA de segunda generación y la tabla de sobrecorrección de taste-skill (sección 5).</td></tr>
+<tr><td>Diseño</td><td>Escribir un solo <code>DESIGN.md</code> de la tesis que lean las diapositivas, los Word, los Excel y las páginas (sección 6).</td></tr>
+<tr><td>Páginas y tableros</td><td>Crear una skill corta de diseño basada en unslop, con crédito a su autor por la licencia CC BY 4.0 (sección 6).</td></tr>
+<tr><td>Excel</td><td>Todo modelo nuevo sigue la estructura Tablero, Datos, Cómo usar y Glosario, con recálculo en Excel y prueba de cada combinación del selector (sección 7).</td></tr>
+<tr><td>Fuentes</td><td>Seguir con las APIs académicas, Consensus y NotebookLM. No adoptar agent-reach, que no tiene fuentes académicas y copia cookies del navegador (sección 8).</td></tr>
+<tr><td>Seguridad</td><td>Darle a Diego una lista de seguridad para su stack y, si ambos lo aprueban, una prueba con Strix solo contra una copia local con datos simulados (sección 9).</td></tr>
+<tr><td>Uso de la IA</td><td>Apagar los conectores que no se usan, mantener las skills cortas, trabajar por frentes en paralelo y compactar al cerrar cada bloque (sección 10).</td></tr>
+</table>
+</section>
+
+<!-- 2 MAPA -->
+<section class="pag">
+<h2>Mapa del sistema de trabajo</h2>
+<p>El trabajo de la tesis pasa por seis piezas. Cada una tiene un papel fijo, y saber cuál es evita duplicar información o perderla.</p>
+<div class="fig"><svg width="640" height="250" viewBox="0 0 640 250"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8A8984"/></marker></defs><rect x="240" y="95" width="160" height="60" rx="6" fill="#FFFDF8" stroke="#B5652B" stroke-width="2"/><text x="320.0" y="119" text-anchor="middle" font-family="Archivo" font-weight="700" font-size="14" fill="#1B2430">Bóveda Obsidian</text><text x="320.0" y="138" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#3A4452">única fuente de verdad</text><rect x="20" y="10" width="170" height="60" rx="6" fill="#FFFDF8" stroke="#3F6585" stroke-width="2"/><text x="105.0" y="34" text-anchor="middle" font-family="Archivo" font-weight="700" font-size="14" fill="#1B2430">Skills y Claude</text><text x="105.0" y="53" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#3A4452">recetas y trabajo</text><rect x="450" y="10" width="170" height="60" rx="6" fill="#FFFDF8" stroke="#3F6585" stroke-width="2"/><text x="535.0" y="34" text-anchor="middle" font-family="Archivo" font-weight="700" font-size="14" fill="#1B2430">Scripts</text><text x="535.0" y="53" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#3A4452">Word, diagramas, fuentes</text><rect x="20" y="180" width="170" height="60" rx="6" fill="#FFFDF8" stroke="#4E7A5A" stroke-width="2"/><text x="105.0" y="204" text-anchor="middle" font-family="Archivo" font-weight="700" font-size="14" fill="#1B2430">Conectores</text><text x="105.0" y="223" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#3A4452">correo, fuentes, app</text><rect x="450" y="180" width="170" height="60" rx="6" fill="#FFFDF8" stroke="#4E7A5A" stroke-width="2"/><text x="535.0" y="204" text-anchor="middle" font-family="Archivo" font-weight="700" font-size="14" fill="#1B2430">Escritorio</text><text x="535.0" y="223" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#3A4452">entregas para personas</text><rect x="255" y="180" width="130" height="60" rx="6" fill="#FFFDF8" stroke="#9C3D27" stroke-width="2"/><text x="320.0" y="204" text-anchor="middle" font-family="Archivo" font-weight="700" font-size="14" fill="#1B2430">GitHub</text><text x="320.0" y="223" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#3A4452">historial y respaldo</text><line x1="190" y1="50" x2="240" y2="105" stroke="#8A8984" stroke-width="1.6" marker-end="url(#ar)"/><text x="215.0" y="72.5" text-anchor="middle" font-family="Source Sans 3" font-size="10.5" fill="#6B7280">lee y escribe</text><line x1="450" y1="50" x2="400" y2="105" stroke="#8A8984" stroke-width="1.6" marker-end="url(#ar)"/><text x="425.0" y="72.5" text-anchor="middle" font-family="Source Sans 3" font-size="10.5" fill="#6B7280">generan</text><line x1="320" y1="155" x2="320" y2="180" stroke="#8A8984" stroke-width="1.6" marker-end="url(#ar)"/><line x1="240" y1="140" x2="190" y2="195" stroke="#8A8984" stroke-width="1.6" marker-end="url(#ar)"/><line x1="400" y1="140" x2="450" y2="195" stroke="#8A8984" stroke-width="1.6" marker-end="url(#ar)"/><text x="425.0" y="162.5" text-anchor="middle" font-family="Source Sans 3" font-size="10.5" fill="#6B7280">copia</text></svg></div>
+<table>
+<tr><th>Pieza</th><th>Qué guarda o hace</th><th>Quién la usa</th></tr>
+<tr><td><b>Bóveda de Obsidian</b> (<code>F:\Obsidian\Tesis_Torvesa</code>)</td><td>La única fuente de verdad: capítulos en <code>.md</code>, fuentes, decisiones, bitácora, cronograma, registro de contribuciones.</td><td>Víctor y Claude</td></tr>
+<tr><td><b>GitHub</b></td><td>El historial de cambios de la bóveda. Cada cierre de día termina en commit y push, después de la auditoría de datos personales.</td><td>Ambos</td></tr>
+<tr><td><b>Scripts</b> (<code>99_Scripts</code>)</td><td>Generan el Word con estilo UPS, los diagramas, el documento madre, el cronograma, la búsqueda de fuentes y el RAG local.</td><td>Claude, con permiso</td></tr>
+<tr><td><b>Skills</b> (<code>~/.claude/skills</code>)</td><td>Recetas repetibles: <code>voz-victor</code>, <code>diapositivas-pdf</code>, <code>estudio-gamificado</code>. Cada una dice cuándo se usa y qué revisa.</td><td>Claude</td></tr>
+<tr><td><b>Conectores</b></td><td>Gmail, Outlook web por Chrome, Consensus, NotebookLM, la app Bitácora Torvesa. Se usan para leer y preparar; enviar siempre lo hace una persona.</td><td>Claude, con permiso</td></tr>
+<tr><td><b>Escritorio</b></td><td>Las carpetas de entrega para personas (PDF, Word, Excel), con un LEEME cuando hace falta.</td><td>Víctor, Diego, la tutora</td></tr>
+</table>
+<div class="caja"><b>Regla del lugar correcto.</b> Lo que es para la IA va en <code>.md</code> dentro de la bóveda. Lo que es para personas va en Word, PDF o Excel, con lenguaje simple, y se copia al Escritorio. Los datos personales solo viven en <code>05_Datos_Campo/_crudo/</code>, que no se sube.</div>
+</section>
+
+<!-- 3 REGLAS -->
+<section class="pag">
+<h2>Reglas que no se negocian</h2>
+<p>Estas reglas ya están en el <code>CLAUDE.md</code> de la bóveda. Se repiten aquí porque todo lo demás del manual se apoya en ellas.</p>
+<table>
+<tr><th style="width:28%">Regla</th><th>Qué significa en la práctica</th></tr>
+<tr><td><b>Nada se inventa</b></td><td>Ni autores, ni DOI, ni páginas, ni cifras. Una fuente cuenta como verificada solo si se abrió y se anotó el dato con su página. Si la evidencia contradice el borrador, se dice.</td></tr>
+<tr><td><b>Los datos simulados no se usan</b></td><td>El diagnóstico de 30 personas y el Excel de ingresos 2025 son simulados. El 22 de noviembre también se descartó una encuesta Kano simulada que llegó como si fuera real: tenía fechas futuras y una página que decía "simulación".</td></tr>
+<tr><td><b>Ninguna versión se pisa</b></td><td>Claude genera, Víctor edita y sale una versión nueva. Lo que Víctor editó nunca se sobrescribe. Cada borrador lleva fecha y versión en el nombre.</td></tr>
+<tr><td><b>Vocabulario fijo</b></td><td>Se dice "validación del diseño en operación experimental controlada". Nunca "piloto" ni "implementado".</td></tr>
+<tr><td><b>Infraestructura congelada</b></td><td>No se crean herramientas, automatizaciones ni tableros nuevos sin pedido de Víctor. Este manual propone; no instala.</td></tr>
+<tr><td><b>Privacidad</b></td><td>Datos personales solo en la carpeta cruda. Antes de cada push se corre <code>99_Scripts/auditoria_pii.py</code>. Las encuestas piden iniciales, no nombres.</td></tr>
+<tr><td><b>Enviar lo hace una persona</b></td><td>Claude deja los correos como borrador con adjuntos y destinatarios, y la persona aprieta Enviar.</td></tr>
+<tr><td><b>Archivos</b></td><td>No se mueven, renombran ni borran sin proponerlo antes, y los movimientos se hacen con <code>git mv</code>.</td></tr>
+</table>
+</section>
+
+<!-- 4 DOCUMENTOS -->
+<section class="pag">
+<h2>Documentos de la tesis: versiones y claridad</h2>
+<h3>4.1 El ciclo de un borrador</h3>
+<div class="fig"><svg width="640" height="90" viewBox="0 0 640 90"><defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8A8984"/></marker></defs><rect x="8" y="18" width="108" height="52" rx="6" fill="#B5652B" stroke="#B5652B" stroke-width="2"/><text x="62" y="40" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="15" fill="#FFFDF8">1</text><text x="62" y="58" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#FFFDF8">.md con {+ +}</text><line x1="118" y1="44" x2="134" y2="44" stroke="#8A8984" stroke-width="1.6" marker-end="url(#ar2)"/><rect x="136" y="18" width="108" height="52" rx="6" fill="#FFFDF8" stroke="#B5652B" stroke-width="2"/><text x="190" y="40" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="15" fill="#1B2430">2</text><text x="190" y="58" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#1B2430">Armado UPS</text><line x1="246" y1="44" x2="262" y2="44" stroke="#8A8984" stroke-width="1.6" marker-end="url(#ar2)"/><rect x="264" y="18" width="108" height="52" rx="6" fill="#FFFDF8" stroke="#B5652B" stroke-width="2"/><text x="318" y="40" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="15" fill="#1B2430">3</text><text x="318" y="58" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#1B2430">Marcas y voz</text><line x1="374" y1="44" x2="390" y2="44" stroke="#8A8984" stroke-width="1.6" marker-end="url(#ar2)"/><rect x="392" y="18" width="108" height="52" rx="6" fill="#FFFDF8" stroke="#B5652B" stroke-width="2"/><text x="446" y="40" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="15" fill="#1B2430">4</text><text x="446" y="58" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#1B2430">Revisión visual</text><line x1="502" y1="44" x2="518" y2="44" stroke="#8A8984" stroke-width="1.6" marker-end="url(#ar2)"/><rect x="520" y="18" width="108" height="52" rx="6" fill="#B5652B" stroke="#B5652B" stroke-width="2"/><text x="574" y="40" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="15" fill="#FFFDF8">5</text><text x="574" y="58" text-anchor="middle" font-family="Source Sans 3" font-size="11.5" fill="#FFFDF8">Registro y commit</text></svg></div>
+<ol>
+<li><b>Fuente en <code>.md</code>.</b> Cada capítulo vive como <code>AAAA-MM-DD_CapN_Nombre_vX.Y.md</code> en <code>06_Capitulos</code>. Una versión nueva es una copia: lo agregado va entre <code>{+ +}</code>, lo quitado entre <code>{- -}</code> y los comentarios entre <code>{&gt;&gt; &lt;&lt;}</code>.</li>
+<li><b>Armado.</b> El armador acepta los cambios, aplica el formato UPS (Times New Roman 12, interlineado 1,5, tablas APA) y genera el Word y el PDF con la nota para la lectora, los índices, las siglas, el glosario y el control de versiones.</li>
+<li><b>Revisión automática.</b> Se cuentan las marcas (<code>[FALTA-DATO]</code>, <code>[FALTA-FUENTE]</code>, <code>[DECIDIR-TUTORA]</code>, <code>[DECIDIR-VÍCTOR]</code>, <code>[VERIFICAR-PÁG]</code>) y se corre el revisor de voz.</li>
+<li><b>Revisión visual.</b> Se renderizan las páginas que cambiaron y se miran: tablas cortadas, figuras fuera de lugar, índice sin actualizar.</li>
+<li><b>Registro.</b> Una fila en <code>CONTROL_VERSIONES_TESIS.md</code> y un archivo <code>Cambios_BorradorN.md</code> con lo que cambió por capítulo.</li>
+</ol>
+<h3>4.2 Regla de claridad: la tesis se entiende sin conocer el proyecto</h3>
+<p>Una tesis es un documento que lee alguien que nunca habló con nosotros. Por eso, desde la versión 0.2 del borrador 4:</p>
+<ul>
+<li>Cada sigla o código se explica entre paréntesis la primera vez que aparece en el cuerpo, aunque sea común en la bóveda. Ejemplo: "TEAMSLASH, la plataforma de registro de solicitudes que los autores ya desarrollaron".</li>
+<li>Al inicio van la <b>lista de siglas, abreviaturas y códigos</b> (37 entradas, con el capítulo donde se explican) y el <b>glosario de términos</b> (17 términos).</li>
+<li>Los códigos internos (DEC-xx, A1 a A47, nombres de archivo) no van en el cuerpo. Solo viven en las marcas amarillas, que desaparecen en la versión final.</li>
+<li>Las metas M1 a M6 se presentan antes de usarse, en un párrafo que dice qué mide cada una.</li>
+</ul>
+<h3>4.3 Antes de mandar un borrador a la tutora</h3>
+<ul class="check">
+<li>El nombre lleva fecha y versión, y la versión anterior sigue intacta.</li>
+<li>La nota para la lectora dice qué cambió, en lenguaje simple.</li>
+<li>Las marcas están contadas y la nota las explica.</li>
+<li>El revisor de voz no encuentra rasgos prohibidos en el texto corrido.</li>
+<li>Cada sigla y cada término nuevo están en la lista o en el glosario.</li>
+<li>El índice se actualizó en Word (el PDF se genera con los campos actualizados).</li>
+<li>El correo explica el contexto con palabras, no con códigos, y trae un cuadro de dudas con "qué decidir, por qué y qué proponemos".</li>
+</ul>
+</section>
+
+<!-- 5 REDACCIÓN -->
+<section class="pag">
+<h2>Redacción con voz propia y sin rasgos de IA</h2>
+<p>La skill <code>voz-victor</code> se armó el 22 de noviembre midiendo 11.168 palabras de tres libros de Víctor. La voz tiene oraciones largas encadenadas con comas, usa "pero", "porque", "así que" y "además", habla en primera persona plural y casi nunca usa punto y coma. El profesor sabe que se trabaja con IA: la meta no es engañar a un detector sino que el texto suene a nosotros y se pueda defender en voz alta.</p>
+<h3>5.1 Lo que ya revisa la skill</h3>
+<p>Conectores de manual ("sin embargo", "asimismo", "por lo tanto", "en conclusión"), punto y coma en prosa, comillas angulares, rayas, tríadas automáticas, gerundios de relleno, oraciones todas del mismo largo y títulos en Title Case. El revisor <code>revisar_voz.py</code> los cuenta y mide el largo medio de las oraciones (meta de 22 a 35 palabras, con variación).</p>
+<h3>5.2 Lo que se le suma: rasgos de segunda generación</h3>
+<p class="peq">Fuente: <code>taste-skill/skills/taste-skill/references/copy-tells.md</code> (MIT).</p>
+<table>
+<tr><th style="width:34%">Rasgo</th><th>Cómo se ve</th><th style="width:30%">Qué se hace</th></tr>
+<tr><td>Datos inventados para sonar específico</td><td>"38 % menos", "lote 047", una hora exacta sin fuente</td><td>Solo hechos de la fuente o una frase más simple</td></tr>
+<tr><td>Franja de cifras</td><td>Tres o cuatro números grandes con una palabra debajo</td><td>Cada número va en la oración que lo prueba</td></tr>
+<tr><td>Títulos de dos fragmentos</td><td>"Doce cuartos. Tres formas de quedarse."</td><td>Como máximo uno por documento</td></tr>
+<tr><td>Contraste y sus sustitutos</td><td>"no es X, es Y", "en lugar de", "sin el"</td><td>Máximo dos en total; decir el hecho positivo</td></tr>
+<tr><td>Palabras de virtud</td><td>honesto, realmente, cuidadosamente, genuinamente</td><td>Mostrarlo con un hecho</td></tr>
+<tr><td>Cierre ingenioso</td><td>Cada párrafo termina con una moraleja</td><td>Terminar con información</td></tr>
+<tr><td>El texto habla de sí mismo</td><td>"Esta sección muestra", "A continuación encontrarás"</td><td>Ir directo al contenido</td></tr>
+<tr><td>Uniformidad perfecta</td><td>Todos los párrafos del mismo largo</td><td>Variar el largo según la idea</td></tr>
+</table>
+<h3>5.3 La tabla de sobrecorrección</h3>
+<p>Cada regla anti IA produce un vicio nuevo si se aplica a ciegas. Esta es la parte más útil del repositorio, porque explica errores que ya cometimos.</p>
+<table>
+<tr><th>Si quitas…</th><th>…aparece</th><th>Contramedida</th></tr>
+<tr><td>las tríadas</td><td>todo en pares</td><td>Listar tantos elementos como haya</td></tr>
+<tr><td>las rayas</td><td>todo con punto seguido</td><td>Usar dos puntos o paréntesis donde caigan natural</td></tr>
+<tr><td>"no X sino Y"</td><td>"en lugar de"</td><td>Decir solo el hecho positivo</td></tr>
+<tr><td>las palabras de moda</td><td>vocabulario "tranquilo" y vago</td><td>Nombrar cosas concretas</td></tr>
+<tr><td>lo genérico</td><td>números inventados</td><td>Solo cifras con fuente</td></tr>
+</table>
+<div class="caja"><b>Lo que no es un rasgo de IA.</b> Gramática correcta, "es" y "tiene", un conector aislado y una lista de tres cuando hay tres cosas. No hay que castigarlos. Tampoco "simplemente" ni "al final" en la voz de Víctor: son muletillas suyas medidas en sus libros, y solo se vigilan si pasan de dos por página.</div>
+<h3>5.4 Registro según el documento</h3>
+<table>
+<tr><th>Documento</th><th>Registro</th></tr>
+<tr><td>Tesis</td><td>Académico, impersonal o primera persona plural moderada, sin muletillas, con citas APA 7 y siglas explicadas.</td></tr>
+<tr><td>Deberes de clase</td><td>Voz de Víctor: estudiante de nivel intermedio, explicaciones obvias, menos citas, sin jerga innecesaria.</td></tr>
+<tr><td>Correos a la tutora</td><td>Directo y respetuoso, con el contexto en palabras y un cuadro de dudas.</td></tr>
+<tr><td>Mensajes a Diego</td><td>Corto, con lo que tiene que hacer, para cuándo y dónde está cada archivo.</td></tr>
+</table>
+</section>
+
+<!-- 6 DISEÑO -->
+<section class="pag">
+<h2>Diseño visual: páginas, diapositivas y gráficos</h2>
+<p>Hoy las diapositivas ya tienen un método (la skill <code>diapositivas-pdf</code>, estilo McKinsey). Las páginas web, los tableros y los gráficos de Excel no. La propuesta es un solo sistema de diseño escrito, que todos los formatos lean, y una skill corta para páginas.</p>
+<h3>6.1 Un DESIGN.md único</h3>
+<p class="peq">Estructura de 9 secciones de <code>awesome-claude-design/README.md</code> y criterios de calidad de <code>design-md-chrome/DESIGN.md</code> (ambos MIT).</p>
+<p>La idea central es poner en el mismo archivo el valor, la regla y la razón. La razón le permite a cualquiera (persona o IA) decidir bien en un caso que el archivo no cubre.</p>
+<table>
+<tr><th style="width:32%">Sección</th><th>Contenido para la tesis</th></tr>
+<tr><td>1. Tema y atmósfera</td><td>Construcción, papel y obra: sobrio, cálido, con datos al frente.</td></tr>
+<tr><td>2. Paleta y roles</td><td>Tinta #1B2430 (texto), papel #F5F1E8 (fondo), arena #E8DDC8, cobre #B5652B (acento), ladrillo #9C3D27 (problema), salvia #4E7A5A (mejora), azul #3F6585, dorado #E3A35F.</td></tr>
+<tr><td>3. Tipografía</td><td>Archivo para títulos y Source Sans 3 para texto en pantallas; Times New Roman 12 en la tesis (formato UPS).</td></tr>
+<tr><td>4. Componentes</td><td>Tarjeta de cifra, tabla APA, marcador de sección, franja de recomendación.</td></tr>
+<tr><td>5. Layout</td><td>Espaciado en múltiplos de 4 px; un mensaje por diapositiva; tablas verticales.</td></tr>
+<tr><td>6. Profundidad</td><td>Sin sombras grandes ni brillos; bordes finos.</td></tr>
+<tr><td>7. Qué sí y qué no</td><td>Las listas de 6.3 y 6.4.</td></tr>
+<tr><td>8. Responsive</td><td>Revisar a 1440, 768 y 390 px; sin scroll horizontal.</td></tr>
+<tr><td>9. Guía para la IA</td><td>Reglas en "debe" y "conviene", todas comprobables.</td></tr>
+</table>
+<h3>6.2 Antes de diseñar: dirección en cinco líneas</h3>
+<p class="peq">De <code>unslop/skills/unslop/SKILL.md</code>, sección Direction (CC BY 4.0, autor Damir Sokolovsky).</p>
+<ol>
+<li><b>Producto:</b> qué hace y para quién.</li>
+<li><b>Carácter:</b> dos o tres palabras concretas. Prohibidas: limpio, moderno, minimalista, premium.</li>
+<li><b>Mundo:</b> el lugar o material al que pertenece (obra, plano, papel de cotización).</li>
+<li><b>Momentos:</b> uno o dos lugares con color rico, como el gráfico principal.</li>
+<li><b>Firma:</b> un solo detalle propio.</li>
+</ol>
+<p>Después se mide cuánto hay que cambiar. Si una pantalla ya está bien, se dice y se proponen como máximo tres ajustes. Nunca se cambia algo bueno solo para que sea distinto.</p>
+<h3>6.3 Nueve pasadas en orden</h3>
+<p>Espaciado, color, íconos, texto, tipografía, layout, detalles, visuales y movimiento. El espaciado va primero porque cambia cómo se lee todo, y el texto va antes que la tipografía porque el largo del título decide su tamaño. Al final, la <b>prueba de plantilla</b>: si cambias el nombre del producto por otro y la pantalla sigue encajando, le falta dirección.</p>
+<h3>6.4 Reglas de gráficos (para diapositivas, Excel y páginas)</h3>
+<ul>
+<li>El gráfico se elige por el dato: tendencia en línea, comparación en barras ordenadas de mayor a menor, proporción en una barra apilada, meta en barra de progreso.</li>
+<li>Con menos de 4 puntos en el tiempo va una cifra destacada, no un gráfico. Con más de 15 categorías va una tabla. Torta solo con 5 categorías o menos y diferencias mayores al 5 %.</li>
+<li>Un gráfico principal claramente más grande; un acento de color en lo que importa y el resto en grises.</li>
+<li>Nada se distingue solo por color: etiquetas directas, y la tabla de datos al lado.</li>
+<li>Tarjeta de cifra: etiqueta, número grande y cambio contra algo ("+12 % vs. octubre"). Sin minigráficos de relleno.</li>
+<li>Cifras con ancho fijo (<code>tabular-nums</code>) y un solo formato numérico en toda la pieza: coma decimal y punto de miles.</li>
+</ul>
+<p class="peq">Fuentes: <code>unslop/.../SKILL.md</code> sección 7 y <code>ui-ux-pro-max-skill/src/ui-ux-pro-max/data/charts.csv</code>. La skill <code>dataviz</code> trae además un validador de paletas para daltonismo, que ya usamos en las figuras Kano del Deber 1.</p>
+<h3>6.5 Formularios (prueba de concepto y Google Forms)</h3>
+<p class="peq">De <code>ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/references/quick-reference.md</code>, sección 8.</p>
+<ul class="check">
+<li>Etiqueta visible en cada campo; el texto de ejemplo no reemplaza a la etiqueta.</li>
+<li>El error aparece debajo de su campo y dice cómo arreglarlo.</li>
+<li>Se valida al salir del campo, no mientras se escribe.</li>
+<li>Si el envío falla, se conserva todo lo escrito.</li>
+<li>El botón de enviar solo se desactiva mientras la petición está en curso.</li>
+<li>Aviso claro si se agotó el tiempo, con opción de reintentar.</li>
+</ul>
+</section>
+
+<!-- 7 EXCEL -->
+<section class="pag">
+<h2>Excel y tableros</h2>
+<p>Los Excel son la parte del trabajo que más se le muestra a personas que no saben finanzas: la tutora y, más adelante, la gerencia de Torvesa. Por eso tienen que explicarse solos.</p>
+<h3>7.1 Estructura de todo Excel nuevo</h3>
+<table>
+<tr><th style="width:22%">Hoja</th><th>Qué lleva</th></tr>
+<tr><td><b>Tablero</b> (primera)</td><td>Selectores con listas desplegables, tarjetas de cifras clave que cambian con el selector, 3 o 4 gráficos y una franja de "qué es dato real y qué es supuesto".</td></tr>
+<tr><td><b>Datos</b></td><td>Cada valor con su origen (hoja y celda del modelo, o la fuente con su página). Nada se redondea distinto al original.</td></tr>
+<tr><td><b>Cómo usar</b></td><td>Qué cambia cada selector y qué significa cada indicador, en una línea.</td></tr>
+<tr><td><b>Glosario</b></td><td>VAN, TIR, beneficio/costo, TMAR, período de recuperación y los términos del modelo.</td></tr>
+</table>
+<h3>7.2 Reglas</h3>
+<ul>
+<li>Las cifras se calculan con fórmulas, no se escriben a mano. Los supuestos van en celdas marcadas, separadas de los datos.</li>
+<li>Se recalcula con Excel (no solo con la librería de Python) y se verifica que no quede ninguna celda con error.</li>
+<li>Se prueba cada combinación del selector y se anotan los resultados.</li>
+<li>La hoja Tablero se exporta a PDF para revisarla con los ojos: nada cortado, nada montado.</li>
+<li>Un formato de número por hoja, con coma decimal y USD donde corresponde.</li>
+<li>Nunca se modifica un modelo anterior: el tablero es un archivo nuevo que lee o copia los valores.</li>
+</ul>
+<h3>7.3 El tablero de costos (22 de noviembre)</h3>
+<p>El archivo <code>06_Capitulos/Modelo_Negocio/2026-11-22_Tablero_Costos_v0.1.xlsx</code> aplica estas reglas. Tiene dos listas desplegables (plan y escenario) y 12 tarjetas en tres franjas: lo que paga Torvesa, la viabilidad para TEAMSLASH y la viabilidad para Torvesa. Las cifras se ponen en rojo cuando un indicador no conviene. Debajo van la franja de dato real y supuesto y 4 gráficos: del costo al precio, el flujo de caja por año, el VAN en los 6 casos y el costo por herramienta. La hoja Datos copia 52 indicadores del modelo financiero v0.2, cada uno con su hoja y su celda de origen. Se revisó en Excel: ninguna celda tiene errores y las 6 combinaciones coinciden con la hoja de escenarios del modelo.</p>
+<table class="compacta">
+<tr><th>Indicador</th><th>Estándar base</th><th>Premium pesimista</th><th>Premium base</th><th>Premium optimista</th></tr>
+<tr><td>Precio mensual sin IVA</td><td>USD 175</td><td>USD 380</td><td>USD 275</td><td>USD 230</td></tr>
+<tr><td>VAN para TEAMSLASH</td><td>USD -1.153</td><td>USD 402</td><td>USD 427</td><td>USD 517</td></tr>
+<tr><td>Beneficio/costo</td><td>0,79</td><td>1,01</td><td>1,03</td><td>1,04</td></tr>
+<tr><td>VAN para Torvesa</td><td>USD 13.081</td><td>USD -9.504</td><td>USD 13.618</td><td>USD 112.143</td></tr>
+<tr><td>Parte del beneficio de Torvesa que se lleva el precio</td><td>23,2 %</td><td>735,2 %</td><td>30,8 %</td><td>5,4 %</td></tr>
+</table>
+<p>La lectura es corta: el Premium es viable para nosotros en los tres escenarios, pero por poco (beneficio/costo entre 1,01 y 1,04), y el Estándar solo no lo es en ninguno. Para Torvesa el resultado depende casi por completo de supuestos suyos, que van de un VAN de USD -9.504 a uno de USD 112.143. Esa amplitud es justamente el argumento para pedirle sus datos.</p>
+<h3>7.4 Lo que encontró la revisión de los Excel</h3>
+<p>Ningún libro tiene celdas con error y las cifras que vio la tutora salen bien del modelo v0.2. Los problemas son de coherencia y de cómo se presentan, y se corrigen en versiones nuevas, nunca en los originales.</p>
+<table class="compacta">
+<tr><th style="width:34%">Hallazgo</th><th>Qué hacer</th></tr>
+<tr><td>El estudio de costos v0.3 y el modelo financiero v0.2, ambos del 15 de noviembre, usan supuestos distintos (sueldo, aporte al IESS, TMAR, margen de obra). Por eso uno da USD 149 de precio y un VAN de 15.832 para Torvesa, y el otro USD 275 y 13.618.</td><td>Alinear el estudio de costos con el modelo, o explicar que 149 es el precio de lista con 20 empresas.</td></tr>
+<tr><td>El "6 % de datos reales de Torvesa" es 1 de 18 supuestos, y ese único dato es un promedio del sector, no de Torvesa. El número de usuarios, que sí sale del censo real, figura como supuesto.</td><td>Corregir la etiqueta y decirlo así en la tesis y en la presentación.</td></tr>
+<tr><td>Los porcentajes del panel (dato, supuesto, decisión) cuentan filas de título.</td><td>Valores correctos: 44 % dato, 48 % supuesto y 8 % decisión.</td></tr>
+<tr><td>El precio Premium base se lleva el 30,8 % del beneficio de Torvesa y pasa el límite del 25 % del propio modelo.</td><td>Decirlo en la tesis: el Estándar base, con 23,2 %, sí cumple.</td></tr>
+<tr><td>La firma electrónica se cuenta dos veces y hay supuestos escritos dentro de las fórmulas.</td><td>Pasarlos a la hoja de supuestos en la versión 0.3.</td></tr>
+<tr><td>La matriz de herramientas cobra la implementación a USD 15 la hora (el modelo usa 9,26) y cuenta Slack Pro, que el modelo no tiene.</td><td>Confirmar con Diego el canal de avisos y alinear.</td></tr>
+</table>
+<p class="peq">Detalle celda por celda en <code>06_Capitulos/Modelo_Negocio/2026-11-22_Revision_Excel_y_Tablero_v0.1.md</code>.</p>
+
+</section>
+
+<!-- 8 FUENTES -->
+<section class="pag">
+<h2>Fuentes e investigación</h2>
+<p>La tesis ya tiene un método de fuentes estricto, y el análisis de los repositorios lo confirmó: nada de lo que vimos lo supera.</p>
+<h3>8.1 El orden de búsqueda</h3>
+<ol>
+<li><b>APIs académicas</b> (OpenAlex y Semantic Scholar) con los scripts de <code>99_Scripts/busqueda</code>.</li>
+<li><b>Consensus</b>, conectado, para preguntas de investigación con resultados citables.</li>
+<li><b>Chrome por CDP</b> con el perfil de la tesis, para abrir los PDF y anotar la página.</li>
+<li><b>NotebookLM</b> para estudiar y cruzar fuentes ya verificadas. No verifica ni se cita.</li>
+<li><b>Google Académico</b> solo a mano: no se automatiza.</li>
+</ol>
+<h3>8.2 Por qué no usar agent-reach</h3>
+<p>El repositorio <code>Panniantong/agent-reach</code> promete leer redes y la web. Lo revisamos completo y encontramos tres problemas: no tiene ninguna fuente académica (ni OpenAlex, ni Crossref, ni arXiv), copia las cookies de sesión del Chrome personal para entrar a X, Reddit o LinkedIn (choca con sus términos de servicio) y se instala pidiéndole al agente que ejecute un archivo remoto que puede cambiar en cualquier momento. Un tuit o un video tampoco cuentan como fuente verificada en la tesis.</p>
+<h3>8.3 Dos ideas que sí rescatamos</h3>
+<ul>
+<li>Primero las herramientas propias; lo externo solo llena huecos.</li>
+<li>Ante un bloqueo, un captcha o un límite de peticiones se para, no se reintenta en bucle y no se cambia de cuenta para saltarlo. Lo resuelve la persona en la página oficial.</li>
+<li>Si una búsqueda no devuelve nada, se reintenta una vez con una consulta más angosta y, si sigue vacía, se dice. Nunca se presenta un resultado vacío como si tuviera datos.</li>
+</ul>
+<h3>8.4 Datos de campo</h3>
+<p>Lo que aprendimos con la encuesta Kano del Deber 1 sirve para la tesis: un formulario de Google armado con un script propio, consentimiento como primera pregunta, solo iniciales, la hoja de respuestas leída sin descargar nada y un control de calidad que detecta respuestas en serie (personas que marcan lo mismo en todo). Antes de usar datos así en la tesis, la tutora tiene que aprobar el método (DEC-21 y DEC-25).</p>
+</section>
+
+<!-- 9 SEGURIDAD -->
+<section class="pag">
+<h2>Código y seguridad de la prueba de concepto</h2>
+<p>Esta sección es para Diego. La prueba de concepto recibe datos de clientes por un formulario público, los guarda en PostgreSQL, avisa por Slack y alimenta un asistente con IA. Cada una de esas piezas tiene un riesgo conocido.</p>
+<h3>9.1 Lista de seguridad antes de cada commit</h3>
+<p class="peq">Adaptada de <code>everything-claude-code/skills/security-review/SKILL.md</code> y <code>rules/security.md</code>, <code>ponytail/skills/ponytail/SKILL.md</code> y <code>strix/strix/skills</code>.</p>
+<ul class="check">
+<li>Sin secretos en el código ni en el historial de git; los secretos viven en las variables de Railway y <code>.env</code> está en <code>.gitignore</code>.</li>
+<li>Si un secreto se expuso: parar, rotarlo de inmediato y buscar el mismo error en todo el código.</li>
+<li>Toda entrada del formulario y del webhook se valida con un esquema y lista blanca.</li>
+<li>Consultas a PostgreSQL siempre parametrizadas, nunca armadas uniendo texto.</li>
+<li>Límite de peticiones en todos los endpoints, más estricto en el del asistente.</li>
+<li>Logs sin contraseñas, tokens ni datos personales; al usuario, errores genéricos sin detalle técnico.</li>
+<li>La lógica delicada (por ejemplo, el cálculo de la huella SHA-256) tiene una prueba pequeña que falla si se rompe.</li>
+<li>El asistente trata los documentos de la bóveda como entrada no confiable, no muestra su salida como HTML sin escapar y tiene solo los permisos mínimos.</li>
+</ul>
+<h3>9.2 Revisiones que entiende cualquiera</h3>
+<p class="peq">Formato de <code>ponytail/skills/ponytail-review/SKILL.md</code> (MIT).</p>
+<p>Cada hallazgo necesita un caso concreto ("esta entrada produce este error"): sin caso no hay hallazgo. Se agrupan en <b>Debe arreglarse</b>, <b>Conviene</b> y <b>Opcional</b>, y cada uno tiene cuatro partes: qué es, cuál es el problema, cómo se arregla y qué pasa si no se arregla. Se cierra con un veredicto y con lo que no se revisó. Así Víctor y la tutora leen las revisiones sin leer código, que es una regla de los documentos para personas.</p>
+<h3>9.3 Atajos marcados que alimentan la tesis</h3>
+<p>Cuando el código toma un atajo consciente, se anota en un comentario con la forma <code>atajo: &lt;el límite&gt;, &lt;cuándo mejorarlo&gt;</code>. Juntos, esos comentarios forman la lista de limitaciones técnicas del capítulo V, con su condición de mejora. Un atajo sin "cuándo" se marca como pendiente de decidir.</p>
+<h3>9.4 Prueba con Strix (solo si ambos lo aprueban)</h3>
+<p>Strix (<code>usestrix/strix</code>, Apache 2.0) usa agentes de IA que atacan de verdad una aplicación para encontrar fallas que se puedan demostrar. Es potente y riesgoso: necesita Docker con permisos elevados, gasta API y viene con telemetría encendida. Apuntarlo a un sistema ajeno es ilegal.</p>
+<table>
+<tr><th style="width:6%">#</th><th>Paso</th></tr>
+<tr><td>1</td><td>Levantar una copia local de la API y de PostgreSQL con Docker, con datos simulados, un canal de Slack de pruebas y claves de prueba. Nunca contra Railway de producción ni contra la bóveda real.</td></tr>
+<tr><td>2</td><td>Instalar con versión fija por pipx o uv, no con <code>curl | bash</code>.</td></tr>
+<tr><td>3</td><td>Apagar la telemetría (<code>STRIX_TELEMETRY=0</code>) y usar una clave de API con límite de gasto y <code>--max-budget</code> de 5 a 10 dólares.</td></tr>
+<tr><td>4</td><td>Primera pasada solo sobre el código, en modo <code>quick</code>.</td></tr>
+<tr><td>5</td><td>Segunda pasada contra la copia local, con el alcance escrito en la instrucción.</td></tr>
+<tr><td>6</td><td>Para el asistente, leer antes las guías de inyección de instrucciones y de aplicaciones con modelos de lenguaje del propio repositorio.</td></tr>
+<tr><td>7</td><td>Verificar a mano cada hallazgo antes de creerlo y volver a correr después de cada arreglo.</td></tr>
+<tr><td>8</td><td>En la tesis se describe como "pruebas de seguridad del diseño en un entorno controlado".</td></tr>
+</table>
+</section>
+
+<!-- 10 IA -->
+<section class="pag">
+<h2>Trabajo con IA: contexto, tokens y agentes en paralelo</h2>
+<p>Cada sesión de Claude tiene una ventana de contexto limitada, y todo lo que entra en ella (conectores, skills, archivos leídos) cuesta tiempo y dinero. Trabajar a nivel senior es también gastar bien ese espacio.</p>
+<h3>10.1 Qué ahorra de verdad</h3>
+<p>El repositorio <code>ponytail</code> ahorra tokens porque el agente escribe menos código y responde más corto, no porque comprima nada. Su propia medición encontró dos cosas útiles: la primera versión ahorraba código pero escribía ensayos largos explicando lo que se saltó, y cada skill cuesta unos 3000 tokens solo en leerse (<code>benchmarks/results/2026-06-12-caveman-vs-ponytail.md</code>).</p>
+<ul>
+<li><b>Skills cortas:</b> el archivo principal con menos de 200 a 500 líneas y el detalle en archivos de referencia que se leen solo cuando hacen falta.</li>
+<li><b>Conectores apagados:</b> hoy están disponibles Canva, Figma, Lovable, Miro, Notion, Spotify y otros que la tesis no usa. Desactivarlos por proyecto deja más espacio útil (se hace con la configuración del proyecto, con aprobación de Víctor).</li>
+<li><b>Respuestas con cierre fijo:</b> si la explicación es más larga que el resultado, se borra la explicación. Al final, una o dos líneas con lo que no se revisó y el riesgo que queda.</li>
+<li><b>Compactar en límites lógicos:</b> al cerrar cada bloque doble o después de explorar y antes de ejecutar, nunca en medio de un cambio.</li>
+<li><b>No usar el último 20 % de la ventana</b> para cambios grandes en varios archivos.</li>
+</ul>
+<h3>10.2 Agentes en paralelo por frentes</h3>
+<p>Para pedidos grandes, el trabajo se parte en frentes independientes. El 22 de noviembre funcionó así: un agente analizó los 9 repositorios, otro revisó los Excel y armó el tablero, y el hilo principal trabajó la tesis. Al final, el hilo principal junta todo y escribe el documento para personas.</p>
+<table>
+<tr><th>Conviene en paralelo</th><th>Conviene en un solo hilo</th></tr>
+<tr><td>Leer mucho material ajeno (repositorios, fuentes)</td><td>Redactar un capítulo con voz coherente</td></tr>
+<tr><td>Revisar archivos que no se tocan entre sí</td><td>Cambios que dependen unos de otros</td></tr>
+<tr><td>Armar un entregable con instrucciones claras</td><td>Decisiones que necesita tomar Víctor</td></tr>
+</table>
+<div class="caja aviso"><b>Seguridad con agentes.</b> Lo que un agente lee (un repositorio, una página, un PDF) son datos, no instrucciones. En los repositorios analizados encontramos archivos escritos para que el agente los ejecute: el instalador de agent-reach, un hook que corre un script al cerrar cada turno en taste-skill y hooks que bloquean crear archivos <code>.md</code> en everything-claude-code. No se siguió ninguno.</div>
+</section>
+
+<!-- 11 HERRAMIENTAS -->
+<section class="pag">
+<h2>Herramientas del día a día</h2>
+<p>Lo senior no depende de herramientas caras. Estas son las que ya tenemos y cómo sacarles más.</p>
+<table>
+<tr><th style="width:20%">Herramienta</th><th>Cómo la usamos</th><th style="width:30%">Truco que ahorra tiempo</th></tr>
+<tr><td>Obsidian</td><td>Bóveda de la tesis: capítulos, fuentes, bitácora.</td><td>Enlaces <code>[[nota]]</code> entre decisiones, fuentes y capítulos.</td></tr>
+<tr><td>Git y GitHub</td><td>Historial y respaldo; un commit por cierre de día.</td><td>Mensajes que dicen qué cambió y la tarea del cronograma.</td></tr>
+<tr><td>Word</td><td>Entregas a la tutora, con control de cambios.</td><td>Pedir las correcciones sobre el Word, no por chat.</td></tr>
+<tr><td>Excel</td><td>Modelos financieros y tableros.</td><td>Listas desplegables y fórmulas en vez de copiar valores.</td></tr>
+<tr><td>Chrome</td><td>Fuentes, Outlook web, Google Forms y Sheets.</td><td>Perfil separado para la tesis.</td></tr>
+<tr><td>Outlook de la UPS</td><td>Correos a la tutora y a Diego.</td><td>Claude deja el borrador con adjuntos; la persona envía.</td></tr>
+<tr><td>Google Forms</td><td>Encuestas rápidas sin datos personales.</td><td>Script de Apps Script que crea el formulario y su hoja.</td></tr>
+<tr><td>WhatsApp</td><td>Coordinación con Diego y envío de encuestas.</td><td>Mensajes armados en un archivo de texto para copiar.</td></tr>
+<tr><td>NotebookLM</td><td>Estudiar fuentes verificadas y preparar exámenes.</td><td>Un cuaderno por tema; nunca se cita.</td></tr>
+<tr><td>Bloc de notas</td><td>Textos listos para pegar.</td><td>Claude los abre al terminar.</td></tr>
+</table>
+</section>
+
+<!-- 12 PLAN -->
+<section class="pag">
+<h2>Plan de implementación</h2>
+<p>Las 12 mejoras salen del análisis de los repositorios y se ordenaron por lo que aportan contra lo que cuestan. Ninguna se aplica sin el visto bueno de Víctor. Las de Diego necesitan también el suyo.</p>
+
+<table class="compacta">
+<tr><th>#</th><th>Qué se hace</th><th>Dónde</th><th>Horas</th><th>Riesgo</th><th>Quién</th></tr>
+<tr><td>1</td><td>Sumar a <code>voz-victor</code> los rasgos de segunda generación, la tabla de sobrecorrección y nuevos contadores en el revisor</td><td>Skill voz-victor</td><td>3</td><td>Bajo</td><td>Claude</td></tr>
+<tr><td>2</td><td>Escribir el <code>DESIGN.md</code> único de la tesis</td><td>Por definir con Víctor</td><td>2 a 3</td><td>Bajo</td><td>Claude</td></tr>
+<tr><td>3</td><td>Crear la skill <code>diseno-paginas</code> (dirección, auditoría, tokens, gráficos, formularios), con crédito a unslop</td><td>Skills</td><td>5</td><td>Bajo</td><td>Claude</td></tr>
+<tr><td>4</td><td>Sumar las reglas de gráficos a <code>diapositivas-pdf</code></td><td>Skill diapositivas-pdf</td><td>1</td><td>Bajo</td><td>Claude</td></tr>
+<tr><td>5</td><td>Lista de seguridad para el stack de la prueba de concepto</td><td><code>IA_DIEGO.md</code></td><td>2</td><td>Bajo</td><td>Diego</td></tr>
+<tr><td>6</td><td>Formato de revisión de código en cuatro partes</td><td><code>IA_DIEGO.md</code></td><td>1</td><td>Bajo</td><td>Diego</td></tr>
+<tr><td>7</td><td>Comentarios <code>atajo:</code> y registro de limitaciones</td><td>Repositorio de Diego y manual de la tesis</td><td>1</td><td>Bajo</td><td>Diego</td></tr>
+<tr><td>8</td><td>Prueba con Strix contra una copia local</td><td>Máquina de Diego</td><td>4 a 6</td><td>Medio</td><td>Diego</td></tr>
+<tr><td>9</td><td>Revisión del formulario con las reglas de formularios</td><td>Repositorio de Diego</td><td>1 a 2</td><td>Bajo</td><td>Diego</td></tr>
+<tr><td>10</td><td>Apagar conectores que no se usan y fijar el cierre de respuestas</td><td>Configuración del proyecto</td><td>1</td><td>Bajo</td><td>Claude</td></tr>
+<tr><td>11</td><td>Reglas de gráficos y formato numérico para los Excel</td><td>Generadores de Excel</td><td>1</td><td>Bajo</td><td>Claude</td></tr>
+<tr><td>12</td><td>Dejar escrito por qué no se adoptan agent-reach ni everything-claude-code</td><td><code>CLAUDE.md</code></td><td>0,25</td><td>Ninguno</td><td>Claude</td></tr>
+</table>
+<h3>Orden sugerido</h3>
+<ul>
+<li><b>Esta semana (23 al 29 de noviembre):</b> 1, 4, 11 y 12, que mejoran lo que ya entregamos y toman unas 5 horas. Diego, la 5 y la 9 antes de la validación.</li>
+<li><b>Antes de la validación (desde el 30 de noviembre):</b> 2 y 3, para que el tablero de la validación y los reportes semanales salgan con el mismo diseño. Diego, la 6 y la 7.</li>
+<li><b>Durante la validación:</b> la 8 solo si ambos la aprueban y hay tiempo, siempre contra la copia local.</li>
+<li><b>Cuando haga falta espacio de contexto:</b> la 10.</li>
+</ul>
+</section>
+
+<!-- 13 CHECKLISTS -->
+<section class="pag">
+<h2>Listas de revisión de bolsillo</h2>
+<div class="grid2">
+<div class="card"><h4>Antes de mandar un documento</h4><ul class="check">
+<li>Fecha y versión en el nombre</li><li>Versión anterior intacta</li><li>Revisor de voz sin rasgos prohibidos</li><li>Siglas explicadas en su primer uso</li><li>Páginas renderizadas y miradas</li><li>Nada inventado, cada cifra con fuente</li><li>Copia en el Escritorio y en la bóveda</li></ul></div>
+<div class="card"><h4>Antes de publicar una página o tablero</h4><ul class="check">
+<li>Dirección en cinco líneas aprobada</li><li>Un acento de color, el resto neutro</li><li>Un gráfico principal</li><li>Sin emojis como íconos</li><li>Revisado a 1440, 768 y 390 px</li><li>Prueba de plantilla superada</li><li>Datos de ejemplo verosímiles</li></ul></div>
+<div class="card"><h4>Antes de entregar un Excel</h4><ul class="check">
+<li>Hojas Tablero, Datos, Cómo usar, Glosario</li><li>Cada valor con su origen</li><li>Recalculado en Excel, sin errores</li><li>Todas las combinaciones probadas</li><li>Supuestos marcados como supuestos</li><li>Tablero exportado y revisado</li></ul></div>
+<div class="card"><h4>Antes de un commit de código (Diego)</h4><ul class="check">
+<li>Sin secretos en el código ni en el historial</li><li>Entradas validadas y SQL parametrizado</li><li>Límite de peticiones</li><li>Logs sin datos personales</li><li>Prueba de la huella SHA-256</li><li>Atajos marcados con su "cuándo"</li></ul></div>
+<div class="card"><h4>Al cerrar el día</h4><ul class="check">
+<li>Bitácora con qué pasó y qué queda</li><li>Fila en el registro de contribuciones</li><li>Auditoría de datos personales</li><li>Commit y push</li><li>App Bitácora Torvesa al día</li></ul></div>
+<div class="card"><h4>Con fuentes</h4><ul class="check">
+<li>Abierta, con dato y página</li><li>"Solo resumen" no cuenta</li><li>Si contradice el borrador, se dice</li><li>Sin automatizar Google Académico</li><li>Bloqueo o captcha: parar</li></ul></div>
+</div>
+</section>
+
+<!-- ANEXO A -->
+<section class="pag">
+<h2 class="sin-num">Anexo A. Las 60 reglas extraídas de los repositorios</h2>
+<p class="peq">Redactadas en español; entre paréntesis, el repositorio de origen. El detalle con las rutas exactas está en el informe de la sesión del 22 de noviembre.</p>
+<div class="reglas"><h4>Diseño de páginas y tableros</h4><ol start="1"><li>Antes de diseñar, escribir 5 líneas: qué hace el producto y para quién, 2 o 3 palabras de carácter concretas (nunca "limpio, moderno, minimalista, premium"), el mundo o material al que pertenece, 1 o 2 momentos con color rico y un solo detalle propio. Mostrarlas y esperar respuesta. <span class="peq">(unslop)</span></li><li>Medir cuánto slop hay antes de cambiar: mucho = rediseño completo; poco = solo arreglar lo auditado; nada = decirlo y proponer como máximo 3 ajustes. Nunca cambiar una pantalla buena solo para que sea distinta. <span class="peq">(unslop)</span></li><li>Arreglar en este orden: espaciado, color, íconos, texto, tipografía, layout, detalles, visuales, movimiento. Terminar cada pasada en toda la pantalla antes de pasar a la siguiente. <span class="peq">(unslop)</span></li><li>Todo el espaciado en múltiplos de 4 px; lo que es igual mide igual; el espacio dentro de un grupo es menor que entre grupos. <span class="peq">(unslop)</span></li><li>Navegación, botones y bordes quedan quietos; el color y el detalle van a 1 o 2 momentos de contenido, como un gráfico bien hecho. <span class="peq">(unslop)</span></li><li>Un solo gráfico principal, claramente el más grande; los demás datos en otra forma (lista con barras finas o tabla corta), nunca un segundo gráfico del mismo tamaño. <span class="peq">(unslop)</span></li><li>Tarjetas de cifra: etiqueta, número grande y cambio con su referencia. Sin sparklines, íconos ni minibarras de relleno. <span class="peq">(unslop)</span></li><li>Variar los anchos: 3 o 4 tarjetas compactas sobre un gráfico ancho, o un gráfico ancho junto a una lista angosta. Cuatro tarjetas iguales con el mismo contenido parecen plantilla. <span class="peq">(unslop)</span></li><li>Sin emojis como íconos; un solo juego de íconos de línea, un tamaño (16 o 18 px) y un trazo, con el color del texto. <span class="peq">(unslop)</span></li><li>Sin animaciones en bucle en lo que no está vivo, sin <code>transition-all</code>, sin agrandar tarjetas al pasar el mouse; animar solo color, fondo, borde, opacidad y transform. Como máximo una entrada al cargar. <span class="peq">(unslop)</span></li><li>Revisar la página renderizada, no solo el código, a 1440, 768 y 390 px; como máximo 3 renders por corrida. <span class="peq">(unslop)</span></li><li>Prueba de plantilla: si se cambia el nombre del producto por otro y la pantalla sigue encajando, falta dirección. <span class="peq">(unslop)</span></li><li>Prioridad de revisión: accesibilidad, interacción táctil, rendimiento, estilo, layout responsive, tipo y color, animación, formularios, navegación, gráficos. <span class="peq">(ui-ux-pro-max-skill)</span></li><li>Sin scroll horizontal, con meta viewport y objetivos táctiles de al menos 44×44 px. <span class="peq">(ui-ux-pro-max-skill)</span></li></ol><h4>Tipografía y color</h4><ol start="15"><li>Una rampa neutra teñida hacia el mundo del producto para fondo, superficies, bordes y texto; tres roles de texto (principal, secundario, apagado). <span class="peq">(unslop)</span></li><li>Un solo acento, usado poco: acción principal, selección o la cifra que importa. Texto sobre el acento con contraste de 4,5:1. <span class="peq">(unslop)</span></li><li>Nada de degradados entre tonos, texto con degradado, brillos de color ni manchas difusas detrás del contenido. Bordes como línea fina al 6 a 10 % de opacidad. <span class="peq">(unslop)</span></li><li>Pesos 400 y 500, 600 solo para énfasis raro; jerarquía por tamaño y color, no por grosor; sin cursiva para enfatizar. <span class="peq">(unslop)</span></li><li>Nada de etiquetas en mayúsculas con letras espaciadas; mayúscula solo al inicio. Letra de menos de 16 px sin tracking negativo. <span class="peq">(unslop)</span></li><li>Las cifras con <code>tabular-nums</code> y un solo formato en toda la pantalla. <span class="peq">(unslop)</span></li><li>Una familia para la interfaz y como máximo una compañera (monoespaciada para cifras o una display para titulares grandes). <span class="peq">(unslop)</span></li><li>Radio anidado: radio interior = radio exterior menos el padding, nunca menos de 4. <span class="peq">(unslop)</span></li><li>Colores como tokens semánticos, no hex sueltos en cada componente; revisar el contraste del modo oscuro por separado. <span class="peq">(ui-ux-pro-max-skill)</span></li></ol><h4>Anti &quot;vibe code&quot; y anti slop en textos</h4><ol start="24"><li>No inventar datos para sonar específico (números de lote, horas exactas, porcentajes). Si la fuente no da el detalle, una frase más simple. <span class="peq">(taste-skill)</span></li><li>Nada de franjas de 3 o 4 cifras con una palabra debajo: cada número va en la oración que lo prueba. <span class="peq">(copy-tells.md)</span></li><li>Como máximo un título de dos fragmentos ("X. Y.") por documento. <span class="peq">(copy-tells.md)</span></li><li>Contar juntos "no es X, es Y", "en lugar de", "sin el": máximo 2 en total. Decir el hecho positivo solo. <span class="peq">(copy-tells.md)</span></li><li>Nada de palabras de virtud sobre uno mismo: honesto, tranquilo, realmente, genuinamente, cuidadosamente, intencional. Mostrarlo con un hecho. <span class="peq">(copy-tells.md)</span></li><li>No cerrar cada párrafo con una frase ingeniosa o una moraleja: terminar con información. <span class="peq">(copy-tells.md)</span></li><li>El texto no habla de sí mismo: nada de "esta sección muestra", "a continuación encontrarás", "aquí hay 3 razones". <span class="peq">(copy-tells.md)</span></li><li>Evitar tríadas no significa escribir todo en pares: listar tantos elementos como haya. <span class="peq">(copy-tells.md)</span></li><li>Quitar las rayas no significa escribir solo con puntos: usar dos puntos o paréntesis donde caigan natural. <span class="peq">(copy-tells.md)</span></li><li>No es rasgo de IA: gramática correcta, "es" y "tiene", un conector aislado, una lista de tres cuando hay tres cosas. No castigarlos. <span class="peq">(copy-tells.md)</span></li><li>Donde quiere ir un adjetivo va un hecho: si se dice "rápido", la cifra va en la misma oración. <span class="peq">(taste-skill)</span></li><li>Prueba de nueve rubros: si la voz le queda igual a nueve negocios de otros rubros, no es una voz propia. <span class="peq">(copy-voice.md)</span></li><li>En interfaces: sin signos de exclamación, sin punto final en títulos, etiquetas y botones, cambios con referencia ("+12 % vs. octubre"), botones como verbo más objeto, nunca "Ver más" ni "Descubrir". <span class="peq">(unslop)</span></li><li>Nada de reseñas, citas, clientes ni cifras inventadas; afirmaciones no comprobables se confirman con el usuario o se quitan. <span class="peq">(taste-skill)</span></li></ol><h4>Excel, tableros y gráficos</h4><ol start="38"><li>Elegir el gráfico por el dato: tendencia = línea; comparación = barras ordenadas de mayor a menor; proporción = una barra apilada o lista con barras; una meta = barra de progreso. <span class="peq">(unslop)</span></li><li>Con menos de 4 puntos en el tiempo, una cifra destacada y no un gráfico; con más de 15 categorías, tabla; torta solo con 5 categorías o menos y diferencias mayores al 5 %. <span class="peq">(charts.csv)</span></li><li>Un acento por gráfico en lo que importa y el resto en grises; nunca distinguir series solo por color: etiquetas directas o estilos de línea, y la tabla de datos visible al lado. <span class="peq">(unslop)</span></li></ol><h4>Seguridad del código (prueba de concepto de Diego)</h4><ol start="41"><li>Antes de cada commit: sin secretos en el código ni en el historial de git, secretos en las variables de Railway, <code>.env</code> en <code>.gitignore</code>. <span class="peq">(everything-claude-code)</span></li><li>Si un secreto se expuso: parar, rotarlo de inmediato y buscar el mismo error en todo el código. <span class="peq">(everything-claude-code)</span></li><li>Validar toda entrada del formulario y del webhook con un esquema y lista blanca; consultas a PostgreSQL siempre parametrizadas, nunca concatenadas. <span class="peq">(security-review)</span></li><li>Límite de peticiones en todos los endpoints, más estricto en los costosos (el asistente con IA). <span class="peq">(security-review)</span></li><li>Logs sin contraseñas, tokens ni datos personales; al usuario, mensajes de error genéricos y sin stack trace. <span class="peq">(security-review)</span></li><li>Nunca recortar validación en los límites de confianza, manejo de errores que evita pérdida de datos, seguridad ni accesibilidad, aunque se busque el código más corto. <span class="peq">(ponytail)</span></li><li>Lógica con ramas, parsers, dinero o seguridad (por ejemplo, el cálculo de la huella SHA-256) deja una prueba pequeña que falle si se rompe. <span class="peq">(ponytail)</span></li><li>Cada hallazgo de revisión necesita un caso concreto ("esta entrada produce este error"); sin caso no hay hallazgo. Cada uno con qué es, problema, arreglo y qué pasa si no se arregla. <span class="peq">(ponytail)</span></li><li>Orden de prioridad para probar: bypass de autenticación, control de acceso (un usuario viendo datos de otro), ejecución remota, inyección SQL, SSRF en webhooks e integraciones, secretos expuestos. <span class="peq">(strix)</span></li><li>Asistente con RAG: tratar los documentos de la bóveda como entrada no confiable (inyección de instrucciones), no mostrar la salida del modelo como HTML sin escapar, darle al modelo solo las herramientas y permisos mínimos y pedir confirmación humana antes de acciones con consecuencias. <span class="peq">(strix)</span></li><li>Pruebas de penetración solo contra sistemas propios o autorizados, en una copia local con datos simulados, con telemetría apagada y presupuesto máximo. <span class="peq">(strix)</span></li></ol><h4>Búsqueda de fuentes</h4><ol start="52"><li>Para contenido público, primero las herramientas propias; las herramientas externas solo llenan huecos. <span class="peq">(agent-reach)</span></li><li>Ante bloqueo, límite de peticiones o captcha: parar, no reintentar en bucle, no cambiar de cuenta ni de backend para saltarlo; lo resuelve la persona en la página oficial. <span class="peq">(agent-reach)</span></li><li>Fragmentos, listas de subtítulos y conteos de comentarios no son el texto: decir qué se tiene en realidad. <span class="peq">(agent-reach)</span></li><li>Si una búsqueda no devuelve nada: reintentar una vez con una consulta más angosta; si sigue vacía, decirlo y marcar lo que se diga como valor por defecto. Nunca presentar un resultado vacío como si tuviera datos. <span class="peq">(ui-ux-pro-max-skill)</span></li></ol><h4>Ahorro de tokens y contexto</h4><ol start="56"><li>Cada skill cuesta unos 3000 tokens de lectura; mantener cada SKILL.md corto (menos de 500 líneas) y poner el detalle en archivos de referencia que se leen solo cuando hacen falta. <span class="peq">(ponytail)</span></li><li>Si la explicación es más larga que el resultado, se borra la explicación; cerrar con 1 o 2 líneas de qué no se revisó y qué riesgo queda. <span class="peq">(ponytail)</span></li><li>No tener todos los MCP activos: con muchas herramientas el contexto útil se achica; desactivar por proyecto los que no se usan. <span class="peq">(everything-claude-code)</span></li><li>Compactar en límites lógicos (después de explorar y antes de ejecutar, al terminar un hito), nunca en medio de una implementación. <span class="peq">(everything-claude-code)</span></li><li>No usar el último 20 % de la ventana de contexto para cambios grandes en varios archivos. <span class="peq">(everything-claude-code)</span></li></ol></div>
+</section>
+
+<!-- ANEXO B -->
+<section class="pag">
+<h2 class="sin-num">Anexo B. Repositorios analizados</h2>
+<p>Se clonaron el 22 de noviembre de 2026 con <code>git clone --depth 1</code>, sin hooks ni submódulos, y solo se leyeron. No se ejecutó ni se instaló nada.</p>
+<table class="compacta">
+<tr><th>Repositorio</th><th>Qué es</th><th>Licencia</th><th>Utilidad</th><th>Riesgo</th></tr>
+<tr><td>heydamir/unslop</td><td>Método para que una interfaz no parezca hecha por IA</td><td>CC BY 4.0 (dar crédito)</td><td>Alta</td><td>Bajo</td></tr>
+<tr><td>leonxlnx/taste-skill</td><td>Skill pesada para sitios web; lo útil son sus reglas de redacción</td><td>MIT</td><td>Media</td><td>Medio (hook al cerrar turno)</td></tr>
+<tr><td>nextlevelbuilder/ui-ux-pro-max-skill</td><td>Base de reglas de UX, gráficos, fuentes y paletas</td><td>MIT</td><td>Media alta</td><td>Bajo</td></tr>
+<tr><td>VoltAgent/awesome-claude-design</td><td>Lista de archivos DESIGN.md y su estructura</td><td>MIT</td><td>Media</td><td>Bajo</td></tr>
+<tr><td>bergside/design-md-chrome</td><td>Extensión que genera DESIGN.md desde una página</td><td>MIT</td><td>Baja media</td><td>Bajo</td></tr>
+<tr><td>DietrichGebert/ponytail</td><td>Prompt de cambios mínimos y revisión de código</td><td>MIT</td><td>Media</td><td>Bajo medio (hooks)</td></tr>
+<tr><td>worldflowai/everything-claude-code</td><td>Colección de agentes, reglas y hooks</td><td>Sin archivo de licencia</td><td>Media baja</td><td>Medio (hooks bloquean .md)</td></tr>
+<tr><td>Panniantong/agent-reach</td><td>Lectura de redes con sesiones del navegador</td><td>MIT</td><td>Baja</td><td>Alto (cookies, términos)</td></tr>
+<tr><td>usestrix/strix</td><td>Pruebas de penetración con agentes de IA</td><td>Apache 2.0</td><td>Media (Diego)</td><td>Alto si se usa mal</td></tr>
+</table>
+<p class="peq">La página tasteskill.dev se leyó como complemento de taste-skill; no traía instrucciones para agentes.</p>
+<h2 class="sin-num" style="margin-top:22px">Anexo C. Glosario</h2>
+<table class="compacta">
+<tr><th style="width:24%">Término</th><th>Significado</th></tr>
+<tr><td>Skill</td><td>Receta guardada que Claude carga cuando la tarea la necesita.</td></tr>
+<tr><td>Hook</td><td>Programa que se ejecuta solo ante un evento (al iniciar sesión, al cerrar un turno). Por eso se revisan antes de instalar nada.</td></tr>
+<tr><td>Conector (MCP)</td><td>Puente entre Claude y un servicio externo, como Gmail o Consensus.</td></tr>
+<tr><td>Contexto</td><td>Todo lo que Claude tiene presente en una sesión; tiene un límite.</td></tr>
+<tr><td>Token</td><td>Unidad en que se mide y se cobra el texto que procesa la IA.</td></tr>
+<tr><td>DESIGN.md</td><td>Archivo con el sistema de diseño: valores, reglas y razones.</td></tr>
+<tr><td>Slop</td><td>Resultado genérico que delata que lo hizo una IA sin dirección.</td></tr>
+<tr><td>Pentest</td><td>Prueba de penetración: atacar el propio sistema para encontrar fallas.</td></tr>
+<tr><td>Telemetría</td><td>Datos de uso que un programa envía a sus creadores.</td></tr>
+<tr><td>Bloque doble</td><td>Dos tareas del mismo tipo hechas seguidas, nuestro método de planificación.</td></tr>
+</table>
+</section>
+</body></html>
