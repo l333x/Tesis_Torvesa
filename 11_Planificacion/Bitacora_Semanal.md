@@ -438,3 +438,48 @@ tags: [bitacora, informes, planificacion]
   - los 3 casos de prueba (S6-T09);
   - sus horas al día.
 - **Claude, cuando haya fecha o respuesta:** acta de la Revisión 2, Gantt, app y presentación. El domingo, el informe y el documento madre (tarea automática).
+
+## 2026-11-22 (domingo) · Deberes de Requerimientos, borrador 4 y envío a la tutora
+
+### Qué pasó (Víctor, con Claude)
+- **Encuesta Kano (Deber 1 de IR, clase):**
+  - el PDF que mandó Diego en la mañana era una **simulación**: tenía fechas del 25 y el 26-nov y una página que decía "simulación", así que no se usó;
+  - se armó un Google Forms con un script de Apps Script y respondieron **7 personas reales, ninguna de Torvesa**;
+  - resultado: 6 de 10 Indiferente; RF-01 y RF-03 De rendimiento; RF-04 De deleite; RF-06 Básico.
+- **Deber 1 entregado** por Víctor en el AVAC. Ese día se hicieron cuatro cambios:
+  - MoSCoW con solo 4 Must (23 %);
+  - prioridad final de 4 altas, 5 medias y 1 baja;
+  - todo el documento en vertical;
+  - sin fechas de las respuestas.
+- **Skill nueva `voz-victor`:** reglas de la forma de escribir de Víctor, medida en sus libros, más el revisor `revisar_voz.py`.
+- **Deber 2, parte de Víctor:** se pasó a Diego para la verificación cruzada, la validación con un stakeholder y sus propias historias. Cierra hoy a las 23:59. Si el recorrido con Torvesa no alcanza por el feriado, se pide una prórroga al profe.
+- **Borrador 4 de la tesis** (`06_Capitulos/2026-11-22_Tesis_Borrador4_v0.1`, 77 páginas):
+  - redacción revisada;
+  - priorización y backlog en el Cap. IV;
+  - DEC-24 tomada;
+  - validación prevista desde el 30-nov.
+  - Detalle en `06_Capitulos/2026-11-22_Cambios_Borrador4.md`.
+- **Presentación de la Revisión 2 v0.3** (`08_Reuniones_Tutora/2026-11-22_Revision2_Presentacion_v0.3.pdf`, 13 diapositivas, estilo de la skill `diapositivas-pdf`):
+  - resumen ejecutivo al inicio;
+  - priorización y backlog;
+  - cronograma nuevo;
+  - 7 decisiones.
+- **Correo a la tutora** en borrador (`00_Inbox/2026-11-22_Correo_Tutora_Avances_BORRADOR.md`):
+  - pide reunirse el **lunes 23 y el miércoles 25** y que revise el borrador **hasta el miércoles 25**;
+  - lleva un cuadro con 9 dudas (DEC-18 a DEC-23, DEC-25 nueva, carta de respaldo y forma de devolver las observaciones).
+- **Mensaje a Diego** en borrador (`00_Inbox/2026-11-22_Mensaje_a_Diego_BORRADOR.md`): el Deber 2, el reenvío del correo y lo que hay que pedirle a Torvesa.
+- **Carpeta en el Escritorio** `TESIS - ENVIO TUTORA 23-nov`: borrador 4 (PDF y Word), presentación, correo (txt y html) y nota para Diego.
+
+### Decisión nueva para la tutora
+- **DEC-25:** si se cita el Kano exploratorio (7 personas fuera de Torvesa) como antecedente o se deja fuera por la DEC-21.
+
+### Pendiente
+- **Víctor:**
+  - enviar el correo a la tutora y el mensaje a Diego;
+  - verificar las historias de Diego;
+  - unir los dos informes del Deber 2 y subirlos.
+- **Diego:**
+  - verificar las historias de Víctor;
+  - hacer el recorrido con una persona de Torvesa;
+  - pedirle a Torvesa los datos y la autorización.
+- **Claude, cuando haya respuesta de la tutora:** acta, capítulo III según la DEC-21 y Gantt.

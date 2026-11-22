@@ -70,3 +70,20 @@ tags: [deber, requerimientos, moscow, kano, invest, historias-de-usuario, victor
 - Se puede reusar en la tesis. Antes de aplicarla al personal de Torvesa hace falta el permiso de la gerencia; mientras no llegue, sirven personas de otras empresas que hagan el mismo trabajo.
 - Las hojas llenas tienen iniciales: van a `05_Datos_Campo/_crudo/`, nunca a la bóveda que se sube.
 - Generador: `scratchpad/kano/encuesta_kano.py` (sesión del 21-nov).
+
+## 22-nov: Kano con datos reales (Deber 1 listo)
+- La hoja que mandó Diego en la mañana **era una simulación** (lo decía su página 8 y tenía fechas del 25 y el 26-nov). No se usó.
+- Se pasó la encuesta a un Google Forms (`Crear_Forms_Kano.gs`, en el Escritorio) y respondieron **5 personas reales el 22-nov**: 4 de compras o abastecimiento y 1 directora o director de un asilo, todas de Quito y ninguna de Torvesa.
+- **Resultado:** 8 de 10 Indiferente; RF-04 de deleite (satisfacción 0,60); RF-06 básico por desempate (molestia −0,60). La importancia media va de 3,6 a 4,6.
+- **Limitaciones** declaradas en el deber: confusión con «Lo espero», el perfil no es el público objetivo y E5 respondió igual las 10 funciones. Kano no baja ninguna prioridad.
+- El Deber 1 se regeneró sin pendientes (Tablas 8 a 10, Tabla 12 y anexo con 5 tablas de respuestas). Las tablas siguientes se renumeraron.
+- **Sigue pendiente en el Deber 2:** el recorrido con el stakeholder y la verificación del compañero (Tablas 16 a 18).
+- **22-nov, más tarde: 7 respuestas.** Se sumaron E6 (atención al cliente de un negocio artesanal) y E7 (jefe de ventas de una constructora, la única persona del público objetivo).
+  - Resultado: 6 de 10 Indiferente; RF-01 y RF-03 De rendimiento; RF-04 De deleite (0,71); RF-06 Básico (−0,57). RF-01, RF-03 y RF-06 se definieron por desempate.
+  - E5, E6 y E7 respondieron en serie. Sin ellas: 9 Indiferente y RF-04 De deleite.
+  - Se agregaron 2 figuras Kano (barras por categoría y satisfacción contra molestia). La matriz pasa a ser la Figura 3. El deber queda en 18 páginas.
+- **22-nov (noche): versión final del Deber 1 (entregado).**
+  - MoSCoW con 4 Must: RF-01, RF-02, RF-03 y RNF-01 (30 h, 23,1 %). RF-04, RF-05 y RNF-03 pasan a Should; RF-06 y RNF-02 a Could; RNF-04 queda en Won't.
+  - Prioridad final: 4 altas, 5 medias y 1 baja.
+  - Formato: todo vertical, sin fechas de las respuestas, perfiles por columnas y lenguaje de estudiante intermedio (skill voz-victor).
+  - El Deber 2 de Víctor (`Deber2_Historias_Validacion_Segura_Bermeo_parte_Victor`) pasa a Diego, con HU-04 en Media. Faltan la validación con un stakeholder, la verificación de Diego y la reflexión.
