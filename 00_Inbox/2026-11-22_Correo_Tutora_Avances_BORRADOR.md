@@ -52,3 +52,5 @@ Tesis: Diseño de un sistema de automatización para la gestión comercial en la
 - Adjuntos: el borrador 4 (PDF y Word) y la presentación v0.3 (PDF). Están juntos en el Escritorio, en `TESIS - ENVIO TUTORA 23-nov`.
 - Para pegar el cuadro con formato en Gmail, abre `Correo_Tutora.html` en el navegador, copia todo y pégalo en el correo.
 - Pon a Diego en copia o mándaselo para que lo reenvíe. La nota para Diego está en `00_Inbox/2026-11-22_Mensaje_a_Diego_BORRADOR.md`.
+
+**22-nov, más tarde (contexto para la tutora):** Víctor ajustó el borrador en Outlook (cuenta de la UPS) y pidió revisar si la tutora entiende los códigos. La tabla pasó a lenguaje simple: cada fila dice qué decidir, por qué se pregunta y qué se propone. Antes de la tabla va un párrafo "Para ubicarse" que explica M1 a M6, los casos de prueba (CP), la validación y los códigos DEC. Está en `Escritorio/TESIS - ENVIO TUTORA 23-nov/Contexto_para_el_correo.html`.
