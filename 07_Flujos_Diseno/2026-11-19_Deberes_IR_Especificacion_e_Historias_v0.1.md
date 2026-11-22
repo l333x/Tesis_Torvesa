@@ -87,3 +87,11 @@ tags: [deber, requerimientos, moscow, kano, invest, historias-de-usuario, victor
   - Prioridad final: 4 altas, 5 medias y 1 baja.
   - Formato: todo vertical, sin fechas de las respuestas, perfiles por columnas y lenguaje de estudiante intermedio (skill voz-victor).
   - El Deber 2 de Víctor (`Deber2_Historias_Validacion_Segura_Bermeo_parte_Victor`) pasa a Diego, con HU-04 en Media. Faltan la validación con un stakeholder, la verificación de Diego y la reflexión.
+- **22-nov, más tarde: Deber 2 v2 (parte de Víctor).**
+  - **HT-01 pasa a ser una refactorización** (RF-01 y RF-02 de la revisión de código del 17-nov): los estados con los nombres del negocio (Nueva, En contacto, Cotizada, Ganada y Perdida) y en una sola lista. Hoy "Cerrado" significa Ganada y "Archivado" significa Perdida.
+  - **SP-01** mide el aviso en el servidor real y compara tres opciones (A: responder primero; B: tiempo límite de 4 s; C: dejarlo como está). Se apoya en la DT-01 de la misma revisión.
+  - Las dos van con el formato de la plantilla de clase (`Plantilla_HU_Spike_Refactor_DeudaTecnica.docx`).
+  - **Stakeholder:** basta con 1 por informe (el enunciado dice "un stakeholder del proyecto"), y puede ser el mismo para los dos integrantes. Es el jefe de equipo de ventas y asesor comercial (E7 del Kano). La técnica es una entrevista semiestructurada más un recorrido guiado por Teams.
+  - En el Escritorio quedan el guion (`Validacion_Deber2_Guion_Reunion_Teams`) y el acta para firmar (`Validacion_Deber2_Acta_Stakeholder`).
+  - **El acta firmada tiene su nombre:** va a `05_Datos_Campo/_crudo/`, nunca a la bóveda que se sube.
+  - **Siguen en amarillo:** fecha, duración, hallazgos, evidencia, la verificación de Diego y los dos huecos de la reflexión.
