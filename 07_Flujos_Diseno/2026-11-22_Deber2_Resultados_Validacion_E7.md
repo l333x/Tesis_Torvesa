@@ -2,7 +2,7 @@
 titulo: "Deber 2: resultados de la validación con E7 (C. A. R. S.) y cambios a las historias"
 fecha: 2026-11-22
 fuente: "Cuestionario respondido en la reunión de Teams del 22-nov (lo anotó Diego). Originales y firmas en 05_Datos_Campo/_crudo/Validacion_Deber2_2026-11-22/ (no se suben)"
-estado: v4 de la parte de Víctor generada; falta la firma de E7 y la hora
+estado: CERRADO. Firmas listas (E7 firmó el cuestionario y el acta; Víctor, el acta). El PDF final de 30 páginas está en el Escritorio
 ---
 
 # Qué pasó
@@ -49,3 +49,10 @@ estado: v4 de la parte de Víctor generada; falta la firma de E7 y la hora
 1. La hora de inicio y de fin, y la duración: están en amarillo en la v4 y en el acta. Se ven en el chat de la reunión en Teams («Reunión finalizada»).
 2. Enviar a E7 los dos PDF llenos para que los firme; las versiones firmadas van a `_crudo/`.
 3. Diego: pasar su Tabla 17, cambiar la numeración si su parte cita la Tabla 18, unir los PDF y entregar.
+
+# Cierre (22-nov, noche)
+
+- Reunión de 19:45 a 20:20 (35 min). E7 firmó con FirmaEC el cuestionario respondido y el acta llena, y Víctor firmó el acta. Diego no tiene firma electrónica. Los originales están en `_crudo/`.
+- La parte de Diego se rehízo con el mismo formato que la de Víctor (`parte_Diego_v2`). Lleva su contenido con la Tabla 17 real, la verificación de Víctor aplicada y la reflexión corregida. **Diego tiene que leerla antes de que se suba**, porque cada informe se califica por separado.
+- Corrección a la verificación del 22-nov: HU-02 de Diego **sí** coincide con su RF-002 (10 pruebas, al celular). El problema real es que «llegó al celular» no se puede verificar, y se corrigió así.
+- PDF final: `Deber2_Historias_Validacion_Segura_Bermeo.pdf` (15 + 15 páginas).
