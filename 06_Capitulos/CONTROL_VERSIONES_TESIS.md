@@ -1,6 +1,6 @@
 ---
 titulo: "Control de versiones de la tesis (borradores completos)"
-actualizado: 2026-11-22
+actualizado: 2026-11-23
 tipo: referencia
 tags: [tesis, versiones, control]
 ---
@@ -20,10 +20,11 @@ tags: [tesis, versiones, control]
 | 3 (v0.1) | 2026-11-16 | 76 | I v0.4, II v0.3, III v0.4, IV v0.4, V–VI v0.3 | Seis capítulos completos, LOPDP, trazabilidad, viabilidad con un cliente, riesgos | `2026-11-16_Cambios_Borrador3.md` |
 | 4 (v0.1) | 2026-11-22 | 77 | I v0.5, II v0.4, III v0.5, IV v0.5, V–VI v0.4 | Priorización y backlog (Deberes de IR), DEC-24, validación desde el 30-nov, redacción sin rasgos de IA | `2026-11-22_Cambios_Borrador4.md` |
 | 4 (v0.2) | 2026-11-22 | 83 | I v0.6, II v0.5, III v0.6, IV v0.6, V–VI v0.5 | Cada sigla, código y término se explica en su primer uso; al inicio van el control de versiones, la lista de 37 siglas y códigos y el glosario de 17 términos | `2026-11-22_Cambios_Borrador4.md` |
+| 4 (v0.3) | 2026-11-23 | 84 | I v0.6, II v0.5, III v0.6, IV v0.7, V–VI v0.6 | Cifras del modelo financiero v0.3 y de la matriz v0.3: firma contada una vez, Premium 270, VAN 380, TIR 25 %, B/C 1,02, VAN Torvesa 13.755, 1 de 22 datos propios de Torvesa y aviso de la regla del 25 % (30,3 %) | `2026-11-23_Cambios_Excel_v0.3.md` |
 
 ## Regla de claridad (desde la v0.2 del borrador 4)
 La tesis tiene que entenderse sin conocer el proyecto. Por eso:
 - **Siglas y códigos:** cada sigla o código (M1–M6, RQ, CP, CU, OE, TEAMSLASH, AS-IS/TO-BE, SHA-256, VAN/TIR…) se explica entre paréntesis la primera vez que aparece en el cuerpo, y además va en la "Lista de siglas, abreviaturas y códigos".
 - **Términos técnicos:** cada término (backlog, sprint, bóveda, línea base, fuga, prueba de concepto, validación…) va en el "Glosario de términos".
 - **Códigos internos:** DEC-xx, A1–A47 y los nombres de archivos no van en el cuerpo del texto. Solo aparecen dentro de las marcas amarillas, que desaparecen en la versión final.
-- **Armado:** se hace con `armar_borrador4b.py` (scratchpad del 22-nov). Para un borrador nuevo: copiarlo, cambiar FUENTES y FECHA, y sumar una fila al control de versiones dentro del armador y en esta tabla.
+- **Armado:** se hace con `armar_borrador4b.py` (scratchpad del 22-nov); la v0.3 usó la copia `armar_borrador4c.py` (scratchpad del 23-nov), que llena el número de páginas con Word. Para un borrador nuevo: copiarlo, cambiar FUENTES y FECHA, y sumar una fila al control de versiones dentro del armador y en esta tabla.

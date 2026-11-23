@@ -13,17 +13,17 @@ Eres el **asesor académico** de Víctor Segura y Diego Bermeo para su tesis UPS
 El detalle del 18 al 21-oct está en la bitácora y en git; aquí va solo lo vigente.
 - **Entrega:** el documento final completo, para la revisión de la tutora, el **lunes 4-ene-2027** (D5).
 - **Tesis:**
-  - el **borrador 4 v0.2** (`06_Capitulos/2026-11-22_Tesis_Borrador4_v0.2`, 83 páginas) explica cada sigla en su primer uso y trae la lista de siglas, el glosario y el control de versiones (`06_Capitulos/CONTROL_VERSIONES_TESIS.md`);
-  - los capítulos fuente son los `2026-11-22_*_v0.5/v0.6.md`.
+  - el **borrador 4 v0.3** (`06_Capitulos/2026-11-23_Tesis_Borrador4_v0.3`, 84 páginas) explica cada sigla en su primer uso y trae la lista de siglas, el glosario y el control de versiones (`06_Capitulos/CONTROL_VERSIONES_TESIS.md`);
+  - los capítulos fuente son los `2026-11-22_*_v0.5/v0.6.md`, salvo el IV (`2026-11-23_..._v0.7`) y el V–VI (`2026-11-23_..._v0.6`).
 - **Tutora:** la Revisión 2 no se hizo el 19-nov.
-  - El 22-nov se dejó un borrador de correo (Outlook de la UPS), con el borrador 4, la presentación v0.3 y un cuadro de 9 dudas, que pide reunión el lunes 23 y el miércoles 25 y revisión hasta el 25.
+  - El correo vigente es `00_Inbox/2026-11-23_Correo_Tutora_Avances_BORRADOR.md`: borrador 4 v0.3, presentación v0.4 y cuadro de 9 dudas; pide reunión el miércoles 25 o el viernes 27, la DEC-21 en esa reunión y la revisión completa hasta el lunes 30. Lo envía Victor.
   - Siguen abiertas las DEC-18 a DEC-23 y la nueva DEC-25 (si se cita el Kano exploratorio). La más urgente es la DEC-21: medir sin datos de personas.
 - **Validación del diseño:** prevista desde el 30-nov, sujeta a la DEC-21 y a la autorización de Torvesa, que gestiona Diego.
 - **Finanzas:**
   - lo vigente es el **modelo financiero v0.3** (`06_Capitulos/Modelo_Negocio/2026-11-23_Modelo_Financiero_v0.3.xlsx`), con el estudio de costos v0.4, la matriz v0.3 y el tablero v0.2; los cambios están en `2026-11-23_Cambios_Excel_v0.3.md`;
   - Premium base: **USD 270** (antes 275), VAN 380, TIR 24,6 %, B/C 1,02, VAN de Torvesa 13.755 y 1,88 obras;
   - **el único dato propio de Torvesa es el censo: 1 de 22 (4,5 %)**, no el "6 %";
-  - el borrador 4, la presentación y el correo todavía dicen 275, 427, 13.618 y 6 %: hay que actualizarlos en la próxima versión.
+  - el **borrador 4 v0.3** (23-nov, 84 páginas), la **presentación v0.4** y el **correo del 23-nov** ya usan estas cifras.
 - **Clase (fuera de la tesis):**
   - los Deberes 1 y 2 de Ingeniería de Requerimientos; el detalle está en `07_Flujos_Diseno/2026-11-19_Deberes_IR_Especificacion_e_Historias_v0.1.md`;
   - la encuesta Kano real de 7 personas fuera de Torvesa se hizo por Google Forms.

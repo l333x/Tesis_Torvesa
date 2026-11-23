@@ -521,3 +521,15 @@ tags: [bitacora, informes, planificacion]
   - **hay claves antiguas en el historial de la landing:** Diego tiene que confirmar o rotar;
   - la seguridad tiene 5 fallas comprobadas, todas en `docs/TAREAS_DIEGO.md`.
 - **Skill `investigacion-web`** creada.
+
+### 23-nov, mañana: paquete final para la tutora
+- **Borrador 4 v0.3** (`06_Capitulos/2026-11-23_Tesis_Borrador4_v0.3`, 84 páginas):
+  - capítulo IV v0.7 y capítulos V–VI v0.6 con las cifras del Excel v0.3 (Premium 270, VAN 380, TIR 25 %, B/C 1,02, VAN Torvesa 13.755, inversión 2.235, matriz con la hora a 9,26);
+  - dice que solo 1 de 22 datos es propio de Torvesa y que el Premium se lleva el 30,3 % del beneficio, sobre el límite de 25 %.
+- **Presentación v0.4** (`08_Reuniones_Tutora/2026-11-23_Revision2_Presentacion_v0.4.pdf`): mismas cifras y fechas nuevas.
+- **Correo** (`00_Inbox/2026-11-23_Correo_Tutora_Avances_BORRADOR.md`), que reemplaza al del 22-nov:
+  - reunión el miércoles 25 o el viernes 27 (el lunes 23 ya pasó);
+  - DEC-21 en esa reunión y revisión completa hasta el lunes 30;
+  - párrafo sobre los mapas AS-IS y TO-BE y el cuadro de 9 dudas en lenguaje simple.
+- **Escritorio:** `TESIS - CORREO TUTORA LISTO 23-nov`, con los 3 adjuntos y el correo en HTML y TXT.
+- **Pendiente de Victor:** enviar el correo desde el Outlook de la UPS, con Diego en copia, y borrar el borrador viejo del 22-nov.
