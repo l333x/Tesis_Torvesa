@@ -531,5 +531,20 @@ tags: [bitacora, informes, planificacion]
   - reunión el miércoles 25 o el viernes 27 (el lunes 23 ya pasó);
   - DEC-21 en esa reunión y revisión completa hasta el lunes 30;
   - párrafo sobre los mapas AS-IS y TO-BE y el cuadro de 9 dudas en lenguaje simple.
-- **Escritorio:** `TESIS - CORREO TUTORA LISTO 23-nov`, con los 3 adjuntos y el correo en HTML y TXT.
+- **Escritorio:** `TESIS\01_Correo_tutora_23-nov (listo para enviar)`, con los 3 adjuntos y el correo en HTML y TXT.
 - **Pendiente de Victor:** enviar el correo desde el Outlook de la UPS, con Diego en copia, y borrar el borrador viejo del 22-nov.
+
+### 23-nov, tarde: material para presentar y Escritorio ordenado
+- **Tablero para presentar v1.0** (`06_Capitulos/Modelo_Negocio/2026-11-23_Tablero_Presentacion_v1.0.xlsx`, 48 KB, y su PDF de 11 páginas):
+  - 7 hojas: Inicio, Finanzas, Metricas, Herramientas, Avance, Datos y origen, y Glosario;
+  - solo valores copiados del modelo v0.3, de la matriz v0.3 y de los capítulos, con origen celda por celda;
+  - la nota para la IA es `2026-11-23_Tablero_Presentacion_v1.0_nota.md`.
+- **Flujo de aprendizaje v0.1** (`08_Reuniones_Tutora/2026-11-23_Flujo_Aprendizaje_Avance_v0.1.pdf`): 11 diapositivas en 6 pasos, con un guion de 1 página.
+- **Presentación v0.4 corregida** (sin cambiar de versión, porque no se había enviado): la diapositiva 13 y el cronograma ya dicen las fechas nuevas, y la portada dice "Victor" sin tilde.
+- **Escritorio:**
+  - quedaron solo `TESIS` y `COMPRAS - CRISFE`;
+  - la lista de movimientos está en `Escritorio\TESIS\LEEME_movimientos_23-nov.md`;
+  - la carpeta para presentar es `TESIS\00_PARA PRESENTAR - directora y tutora`, y su copia para la laptop está en `OneDrive\TESIS - para presentar 23-nov`.
+- **Queda como FALTA:**
+  - las líneas base de M1 y M3, que dependen de las fechas y horas que entregue Torvesa;
+  - el estado de las tareas en `Cronograma_Tesis.xlsx`, sin actualizar desde el sprint 3.

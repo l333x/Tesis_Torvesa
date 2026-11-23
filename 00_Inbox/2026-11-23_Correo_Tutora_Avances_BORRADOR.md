@@ -53,7 +53,7 @@ Tesis: Diseño de un sistema de automatización para la gestión comercial en la
 ---
 
 **Nota para Victor (no va en el correo):**
-- Adjuntos: `2026-11-23_Tesis_Borrador4_v0.3.pdf`, `2026-11-23_Tesis_Borrador4_v0.3.docx` y `2026-11-23_Revision2_Presentacion_v0.4.pdf`. Están solos en el Escritorio, en `TESIS - CORREO TUTORA LISTO 23-nov`.
+- Adjuntos: `2026-11-23_Tesis_Borrador4_v0.3.pdf`, `2026-11-23_Tesis_Borrador4_v0.3.docx` y `2026-11-23_Revision2_Presentacion_v0.4.pdf`. Están en el Escritorio, en `TESIS\01_Correo_tutora_23-nov (listo para enviar)`.
 - Qué cambió frente al borrador del 22-nov: las fechas (el lunes 23 ya es hoy: ahora miércoles 25 o viernes 27, DEC-21 en esa reunión y revisión completa hasta el lunes 30), el borrador v0.3 y la presentación v0.4 con las cifras del Excel v0.3, el párrafo de los mapas de procesos, "Victor" sin tilde y la firma con los dos apellidos.
 - Si en Outlook ya tienes el borrador del 22-nov, bórralo para no mandar el viejo.
 - Pon a Diego en copia.
