@@ -56,3 +56,5 @@ estado: CERRADO. Firmas listas (E7 firmó el cuestionario y el acta; Víctor, el
 - La parte de Diego se rehízo con el mismo formato que la de Víctor (`parte_Diego_v2`). Lleva su contenido con la Tabla 17 real, la verificación de Víctor aplicada y la reflexión corregida. **Diego tiene que leerla antes de que se suba**, porque cada informe se califica por separado.
 - Corrección a la verificación del 22-nov: HU-02 de Diego **sí** coincide con su RF-002 (10 pruebas, al celular). El problema real es que «llegó al celular» no se puede verificar, y se corrigió así.
 - PDF final: `Deber2_Historias_Validacion_Segura_Bermeo.pdf` (15 + 15 páginas).
+
+- 22:30: Diego mandó su parte corregida por él mismo (12 págs.; separó HU-09 = aprobación del borrador). Se pasó tal cual a la plantilla común (`parte_Diego_v3`). El PDF final para subir tiene 30 págs. (Víctor 1-15, Diego 16-30). Su HU-09 (aprobación) y la HU-09 de Víctor (asignación) son historias distintas, cada una en su informe.
