@@ -1,6 +1,6 @@
 ---
 titulo: Inicio — documento madre (versión Obsidian)
-actualizado: 2026-11-15
+actualizado: 2026-11-22
 tipo: portal
 tags: [inicio, portal]
 ---
@@ -10,28 +10,25 @@ tags: [inicio, portal]
 > Versión para leer en Obsidian. La versión completa, con gráficos, es [[00_DOCUMENTO_MADRE.pdf]] (se regenera cada domingo).
 
 ## Hoy
-- **Semana:** Sprint 5 · 9–15 nov · Prueba de concepto y finanzas
+- **Semana:** Sprint 6 · 16–22 nov · Revisión 2 con la tutora
 - **Avance:** 41/173 tareas · **Fuentes:** 786 (93 verificadas)
 - **Cronograma:** [[Cronograma_Tesis.xlsx]] · [[CRONOGRAMA]] (versión IA)
 
 ### Esta semana
 | Día | Tarea | Quién | Estado |
 |---|---|---|---|
-| lun 9-nov | Estimar los beneficios con supuestos explícitos (horas ahorradas, clientes no perdidos) | Víctor | Pendiente |
-| lun 9-nov | Construir la prueba de concepto, parte 1: formulario → servidor | Diego | Pendiente |
-| mar 10-nov | Calcular VAN, TIR y período de recuperación en 3 escenarios | Víctor | Pendiente |
-| mar 10-nov | Construir la prueba de concepto, parte 2: servidor → bóveda | Diego | Pendiente |
-| mié 11-nov | Hacer el análisis de sensibilidad (qué pasa si cambian los supuestos) | Víctor | Pendiente |
-| mié 11-nov | Construir la prueba de concepto, parte 3: borrador de cotización con IA | Diego | Pendiente |
-| jue 12-nov | Escribir la matriz de riesgos | Víctor | Pendiente |
-| jue 12-nov | Construir la prueba de concepto, parte 4: alertas y registro de eventos | Diego | Pendiente |
-| vie 13-nov | Escribir el capítulo de normativa (LOPDP) | Víctor | Pendiente |
-| vie 13-nov | Probar la prueba de concepto completa y corregir errores | Diego | Pendiente |
-| sáb 14-nov | Escribir el pitch de 1 página para inversionista | Víctor | Pendiente |
-| sáb 14-nov | Terminar el capítulo de normativa | Víctor | Pendiente |
-| sáb 14-nov | Diseñar los 3 casos de prueba | Diego | Pendiente |
-| dom 15-nov | Intercambiar resúmenes de 1 página (finanzas ↔ prueba de concepto) | Ambos | Pendiente |
-| dom 15-nov | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Ambos | Pendiente |
+| lun 16-nov | Preparar la presentación de la Revisión 2 (diseño, flujos, datos y viabilidad) | Ambos | Pendiente |
+| mar 17-nov | Ensayar la presentación de la Revisión 2 | Ambos | Pendiente |
+| mar 17-nov | Estabilizar la prueba de concepto para la demostración | Diego | Pendiente |
+| mié 18-nov | Asistir a la Revisión 2 con la tutora (fecha a confirmar) | Ambos | Pendiente |
+| mié 18-nov | Escribir el acta de la Revisión 2 | Víctor | Pendiente |
+| jue 19-nov | Preparar el protocolo de la validación del diseño en operación experimental controlada | Víctor | Pendiente |
+| jue 19-nov | Dejar estable la prueba de concepto para la validación | Diego | Pendiente |
+| vie 20-nov | Pedir a Torvesa la autorización y las fechas de la validación | Víctor | Pendiente |
+| vie 20-nov | Probar la prueba de concepto con los 3 casos de prueba antes de la validación | Diego | Pendiente |
+| sáb 21-nov | Incorporar las observaciones de la Revisión 2 (documento) | Víctor | Pendiente |
+| sáb 21-nov | Incorporar las observaciones de la Revisión 2 (técnicas) | Diego | Pendiente |
+| dom 22-nov | Revisar el sprint (qué hicimos, qué no, qué aprendimos), hacer 20 min de «explícame lo tuyo» y planificar el siguiente | Ambos | Pendiente |
 
 ## Carpetas
 - [[00_Inbox/README|00_Inbox]] — Todo lo nuevo sin clasificar (Ambos)
@@ -53,12 +50,12 @@ tags: [inicio, portal]
 - [[Bitacora_Semanal]] · [[Registro_Contribuciones]] · [[2026-10-11_F0_Validacion_Tesis|Fase 0]]
 
 ## Capítulos
-- **Capítulo 1 · El problema** — Contexto de Torvesa, el problema (tiempo de respuesta, historial disperso), justificación y objetivos. [[2026-10-19_Cap1_Introduccion_p1_v0.1]] [[2026-10-19_Cap1_Introduccion_p1_v0.1]] [[2026-10-19_Cap1_Introduccion_p2_v0.1]] [[2026-10-19_Cap1_Introduccion_p2_v0.1]] [[2026-10-19_Resumen_Cap1]] [[2026-10-20_Cap1_Introduccion_p1_v0.2]] [[2026-10-20_Cap1_Introduccion_p1_v0.2]] [[2026-10-20_Cap1_Introduccion_p2_v0.2]] [[2026-10-20_Cap1_Introduccion_p2_v0.2]] [[2026-10-27_Cap1_Introduccion_p1_v0.3]] [[2026-10-27_Cap1_Introduccion_p1_v0.3]] [[2026-10-27_Cap1_Introduccion_p2_v0.3]] [[2026-10-27_Cap1_Introduccion_p2_v0.3]] [[2026-11-16_Cap1_Introduccion_p1_v0.4]] [[2026-11-16_Cap1_Introduccion_p2_v0.4]] [[2026-11-16_Resumen_Cap1_Para_Diego]] [[2026-11-16_Resumen_Cap1_Para_Diego]] [[2026-11-16_Resumen_Cap1_Para_Diego]]
-- **Capítulo 2 · Marco teórico** — CRM y CRM móvil, tiempo de respuesta, gestión del conocimiento, IA con búsqueda en documentos (RAG), normativa. [[2026-10-19_Cap2_Marco_Teorico_v0.1]] [[2026-10-19_Cap2_Marco_Teorico_v0.1]] [[2026-10-20_Cap2_Marco_Teorico_v0.2]] [[2026-10-20_Cap2_Marco_Teorico_v0.2]] [[2026-10-27_Cap2_Marco_Teorico_v0.3]] [[2026-10-27_Cap2_Marco_Teorico_v0.3]]
-- **Capítulo 3 · Metodología** — Enfoque mixto con predominio cuantitativo, DSR (investigación en ciencia del diseño), población (dos censos), instrumentos, análisis y ética. [[2026-10-19_Cap3_Metodologia_v0.1]] [[2026-10-19_Cap3_Metodologia_v0.1]] [[2026-10-20_Cap3_Metodologia_v0.2]] [[2026-10-20_Cap3_Metodologia_v0.2]] [[2026-10-27_Cap3_Metodologia_v0.3]] [[2026-10-27_Cap3_Metodologia_v0.3]] [[2026-11-16_Cap3_Metodologia_v0.4]]
-- **Capítulo 4 · Diagnóstico** — Cómo funciona hoy la atención comercial de Torvesa, con datos reales. [[2026-11-07_Cap4_Desarrollo_Tecnico_v0.1]] [[2026-11-10_Cap4_Desarrollo_Tecnico_v0.2]] [[2026-11-10_Cap4_Desarrollo_Tecnico_v0.3]] [[2026-11-16_Cap4_Desarrollo_Tecnico_v0.4]]
-- **Capítulo 5 · Diseño del sistema y viabilidad** — Requisitos, procesos con el sistema (TO-BE), arquitectura, herramientas, costos, VAN y TIR, riesgos, ley de datos. [[2026-11-07_Cap5_Cap6_Esquema_v0.1]] [[2026-11-10_Cap5_Cap6_Esquema_v0.2]] [[2026-11-16_Cap5_Cap6_v0.3]]
-- **Capítulo 6 · Resultados de la validación** — Comparación del antes y el después de la validación del diseño en operación experimental controlada (metas M1–M6). [[2026-11-07_Cap5_Cap6_Esquema_v0.1]] [[2026-11-10_Cap5_Cap6_Esquema_v0.2]] [[2026-11-16_Cap5_Cap6_v0.3]]
+- **Capítulo 1 · El problema** — Contexto de Torvesa, el problema (tiempo de respuesta, historial disperso), justificación y objetivos. [[2026-10-19_Cap1_Introduccion_p1_v0.1]] [[2026-10-19_Cap1_Introduccion_p1_v0.1]] [[2026-10-19_Cap1_Introduccion_p2_v0.1]] [[2026-10-19_Cap1_Introduccion_p2_v0.1]] [[2026-10-19_Resumen_Cap1]] [[2026-10-20_Cap1_Introduccion_p1_v0.2]] [[2026-10-20_Cap1_Introduccion_p1_v0.2]] [[2026-10-20_Cap1_Introduccion_p2_v0.2]] [[2026-10-20_Cap1_Introduccion_p2_v0.2]] [[2026-10-27_Cap1_Introduccion_p1_v0.3]] [[2026-10-27_Cap1_Introduccion_p1_v0.3]] [[2026-10-27_Cap1_Introduccion_p2_v0.3]] [[2026-10-27_Cap1_Introduccion_p2_v0.3]] [[2026-11-16_Cap1_Introduccion_p1_v0.4]] [[2026-11-16_Cap1_Introduccion_p2_v0.4]] [[2026-11-16_Resumen_Cap1_Para_Diego]] [[2026-11-16_Resumen_Cap1_Para_Diego]] [[2026-11-16_Resumen_Cap1_Para_Diego]] [[2026-11-22_Cap1_Introduccion_p1_v0.5]] [[2026-11-22_Cap1_Introduccion_p1_v0.6]] [[2026-11-22_Cap1_Introduccion_p2_v0.5]] [[2026-11-22_Cap1_Introduccion_p2_v0.6]]
+- **Capítulo 2 · Marco teórico** — CRM y CRM móvil, tiempo de respuesta, gestión del conocimiento, IA con búsqueda en documentos (RAG), normativa. [[2026-10-19_Cap2_Marco_Teorico_v0.1]] [[2026-10-19_Cap2_Marco_Teorico_v0.1]] [[2026-10-20_Cap2_Marco_Teorico_v0.2]] [[2026-10-20_Cap2_Marco_Teorico_v0.2]] [[2026-10-27_Cap2_Marco_Teorico_v0.3]] [[2026-10-27_Cap2_Marco_Teorico_v0.3]] [[2026-11-22_Cap2_Marco_Teorico_v0.4]] [[2026-11-22_Cap2_Marco_Teorico_v0.5]]
+- **Capítulo 3 · Metodología** — Enfoque mixto con predominio cuantitativo, DSR (investigación en ciencia del diseño), población (dos censos), instrumentos, análisis y ética. [[2026-10-19_Cap3_Metodologia_v0.1]] [[2026-10-19_Cap3_Metodologia_v0.1]] [[2026-10-20_Cap3_Metodologia_v0.2]] [[2026-10-20_Cap3_Metodologia_v0.2]] [[2026-10-27_Cap3_Metodologia_v0.3]] [[2026-10-27_Cap3_Metodologia_v0.3]] [[2026-11-16_Cap3_Metodologia_v0.4]] [[2026-11-22_Cap3_Metodologia_v0.5]] [[2026-11-22_Cap3_Metodologia_v0.6]]
+- **Capítulo 4 · Diagnóstico** — Cómo funciona hoy la atención comercial de Torvesa, con datos reales. [[2026-11-07_Cap4_Desarrollo_Tecnico_v0.1]] [[2026-11-10_Cap4_Desarrollo_Tecnico_v0.2]] [[2026-11-10_Cap4_Desarrollo_Tecnico_v0.3]] [[2026-11-16_Cap4_Desarrollo_Tecnico_v0.4]] [[2026-11-22_Cap4_Desarrollo_Tecnico_v0.5]] [[2026-11-22_Cap4_Desarrollo_Tecnico_v0.6]]
+- **Capítulo 5 · Diseño del sistema y viabilidad** — Requisitos, procesos con el sistema (TO-BE), arquitectura, herramientas, costos, VAN y TIR, riesgos, ley de datos. [[2026-11-07_Cap5_Cap6_Esquema_v0.1]] [[2026-11-10_Cap5_Cap6_Esquema_v0.2]] [[2026-11-16_Cap5_Cap6_v0.3]] [[2026-11-22_Cap5_Cap6_v0.4]] [[2026-11-22_Cap5_Cap6_v0.5]]
+- **Capítulo 6 · Resultados de la validación** — Comparación del antes y el después de la validación del diseño en operación experimental controlada (metas M1–M6). [[2026-11-07_Cap5_Cap6_Esquema_v0.1]] [[2026-11-10_Cap5_Cap6_Esquema_v0.2]] [[2026-11-16_Cap5_Cap6_v0.3]] [[2026-11-22_Cap5_Cap6_v0.4]] [[2026-11-22_Cap5_Cap6_v0.5]]
 
 ## Decisiones
 - **D1** Lo que el borrador llama «piloto» se llama «validación del diseño en operación experimental controlada»; nunca «implementación» — *Tomada*

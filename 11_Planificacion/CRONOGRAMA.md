@@ -1,7 +1,7 @@
 ---
 titulo: Cronograma maestro (versión para la IA)
 tipo: documento_vivo
-actualizado: 2026-11-15
+actualizado: 2026-11-22
 fuente_de_verdad: 11_Planificacion/Cronograma_Tesis.xlsx
 tags: [cronograma, planificacion]
 ---
