@@ -65,6 +65,41 @@
    "unidad": "Plantilla Problem Statement",
    "resumen": "Definir el problema antes de pedir requerimientos: alcance, impacto, interesados (poder contra interés), brecha actual-deseado y causa raíz.",
    "analogia": "Antes de comprar, el área explica qué falla, a quién afecta y por qué."
+  },
+  {
+   "id": "IR-T10",
+   "titulo": "Validación: ¿el producto correcto?",
+   "unidad": "Unidad 2",
+   "resumen": "Con el cliente; valida la intención; 7 técnicas; caso Quito: el ranking público no era la necesidad real.",
+   "analogia": "Preguntar para qué quieren 50 laptops gamer: eran para Excel."
+  },
+  {
+   "id": "IR-T11",
+   "titulo": "Verificación: ¿bien escrito?",
+   "unidad": "Unidad 2",
+   "resumen": "Interna; 3 C (claridad, completitud, coherencia); lista de 12 puntos; RF-031 partido en dos.",
+   "analogia": "Revisar que la comanda de cocina diga bien el pedido."
+  },
+  {
+   "id": "IR-T12",
+   "titulo": "Gestión: línea base, cambios y trazabilidad",
+   "unidad": "Unidad 2",
+   "resumen": "Línea base y versiones; control de cambios en 5 pasos; impacto +7 semanas-persona; trazabilidad; estabilidad y volatilidad.",
+   "analogia": "Parches de un juego y el ciclo de compras con su PO."
+  },
+  {
+   "id": "IR-T13",
+   "titulo": "Ágil: manifiesto, conceptos y backlog",
+   "unidad": "Unidad 2",
+   "resumen": "Cascada vs ágil; 4 valores; iteraciones, colaboración, adaptación; roles Scrum; Product Backlog.",
+   "analogia": "Metro de Quito (cascada) contra una app que mejora cada 2 semanas."
+  },
+  {
+   "id": "IR-T14",
+   "titulo": "Historias de usuario, INVEST y aceptación",
+   "unidad": "Unidad 2",
+   "resumen": "Como/quiero/para; INVEST de Bill Wake; Dado/Cuando/Entonces; 4 errores; historias técnicas y spikes.",
+   "analogia": "Pago en Deuna: Dado saldo, Cuando escaneo, Entonces pago exitoso."
   }
  ],
  "preguntas": [
@@ -2171,6 +2206,1106 @@
    "correcta": true,
    "explicacion": "Problem Definition.",
    "fuente": "Plantilla Problem Statement PMBOK"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Qué pregunta responde la validación de requerimientos?",
+   "opciones": [
+    "¿Estamos construyendo el producto correcto?",
+    "¿Estamos especificando los requerimientos correctamente?",
+    "¿Cuánto cuesta el cambio?",
+    "¿Quién aprueba la línea base?"
+   ],
+   "correcta": 0,
+   "explicacion": "Validar = producto CORRECTO, junto al cliente.",
+   "fuente": "Validación, Verificación y Gestión, p. 4",
+   "id": "IR-201"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Con quién se hace la validación?",
+   "opciones": [
+    "Con el cliente, los usuarios finales y los stakeholders",
+    "Solo con el equipo técnico",
+    "Solo con los pares revisores",
+    "Con el Scrum Master"
+   ],
+   "correcta": 0,
+   "explicacion": "Validación se hace CON el cliente y stakeholders; la verificación es interna.",
+   "fuente": "Validación, Verificación y Gestión, pp. 4 y 11",
+   "id": "IR-202"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál NO es una técnica de validación según SWEBOK v4 en la clase?",
+   "opciones": [
+    "Refactorización del código",
+    "Walkthroughs",
+    "Prototipos",
+    "Casos de prueba de aceptación"
+   ],
+   "correcta": 0,
+   "explicacion": "Las 7 técnicas: revisiones formales, walkthroughs, prototipos, casos de aceptación, checklists, modelado y simulación, validación basada en estándares.",
+   "fuente": "Validación, Verificación y Gestión, p. 7",
+   "id": "IR-203"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "El requerimiento «el sistema debe ser fácil de usar», después de validarlo con el cliente, quedó como:",
+   "opciones": [
+    "El 90 % de los usuarios objetivo completa el registro en menos de 3 minutos sin asistencia",
+    "El sistema debe ser intuitivo y amigable",
+    "El sistema debe usar un diseño moderno",
+    "El registro debe hacerse con cédula"
+   ],
+   "correcta": 0,
+   "explicacion": "Ejemplo de la clase: claro, verificable y concreto.",
+   "fuente": "Validación, Verificación y Gestión, p. 8",
+   "id": "IR-204"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En el caso de Quito, ¿qué quedó después de validar el pedido «mostrar qué operadora es la más puntual»?",
+   "opciones": [
+    "Puntualidad por ruta para los usuarios y reporte por operadora solo para el Municipio",
+    "Un ranking público de operadoras",
+    "Nada, se rechazó el pedido",
+    "Un mapa con todos los buses en tiempo real"
+   ],
+   "correcta": 0,
+   "explicacion": "La validación cambió la intención: el ranking público no era la necesidad real.",
+   "fuente": "Validación, Verificación y Gestión, p. 9",
+   "id": "IR-205"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En el caso de Quito, ¿qué condición pusieron las operadoras?",
+   "opciones": [
+    "Medir solo rutas con GPS y no contar retrasos por cierres de vía",
+    "Que el ranking sea público",
+    "Que la app sea gratuita",
+    "Que se mida por número de pasajeros"
+   ],
+   "correcta": 0,
+   "explicacion": "Operadoras: reglas de medición justas.",
+   "fuente": "Validación, Verificación y Gestión, p. 9",
+   "id": "IR-206"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Para el Municipio, ¿para qué servía el dato de puntualidad?",
+   "opciones": [
+    "Para controlar el cumplimiento de los contratos",
+    "Para elegir ruta",
+    "Para publicar un ranking",
+    "Para cobrar el pasaje"
+   ],
+   "correcta": 0,
+   "explicacion": "Municipio: controlar contratos.",
+   "fuente": "Validación, Verificación y Gestión, p. 9",
+   "id": "IR-207"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es un error típico que detecta la validación?",
+   "opciones": [
+    "Faltantes críticos que el cliente daba por obvios",
+    "Falta de ID único",
+    "Uso de MySQL en el requerimiento",
+    "Formato del documento"
+   ],
+   "correcta": 0,
+   "explicacion": "Los 7 errores de validación son de necesidad/intención; los otros son de verificación.",
+   "fuente": "Validación, Verificación y Gestión, p. 6",
+   "id": "IR-208"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Validar es solo revisar la redacción de los requerimientos.",
+   "correcta": false,
+   "explicacion": "No es solo revisar la redacción, sino validar la intención.",
+   "fuente": "Validación, Verificación y Gestión, p. 4",
+   "id": "IR-209"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Según la clase, detectar problemas al validar cuesta horas; detectarlos en producción cuesta semanas.",
+   "correcta": true,
+   "explicacion": "Importancia de validar.",
+   "fuente": "Validación, Verificación y Gestión, p. 5",
+   "id": "IR-210"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Según SWEBOK v4, la validación previene construir el producto ______.",
+   "respuesta": "equivocado",
+   "aceptadas": [
+    "equivocado",
+    "incorrecto"
+   ],
+   "explicacion": "Frase de la p. 4.",
+   "fuente": "Validación, Verificación y Gestión, p. 4",
+   "id": "IR-211"
+  },
+  {
+   "tema": "IR-T10",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Los recorridos guiados sobre la especificación se llaman ______.",
+   "respuesta": "walkthroughs",
+   "aceptadas": [
+    "walkthroughs",
+    "walkthrough"
+   ],
+   "explicacion": "Técnica de validación.",
+   "fuente": "Validación, Verificación y Gestión, p. 7",
+   "id": "IR-212"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Qué pregunta responde la verificación?",
+   "opciones": [
+    "¿Estamos especificando los requerimientos correctamente?",
+    "¿Estamos construyendo el producto correcto?",
+    "¿Qué quiere el cliente?",
+    "¿Cuánto esfuerzo toma?"
+   ],
+   "correcta": 0,
+   "explicacion": "Verificar = BIEN ESCRITO.",
+   "fuente": "Validación, Verificación y Gestión, p. 10",
+   "id": "IR-213"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Quiénes hacen la verificación?",
+   "opciones": [
+    "El equipo técnico, analistas y pares revisores",
+    "El cliente y usuarios finales",
+    "El Municipio",
+    "Solo el Product Owner"
+   ],
+   "correcta": 0,
+   "explicacion": "Es interna y no requiere necesariamente al cliente.",
+   "fuente": "Validación, Verificación y Gestión, pp. 10-11",
+   "id": "IR-214"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuáles son los 3 criterios fundamentales de verificación que usa la clase?",
+   "opciones": [
+    "Claridad, completitud y coherencia",
+    "Necesario, factible y trazable",
+    "Independiente, negociable y valioso",
+    "Rápido, simple y robusto"
+   ],
+   "correcta": 0,
+   "explicacion": "Las 3 C, los más usados en la práctica de ISO 29148.",
+   "fuente": "Validación, Verificación y Gestión, pp. 13-14",
+   "id": "IR-215"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«La ______ se evalúa sobre el conjunto, no sobre un único requerimiento». ¿Qué criterio es?",
+   "opciones": [
+    "Completitud",
+    "Claridad",
+    "Coherencia",
+    "Atomicidad"
+   ],
+   "correcta": 0,
+   "explicacion": "Frase textual de la p. 16.",
+   "fuente": "Validación, Verificación y Gestión, p. 16",
+   "id": "IR-216"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "RF-002 dice «el registro requiere email» y RF-007 «el registro debe hacerse solo con cédula». ¿Qué criterio falla?",
+   "opciones": [
+    "Coherencia",
+    "Claridad",
+    "Completitud",
+    "Factibilidad"
+   ],
+   "correcta": 0,
+   "explicacion": "Ejemplo de incoherencia de la clase.",
+   "fuente": "Validación, Verificación y Gestión, p. 17",
+   "id": "IR-217"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«usar MySQL para guardar usuarios» es un error de verificación porque:",
+   "opciones": [
+    "Mezcla el QUÉ con el CÓMO (impone solución)",
+    "Es ambiguo",
+    "No tiene prioridad",
+    "Es incoherente"
+   ],
+   "correcta": 0,
+   "explicacion": "Error típico 1 de la p. 19.",
+   "fuente": "Validación, Verificación y Gestión, p. 19",
+   "id": "IR-218"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«permitir registrarse y recuperar contraseña» falla porque:",
+   "opciones": [
+    "Tiene varios objetivos en uno (no es atómico)",
+    "Usa palabras subjetivas",
+    "Mezcla qué con cómo",
+    "No es trazable"
+   ],
+   "correcta": 0,
+   "explicacion": "Hay que partirlo en dos.",
+   "fuente": "Validación, Verificación y Gestión, p. 19",
+   "id": "IR-219"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "En el borrador RF-031 («mostrar la puntualidad de forma rápida y confiable y permitir exportar reportes»), ¿qué problema corresponde a «puntualidad no está definida»?",
+   "opciones": [
+    "Coherencia del vocabulario",
+    "Claridad",
+    "No atómico",
+    "No verificable"
+   ],
+   "correcta": 0,
+   "explicacion": "Los 4 problemas: vagos→claridad; dos objetivos→no atómico; puntualidad sin definir→coherencia del vocabulario; sin criterio→no verificable.",
+   "fuente": "Validación, Verificación y Gestión, p. 20",
+   "id": "IR-220"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "¿Cómo quedó RF-031 verificado?",
+   "opciones": [
+    "% de salidas con menos de 3 min de desvío en los últimos 7 días, sin contar cierres de vía",
+    "Mostrar la puntualidad de forma rápida",
+    "Ranking público de operadoras",
+    "Reporte mensual por operadora en PDF"
+   ],
+   "correcta": 0,
+   "explicacion": "El reporte mensual en PDF es RF-032.",
+   "fuente": "Validación, Verificación y Gestión, p. 20",
+   "id": "IR-221"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál de estas técnicas es de VERIFICACIÓN?",
+   "opciones": [
+    "Inspecciones formales",
+    "Prototipos con el cliente",
+    "Casos de aceptación con usuarios",
+    "Revisiones con el cliente"
+   ],
+   "correcta": 0,
+   "explicacion": "Verificación: revisiones técnicas, listas de chequeo, inspecciones formales.",
+   "fuente": "Validación, Verificación y Gestión, p. 11",
+   "id": "IR-222"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Qué palabras debe evitar un requerimiento claro?",
+   "opciones": [
+    "rápido, fácil, amigable, intuitivo",
+    "debe, cuando, para",
+    "ID, prioridad, origen",
+    "Dado, Cuando, Entonces"
+   ],
+   "correcta": 0,
+   "explicacion": "Términos vagos.",
+   "fuente": "Validación, Verificación y Gestión, p. 14",
+   "id": "IR-223"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál NO está en la lista de chequeo de 12 puntos para verificar?",
+   "opciones": [
+    "Está escrito en inglés",
+    "Tiene ID único",
+    "Tiene criterio de aceptación",
+    "Describe el QUÉ, no el CÓMO"
+   ],
+   "correcta": 0,
+   "explicacion": "La lista: ID, claro, verificable, prioridad, aceptación, no contradice, terminología, excepciones, trazable, factible, qué no cómo, valor.",
+   "fuente": "Validación, Verificación y Gestión, p. 18",
+   "id": "IR-224"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "La verificación requiere obligatoriamente la presencia del cliente.",
+   "correcta": false,
+   "explicacion": "No requiere necesariamente al cliente.",
+   "fuente": "Validación, Verificación y Gestión, p. 10",
+   "id": "IR-225"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Validación y verificación son complementarias y ninguna reemplaza a la otra.",
+   "correcta": true,
+   "explicacion": "Frase de la p. 12.",
+   "fuente": "Validación, Verificación y Gestión, p. 12",
+   "id": "IR-226"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "La ISO/IEC/IEEE 29148 define las características que debe cumplir cada requerimiento, como singular, factible, trazable y verificable.",
+   "correcta": true,
+   "explicacion": "Lista de 9 características.",
+   "fuente": "Validación, Verificación y Gestión, p. 13",
+   "id": "IR-227"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "La lista de chequeo para verificar tiene ______ puntos.",
+   "respuesta": "12",
+   "aceptadas": [
+    "12",
+    "doce"
+   ],
+   "explicacion": "Lista de la p. 18.",
+   "fuente": "Validación, Verificación y Gestión, p. 18",
+   "id": "IR-228"
+  },
+  {
+   "tema": "IR-T11",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Un requerimiento que tiene un solo objetivo se llama ______ (o singular).",
+   "respuesta": "atómico",
+   "aceptadas": [
+    "atómico",
+    "atomico",
+    "atómica"
+   ],
+   "explicacion": "Error: varios objetivos en uno.",
+   "fuente": "Validación, Verificación y Gestión, p. 19",
+   "id": "IR-229"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Qué es la línea base?",
+   "opciones": [
+    "Conjunto de requerimientos revisado y aprobado que sirve de referencia",
+    "El primer borrador sin revisar",
+    "La lista de cambios rechazados",
+    "El backlog del sprint"
+   ],
+   "correcta": 0,
+   "explicacion": "Desde la línea base todo cambio pasa por control de cambios.",
+   "fuente": "Validación, Verificación y Gestión, p. 22",
+   "id": "IR-230"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Según la convención de versiones de la clase, un cambio mayor de alcance genera la versión:",
+   "opciones": [
+    "v2.0",
+    "v1.1",
+    "v1.2",
+    "v1.0"
+   ],
+   "correcta": 0,
+   "explicacion": "v1.0 primera línea base; v1.1, v1.2 cambios menores; v2.0 cambio mayor.",
+   "fuente": "Validación, Verificación y Gestión, p. 22",
+   "id": "IR-231"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es el orden correcto del control de cambios?",
+   "opciones": [
+    "Solicitud, análisis de impacto, decisión, actualización, comunicación",
+    "Decisión, solicitud, actualización, análisis, comunicación",
+    "Análisis, solicitud, comunicación, decisión, actualización",
+    "Solicitud, decisión, comunicación, análisis, actualización"
+   ],
+   "correcta": 0,
+   "explicacion": "5 pasos: S-A-D-A-C.",
+   "fuente": "Validación, Verificación y Gestión, p. 23",
+   "id": "IR-232"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En el paso de decisión del control de cambios, las opciones son:",
+   "opciones": [
+    "Aprobar, rechazar o diferir",
+    "Aprobar o rechazar",
+    "Validar o verificar",
+    "Must, Should, Could o Won't"
+   ],
+   "correcta": 0,
+   "explicacion": "Decide el product owner o comité.",
+   "fuente": "Validación, Verificación y Gestión, p. 23",
+   "id": "IR-233"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Qué incluye el análisis de impacto?",
+   "opciones": [
+    "Requerimientos afectados, esfuerzo, plazo y riesgo",
+    "Solo el costo",
+    "Solo quién lo pidió",
+    "El diseño de la pantalla"
+   ],
+   "correcta": 0,
+   "explicacion": "Paso 2 del control de cambios.",
+   "fuente": "Validación, Verificación y Gestión, p. 23",
+   "id": "IR-234"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "En el caso de Quito, ¿cuánto esfuerzo agregaba el cambio?",
+   "opciones": [
+    "+7 semanas-persona (RF-031: 5, RF-032: 2)",
+    "+48 semanas-persona",
+    "+5 semanas-persona",
+    "+0,4 semanas-persona"
+   ],
+   "correcta": 0,
+   "explicacion": "Tabla de análisis de impacto.",
+   "fuente": "Validación, Verificación y Gestión, p. 24",
+   "id": "IR-235"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "¿Por qué el cambio de Quito no entró en la versión 1?",
+   "opciones": [
+    "El lanzamiento ya usaba 48 de 48 semanas-persona",
+    "Las operadoras lo rechazaron",
+    "El riesgo era 1,0",
+    "El Municipio no lo aprobó"
+   ],
+   "correcta": 0,
+   "explicacion": "Plazo lleno.",
+   "fuente": "Validación, Verificación y Gestión, p. 24",
+   "id": "IR-236"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 3,
+   "enunciado": "¿Cuál fue la decisión en el caso de Quito y quién aprobó?",
+   "opciones": [
+    "Aprobado para la versión 2 con piloto de un mes; aprueba el Municipio (sponsor)",
+    "Rechazado por las operadoras",
+    "Aprobado para la versión 1 por el Product Owner",
+    "Diferido sin fecha por el equipo"
+   ],
+   "correcta": 0,
+   "explicacion": "Nueva línea base v1.2.",
+   "fuente": "Validación, Verificación y Gestión, p. 24",
+   "id": "IR-237"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "La trazabilidad hacia ATRÁS responde:",
+   "opciones": [
+    "¿De qué necesidad y de qué stakeholder viene el requerimiento?",
+    "¿Dónde se diseña, se construye y se prueba?",
+    "¿Cuánto cuesta?",
+    "¿Quién lo programa?"
+   ],
+   "correcta": 0,
+   "explicacion": "Hacia adelante = diseño, construcción y prueba.",
+   "fuente": "Validación, Verificación y Gestión, p. 25",
+   "id": "IR-238"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es la diferencia entre estabilidad y volatilidad?",
+   "opciones": [
+    "Estabilidad es atributo de cada requerimiento; volatilidad es cuánto cambia el conjunto",
+    "Son sinónimos",
+    "Volatilidad es de cada requerimiento; estabilidad del conjunto",
+    "Estabilidad mide el costo y volatilidad el tiempo"
+   ],
+   "correcta": 0,
+   "explicacion": "Volatilidad: % de requerimientos modificados por sprint o versión.",
+   "fuente": "Validación, Verificación y Gestión, p. 26",
+   "id": "IR-239"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Una volatilidad alta suele indicar:",
+   "opciones": [
+    "Una elicitación incompleta",
+    "Un equipo muy rápido",
+    "Una buena verificación",
+    "Que el proyecto terminó"
+   ],
+   "correcta": 0,
+   "explicacion": "Frase de la p. 26.",
+   "fuente": "Validación, Verificación y Gestión, p. 26",
+   "id": "IR-240"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Gestionar requerimientos es impedir los cambios.",
+   "correcta": false,
+   "explicacion": "Gestionar no es impedir los cambios, sino decidir sobre ellos con información.",
+   "fuente": "Validación, Verificación y Gestión, p. 21",
+   "id": "IR-241"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "En ágil, la solicitud de cambio entra al backlog y compite por prioridad como cualquier otra historia.",
+   "correcta": true,
+   "explicacion": "Nota de la p. 23.",
+   "fuente": "Validación, Verificación y Gestión, p. 23",
+   "id": "IR-242"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Según SWEBOK v4, el proceso de requerimientos termina cuando se entrega la versión 1.",
+   "correcta": false,
+   "explicacion": "Es iterativo y continúa hasta el retiro del sistema.",
+   "fuente": "Validación, Verificación y Gestión, p. 21",
+   "id": "IR-243"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "«Un cambio sin análisis de ______ es un cambio sin control».",
+   "respuesta": "impacto",
+   "aceptadas": [
+    "impacto"
+   ],
+   "explicacion": "Frase de la p. 23.",
+   "fuente": "Validación, Verificación y Gestión, p. 23",
+   "id": "IR-244"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "En el caso de Quito, la nueva línea base quedó en la versión ______.",
+   "respuesta": "v1.2",
+   "aceptadas": [
+    "v1.2",
+    "1.2"
+   ],
+   "explicacion": "v1.1 (lanzamiento) → v1.2.",
+   "fuente": "Validación, Verificación y Gestión, p. 22",
+   "id": "IR-245"
+  },
+  {
+   "tema": "IR-T12",
+   "tipo": "completar",
+   "dificultad": 3,
+   "enunciado": "El riesgo del cambio de Quito se estimó en ______.",
+   "respuesta": "0,4",
+   "aceptadas": [
+    "0,4",
+    "0.4"
+   ],
+   "explicacion": "Depende de los GPS y de las reglas de medición.",
+   "fuente": "Validación, Verificación y Gestión, p. 24",
+   "id": "IR-246"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "El Manifiesto Ágil se firmó en:",
+   "opciones": [
+    "2001, por 17 desarrolladores",
+    "1995, por 5 empresas",
+    "2010, por la IEEE",
+    "2001, por la ISO"
+   ],
+   "correcta": 0,
+   "explicacion": "Origen de las metodologías ágiles.",
+   "fuente": "Requerimientos Ágiles e HU, p. 3",
+   "id": "IR-247"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál es uno de los 4 valores del Manifiesto Ágil?",
+   "opciones": [
+    "Software funcionando sobre documentación extensa",
+    "Documentación extensa sobre software funcionando",
+    "Seguir un plan sobre responder al cambio",
+    "Negociación contractual sobre colaboración"
+   ],
+   "correcta": 0,
+   "explicacion": "Lo de la izquierda se valora MÁS.",
+   "fuente": "Requerimientos Ágiles e HU, p. 4",
+   "id": "IR-248"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En el enfoque tradicional (cascada), el cliente:",
+   "opciones": [
+    "Firma al inicio y ve el producto al final",
+    "Participa todo el tiempo",
+    "Ve resultados cada sprint",
+    "Prioriza el backlog"
+   ],
+   "correcta": 0,
+   "explicacion": "En ágil participa todo el tiempo.",
+   "fuente": "Requerimientos Ágiles e HU, p. 2",
+   "id": "IR-249"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Cuánto dura típicamente una iteración (sprint)?",
+   "opciones": [
+    "Entre 1 y 4 semanas",
+    "Entre 3 y 6 meses",
+    "Un día",
+    "Un año"
+   ],
+   "correcta": 0,
+   "explicacion": "Al final hay un incremento funcional.",
+   "fuente": "Requerimientos Ágiles e HU, p. 6",
+   "id": "IR-250"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En Scrum, ¿quién representa al cliente y prioriza?",
+   "opciones": [
+    "Product Owner",
+    "Scrum Master",
+    "Equipo de desarrollo",
+    "Analista de QA"
+   ],
+   "correcta": 0,
+   "explicacion": "Scrum Master facilita; el equipo ejecuta.",
+   "fuente": "Requerimientos Ágiles e HU, p. 7",
+   "id": "IR-251"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Qué hace el Scrum Master?",
+   "opciones": [
+    "Facilita el proceso",
+    "Prioriza el backlog",
+    "Programa las historias",
+    "Firma el contrato"
+   ],
+   "correcta": 0,
+   "explicacion": "Roles en Scrum.",
+   "fuente": "Requerimientos Ágiles e HU, p. 7",
+   "id": "IR-252"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál NO es característica del Product Backlog?",
+   "opciones": [
+    "Está terminado al inicio del proyecto",
+    "Priorizado por valor de negocio",
+    "Refinado constantemente",
+    "Ítems más detallados arriba"
+   ],
+   "correcta": 0,
+   "explicacion": "Nunca está terminado.",
+   "fuente": "Requerimientos Ágiles e HU, p. 9",
+   "id": "IR-253"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Cuál de estos NO es un marco ágil mencionado en la clase?",
+   "opciones": [
+    "Cascada",
+    "Scrum",
+    "Kanban",
+    "SAFe"
+   ],
+   "correcta": 0,
+   "explicacion": "Marcos: Scrum, Kanban, XP, SAFe, Lean.",
+   "fuente": "Requerimientos Ágiles e HU, p. 3",
+   "id": "IR-254"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Según el Manifiesto Ágil, la documentación no tiene ninguna importancia.",
+   "correcta": false,
+   "explicacion": "Lo de la derecha sigue siendo importante, pero lo de la izquierda se valora más.",
+   "fuente": "Requerimientos Ágiles e HU, p. 4",
+   "id": "IR-255"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "El analista de requerimientos suele apoyar al Product Owner.",
+   "correcta": true,
+   "explicacion": "Nota de la p. 7.",
+   "fuente": "Requerimientos Ágiles e HU, p. 7",
+   "id": "IR-256"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "El refinamiento constante del backlog también se llama ______.",
+   "respuesta": "grooming",
+   "aceptadas": [
+    "grooming",
+    "refinement",
+    "refinamiento"
+   ],
+   "explicacion": "Grooming/Refinement.",
+   "fuente": "Requerimientos Ágiles e HU, p. 9",
+   "id": "IR-257"
+  },
+  {
+   "tema": "IR-T13",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Una estrategia ágil: refinar los detalles solo cuando se van a ______.",
+   "respuesta": "usar",
+   "aceptadas": [
+    "usar"
+   ],
+   "explicacion": "Adaptación al cambio.",
+   "fuente": "Requerimientos Ágiles e HU, p. 8",
+   "id": "IR-258"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 1,
+   "enunciado": "¿Cuál es la plantilla universal de una historia de usuario?",
+   "opciones": [
+    "Como [usuario] quiero [funcionalidad] para [beneficio]",
+    "Dado [contexto] cuando [acción] entonces [resultado]",
+    "El sistema debe [acción] cuando [condición]",
+    "ID, título, descripción, prioridad"
+   ],
+   "correcta": 0,
+   "explicacion": "Dado/Cuando/Entonces es para criterios de aceptación.",
+   "fuente": "Requerimientos Ágiles e HU, p. 11",
+   "id": "IR-259"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En [usuario] de una historia se escribe:",
+   "opciones": [
+    "El rol, no el nombre",
+    "El nombre de la persona",
+    "El área de sistemas",
+    "El nombre del programador"
+   ],
+   "correcta": 0,
+   "explicacion": "Rol, no nombre.",
+   "fuente": "Requerimientos Ágiles e HU, p. 11",
+   "id": "IR-260"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Quién propuso el acrónimo INVEST?",
+   "opciones": [
+    "Bill Wake",
+    "Kent Beck",
+    "Noriaki Kano",
+    "Ian Sommerville"
+   ],
+   "correcta": 0,
+   "explicacion": "Bill Wake.",
+   "fuente": "Requerimientos Ágiles e HU, p. 15",
+   "id": "IR-261"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En INVEST, la «S» (Small) significa:",
+   "opciones": [
+    "Cabe en un sprint",
+    "Es simple de leer",
+    "Es segura",
+    "Tiene un solo stakeholder"
+   ],
+   "correcta": 0,
+   "explicacion": "I independiente, N negociable, V valiosa, E estimable, S pequeña (cabe en un sprint), T testeable.",
+   "fuente": "Requerimientos Ágiles e HU, p. 15",
+   "id": "IR-262"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En INVEST, la «N» significa:",
+   "opciones": [
+    "Negotiable: los detalles se negocian con el cliente",
+    "Necessary: es necesaria",
+    "New: es nueva",
+    "Numbered: tiene número"
+   ],
+   "correcta": 0,
+   "explicacion": "Negociable.",
+   "fuente": "Requerimientos Ágiles e HU, p. 15",
+   "id": "IR-263"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Qué falla en «Como usuario quiero que la app sea más rápida»?",
+   "opciones": [
+    "Rol genérico, «más rápida» subjetivo, sin beneficio, no testeable",
+    "Nada, está bien",
+    "Solo le falta el ID",
+    "Es demasiado larga"
+   ],
+   "correcta": 0,
+   "explicacion": "Mala historia de la clase.",
+   "fuente": "Requerimientos Ágiles e HU, p. 16",
+   "id": "IR-264"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "¿Para qué sirven los criterios de aceptación?",
+   "opciones": [
+    "Definen cuándo la historia está terminada",
+    "Para priorizar con MoSCoW",
+    "Para estimar el costo",
+    "Para nombrar al usuario"
+   ],
+   "correcta": 0,
+   "explicacion": "Formato Given/When/Then; conectan con QA.",
+   "fuente": "Requerimientos Ágiles e HU, p. 17",
+   "id": "IR-265"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "En «Dado que estoy en la pantalla de matrícula, Cuando escribo el nombre de una materia, Entonces veo los resultados en menos de 2 segundos», el «Entonces» es:",
+   "opciones": [
+    "El resultado esperado y medible",
+    "El contexto",
+    "La acción del usuario",
+    "El beneficio"
+   ],
+   "correcta": 0,
+   "explicacion": "Dado = contexto, Cuando = acción, Entonces = resultado.",
+   "fuente": "Requerimientos Ágiles e HU, p. 17",
+   "id": "IR-266"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«quiero un botón rojo en la esquina» es un error porque:",
+   "opciones": [
+    "Escribe una solución técnica en vez de una necesidad",
+    "Usa un rol genérico",
+    "Le falta el Dado",
+    "Es muy pequeña"
+   ],
+   "correcta": 0,
+   "explicacion": "Mejor: «quiero acceder a soporte rápidamente».",
+   "fuente": "Requerimientos Ágiles e HU, p. 18",
+   "id": "IR-267"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«investigar opciones de pasarela de pago para Ecuador» es un ejemplo de:",
+   "opciones": [
+    "Spike",
+    "Historia técnica",
+    "Historia de usuario",
+    "Criterio de aceptación"
+   ],
+   "correcta": 0,
+   "explicacion": "Spike = investigación para resolver incertidumbres.",
+   "fuente": "Requerimientos Ágiles e HU, p. 19",
+   "id": "IR-268"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "«migrar la base de datos a una versión más reciente» es un ejemplo de:",
+   "opciones": [
+    "Historia técnica",
+    "Spike",
+    "Criterio de aceptación",
+    "Épica de usuario"
+   ],
+   "correcta": 0,
+   "explicacion": "Infraestructura, refactor, deuda técnica.",
+   "fuente": "Requerimientos Ágiles e HU, p. 19",
+   "id": "IR-269"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "mcq",
+   "dificultad": 2,
+   "enunciado": "Una historia de usuario captura:",
+   "opciones": [
+    "El QUÉ, el QUIÉN y el PORQUÉ",
+    "El CÓMO y el CUÁNDO",
+    "Solo el QUÉ",
+    "El costo y el plazo"
+   ],
+   "correcta": 0,
+   "explicacion": "Promueve la conversación.",
+   "fuente": "Requerimientos Ágiles e HU, p. 10",
+   "id": "IR-270"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "vf",
+   "dificultad": 1,
+   "enunciado": "Si se olvida la parte «para…», no se sabe por qué priorizar la historia.",
+   "correcta": true,
+   "explicacion": "Error 3 de la p. 18.",
+   "fuente": "Requerimientos Ágiles e HU, p. 18",
+   "id": "IR-271"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "Las historias técnicas y los spikes no van en el backlog.",
+   "correcta": false,
+   "explicacion": "Ambos se ponen en el backlog junto a las historias de usuario.",
+   "fuente": "Requerimientos Ágiles e HU, p. 19",
+   "id": "IR-272"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "vf",
+   "dificultad": 2,
+   "enunciado": "«Comprador frecuente» y «comprador ocasional» son roles distintos y conviene precisarlos.",
+   "correcta": true,
+   "explicacion": "Ejemplo 3 (e-commerce).",
+   "fuente": "Requerimientos Ágiles e HU, p. 14",
+   "id": "IR-273"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "Si una historia falla en algún criterio INVEST, conviene reescribirla o ______.",
+   "respuesta": "dividirla",
+   "aceptadas": [
+    "dividirla",
+    "dividir",
+    "partirla"
+   ],
+   "explicacion": "Frase de la p. 15.",
+   "fuente": "Requerimientos Ágiles e HU, p. 15",
+   "id": "IR-274"
+  },
+  {
+   "tema": "IR-T14",
+   "tipo": "completar",
+   "dificultad": 2,
+   "enunciado": "El formato de criterios de aceptación Given/When/Then en español es Dado/Cuando/______.",
+   "respuesta": "Entonces",
+   "aceptadas": [
+    "entonces"
+   ],
+   "explicacion": "p. 17.",
+   "fuente": "Requerimientos Ágiles e HU, p. 17",
+   "id": "IR-275"
   }
  ],
  "tarjetas": [
@@ -2358,6 +3493,106 @@
    "tema": "IR-T9",
    "frente": "Secciones del Problem Statement",
    "reverso": "Definición, antecedentes, alcance, impacto, interesados, tiempo y lugar, brechas, causa raíz, evidencia"
+  },
+  {
+   "tema": "IR-T10",
+   "frente": "Validación: ¿qué pregunta responde y con quién?",
+   "reverso": "¿Construimos el producto CORRECTO? Con el cliente, usuarios y stakeholders. Valida la intención."
+  },
+  {
+   "tema": "IR-T10",
+   "frente": "Las 7 técnicas de validación",
+   "reverso": "Revisiones formales, walkthroughs, prototipos, casos de aceptación, checklists, modelado y simulación, validación basada en estándares."
+  },
+  {
+   "tema": "IR-T10",
+   "frente": "Caso Quito validado",
+   "reverso": "Puntualidad por ruta para usuarios + reporte por operadora solo para el Municipio. El ranking público no era la necesidad real."
+  },
+  {
+   "tema": "IR-T10",
+   "frente": "«Fácil de usar» validado",
+   "reverso": "El 90 % de usuarios objetivo completa el registro en menos de 3 min sin asistencia."
+  },
+  {
+   "tema": "IR-T11",
+   "frente": "Verificación: ¿qué pregunta y con quién?",
+   "reverso": "¿Especificamos CORRECTAMENTE? Interna: equipo técnico, analistas, pares. Revisa la redacción."
+  },
+  {
+   "tema": "IR-T11",
+   "frente": "Las 3 C",
+   "reverso": "Claridad (una sola interpretación), Completitud (el CONJUNTO cubre todo, errores y excepciones), Coherencia (sin contradicciones)."
+  },
+  {
+   "tema": "IR-T11",
+   "frente": "4 errores típicos al verificar",
+   "reverso": "Mezclar QUÉ con CÓMO; palabras subjetivas; sin criterio de aceptación; varios objetivos en uno."
+  },
+  {
+   "tema": "IR-T11",
+   "frente": "RF-031: 4 problemas",
+   "reverso": "Vagos (claridad), dos objetivos (no atómico), puntualidad sin definir (coherencia), sin criterio (no verificable)."
+  },
+  {
+   "tema": "IR-T11",
+   "frente": "Lista de chequeo (12)",
+   "reverso": "ID, claro, verificable, prioridad, aceptación, no contradice, terminología, excepciones, trazable, factible, qué no cómo, valor."
+  },
+  {
+   "tema": "IR-T12",
+   "frente": "Control de cambios (5)",
+   "reverso": "Solicitud → Análisis de impacto → Decisión (aprobar/rechazar/diferir) → Actualización → Comunicación."
+  },
+  {
+   "tema": "IR-T12",
+   "frente": "Versiones",
+   "reverso": "v1.0 primera línea base; v1.1, v1.2 cambios menores; v2.0 cambio mayor de alcance."
+  },
+  {
+   "tema": "IR-T12",
+   "frente": "Impacto caso Quito",
+   "reverso": "+7 semanas-persona (5+2); 48 de 48 ocupadas; riesgo 0,4; aprobado para v2 con piloto de 1 mes; aprueba el Municipio; línea base v1.2."
+  },
+  {
+   "tema": "IR-T12",
+   "frente": "Trazabilidad atrás / adelante",
+   "reverso": "Atrás: necesidad y stakeholder. Adelante: diseño, construcción y prueba."
+  },
+  {
+   "tema": "IR-T12",
+   "frente": "Estabilidad vs volatilidad",
+   "reverso": "Estabilidad: de cada requerimiento (alta/media/baja). Volatilidad: del conjunto (% modificados por sprint/versión); alta = elicitación incompleta."
+  },
+  {
+   "tema": "IR-T13",
+   "frente": "4 valores del Manifiesto Ágil",
+   "reverso": "Individuos e interacciones; software funcionando; colaboración con el cliente; responder al cambio (sobre lo de la derecha)."
+  },
+  {
+   "tema": "IR-T13",
+   "frente": "Roles Scrum",
+   "reverso": "Product Owner prioriza; Scrum Master facilita; equipo ejecuta. El analista apoya al PO."
+  },
+  {
+   "tema": "IR-T13",
+   "frente": "Product Backlog",
+   "reverso": "Lista priorizada por valor; refinada (grooming); detallado arriba, general abajo; nunca terminada; lo gestiona el PO."
+  },
+  {
+   "tema": "IR-T14",
+   "frente": "INVEST",
+   "reverso": "Independent, Negotiable, Valuable, Estimable, Small (cabe en un sprint), Testable. Bill Wake."
+  },
+  {
+   "tema": "IR-T14",
+   "frente": "4 errores al escribir historias",
+   "reverso": "Rol genérico «usuario»; varias funcionalidades; sin beneficio; solución técnica en vez de necesidad."
+  },
+  {
+   "tema": "IR-T14",
+   "frente": "Historia técnica vs spike",
+   "reverso": "Técnica: infraestructura/refactor/deuda. Spike: investigar una incertidumbre. Ambas al backlog."
   }
  ]
 }
