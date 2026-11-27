@@ -548,3 +548,37 @@ tags: [bitacora, informes, planificacion]
 - **Queda como FALTA:**
   - las líneas base de M1 y M3, que dependen de las fechas y horas que entregue Torvesa;
   - el estado de las tareas en `Cronograma_Tesis.xlsx`, sin actualizar desde el sprint 3.
+
+## 2026-11-27 (viernes) · Puesta al día después de dos semanas
+- **Estado:** del 24 al 27-nov no hubo trabajo de tesis. La tutora no respondió el correo del 23-nov y la reunión del 25 o 27 no se hizo. Tampoco hay autorización ni datos de Torvesa.
+- **Replan hasta el 4-ene** (`11_Planificacion/2026-11-27_Replan_Cierre_4ene_v0.1.md`), con tres escenarios:
+  - **A:** DEC-21 aceptada hasta el viernes 4-dic. La validación arranca el 9-dic y dura 2 semanas, hasta el 22-dic.
+  - **B:** respuesta del 7 al 11-dic. La validación es de 1 semana desde el 14-dic.
+  - **C:** sin respuesta. Se valida con CP-01 a CP-04 y con los documentos de Torvesa, y se declara como limitación.
+  - **Cortes:** el viernes 4-dic y el viernes 11-dic. El borrador 5 va a la tutora el 18-dic y la entrega es el lunes 4-ene.
+- **Capítulo III v0.7** (`06_Capitulos/2026-11-27_Cap3_Metodologia_v0.7.md`):
+  - aplica la propuesta de DEC-21, 22 y 23: enfoque cuantitativo, la solicitud de cotización como unidad de análisis y M6 con evaluación heurística (CP-04);
+  - trae una tabla por cada meta, de M1 a M6;
+  - deja 30 marcadores, 13 de ellos DECIDIR-TUTORA.
+- **Pedido de datos a Torvesa** (`05_Datos_Campo/2026-11-27_Pedido_Datos_Torvesa_v0.1.md`): 15 columnas sin datos personales, del 1-sep al 29-nov, con un mensaje corto para que Diego lo envíe.
+- **Auditoría de citas del borrador 4** (`06_Capitulos/2026-11-27_Auditoria_Citas_Borrador4_v0.1.md`):
+  - hay 90 obras citadas: 75 verificadas, 5 con solo resumen y 10 sin ficha;
+  - 9 de ellas se citan como si estuvieran verificadas, entre ellas Oldroyd en el Cap. I;
+  - hay 11 obras citadas que no están en la lista de referencias y 6 contradicciones de fondo, como el aporte patronal 12,15 % contra 11,15 % y la tasa de 15 % con una prima de 17,18 %.
+- **Mensajes nuevos (borradores):**
+  - seguimiento a la tutora, en versión corta para WhatsApp y larga por correo: `00_Inbox/2026-11-27_Mensaje_Tutora_Seguimiento_BORRADOR.md`;
+  - mensaje a Diego, con 5 confirmaciones: `00_Inbox/2026-11-27_Mensaje_a_Diego_BORRADOR.md`.
+
+### Pendiente
+- **Victor:**
+  - enviar los dos mensajes;
+  - decidir qué cuenta como «primera respuesta» (la hora en que alguien pulsa «Tomar» o la del primer mensaje al cliente);
+  - aprobar las 20 alteraciones de CP-03;
+  - bajar los PDF de Oldroyd, Rodriguez 2025 (Emerald) y Rodriguez y Boyer.
+- **Diego:**
+  - enviar a Torvesa el pedido de datos y la autorización;
+  - confirmar las claves y el PR #1.
+- **Claude:**
+  - pasar las correcciones de la auditoría a los capítulos (v0.x nuevas);
+  - alinear los caps. I, IV y V con el cap. III v0.7 cuando la tutora responda;
+  - actualizar el anexo 5 al modelo v0.3.
